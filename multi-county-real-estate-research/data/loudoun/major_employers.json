@@ -1,0 +1,326 @@
+{
+  "metadata": {
+    "title": "Loudoun County Principal Employers",
+    "source": "Loudoun County Annual Comprehensive Financial Reports (ACFRs)",
+    "years_covered": "2008-2025",
+    "extraction_date": "2025-12-29",
+    "table_name": "Table O (formerly Table N)",
+    "notes": [
+      "Employment often given as ranges for private employers",
+      "Only LCPS and County of Loudoun report exact employee counts",
+      "Percentages based on total county employment"
+    ]
+  },
+  "employers_by_year": {
+    "2025": {
+      "source": "FY2025 ACFR",
+      "total_top10_pct": 21.36,
+      "employers": [
+        {"rank": 1, "name": "Loudoun County Public Schools", "employees": 13281, "pct": 6.71},
+        {"rank": 2, "name": "County of Loudoun", "employees": 5059, "pct": 2.56},
+        {"rank": 3, "name": "U.S. Department of Homeland Security", "employees_range": "2,500-5,000", "pct": 1.89},
+        {"rank": 4, "name": "Northrop Grumman", "employees_range": "2,500-5,000", "pct": 1.89},
+        {"rank": 5, "name": "United Airlines", "employees_range": "2,500-5,000", "pct": 1.89},
+        {"rank": 6, "name": "Amazon", "employees_range": "2,500-5,000", "pct": 1.89},
+        {"rank": 7, "name": "Inova Health System", "employees_range": "2,500-5,000", "pct": 1.89},
+        {"rank": 8, "name": "Verizon", "employees_range": "1,000-2,500", "pct": 0.88},
+        {"rank": 9, "name": "Dynalectric", "employees_range": "1,000-2,500", "pct": 0.88},
+        {"rank": 10, "name": "Walmart", "employees_range": "1,000-2,500", "pct": 0.88}
+      ]
+    },
+    "2024": {
+      "source": "FY2024 ACFR",
+      "total_top10_pct": 19.93,
+      "employers": [
+        {"rank": 1, "name": "Loudoun County Public Schools", "employees": 12968, "pct": 6.79},
+        {"rank": 2, "name": "County of Loudoun", "employees": 4813, "pct": 2.48},
+        {"rank": 3, "name": "U.S. Department of Homeland Security", "employees_range": "2,500-5,000", "pct": 1.99},
+        {"rank": 4, "name": "Inova Health System", "employees_range": "2,500-5,000", "pct": 1.99},
+        {"rank": 5, "name": "United Airlines", "employees_range": "2,500-5,000", "pct": 1.99},
+        {"rank": 6, "name": "Amazon", "employees_range": "1,000-2,500", "pct": 0.93},
+        {"rank": 7, "name": "Northrop Grumman", "employees_range": "1,000-2,500", "pct": 0.97},
+        {"rank": 8, "name": "Verizon Business", "employees_range": "1,000-2,500", "pct": 0.93},
+        {"rank": 9, "name": "RTX (Raytheon)", "employees_range": "1,000-2,500", "pct": 0.93},
+        {"rank": 10, "name": "Walmart", "employees_range": "1,000-2,500", "pct": 0.93}
+      ]
+    },
+    "2023": {
+      "source": "FY2023 ACFR",
+      "total_top10_pct": 20.09,
+      "employers": [
+        {"rank": 1, "name": "Loudoun County Public Schools", "employees": 12804, "pct": 7.11},
+        {"rank": 2, "name": "County of Loudoun", "employees": 4453, "pct": 2.58},
+        {"rank": 3, "name": "U.S. Department of Homeland Security", "employees_range": "2,500-5,000", "pct": 2.17},
+        {"rank": 4, "name": "Verizon Business", "employees_range": "2,500-5,000", "pct": 2.17},
+        {"rank": 5, "name": "Northrop Grumman", "employees_range": "1,000-2,500", "pct": 1.01},
+        {"rank": 6, "name": "United Airlines", "employees_range": "1,000-2,500", "pct": 1.01},
+        {"rank": 7, "name": "Inova Health System", "employees_range": "1,000-2,500", "pct": 1.01},
+        {"rank": 8, "name": "Raytheon Technologies", "employees_range": "1,000-2,500", "pct": 1.01},
+        {"rank": 9, "name": "Dynalectric", "employees_range": "1,000-2,500", "pct": 1.01},
+        {"rank": 10, "name": "Amazon", "employees_range": "1,000-2,500", "pct": 1.01}
+      ]
+    },
+    "2022": {
+      "source": "FY2022 ACFR",
+      "total_top10_pct": 20.53,
+      "employers": [
+        {"rank": 1, "name": "Loudoun County Public Schools", "employees": 13018, "pct": 7.55},
+        {"rank": 2, "name": "County of Loudoun", "employees": 4453, "pct": 2.58},
+        {"rank": 3, "name": "U.S. Department of Homeland Security", "employees_range": "2,500-5,000", "pct": 2.17},
+        {"rank": 4, "name": "Verizon Business", "employees_range": "2,500-5,000", "pct": 2.17},
+        {"rank": 5, "name": "Northrop Grumman", "employees_range": "1,000-2,500", "pct": 1.01},
+        {"rank": 6, "name": "United Airlines", "employees_range": "1,000-2,500", "pct": 1.01},
+        {"rank": 7, "name": "Inova Health System", "employees_range": "1,000-2,500", "pct": 1.01},
+        {"rank": 8, "name": "Raytheon Technologies", "employees_range": "1,000-2,500", "pct": 1.01},
+        {"rank": 9, "name": "Dynalectric", "employees_range": "1,000-2,500", "pct": 1.01},
+        {"rank": 10, "name": "Amazon", "employees_range": "1,000-2,500", "pct": 1.01}
+      ]
+    },
+    "2021": {
+      "source": "FY2021 ACFR",
+      "total_top10_pct": 19.79,
+      "employers": [
+        {"rank": 1, "name": "Loudoun County Public Schools", "employees": 12382, "pct": 7.50},
+        {"rank": 2, "name": "County of Loudoun", "employees": 4298, "pct": 2.60},
+        {"rank": 3, "name": "Verizon Business", "employees_range": "2,500-5,000", "pct": 2.27},
+        {"rank": 4, "name": "Northrop Grumman", "employees_range": "1,000-2,500", "pct": 1.06},
+        {"rank": 5, "name": "U.S. Department of Homeland Security", "employees_range": "1,000-2,500", "pct": 1.06},
+        {"rank": 6, "name": "United Airlines", "employees_range": "1,000-2,500", "pct": 1.06},
+        {"rank": 7, "name": "Raytheon Technologies", "employees_range": "1,000-2,500", "pct": 1.06},
+        {"rank": 8, "name": "Inova Health System", "employees_range": "1,000-2,500", "pct": 1.06},
+        {"rank": 9, "name": "Walmart", "employees_range": "1,000-2,500", "pct": 1.06},
+        {"rank": 10, "name": "U.S. Postal Service", "employees_range": "1,000-2,500", "pct": 1.06}
+      ]
+    },
+    "2020": {
+      "source": "FY2020 ACFR",
+      "total_top10_pct": 22.30,
+      "employers": [
+        {"rank": 1, "name": "Loudoun County Public Schools", "employees": 11995, "pct": 7.45},
+        {"rank": 2, "name": "County of Loudoun", "employees": 4152, "pct": 2.58},
+        {"rank": 3, "name": "Verizon Business", "employees_range": "2,500-5,000", "pct": 2.33},
+        {"rank": 4, "name": "United Airlines", "employees_range": "1,000-5,000", "pct": 1.86},
+        {"rank": 5, "name": "U.S. Department of Homeland Security", "employees_range": "1,000-5,000", "pct": 1.86},
+        {"rank": 6, "name": "Northrop Grumman", "employees_range": "1,000-2,500", "pct": 1.09},
+        {"rank": 7, "name": "Raytheon Technologies", "employees_range": "1,000-2,500", "pct": 1.09},
+        {"rank": 8, "name": "Inova Health System", "employees_range": "1,000-5,000", "pct": 1.86},
+        {"rank": 9, "name": "Amazon", "employees_range": "1,000-2,500", "pct": 1.09},
+        {"rank": 10, "name": "Swissport USA", "employees_range": "1,000-2,500", "pct": 1.09}
+      ]
+    },
+    "2019": {
+      "source": "FY2019 ACFR",
+      "total_top10_pct": 24.63,
+      "employers": [
+        {"rank": 1, "name": "Loudoun County Public Schools", "employees": 11577, "pct": 6.79},
+        {"rank": 2, "name": "County of Loudoun", "employees": 3952, "pct": 2.32},
+        {"rank": 3, "name": "United Airlines", "employees_range": "1,000-5,000", "pct": 2.05},
+        {"rank": 4, "name": "U.S. Department of Homeland Security", "employees_range": "1,000-5,000", "pct": 2.05},
+        {"rank": 5, "name": "M.C. Dean, Inc.", "employees_range": "1,000-5,000", "pct": 2.05},
+        {"rank": 6, "name": "Orbital ATK", "employees_range": "1,000-5,000", "pct": 2.05},
+        {"rank": 7, "name": "Raytheon Company", "employees_range": "1,000-5,000", "pct": 1.61},
+        {"rank": 8, "name": "Loudoun Hospital Center", "employees_range": "1,000-5,000", "pct": 2.05},
+        {"rank": 9, "name": "Swissport USA", "employees_range": "1,000-5,000", "pct": 1.61},
+        {"rank": 10, "name": "God Bless America Inc", "employees_range": "1,000-5,000", "pct": 2.05}
+      ]
+    },
+    "2018": {
+      "source": "FY2018 ACFR",
+      "total_top10_pct": 25.03,
+      "employers": [
+        {"rank": 1, "name": "Loudoun County Public Schools", "employees": 11103, "pct": 6.68},
+        {"rank": 2, "name": "County of Loudoun", "employees": 3976, "pct": 2.39},
+        {"rank": 3, "name": "United Airlines", "employees_range": "1,000-5,000", "pct": 2.11},
+        {"rank": 4, "name": "Orbital ATK", "employees_range": "1,000-5,000", "pct": 2.11},
+        {"rank": 5, "name": "M.C. Dean, Inc.", "employees_range": "1,000-5,000", "pct": 2.11},
+        {"rank": 6, "name": "U.S. Department of Homeland Security", "employees_range": "1,000-5,000", "pct": 2.11},
+        {"rank": 7, "name": "Raytheon Company", "employees_range": "1,000-5,000", "pct": 1.65},
+        {"rank": 8, "name": "Loudoun Hospital Center", "employees_range": "1,000-5,000", "pct": 2.11},
+        {"rank": 9, "name": "Swissport USA", "employees_range": "1,000-5,000", "pct": 1.65},
+        {"rank": 10, "name": "U.S. Postal Service", "employees_range": "1,000-5,000", "pct": 2.11}
+      ]
+    },
+    "2017": {
+      "source": "FY2017 ACFR",
+      "total_top10_pct": 20.02,
+      "employers": [
+        {"rank": 1, "name": "Loudoun County Public Schools", "employees": 10640, "pct": 6.58},
+        {"rank": 2, "name": "County of Loudoun", "employees": 3754, "pct": 2.32},
+        {"rank": 3, "name": "United Airlines", "employees_range": "1,000-3,500", "pct": 1.39},
+        {"rank": 4, "name": "Raytheon Company", "employees_range": "1,000-3,500", "pct": 1.39},
+        {"rank": 5, "name": "Orbital ATK", "employees_range": "1,000-3,500", "pct": 1.39},
+        {"rank": 6, "name": "Loudoun Hospital Center", "employees_range": "1,000-3,500", "pct": 1.39},
+        {"rank": 7, "name": "U.S. Department of Homeland Security", "employees_range": "1,000-3,500", "pct": 1.39},
+        {"rank": 8, "name": "Swissport USA", "employees_range": "1,000-3,500", "pct": 1.39},
+        {"rank": 9, "name": "M.C. Dean, Inc.", "employees_range": "1,000-3,500", "pct": 1.39},
+        {"rank": 10, "name": "Walmart", "employees_range": "1,000-3,500", "pct": 1.39}
+      ]
+    },
+    "2016": {
+      "source": "FY2025 ACFR comparison",
+      "total_top10_pct": 18.58,
+      "employers": [
+        {"rank": 1, "name": "Loudoun County Public Schools", "employees": 10210, "pct": 6.41},
+        {"rank": 2, "name": "County of Loudoun", "employees": 3377, "pct": 2.12},
+        {"rank": 3, "name": "Verizon", "employees_range": "2,500-4,999", "pct": 2.35},
+        {"rank": 4, "name": "U.S. Department of Homeland Security", "employees_range": "1,000-2,499", "pct": 1.10},
+        {"rank": 5, "name": "United Airlines", "employees_range": "1,000-2,499", "pct": 1.10},
+        {"rank": 6, "name": "Inova Health System", "employees_range": "1,000-2,499", "pct": 1.10},
+        {"rank": 7, "name": "RTX (Raytheon)", "employees_range": "1,000-2,499", "pct": 1.10},
+        {"rank": 8, "name": "Orbital ATK Inc", "employees_range": "1,000-2,499", "pct": 1.10},
+        {"rank": 9, "name": "Swissport USA", "employees_range": "1,000-2,499", "pct": 1.10},
+        {"rank": 10, "name": "U.S. Postal Service", "employees_range": "1,000-2,499", "pct": 1.10}
+      ]
+    },
+    "2015": {
+      "source": "FY2024 ACFR comparison",
+      "total_top10_pct": 20.91,
+      "employers": [
+        {"rank": 1, "name": "Loudoun County Public Schools", "employees": 9822, "pct": 6.53},
+        {"rank": 2, "name": "County of Loudoun", "employees": 3584, "pct": 2.38},
+        {"rank": 3, "name": "United Airlines", "employees_range": "1,000-3,500", "pct": 1.50},
+        {"rank": 4, "name": "M.C. Dean", "employees_range": "1,000-3,500", "pct": 1.50},
+        {"rank": 5, "name": "Orbital Sciences Corporation", "employees_range": "1,000-3,500", "pct": 1.50},
+        {"rank": 6, "name": "U.S. Department of Homeland Security", "employees_range": "1,000-3,500", "pct": 1.50},
+        {"rank": 7, "name": "Verizon Business", "employees_range": "1,000-3,500", "pct": 1.50},
+        {"rank": 8, "name": "U.S. Postal Service", "employees_range": "1,000-3,500", "pct": 1.50},
+        {"rank": 9, "name": "RTX (Raytheon)", "employees_range": "1,000-3,500", "pct": 1.50},
+        {"rank": 10, "name": "Inova Health System", "employees_range": "1,000-3,500", "pct": 1.50}
+      ]
+    },
+    "2014": {
+      "source": "FY2023 ACFR comparison",
+      "total_top10_pct": 25.53,
+      "employers": [
+        {"rank": 1, "name": "Loudoun County Public Schools", "employees": 9638, "pct": 6.50},
+        {"rank": 2, "name": "County of Loudoun", "employees": 3438, "pct": 2.39},
+        {"rank": 3, "name": "U.S. Department of Homeland Security", "employees_range": "1,000-5,000", "pct": 2.08},
+        {"rank": 4, "name": "Orbital ATK", "employees_range": "1,000-5,000", "pct": 2.08},
+        {"rank": 5, "name": "United Airlines", "employees_range": "1,000-5,000", "pct": 2.08},
+        {"rank": 6, "name": "M.C. Dean, Inc.", "employees_range": "1,000-5,000", "pct": 2.08},
+        {"rank": 7, "name": "Verizon Business", "employees_range": "1,000-5,000", "pct": 2.08},
+        {"rank": 8, "name": "Inova Health System", "employees_range": "1,000-5,000", "pct": 2.08},
+        {"rank": 9, "name": "U.S. Postal Service", "employees_range": "1,000-5,000", "pct": 2.08},
+        {"rank": 10, "name": "America Online", "employees_range": "1,000-5,000", "pct": 2.08}
+      ]
+    },
+    "2013": {
+      "source": "FY2022 ACFR comparison",
+      "total_top10_pct": 25.74,
+      "employers": [
+        {"rank": 1, "name": "Loudoun County Public Schools", "employees": 9671, "pct": 6.71},
+        {"rank": 2, "name": "County of Loudoun", "employees": 3438, "pct": 2.39},
+        {"rank": 3, "name": "U.S. Department of Homeland Security", "employees_range": "1,000-5,000", "pct": 2.08},
+        {"rank": 4, "name": "Orbital ATK", "employees_range": "1,000-5,000", "pct": 2.08},
+        {"rank": 5, "name": "United Airlines", "employees_range": "1,000-5,000", "pct": 2.08},
+        {"rank": 6, "name": "M.C. Dean, Inc.", "employees_range": "1,000-5,000", "pct": 2.08},
+        {"rank": 7, "name": "Verizon Business", "employees_range": "1,000-5,000", "pct": 2.08},
+        {"rank": 8, "name": "Inova Health System", "employees_range": "1,000-5,000", "pct": 2.08},
+        {"rank": 9, "name": "U.S. Postal Service", "employees_range": "1,000-5,000", "pct": 2.08},
+        {"rank": 10, "name": "America Online", "employees_range": "1,000-5,000", "pct": 2.08}
+      ]
+    },
+    "2012": {
+      "source": "FY2021 ACFR comparison",
+      "total_top10_pct": 26.73,
+      "employers": [
+        {"rank": 1, "name": "Loudoun County Public Schools", "employees": 9663, "pct": 6.95},
+        {"rank": 2, "name": "County of Loudoun", "employees": 3477, "pct": 2.50},
+        {"rank": 3, "name": "U.S. Department of Homeland Security", "employees_range": "1,000-5,000", "pct": 2.16},
+        {"rank": 4, "name": "Orbital ATK", "employees_range": "1,000-5,000", "pct": 2.16},
+        {"rank": 5, "name": "United Airlines", "employees_range": "1,000-5,000", "pct": 2.16},
+        {"rank": 6, "name": "M.C. Dean, Inc.", "employees_range": "1,000-5,000", "pct": 2.16},
+        {"rank": 7, "name": "Verizon Business", "employees_range": "1,000-5,000", "pct": 2.16},
+        {"rank": 8, "name": "Inova Health System", "employees_range": "1,000-5,000", "pct": 2.16},
+        {"rank": 9, "name": "U.S. Postal Service", "employees_range": "1,000-5,000", "pct": 2.16},
+        {"rank": 10, "name": "America Online", "employees_range": "1,000-5,000", "pct": 2.16}
+      ]
+    },
+    "2011": {
+      "source": "FY2020 ACFR comparison",
+      "total_top10_pct": 27.81,
+      "employers": [
+        {"rank": 1, "name": "Loudoun County Public Schools", "employees": 10098, "pct": 7.51},
+        {"rank": 2, "name": "County of Loudoun", "employees": 3303, "pct": 2.46},
+        {"rank": 3, "name": "M.C. Dean, Inc.", "employees_range": "1,000-5,000", "pct": 2.23},
+        {"rank": 4, "name": "Verizon Business", "employees_range": "1,000-5,000", "pct": 2.23},
+        {"rank": 5, "name": "U.S. Department of Homeland Security", "employees_range": "1,000-5,000", "pct": 2.23},
+        {"rank": 6, "name": "Orbital ATK", "employees_range": "1,000-5,000", "pct": 2.23},
+        {"rank": 7, "name": "United Airlines", "employees_range": "1,000-5,000", "pct": 2.23},
+        {"rank": 8, "name": "America Online", "employees_range": "1,000-5,000", "pct": 2.23},
+        {"rank": 9, "name": "Inova Health System", "employees_range": "1,000-5,000", "pct": 2.23},
+        {"rank": 10, "name": "U.S. Postal Service", "employees_range": "1,000-5,000", "pct": 2.23}
+      ]
+    },
+    "2010": {
+      "source": "FY2019 ACFR comparison",
+      "total_top10_pct": 34.19,
+      "employers": [
+        {"rank": 1, "name": "Loudoun County Public Schools", "employees": 9838, "pct": 7.54},
+        {"rank": 2, "name": "County of Loudoun", "employees": 3302, "pct": 2.53},
+        {"rank": 3, "name": "M.C. Dean, Inc.", "employees_range": "1,000-5,000", "pct": 2.68},
+        {"rank": 4, "name": "Verizon Business", "employees_range": "1,000-5,000", "pct": 2.68},
+        {"rank": 5, "name": "United Airlines", "employees_range": "1,000-5,000", "pct": 2.68},
+        {"rank": 6, "name": "U.S. Department of Homeland Security", "employees_range": "1,000-5,000", "pct": 2.68},
+        {"rank": 7, "name": "Loudoun Hospital Center", "employees_range": "1,000-5,000", "pct": 2.68},
+        {"rank": 8, "name": "Orbital Sciences Corp", "employees_range": "1,000-5,000", "pct": 2.68},
+        {"rank": 9, "name": "America Online", "employees_range": "1,000-5,000", "pct": 2.68},
+        {"rank": 10, "name": "Walmart", "employees_range": "1,000-5,000", "pct": 2.68}
+      ]
+    },
+    "2009": {
+      "source": "FY2018 ACFR comparison",
+      "total_top10_pct": 31.31,
+      "employers": [
+        {"rank": 1, "name": "Loudoun County Public Schools", "employees": 10533, "pct": 7.88},
+        {"rank": 2, "name": "County of Loudoun", "employees": 3304, "pct": 2.47},
+        {"rank": 3, "name": "America Online", "employees_range": "1,000-5,000", "pct": 2.62},
+        {"rank": 4, "name": "Verizon Business", "employees_range": "1,000-5,000", "pct": 2.62},
+        {"rank": 5, "name": "M.C. Dean, Inc.", "employees_range": "1,000-5,000", "pct": 2.62},
+        {"rank": 6, "name": "U.S. Department of Homeland Security", "employees_range": "1,000-5,000", "pct": 2.62},
+        {"rank": 7, "name": "United Airlines", "employees_range": "1,000-5,000", "pct": 2.62},
+        {"rank": 8, "name": "Loudoun Hospital Center", "employees_range": "1,000-5,000", "pct": 2.62},
+        {"rank": 9, "name": "Orbital Sciences Corp", "employees_range": "1,000-5,000", "pct": 2.62},
+        {"rank": 10, "name": "Swissport USA", "employees_range": "1,000-5,000", "pct": 2.62}
+      ]
+    },
+    "2008": {
+      "source": "FY2017 ACFR comparison",
+      "total_top10_pct": 28.01,
+      "employers": [
+        {"rank": 1, "name": "Loudoun County Public Schools", "employees": 9309, "pct": 7.11},
+        {"rank": 2, "name": "America Online", "employees_range": "1,000-5,000", "pct": 2.29},
+        {"rank": 3, "name": "County of Loudoun", "employees": 3375, "pct": 2.58},
+        {"rank": 4, "name": "Verizon Business", "employees_range": "1,000-5,000", "pct": 2.29},
+        {"rank": 5, "name": "United Airlines", "employees_range": "1,000-5,000", "pct": 2.29},
+        {"rank": 6, "name": "U.S. Department of Homeland Security", "employees_range": "1,000-5,000", "pct": 2.29},
+        {"rank": 7, "name": "M.C. Dean, Inc.", "employees_range": "1,000-5,000", "pct": 2.29},
+        {"rank": 8, "name": "U.S. Postal Service", "employees_range": "1,000-5,000", "pct": 2.29},
+        {"rank": 9, "name": "Loudoun Hospital Center", "employees_range": "1,000-5,000", "pct": 2.29},
+        {"rank": 10, "name": "Orbital Sciences Corp", "employees_range": "1,000-5,000", "pct": 2.29}
+      ]
+    }
+  },
+  "summary": {
+    "lcps_employment": {
+      "2008": 9309, "2009": 10533, "2010": 9838, "2011": 10098, "2012": 9663,
+      "2013": 9671, "2014": 9638, "2015": 9822, "2016": 10210, "2017": 10640,
+      "2018": 11103, "2019": 11577, "2020": 11995, "2021": 12382, "2022": 13018,
+      "2023": 12804, "2024": 12968, "2025": 13281
+    },
+    "county_employment": {
+      "2008": 3375, "2009": 3304, "2010": 3302, "2011": 3303, "2012": 3477,
+      "2013": 3438, "2014": 3438, "2015": 3584, "2016": 3377, "2017": 3754,
+      "2018": 3976, "2019": 3952, "2020": 4152, "2021": 4298, "2022": 4453,
+      "2023": 4453, "2024": 4813, "2025": 5059
+    },
+    "key_trends": {
+      "lcps_growth_2008_2025": "42.7%",
+      "county_growth_2008_2025": "49.9%",
+      "amazon_first_appearance": 2020,
+      "aol_last_appearance": 2014,
+      "northrop_grumman_merger_with_orbital": 2018,
+      "verizon_decline": "Rank 3-4 in 2008-2014, down to 8 by 2025"
+    }
+  }
+}

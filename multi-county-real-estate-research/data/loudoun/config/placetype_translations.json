@@ -1,0 +1,203 @@
+{
+  "_metadata": {
+    "description": "Plain English translations for Loudoun County 2019 Comprehensive Plan Place Types",
+    "source": "Loudoun County GIS Planning MapServer Layer 10",
+    "api_endpoint": "https://logis.loudoun.gov/gis/rest/services/COL/Planning/MapServer/10",
+    "last_updated": "2025-12-15",
+    "total_place_types": 24
+  },
+  "translations": {
+    "SUBNBR": {
+      "official_name": "Suburban Neighborhood",
+      "plain_english": "Suburban neighborhood",
+      "description": "Traditional suburban residential area with single-family homes, townhouses, and neighborhood amenities",
+      "typical_uses": ["Single-family homes", "Townhouses", "Schools", "Parks", "Neighborhood retail"],
+      "density_range": "2-8 homes per acre",
+      "character": "Family-oriented suburban community"
+    },
+    "SUBCMP": {
+      "official_name": "Suburban Compact Neighborhood",
+      "plain_english": "Compact suburban neighborhood",
+      "description": "Higher-density walkable suburban development with a mix of housing types",
+      "typical_uses": ["Townhouses", "Small-lot single-family", "Condos", "Neighborhood services"],
+      "density_range": "6-16 homes per acre",
+      "character": "Walkable suburban community with nearby conveniences"
+    },
+    "SUBMUS": {
+      "official_name": "Suburban Mixed Use",
+      "plain_english": "Suburban mixed-use area",
+      "description": "Blend of residential and commercial development in a suburban setting",
+      "typical_uses": ["Apartments", "Retail", "Restaurants", "Offices", "Entertainment"],
+      "density_range": "8-24 homes per acre",
+      "character": "Live-work-play suburban destination"
+    },
+    "SUBEM": {
+      "official_name": "Suburban Employment",
+      "plain_english": "Business and office park area",
+      "description": "Areas designed primarily for employment uses including offices and business parks",
+      "typical_uses": ["Office buildings", "Business parks", "Data centers", "Supporting retail"],
+      "density_range": "Commercial/Employment",
+      "character": "Professional employment center"
+    },
+    "SUBCOM": {
+      "official_name": "Suburban Commercial",
+      "plain_english": "Suburban shopping and commercial area",
+      "description": "Commercial areas serving suburban neighborhoods with retail and services",
+      "typical_uses": ["Shopping centers", "Big-box retail", "Restaurants", "Services"],
+      "density_range": "Commercial",
+      "character": "Regional shopping destination"
+    },
+    "SUBIM": {
+      "official_name": "Suburban Industrial/Mineral Extraction",
+      "plain_english": "Industrial and extraction area",
+      "description": "Areas for industrial operations and mineral extraction activities",
+      "typical_uses": ["Warehouses", "Manufacturing", "Quarries", "Distribution"],
+      "density_range": "Industrial",
+      "character": "Industrial operations zone"
+    },
+    "URBTC": {
+      "official_name": "Urban Transit Center",
+      "plain_english": "Urban metro area",
+      "description": "High-density urban development centered around Metro stations",
+      "typical_uses": ["High-rise apartments", "Office towers", "Metro station", "Urban retail"],
+      "density_range": "24-50+ homes per acre",
+      "character": "Urban walkable metro-accessible community"
+    },
+    "URBMUS": {
+      "official_name": "Urban Mixed Use",
+      "plain_english": "Urban mixed-use development",
+      "description": "High-density urban development with mixed residential and commercial",
+      "typical_uses": ["Mid-rise apartments", "Urban retail", "Restaurants", "Entertainment"],
+      "density_range": "16-40 homes per acre",
+      "character": "Vibrant urban neighborhood"
+    },
+    "TRNLLN": {
+      "official_name": "Transition Large Lot Neighborhood",
+      "plain_english": "Large-lot transitional neighborhood",
+      "description": "Low-density residential area between suburban and rural zones",
+      "typical_uses": ["Large-lot single-family homes", "Hobby farms", "Open space"],
+      "density_range": "1 home per 3-10 acres",
+      "character": "Spacious semi-rural living"
+    },
+    "TRNSLN": {
+      "official_name": "Transition Small Lot Neighborhood",
+      "plain_english": "Small-lot transitional neighborhood",
+      "description": "Moderate-density residential in transition areas",
+      "typical_uses": ["Single-family homes", "Townhouses", "Community facilities"],
+      "density_range": "1-4 homes per acre",
+      "character": "Transition between suburban and rural"
+    },
+    "TRNCMP": {
+      "official_name": "Transition Compact Neighborhood",
+      "plain_english": "Compact transitional neighborhood",
+      "description": "Higher-density development in transition policy areas",
+      "typical_uses": ["Townhouses", "Mixed housing", "Local services"],
+      "density_range": "4-8 homes per acre",
+      "character": "Walkable transition community"
+    },
+    "TRNCC": {
+      "official_name": "Transition Community Center",
+      "plain_english": "Transition community center",
+      "description": "Commercial and community hub in transition areas",
+      "typical_uses": ["Local retail", "Community services", "Small offices"],
+      "density_range": "Commercial",
+      "character": "Local community hub"
+    },
+    "TRNLI": {
+      "official_name": "Transition Light Industrial",
+      "plain_english": "Light industrial transition area",
+      "description": "Light industrial uses in transition policy areas",
+      "typical_uses": ["Light manufacturing", "Warehouses", "Flex space"],
+      "density_range": "Industrial",
+      "character": "Light industrial operations"
+    },
+    "TRNIM": {
+      "official_name": "Transition Industrial/Mineral Extraction",
+      "plain_english": "Industrial extraction transition area",
+      "description": "Industrial and mineral extraction in transition areas",
+      "typical_uses": ["Quarries", "Heavy industrial", "Material processing"],
+      "density_range": "Industrial",
+      "character": "Heavy industrial operations"
+    },
+    "RURNTH": {
+      "official_name": "Rural North",
+      "plain_english": "Rural northern Loudoun",
+      "description": "Agricultural and very low-density residential in northern rural areas",
+      "typical_uses": ["Farms", "Vineyards", "Estate homes", "Equestrian"],
+      "density_range": "1 home per 20-50 acres",
+      "character": "Protected rural and agricultural land"
+    },
+    "RURSTH": {
+      "official_name": "Rural South",
+      "plain_english": "Rural southern Loudoun",
+      "description": "Agricultural and very low-density residential in southern rural areas",
+      "typical_uses": ["Farms", "Vineyards", "Estate homes", "Rural businesses"],
+      "density_range": "1 home per 20-50 acres",
+      "character": "Protected rural and agricultural land"
+    },
+    "RURVLG": {
+      "official_name": "Rural Historic Village",
+      "plain_english": "Historic village",
+      "description": "Historic rural villages with limited growth allowance",
+      "typical_uses": ["Historic homes", "Small businesses", "Village center"],
+      "density_range": "Village scale",
+      "character": "Historic village character preserved"
+    },
+    "TOWN": {
+      "official_name": "Towns",
+      "plain_english": "Incorporated town",
+      "description": "Incorporated town with its own zoning authority (Leesburg, Purcellville, etc.)",
+      "typical_uses": ["Varies by town zoning"],
+      "density_range": "Governed by town",
+      "character": "Self-governing incorporated community"
+    },
+    "AIRPRT": {
+      "official_name": "Airport",
+      "plain_english": "Airport area",
+      "description": "Areas designated for airport operations (Dulles International Airport)",
+      "typical_uses": ["Airport facilities", "Aviation support", "Transportation"],
+      "density_range": "Airport use",
+      "character": "Aviation and airport operations"
+    },
+    "LJLMRN": {
+      "official_name": "Leesburg JLMA Residential Neighborhood",
+      "plain_english": "Leesburg-area residential neighborhood",
+      "description": "Residential areas in the Leesburg Joint Land Management Area",
+      "typical_uses": ["Single-family homes", "Townhouses", "Neighborhood amenities"],
+      "density_range": "2-8 homes per acre",
+      "character": "Established Leesburg-area community"
+    },
+    "LJLMEM": {
+      "official_name": "Leesburg JLMA Employment",
+      "plain_english": "Leesburg-area employment center",
+      "description": "Employment areas in the Leesburg Joint Land Management Area",
+      "typical_uses": ["Offices", "Business parks", "Commercial"],
+      "density_range": "Employment",
+      "character": "Leesburg-area business center"
+    },
+    "LJLMIM": {
+      "official_name": "Leesburg JLMA Industry/Mineral Extraction",
+      "plain_english": "Leesburg-area industrial zone",
+      "description": "Industrial areas in the Leesburg Joint Land Management Area",
+      "typical_uses": ["Industrial", "Quarries", "Manufacturing"],
+      "density_range": "Industrial",
+      "character": "Leesburg-area industrial operations"
+    },
+    "PJLMRN": {
+      "official_name": "Purcellville JLMA Rural Neighborhood",
+      "plain_english": "Purcellville-area rural neighborhood",
+      "description": "Rural residential areas in the Purcellville Joint Land Management Area",
+      "typical_uses": ["Large-lot homes", "Small farms", "Rural living"],
+      "density_range": "1 home per 3-10 acres",
+      "character": "Rural Purcellville-area community"
+    },
+    "WJLMN": {
+      "official_name": "Western JLMA Neighborhood",
+      "plain_english": "Western Loudoun neighborhood",
+      "description": "Residential areas in the Western Joint Land Management Area",
+      "typical_uses": ["Single-family homes", "Rural residential"],
+      "density_range": "1-3 homes per acre",
+      "character": "Western Loudoun community"
+    }
+  }
+}

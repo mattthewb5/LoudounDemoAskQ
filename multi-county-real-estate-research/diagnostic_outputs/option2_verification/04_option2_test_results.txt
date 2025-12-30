@@ -1,0 +1,35 @@
+======================================================================
+OPTION 2 VIABILITY TEST
+======================================================================
+
+Function Exists: Yes
+Function Location: core/loudoun_school_performance.py:217-252
+
+*** OPTION 2 IS NOT VIABLE ***
+----------------------------------------------------------------------
+The existing match_school_in_performance_data() function has a bug.
+It would trade duplicate lines for wrong data.
+
+Test Results:
+----------------------------------------------------------------------
+
+School: Steuart Weller Elementary
+  Current (buggy): 1 school, 5 records (correct - unique first word)
+  Option 2: Returns 'Steuart W. Weller Elementary' (via partial match)
+  Duplicates eliminated: N/A (no duplicates with current pattern)
+  Data correct: Yes
+
+School: Belmont Ridge Middle
+  Current (buggy): 3 schools, 15 records (Belmont, Belmont Station, Belmont Ridge)
+  Option 2: Returns 'Belmont Station Elementary' (WRONG!)
+  Duplicates eliminated: Yes
+  Data correct: NO - shows wrong school's data!
+
+School: Riverside High
+  Current (buggy): 2 schools, 10 records (Riverside High, Riverside Elementary)
+  Option 2: Returns 'Riverside High' (correct - appears first in file)
+  Duplicates eliminated: Yes
+  Data correct: Yes (by coincidence - Riverside High before Riverside Elementary)
+
+CONCLUSION: Option 2 is NOT a reliable fix.
+It works for some schools by coincidence of data file order.

@@ -1,0 +1,53 @@
+{
+  "source": "Census ACS 5-Year 2023 (DP03 Profile)",
+  "lfpr_comparison": {
+    "loudoun_county_va": 74.1,
+    "virginia": 65.6,
+    "united_states": 63.5
+  },
+  "loudoun_industry_mix": {
+    "Agriculture, forestry, fishing, hunting, mining": 0.6,
+    "Construction": 5.0,
+    "Manufacturing": 4.4,
+    "Wholesale trade": 1.2,
+    "Retail trade": 7.4,
+    "Transportation, warehousing, utilities": 4.1,
+    "Information (Tech/Data Centers)": 3.7,
+    "Finance, insurance, real estate": 7.9,
+    "Professional, scientific, management, admin": 29.6,
+    "Educational services, health care, social assistance": 16.8,
+    "Arts, entertainment, recreation, accommodation, food": 6.7,
+    "Other services": 4.7,
+    "Public administration": 8.0
+  },
+  "virginia_industry_mix": {
+    "Agriculture, forestry, fishing, hunting, mining": 0.8,
+    "Construction": 6.5,
+    "Manufacturing": 7.1,
+    "Wholesale trade": 1.7,
+    "Retail trade": 9.8,
+    "Transportation, warehousing, utilities": 4.8,
+    "Information (Tech/Data Centers)": 1.8,
+    "Finance, insurance, real estate": 6.5,
+    "Professional, scientific, management, admin": 16.6,
+    "Educational services, health care, social assistance": 22.2,
+    "Arts, entertainment, recreation, accommodation, food": 8.1,
+    "Other services": 5.2,
+    "Public administration": 8.9
+  },
+  "us_industry_mix": {
+    "Agriculture, forestry, fishing, hunting, mining": 1.6,
+    "Construction": 6.9,
+    "Manufacturing": 10.0,
+    "Wholesale trade": 2.3,
+    "Retail trade": 10.9,
+    "Transportation, warehousing, utilities": 5.9,
+    "Information (Tech/Data Centers)": 1.9,
+    "Finance, insurance, real estate": 6.7,
+    "Professional, scientific, management, admin": 12.4,
+    "Educational services, health care, social assistance": 23.4,
+    "Arts, entertainment, recreation, accommodation, food": 8.8,
+    "Other services": 4.7,
+    "Public administration": 4.7
+  }
+}

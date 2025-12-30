@@ -1,0 +1,282 @@
+{
+  "_metadata": {
+    "description": "Plain English translations for Loudoun County zoning codes",
+    "source": "Loudoun County GIS Zoning MapServer Layer 3",
+    "api_endpoint": "https://logis.loudoun.gov/gis/rest/services/COL/Zoning/MapServer/3",
+    "last_updated": "2025-12-15",
+    "notes": [
+      "R-series codes (R1, R2, R3, R4, R8, R16, R24) indicate max homes per acre",
+      "PDH codes (PDH3, PDH4, PDH6, etc.) are Planned Development Housing with density",
+      "Dynamic translation supported for R-{n} pattern"
+    ]
+  },
+  "static_translations": {
+    "PDH3": {
+      "official_name": "Planned Development Housing-3",
+      "plain_english": "Planned neighborhood (up to 3 homes/acre)",
+      "description": "Master-planned residential community with mix of housing types at 3 units per acre max",
+      "typical_homes": "Single-family homes, some townhouses",
+      "character": "Established planned community"
+    },
+    "PDH4": {
+      "official_name": "Planned Development Housing-4",
+      "plain_english": "Planned neighborhood (up to 4 homes/acre)",
+      "description": "Master-planned residential community with mix of housing types at 4 units per acre max",
+      "typical_homes": "Single-family homes, townhouses",
+      "character": "Established planned community"
+    },
+    "PDH6": {
+      "official_name": "Planned Development Housing-6",
+      "plain_english": "Planned neighborhood (up to 6 homes/acre)",
+      "description": "Master-planned residential community with higher density at 6 units per acre max",
+      "typical_homes": "Townhouses, smaller single-family",
+      "character": "Compact planned community"
+    },
+    "PDH8": {
+      "official_name": "Planned Development Housing-8",
+      "plain_english": "Planned neighborhood (up to 8 homes/acre)",
+      "description": "Higher-density planned community at 8 units per acre max",
+      "typical_homes": "Townhouses, condos",
+      "character": "Higher-density planned community"
+    },
+    "R1": {
+      "official_name": "Single Family Residential-1",
+      "plain_english": "Residential (1 home/acre allowed)",
+      "description": "Low-density single-family with 1 home per acre maximum",
+      "typical_homes": "Single-family homes on large lots",
+      "character": "Spacious low-density residential"
+    },
+    "R2": {
+      "official_name": "Single Family Residential-2",
+      "plain_english": "Residential (2 homes/acre allowed)",
+      "description": "Low-moderate density single-family with 2 homes per acre maximum",
+      "typical_homes": "Single-family homes on half-acre lots",
+      "character": "Low-density residential"
+    },
+    "R4": {
+      "official_name": "Single Family Residential-4",
+      "plain_english": "Residential (4 homes/acre allowed)",
+      "description": "Moderate density single-family with 4 homes per acre maximum",
+      "typical_homes": "Single-family homes on quarter-acre lots",
+      "character": "Traditional suburban residential"
+    },
+    "R8": {
+      "official_name": "Single Family Residential-8",
+      "plain_english": "Residential (8 homes/acre allowed)",
+      "description": "Medium density residential allowing various housing types at 8 units per acre",
+      "typical_homes": "Single-family, duplexes, townhouses",
+      "character": "Medium-density suburban"
+    },
+    "R16": {
+      "official_name": "Townhouse/Multifamily Residential-16",
+      "plain_english": "Residential (16 homes/acre allowed)",
+      "description": "Higher density allowing townhouses and multifamily at 16 units per acre",
+      "typical_homes": "Townhouses, apartments",
+      "character": "Higher-density residential"
+    },
+    "R24": {
+      "official_name": "Multifamily Residential-24",
+      "plain_english": "Residential (24 homes/acre allowed)",
+      "description": "High-density multifamily at 24 units per acre maximum",
+      "typical_homes": "Apartments, condos",
+      "character": "High-density multifamily"
+    },
+    "AR1": {
+      "official_name": "Agricultural Residential-1",
+      "plain_english": "Agricultural residential (40-acre minimum lots)",
+      "description": "Very low-density agricultural and residential with 40-acre minimum lot size",
+      "typical_homes": "Farms, large estates",
+      "character": "Rural agricultural preservation"
+    },
+    "AR-1": {
+      "official_name": "Agricultural Residential-1",
+      "plain_english": "Agricultural residential (40-acre minimum lots)",
+      "description": "Very low-density agricultural and residential with 40-acre minimum lot size",
+      "typical_homes": "Farms, large estates",
+      "character": "Rural agricultural preservation"
+    },
+    "AR2": {
+      "official_name": "Agricultural Residential-2",
+      "plain_english": "Agricultural residential (20-acre minimum lots)",
+      "description": "Low-density agricultural and residential with 20-acre minimum lot size",
+      "typical_homes": "Farms, estates",
+      "character": "Rural agricultural"
+    },
+    "A3": {
+      "official_name": "Agricultural/Residential",
+      "plain_english": "Agricultural (3-acre minimum lots)",
+      "description": "Agricultural and low-density residential with 3-acre minimum lot size",
+      "typical_homes": "Farmhouses, estate homes",
+      "character": "Rural agricultural"
+    },
+    "A10": {
+      "official_name": "Agriculture",
+      "plain_english": "Agricultural (10-acre minimum lots)",
+      "description": "Agricultural with 10-acre minimum lot size",
+      "typical_homes": "Farms, estates",
+      "character": "Agricultural preservation"
+    },
+    "CR1": {
+      "official_name": "Countryside Residential-1",
+      "plain_english": "Countryside residential (1-acre lots)",
+      "description": "Low-density countryside residential with 1-acre minimum",
+      "typical_homes": "Single-family on large lots",
+      "character": "Rural residential"
+    },
+    "CR2": {
+      "official_name": "Countryside Residential-2",
+      "plain_english": "Countryside residential (2-acre lots)",
+      "description": "Low-density countryside residential with 2-acre minimum",
+      "typical_homes": "Single-family on large lots",
+      "character": "Rural residential"
+    },
+    "RC": {
+      "official_name": "Rural Commercial",
+      "plain_english": "Rural commercial area",
+      "description": "Commercial uses compatible with rural character",
+      "typical_homes": "Not residential",
+      "character": "Rural-scale commercial"
+    },
+    "TC": {
+      "official_name": "Town Center",
+      "plain_english": "Town center mixed-use",
+      "description": "Mixed-use commercial, cultural, and residential in town center setting",
+      "typical_homes": "Mixed-use, apartments above retail",
+      "character": "Walkable town center"
+    },
+    "GI": {
+      "official_name": "General Industry",
+      "plain_english": "Industrial zone",
+      "description": "Industrial uses including outdoor storage, may have noise/odor",
+      "typical_homes": "Not residential",
+      "character": "Heavy industrial"
+    },
+    "IP": {
+      "official_name": "Industrial Park",
+      "plain_english": "Business/industrial park",
+      "description": "Office, light production, flex space, and warehousing",
+      "typical_homes": "Not residential",
+      "character": "Business park"
+    },
+    "OP": {
+      "official_name": "Office Park",
+      "plain_english": "Office park",
+      "description": "Administrative, business, professional offices and R&D",
+      "typical_homes": "Not residential",
+      "character": "Professional office campus"
+    },
+    "CLI": {
+      "official_name": "Commercial/Light Industry",
+      "plain_english": "Commercial and light industrial",
+      "description": "Mix of light industrial and office uses",
+      "typical_homes": "Not residential",
+      "character": "Light industrial/commercial"
+    },
+    "CCSC": {
+      "official_name": "Commercial Center - Small Regional Center",
+      "plain_english": "Regional shopping center",
+      "description": "Regional retail center for shopping beyond 10 minutes drive",
+      "typical_homes": "Not residential",
+      "character": "Regional shopping destination"
+    },
+    "CCCC": {
+      "official_name": "Commercial Center - Community Center",
+      "plain_english": "Community shopping center",
+      "description": "Community retail within 10 minutes drive",
+      "typical_homes": "Not residential",
+      "character": "Community retail center"
+    },
+    "JLMA1": {
+      "official_name": "Joint Land Management Area-1",
+      "plain_english": "JLMA mixed residential (low density)",
+      "description": "Mix of residential and non-residential in JLMA at lower density",
+      "typical_homes": "Single-family, townhouses",
+      "character": "Mixed-use JLMA"
+    },
+    "JLMA3": {
+      "official_name": "Joint Land Management Area-3",
+      "plain_english": "JLMA mixed residential (3 units/acre)",
+      "description": "Mix of residential and non-residential in JLMA at 3 units/acre",
+      "typical_homes": "Single-family, townhouses",
+      "character": "Mixed-use JLMA"
+    },
+    "PDIP": {
+      "official_name": "Planned Development-Industrial Park",
+      "plain_english": "Planned industrial park",
+      "description": "Light and medium industrial with supporting uses",
+      "typical_homes": "Not residential",
+      "character": "Planned industrial development"
+    },
+    "PDGI": {
+      "official_name": "Planned Development-General Industrial",
+      "plain_english": "Planned heavy industrial",
+      "description": "Medium intensity industrial with public nuisance potential",
+      "typical_homes": "Not residential",
+      "character": "Heavy industrial"
+    },
+    "PDRDP": {
+      "official_name": "Planned Development-Research and Development Park",
+      "plain_english": "Research and development park",
+      "description": "Planned mixed employment park minimum 20 acres in Route 28 Tax District",
+      "typical_homes": "Not residential",
+      "character": "R&D campus"
+    },
+    "PDMUB": {
+      "official_name": "Planned Development-Mixed Use Business",
+      "plain_english": "Mixed-use business district",
+      "description": "Compact pedestrian-oriented mixed use business district",
+      "typical_homes": "Mixed-use, some residential",
+      "character": "Walkable business district"
+    },
+    "PDCCRC": {
+      "official_name": "Planned Development-Commercial Center (Regional)",
+      "plain_english": "Regional commercial center",
+      "description": "Large-scale commercial centers with retail, office, and services",
+      "typical_homes": "Not residential",
+      "character": "Major commercial center"
+    },
+    "PDAAAR": {
+      "official_name": "Planned Development-Active Adult/Age Restricted",
+      "plain_english": "55+ adult community",
+      "description": "Planned adult communities for 55 years or older, max 30 units/acre",
+      "typical_homes": "Age-restricted housing",
+      "character": "Active adult community"
+    },
+    "MRHI": {
+      "official_name": "Mineral Resource/Heavy Industry",
+      "plain_english": "Quarry and heavy industrial",
+      "description": "Diabase resource extraction (quarries) with compatible heavy industrial",
+      "typical_homes": "Not residential",
+      "character": "Quarry operations"
+    },
+    "TOWNS": {
+      "official_name": "Towns",
+      "plain_english": "Incorporated town (separate zoning)",
+      "description": "Property within incorporated town limits - governed by town zoning",
+      "typical_homes": "Varies by town",
+      "character": "Town jurisdiction"
+    }
+  },
+  "dynamic_patterns": {
+    "R-{n}": {
+      "pattern": "^R-?(\\d+)$",
+      "template": "Residential ({n} homes/acre allowed)",
+      "description_template": "Residential zone allowing up to {n} dwelling units per acre"
+    },
+    "PDH-{n}": {
+      "pattern": "^PDH-?(\\d+)$",
+      "template": "Planned neighborhood (up to {n} homes/acre)",
+      "description_template": "Master-planned residential community at {n} units per acre max"
+    },
+    "CR-{n}": {
+      "pattern": "^CR-?(\\d+)$",
+      "template": "Countryside residential ({n}-acre lots)",
+      "description_template": "Countryside residential with {n}-acre minimum lot size"
+    },
+    "A-{n}": {
+      "pattern": "^A-?(\\d+)$",
+      "template": "Agricultural ({n}-acre minimum lots)",
+      "description_template": "Agricultural zone with {n}-acre minimum lot size"
+    }
+  }
+}

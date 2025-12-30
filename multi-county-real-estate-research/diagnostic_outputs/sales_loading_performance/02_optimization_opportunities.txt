@@ -1,0 +1,375 @@
+================================================================================
+SALES DATA LOADING - OPTIMIZATION OPPORTUNITIES ANALYSIS
+================================================================================
+
+Generated: 2025-12-19
+Baseline: ~90-150 seconds load time
+
+================================================================================
+STRATEGY 1: ADD STREAMLIT CACHING
+================================================================================
+
+CURRENT STATE:
+  - PropertyValuationOrchestrator instantiated fresh each time
+  - LoudounSalesData loaded on each orchestrator instantiation
+  - No @st.cache_data or @st.cache_resource decorator
+
+OPTIMIZATION:
+  Option A: Cache at LoudounSalesData level
+    @st.cache_resource
+    def get_sales_data_instance():
+        return LoudounSalesData()
+
+  Option B: Cache at Orchestrator level
+    @st.cache_resource
+    def get_orchestrator():
+        return PropertyValuationOrchestrator()
+
+ESTIMATED IMPACT:
+  - First load time: 90-150s (unchanged)
+  - Subsequent loads: <0.01s (instant cache hit)
+  - Memory: +30-50 MB (cached instance persists)
+  - Session behavior: Load once per Streamlit worker process
+
+IMPLEMENTATION EFFORT: VERY LOW
+  - 5-10 minutes
+  - Add decorator and refactor instantiation
+  - No data changes required
+
+TRADEOFFS:
+  PROS:
+    + Dramatic improvement for repeat analyses (most common case)
+    + Zero risk to data accuracy
+    + Simple implementation
+    + No file format changes
+    + Backward compatible
+
+  CONS:
+    - First analysis still slow
+    - Increased memory usage
+    - Stale data if CSV updates during session (unlikely concern)
+    - Requires restart to pick up new data
+
+RISKS:
+  - Very low risk
+  - Cache can be cleared with Streamlit restart
+
+RECOMMENDATION: HIGH PRIORITY
+  This is the single most impactful optimization with lowest effort.
+  Should be implemented regardless of other strategies.
+
+================================================================================
+STRATEGY 2: CONVERT TO PARQUET FORMAT
+================================================================================
+
+CURRENT STATE:
+  - Data stored as Excel (.xlsx) format
+  - Requires openpyxl library to parse
+  - 7.37 MB file size
+  - XML-based format, slow to decompress and parse
+
+OPTIMIZATION:
+  - One-time conversion: Excel -> Parquet
+  - Update load code: pd.read_excel -> pd.read_parquet
+  - Parquet is columnar, compressed, fast to read
+
+ESTIMATED IMPACT:
+  - Load time: 90-150s -> 1-3s (50-100x improvement)
+  - File size: 7.37 MB -> 2-3 MB (60-70% smaller)
+  - Memory: Same (~30 MB loaded)
+  - One-time conversion: ~30 seconds
+
+IMPLEMENTATION EFFORT: LOW-MEDIUM
+  - 30 minutes to implement
+  - Convert script + update load code
+  - Need to update data refresh process
+
+TRADEOFFS:
+  PROS:
+    + Massive load time improvement
+    + Smaller file size (storage + git)
+    + Industry standard for analytics
+    + Supports column selection natively
+    + Preserves dtype information
+
+  CONS:
+    - Less human-readable than CSV/Excel
+    - Requires pyarrow or fastparquet library
+    - One-time conversion effort
+    - Need to update data refresh workflow
+    - Binary format harder to inspect/debug
+
+RISKS:
+  - Low risk: pandas handles parquet natively
+  - Dependency on pyarrow (usually already installed)
+
+RECOMMENDATION: HIGH PRIORITY
+  Parquet is the industry standard for this use case.
+  Combined with caching, reduces first-load from 90s to 1-3s.
+
+================================================================================
+STRATEGY 3: COLUMN SELECTION
+================================================================================
+
+CURRENT STATE:
+  - Loads ALL columns from Excel file
+  - Only uses 6-10 columns actually
+  - Unknown number of additional columns
+
+OPTIMIZATION:
+  - Specify usecols parameter when reading
+  - Only load required columns:
+    ['PARID', 'RECORD DATE', 'PRICE', 'SALE VERIFICATION',
+     'INSTRUMENT#', 'SALEKEY', 'OLD OWNER', 'NEW OWNER',
+     'SALE TYPE', '# OF PARCELS']
+
+ESTIMATED IMPACT:
+  - Load time reduction: 10-30% (fewer columns to parse)
+  - Memory reduction: 20-50% (fewer columns in memory)
+  - Combined with Parquet: Very efficient (columnar read)
+
+IMPLEMENTATION EFFORT: VERY LOW
+  - 5 minutes
+  - Add usecols parameter to read function
+
+TRADEOFFS:
+  PROS:
+    + Simple change
+    + Reduces memory usage
+    + Faster load time
+    + Documents which columns are needed
+    + Works with Excel, CSV, and Parquet
+
+  CONS:
+    - Must maintain column list
+    - Future features may need additional columns
+    - Must update if source data columns change
+
+RISKS:
+  - Very low risk
+  - If column missing, will error clearly
+
+RECOMMENDATION: MEDIUM PRIORITY
+  Quick win, should implement alongside other changes.
+
+================================================================================
+STRATEGY 4: VECTORIZED INDEX BUILDING
+================================================================================
+
+CURRENT STATE:
+  - Uses iterrows() to loop through DataFrame
+  - Builds dictionary index row by row
+  - ~15-30 seconds for 47K rows
+
+OPTIMIZATION:
+  Replace iterrows() with vectorized operations:
+
+  # Instead of row-by-row iteration:
+  df['normalized_parid'] = df['PARID'].apply(normalize_parid)
+  indexed = df.groupby('normalized_parid').apply(
+      lambda g: g.to_dict('records')
+  ).to_dict()
+
+  Or use dict comprehension with groupby:
+  sales_index = {
+      parid: group.to_dict('records')
+      for parid, group in df.groupby('normalized_parid')
+  }
+
+ESTIMATED IMPACT:
+  - Index build time: 15-30s -> 0.5-2s (20-50x improvement)
+  - Memory: Similar
+  - Sorting: Can be done in groupby
+
+IMPLEMENTATION EFFORT: MEDIUM
+  - 1-2 hours
+  - Refactor _load_data() method
+  - Need to handle edge cases
+  - Test thoroughly
+
+TRADEOFFS:
+  PROS:
+    + Significant speed improvement
+    + More "pandas-native" code
+    + Can handle larger datasets
+
+  CONS:
+    - More complex code
+    - groupby syntax can be tricky
+    - Needs thorough testing
+    - May have edge cases with null values
+
+RISKS:
+  - Medium risk: Logic changes require careful testing
+  - Groupby behavior with nulls needs attention
+
+RECOMMENDATION: MEDIUM PRIORITY
+  Worth doing, but Parquet + caching may make this less critical.
+
+================================================================================
+STRATEGY 5: DATE FILTERING
+================================================================================
+
+CURRENT STATE:
+  - Loads all records from 2020-2025 (~5 years)
+  - Uses all records for index
+  - Typical comps need only 2-3 years
+
+OPTIMIZATION:
+  - Filter to last 3 years during load
+  - Reduces dataset size by 40%+
+
+ESTIMATED IMPACT:
+  - Record reduction: 47K -> ~30K (depends on distribution)
+  - Load time: Proportional reduction
+  - Memory: Proportional reduction
+
+IMPLEMENTATION EFFORT: LOW
+  - 15 minutes
+  - Add filter after load
+
+TRADEOFFS:
+  PROS:
+    + Faster load
+    + Less memory
+    + Focused on relevant data
+
+  CONS:
+    - Loses historical sales (2020-2021)
+    - May affect edge cases needing older data
+    - Need to verify no features use old data
+    - Must decide cutoff date
+
+RISKS:
+  - Medium risk: May affect historical analysis
+  - Need to confirm no dependency on older records
+
+QUESTIONS FOR MATT:
+  - Does any feature require sales older than 3 years?
+  - For property sales history, do users need 2020 data?
+
+RECOMMENDATION: OPTIONAL
+  Implement only if confirmed no features need historical data.
+
+================================================================================
+STRATEGY 6: LAZY INDEX LOADING
+================================================================================
+
+CURRENT STATE:
+  - Builds complete index on load
+  - Index for ALL properties ready immediately
+  - Uses ~5-10 MB for index dictionary
+
+OPTIMIZATION:
+  - Load DataFrame but don't build full index
+  - Build index entries on-demand per PARID
+  - Cache individual lookups
+
+ESTIMATED IMPACT:
+  - Initial load: Faster (skip index build)
+  - First lookup per property: +50ms overhead
+  - Memory: Lower (smaller index)
+
+IMPLEMENTATION EFFORT: MEDIUM
+  - 1-2 hours
+  - Refactor lookup logic
+  - Add per-PARID caching
+
+TRADEOFFS:
+  PROS:
+    + Faster initial load
+    + Lower memory until needed
+    + Only indexes properties actually queried
+
+  CONS:
+    - Slightly slower first lookup per property
+    - More complex code
+    - Still need DataFrame in memory
+    - Less benefit if most properties queried
+
+RISKS:
+  - Low-medium risk
+  - Complexity increase for marginal benefit
+
+RECOMMENDATION: LOW PRIORITY
+  Parquet + caching makes full index build fast enough.
+  Only consider if memory is a critical constraint.
+
+================================================================================
+STRATEGY 7: PRE-COMPUTED PARQUET WITH INDEX
+================================================================================
+
+CURRENT STATE:
+  - Raw sales data loaded
+  - Index computed at runtime
+  - Repeats computation every session
+
+OPTIMIZATION:
+  - Pre-compute normalized PARID and filter in offline process
+  - Save directly to Parquet with index
+  - Load pre-filtered, pre-indexed data
+
+ESTIMATED IMPACT:
+  - Load time: <1 second (pre-computed)
+  - Processing: Zero at runtime
+  - File size: Smaller (only needed columns, pre-filtered)
+
+IMPLEMENTATION EFFORT: MEDIUM
+  - 2-3 hours
+  - Create conversion script
+  - Update load code
+  - Document refresh process
+
+TRADEOFFS:
+  PROS:
+    + Maximum performance
+    + Minimal runtime processing
+    + Smallest file size
+
+  CONS:
+    - Two-step data pipeline
+    - Must run conversion when source updates
+    - More complex data management
+    - Source Excel files still needed for updates
+
+RISKS:
+  - Low risk if documented properly
+  - Need to remember conversion step on data updates
+
+RECOMMENDATION: MEDIUM PRIORITY
+  Good for maximum performance, but adds pipeline complexity.
+
+================================================================================
+SUMMARY: OPTIMIZATION IMPACT ESTIMATES
+================================================================================
+
+Current Baseline: 90-150 seconds
+
+Strategy                    | Time Reduction | Effort  | Priority
+----------------------------|----------------|---------|----------
+1. Streamlit Caching        | 99%+*          | 5 min   | HIGH
+2. Parquet Conversion       | 95%            | 30 min  | HIGH
+3. Column Selection         | 10-30%         | 5 min   | MEDIUM
+4. Vectorized Index         | 50-80%**       | 2 hrs   | MEDIUM
+5. Date Filtering           | 20-40%         | 15 min  | OPTIONAL
+6. Lazy Index               | 10-20%         | 2 hrs   | LOW
+7. Pre-computed Parquet     | 98%            | 3 hrs   | MEDIUM
+
+* For subsequent loads (first load unchanged)
+** Of index-building portion only
+
+COMBINED IMPACT SCENARIOS:
+
+Caching Only (Strategy 1):
+  First load: 90-150s (unchanged)
+  Subsequent: <0.01s (cache hit)
+
+Parquet + Caching (Strategies 1+2):
+  First load: 1-3s
+  Subsequent: <0.01s
+
+Full Optimization (Strategies 1+2+3+4):
+  First load: <1s
+  Subsequent: <0.01s
+
+================================================================================

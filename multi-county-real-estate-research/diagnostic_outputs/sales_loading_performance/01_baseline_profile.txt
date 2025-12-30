@@ -1,0 +1,175 @@
+================================================================================
+SALES DATA LOADING BASELINE PROFILE
+================================================================================
+
+Generated: 2025-12-19
+Location: core/loudoun_sales_data.py, class LoudounSalesData
+Called from: core/property_valuation_orchestrator.py, line 72
+
+================================================================================
+DATA SOURCE
+================================================================================
+
+File: data/loudoun/sales/combined_sales.xlsx
+Format: Excel (.xlsx) - requires openpyxl
+Size: 7.37 MB
+Records: ~47,000+ (per message "Loading Loudoun County sales data (47K records)")
+Date Range: 2020-01-02 to present (approximately 5 years)
+
+Individual Year Files Also Present:
+  - 2020_sales.xlsx (4.3 MB)
+  - 2021_sales.XLSX (4.4 MB)
+  - 2022_sales.XLSX (1.3 MB)
+  - 2023_sales.XLSX (1.1 MB)
+  - 2024_sales.XLSX (1.2 MB)
+  - 2025_sales.xlsx (929 KB)
+  - combined_sales.xlsx (7.4 MB) <- Used for loading
+
+================================================================================
+LOADING PROCESS ANALYSIS
+================================================================================
+
+Step-by-step breakdown of _load_data() method:
+
+1. EXCEL FILE READ (pd.read_excel)
+   - Operation: Read entire xlsx file into DataFrame
+   - Estimated Time: 60-120 seconds (xlsx is VERY slow)
+   - Why Slow: openpyxl parses XML, decompresses, builds objects
+   - Bottleneck Factor: PRIMARY BOTTLENECK
+
+2. DATE CONVERSION
+   - Operation: pd.to_datetime(df['RECORD DATE'])
+   - Estimated Time: 0.5-2 seconds
+   - Notes: Standard pandas operation
+
+3. ARMS-LENGTH FILTERING
+   - Operation: df['SALE VERIFICATION'].isin(ARMS_LENGTH_CODES)
+   - Estimated Time: <0.1 seconds
+   - Records Kept: ~60-70% (arms-length transactions only)
+
+4. INDEX BUILDING (Row Iteration)
+   - Operation: for _, row in df_arms_length.iterrows()
+   - Estimated Time: 15-30 seconds for ~30K rows
+   - Why Slow: Python-level iteration, not vectorized
+   - Bottleneck Factor: SECONDARY BOTTLENECK
+
+5. SORTING PER PARID
+   - Operation: Sort each property's sales by date
+   - Estimated Time: 1-3 seconds
+   - Notes: Dictionary of lists, each sorted
+
+TOTAL ESTIMATED TIME: 90-150 seconds (1.5-2.5 minutes)
+
+================================================================================
+COLUMNS ANALYSIS
+================================================================================
+
+Required Columns (used in code):
+  - PARID              : Property identifier (indexed for O(1) lookup)
+  - RECORD DATE        : Sale date (converted to datetime)
+  - PRICE              : Sale price (numeric)
+  - SALE VERIFICATION  : Transaction type code (filtered)
+
+Optional Columns (extracted but not critical):
+  - INSTRUMENT#        : Recording instrument number
+  - SALEKEY            : Internal key
+  - OLD OWNER          : Previous owner name
+  - NEW OWNER          : New owner name
+  - SALE TYPE          : Type of sale
+  - # OF PARCELS       : Multi-parcel indicator
+
+Unknown Columns (likely present but unused):
+  - Additional metadata columns from Loudoun County export
+  - Each unused column adds memory and load time
+
+================================================================================
+CACHING ANALYSIS
+================================================================================
+
+Current State: NO CACHING
+
+In property_valuation_orchestrator.py:
+  - _sales_data initialized to None
+  - Loaded lazily on first use via _get_sales_data()
+  - BUT: Orchestrator is instantiated fresh each time
+
+In loudoun_streamlit_app.py (lines 2584, 3235):
+  - orchestrator = PropertyValuationOrchestrator()
+  - Creates NEW instance each time
+  - Previous sales data is discarded
+  - NO @st.cache_data or @st.cache_resource on orchestrator
+
+Result: Sales data is reloaded for EVERY property analysis session
+
+================================================================================
+USAGE PATTERN
+================================================================================
+
+Typical Usage Flow:
+1. User enters address, clicks "Analyze Property"
+2. loudoun_streamlit_app.py creates new PropertyValuationOrchestrator()
+3. Orchestrator's analyze_property() calls _get_sales_data()
+4. LoudounSalesData() is instantiated
+5. Full Excel file is loaded and indexed (90-150 seconds)
+6. Quick O(1) lookup for specific property's sales
+7. User analyzes another property -> REPEAT FROM STEP 2
+
+Impact: Every property analysis incurs ~2 minute delay
+
+================================================================================
+PERFORMANCE CHARACTERISTICS
+================================================================================
+
+File Format Impact:
+  Excel (.xlsx)     : ~60-120s load time
+  CSV               : ~3-8s load time (10-20x faster)
+  Parquet           : ~0.5-2s load time (30-100x faster)
+
+Row Iteration Impact:
+  iterrows()        : ~15-30s for 47K rows
+  Vectorized pandas : ~0.1-0.5s (50-100x faster)
+
+Memory Usage (Estimated):
+  Full DataFrame    : ~30-50 MB
+  Index only        : ~5-10 MB
+
+================================================================================
+KEY FINDINGS
+================================================================================
+
+1. PRIMARY BOTTLENECK: Excel file format
+   - pd.read_excel() is orders of magnitude slower than CSV/Parquet
+   - 7.4 MB xlsx takes 60-120 seconds to parse
+
+2. SECONDARY BOTTLENECK: Row-by-row iteration
+   - iterrows() is slow for building index
+   - Could be vectorized with groupby
+
+3. NO CACHING at Streamlit level
+   - Orchestrator created fresh each time
+   - Sales data discarded after each analysis
+   - Same 2-minute load for every property
+
+4. UNUSED COLUMNS loaded
+   - Only 4-6 columns actually needed
+   - Additional columns waste memory and time
+
+5. LAZY LOADING helps slightly
+   - Sales data only loaded when needed
+   - But still loads full file when triggered
+
+================================================================================
+BASELINE METRICS SUMMARY
+================================================================================
+
+Current Performance:
+  - Load time: ~90-150 seconds (1.5-2.5 minutes)
+  - Memory: ~30-50 MB for full DataFrame
+  - Caching: None (reloads every session)
+
+Target Performance:
+  - First load: <10 seconds
+  - Subsequent loads: Near-instant (cached)
+  - Memory: <20 MB
+
+Performance Gap: 10-15x improvement needed

@@ -1,0 +1,1649 @@
+======================================================================
+OTHER SCHOOLS AFFECTED BY THE DUPLICATE BUG
+======================================================================
+
+SCOPE ANALYSIS:
+----------------------------------------------------------------------
+Total unique schools in data: 1792
+Unique first words: 1135
+First words with multiple schools: 316
+
+IS THIS BELMONT RIDGE SPECIFIC? NO
+----------------------------------------------------------------------
+This affects ANY school whose first word matches another school.
+
+AFFECTED SCHOOL GROUPS (First word → Schools that share it):
+----------------------------------------------------------------------
+
+'John' → 21 schools:
+    - John Adams Elementary
+    - John B. Cary Elementary
+    - John B. Dey Elementary
+    - John C. Myers Elementary
+    - John Champe High
+    - John D. Jenkins Elementary
+    - John F. Kennedy Middle
+    - John F. Pattie Sr. Elementary
+    - John Handley High
+    - John Kerr Elementary
+    - John L. Hurt Elementary
+    - John M. Gandy Elementary
+    - John Marshall High
+    - John N. Dalton Intermediate
+    - John P. Fishwick Middle
+    - John Randolph Tucker High
+    - John Rolfe Middle
+    - John S. Battle High
+    - John W. Tolbert Jr. Elementary
+    - John W. Wayland Elementary
+    - John Yeates Middle
+
+'Virginia' → 16 schools:
+    - Virginia Avenue Charlotte Dehart Elementary
+    - Virginia Beach Middle
+    - Virginia Connections Academy
+    - Virginia Heights Elementary
+    - Virginia High
+    - Virginia Intermediate School
+    - Virginia L. Murray Elementary
+    - Virginia Middle
+    - Virginia Primary School
+    - Virginia Run Elementary
+    - Virginia School for the Deaf and Blind Elementary
+    - Virginia School for the Deaf and Blind High
+    - Virginia School for the Deaf and Blind Middle
+    - Virginia School for the Deaf and the Blind
+    - Virginia State Average
+    - Virginia Virtual Academy at Salem
+
+'William' → 15 schools:
+    - William A. Walton Elementary
+    - William Byrd High
+    - William Byrd Middle
+    - William Campbell High
+    - William E. Waters Middle
+    - William Fleming High
+    - William Fox Elementary
+    - William H. Ruffner Middle
+    - William H. Wetsel Middle
+    - William M. Bass Elementary
+    - William Mason Cooper Elementary
+    - William Monroe High
+    - William Monroe Middle
+    - William Perry Elementary
+    - William Ramsay Elementary
+
+'George' → 15 schools:
+    - George Carr Round Elementary
+    - George F. Baker Elementary
+    - George G. Tyler Elementary
+    - George H. Moody Middle
+    - George J. McIntosh Elementary
+    - George M. Hampton Middle
+    - George Mason Elementary
+    - George P. Mullen Elementary
+    - George P. Phenix Elementary
+    - George W. Carver Elementary
+    - George W. Carver Intermediate
+    - George W. Watkins Elementary
+    - George Washington High
+    - George Washington Middle
+    - George Wythe High
+
+'Mary' → 12 schools:
+    - Mary Calcott Elementary
+    - Mary Carr Greer Elementary
+    - Mary Ellen Henderson Middle
+    - Mary Ellen Henderson Middle School
+    - Mary G. Porter Traditional
+    - Mary Munford Elementary
+    - Mary Passage Middle
+    - Mary S. Peake Elementary
+    - Mary T. Christian Elementary
+    - Mary W. Jackson Elementary
+    - Mary Walter Elementary
+    - Mary Williams Elementary
+
+'Thomas' → 12 schools:
+    - Thomas C. Boushall Middle
+    - Thomas C. McSwain Elementary
+    - Thomas Dale High
+    - Thomas Eaton Middle
+    - Thomas H. Henderson Middle
+    - Thomas H. Henderson Middle School
+    - Thomas Harrison Middle
+    - Thomas Hunter Middle
+    - Thomas Jefferson Elementary
+    - Thomas Jefferson High
+    - Thomas Jefferson High for Science and Technology
+    - Thomas Walker High
+
+'James' → 12 schools:
+    - James Blair Middle
+    - James G. Brumfield Elementary
+    - James H. Cary Intermediate
+    - James K. Polk Elementary
+    - James Madison Middle
+    - James Monroe Elementary
+    - James Monroe High
+    - James River Elementary
+    - James River High
+    - James S. Russell Middle
+    - James Wood High
+    - James Wood Middle
+
+'South' → 9 schools:
+    - South Anna Elementary
+    - South Boston Elementary
+    - South County High
+    - South County Middle
+    - South Elementary
+    - South Hill Elementary
+    - South Lakes High
+    - South River Elementary
+    - South Salem Elementary
+
+'Richmond' → 8 schools:
+    - Richmond Alternative
+    - Richmond Alternative School
+    - Richmond Career Education and Employment Charter School
+    - Richmond Community High
+    - Richmond County Elementary
+    - Richmond High School for the Arts
+    - Richmond Success Academy
+    - Richmond Virtual Academy
+
+'Oak' → 8 schools:
+    - Oak Grove Elementary
+    - Oak Grove/Bellemeade Elementary
+    - Oak Hill Elementary
+    - Oak Knoll Middle
+    - Oak Point Elementary
+    - Oak Street Elementary
+    - Oak Street Elementary School
+    - Oak View Elementary
+
+'Colonial' → 7 schools:
+    - Colonial Beach Elementary
+    - Colonial Beach High
+    - Colonial Elementary
+    - Colonial Forge High
+    - Colonial Heights High
+    - Colonial Heights Middle
+    - Colonial Trail Elementary
+
+'Forest' → 7 schools:
+    - Forest Edge Elementary
+    - Forest Elementary
+    - Forest Glen Middle
+    - Forest Grove Elementary
+    - Forest Hills Elementary
+    - Forest Middle
+    - Forest Park High
+
+'Mount' → 7 schools:
+    - Mount Airy Elementary
+    - Mount Eagle Elementary
+    - Mount Olivet Elementary
+    - Mount Pleasant Elementary
+    - Mount Vernon Elementary
+    - Mount Vernon High
+    - Mount Vernon Woods Elementary
+
+'Fort' → 7 schools:
+    - Fort Belvoir Upper Elementary
+    - Fort Blackmore Primary
+    - Fort Chiswell High
+    - Fort Chiswell Middle
+    - Fort Defiance High
+    - Fort Hunt Elementary
+    - Fort Lewis Elementary
+
+'Patrick' → 7 schools:
+    - Patrick Copeland Elementary
+    - Patrick County High
+    - Patrick Henry Elementary
+    - Patrick Henry High
+    - Patrick Henry K-8 School
+    - Patrick Henry School Of Science And Arts
+    - Patrick Springs Primary
+
+'West' → 7 schools:
+    - West Gate Elementary
+    - West Point Elementary
+    - West Point Middle/High
+    - West Potomac High
+    - West Salem Elementary
+    - West Springfield Elementary
+    - West Springfield High
+
+'North' → 6 schools:
+    - North Elementary
+    - North Fork Middle
+    - North Landing Elementary
+    - North River Elementary
+    - North Springfield Elementary
+    - North Stafford High
+
+'Laurel' → 6 schools:
+    - Laurel Elementary
+    - Laurel Hill Elementary
+    - Laurel Lane Elementary
+    - Laurel Meadow Elementary
+    - Laurel Park Middle
+    - Laurel Ridge Elementary
+
+'Potomac' → 6 schools:
+    - Potomac Elementary
+    - Potomac Falls High
+    - Potomac High
+    - Potomac Middle
+    - Potomac Shores Middle
+    - Potomac View Elementary
+
+'Highland' → 6 schools:
+    - Highland Elementary
+    - Highland High
+    - Highland Park Elementary
+    - Highland Springs Elementary
+    - Highland Springs High
+    - Highland View Elementary
+
+'Lake' → 6 schools:
+    - Lake Anne Elementary
+    - Lake Braddock Secondary
+    - Lake Ridge Elementary
+    - Lake Ridge Middle
+    - Lake Taylor
+    - Lake Taylor High
+
+'Cedar' → 6 schools:
+    - Cedar Bluff Elementary
+    - Cedar Forest Elementary
+    - Cedar Lane Elementary
+    - Cedar Lee Middle
+    - Cedar Point Elementary
+    - Cedar Road Elementary
+
+'Graham' → 5 schools:
+    - Graham High
+    - Graham Intermediate
+    - Graham Middle
+    - Graham Park Middle
+    - Graham Road Elementary
+
+'King' → 5 schools:
+    - King & Queen Elementary
+    - King George Elementary
+    - King George High
+    - King George Middle
+    - King William High
+
+'Lancaster' → 5 schools:
+    - Lancaster Elementary
+    - Lancaster Elementary School
+    - Lancaster High
+    - Lancaster Middle
+    - Lancaster Primary
+
+'New' → 5 schools:
+    - New Castle Elementary
+    - New Kent Elementary
+    - New Kent High
+    - New Kent Middle
+    - New London Academy Elementary
+
+'Glen' → 5 schools:
+    - Glen Allen Elementary
+    - Glen Allen High
+    - Glen Cove Elementary
+    - Glen Forest Elementary
+    - Glen Lea Elementary
+
+'Indian' → 5 schools:
+    - Indian Hollow Elementary
+    - Indian Lakes Elementary
+    - Indian River High
+    - Indian River Middle
+    - Indian Valley Elementary
+
+'Salem' → 5 schools:
+    - Salem Church Elementary
+    - Salem Church Middle
+    - Salem Elementary
+    - Salem High
+    - Salem Middle
+
+'Park' → 5 schools:
+    - Park Avenue Elementary
+    - Park Ridge Elementary
+    - Park View Elementary
+    - Park View High
+    - Park View Middle
+
+'Charles' → 5 schools:
+    - Charles Barrett Elementary
+    - Charles City County Elementary
+    - Charles City County High
+    - Charles J. Colgan Sr. High
+    - Charles M. Johnson Elementary
+
+'Deep' → 5 schools:
+    - Deep Creek Central Elementary
+    - Deep Creek Elementary
+    - Deep Creek High
+    - Deep Creek Middle
+    - Deep Run High
+
+'Great' → 5 schools:
+    - Great Bridge High
+    - Great Bridge Intermediate
+    - Great Bridge Middle
+    - Great Falls Elementary
+    - Great Neck Middle
+
+'St.' → 5 schools:
+    - St. Charles Elementary
+    - St. Clare Walker Middle
+    - St. Helena Elementary
+    - St. Paul
+    - St. Paul Elementary
+
+'Churchland' → 5 schools:
+    - Churchland Academy Elementary
+    - Churchland Elementary
+    - Churchland High
+    - Churchland Middle
+    - Churchland Primary & Intermediate
+
+'Stone' → 5 schools:
+    - Stone Bridge High
+    - Stone Hill Middle
+    - Stone Middle
+    - Stone Robinson Elementary
+    - Stone Spring Elementary
+
+'Twin' → 5 schools:
+    - Twin Hickory Elementary
+    - Twin Springs Elementary
+    - Twin Springs High
+    - Twin Valley Elementary/Middle
+    - Twin Valley High
+
+'Elizabeth' → 5 schools:
+    - Elizabeth D. Redd Elementary
+    - Elizabeth Davis Middle
+    - Elizabeth Holladay Elementary
+    - Elizabeth Scott Elementary
+    - Elizabeth Vaughan Elementary
+
+'Union' → 5 schools:
+    - Union Hall Elementary
+    - Union High
+    - Union Middle
+    - Union Mill Elementary
+    - Union Primary
+
+'Amelia' → 4 schools:
+    - Amelia County Elementary
+    - Amelia County High
+    - Amelia County Middle
+    - Amelia Street Special Education
+
+'Battlefield' → 4 schools:
+    - Battlefield Elementary
+    - Battlefield High
+    - Battlefield Middle
+    - Battlefield Park Elementary
+
+'Eastern' → 4 schools:
+    - Eastern Elementary/Middle
+    - Eastern Montgomery Elementary
+    - Eastern Montgomery High
+    - Eastern View High
+
+'Green' → 4 schools:
+    - Green Run Collegiate
+    - Green Run Elementary
+    - Green Run High
+    - Green Valley Elementary
+
+'Nottoway' → 4 schools:
+    - Nottoway Elementary
+    - Nottoway High
+    - Nottoway Intermediate
+    - Nottoway Middle
+
+'Prince' → 4 schools:
+    - Prince Edward County High
+    - Prince Edward Elementary
+    - Prince Edward Middle
+    - Prince George High
+
+'Pulaski' → 4 schools:
+    - Pulaski County Middle
+    - Pulaski County Public Schools Virtual School K-12
+    - Pulaski County Senior High
+    - Pulaski Elementary
+
+'Franklin' → 4 schools:
+    - Franklin County High
+    - Franklin High
+    - Franklin Middle
+    - Franklin Military Academy
+
+'J.' → 4 schools:
+    - J. Blaine Blayton Elementary
+    - J. Frank Hillyard Middle
+    - J. Lupton Simpson Middle
+    - J. Michael Lunsford Middle
+
+'Richard' → 4 schools:
+    - Richard Bowling Elementary
+    - Richard C. Haydon Elementary
+    - Richard T. Yates Elementary
+    - Richard and Mildred Loving Elementary
+
+'Rural' → 4 schools:
+    - Rural Point Elementary
+    - Rural Retreat Elementary
+    - Rural Retreat High
+    - Rural Retreat Middle
+
+'Jackson' → 4 schools:
+    - Jackson Davis Elementary
+    - Jackson Memorial Elementary
+    - Jackson Middle
+    - Jackson P. Burley Middle
+
+'Stonewall' → 4 schools:
+    - Stonewall Elementary
+    - Stonewall Jackson Elementary
+    - Stonewall Jackson High
+    - Stonewall Jackson High School
+
+'Joseph' → 4 schools:
+    - Joseph H. Saunders Elementary
+    - Joseph P. King Jr. Middle
+    - Joseph T. Henley Middle
+    - Joseph Van Pelt Elementary
+
+'Bayside' → 4 schools:
+    - Bayside 6th Grade Campus
+    - Bayside Elementary
+    - Bayside High
+    - Bayside Middle
+
+'Grafton' → 4 schools:
+    - Grafton Bethel Elementary
+    - Grafton High
+    - Grafton Middle
+    - Grafton Village Elementary
+
+'Western' → 4 schools:
+    - Western Albemarle High
+    - Western Branch High
+    - Western Branch Intermediate
+    - Western Branch Middle
+
+'Central' → 4 schools:
+    - Central Academy Middle
+    - Central Elementary
+    - Central High
+    - Central Middle
+
+'Madison' → 4 schools:
+    - Madison County High
+    - Madison Elementary
+    - Madison Heights Elementary
+    - Madison High
+
+'Windsor' → 4 schools:
+    - Windsor Elementary
+    - Windsor High
+    - Windsor Oaks Elementary
+    - Windsor Woods Elementary
+
+'Floyd' → 4 schools:
+    - Floyd County High
+    - Floyd Elementary
+    - Floyd Kellam High
+    - Floyd T. Binns Middle
+
+'River' → 4 schools:
+    - River Bend Elementary
+    - River Bend Middle
+    - River City Middle
+    - River Oaks Elementary
+
+'Kempsville' → 4 schools:
+    - Kempsville Elementary
+    - Kempsville High
+    - Kempsville Meadows Elementary
+    - Kempsville Middle
+
+'Edward' → 3 schools:
+    - Edward E. Drew Jr. Middle
+    - Edward G. Clymore Elementary
+    - Edward W. Wyatt Middle
+
+'Galax' → 3 schools:
+    - Galax Elementary
+    - Galax High
+    - Galax Middle
+
+'Henry' → 3 schools:
+    - Henry D. Ward Elementary
+    - Henry Elementary
+    - Henry Marsh III Elementary
+
+'Marshall' → 3 schools:
+    - Marshall High
+    - Marshall Middle
+    - Marshall Road Elementary
+
+'Poquoson' → 3 schools:
+    - Poquoson Elementary
+    - Poquoson High
+    - Poquoson Middle
+
+'Independence' → 3 schools:
+    - Independence Elementary
+    - Independence High
+    - Independence Middle
+
+'Powhatan' → 3 schools:
+    - Powhatan Elementary
+    - Powhatan High
+    - Powhatan Middle
+
+'Fairfax' → 3 schools:
+    - Fairfax County Adult High
+    - Fairfax High
+    - Fairfax Villa Elementary
+
+'Stafford' → 3 schools:
+    - Stafford Elementary
+    - Stafford Middle
+    - Stafford Senior High
+
+'Albert' → 3 schools:
+    - Albert Harris Elementary
+    - Albert Hill Middle
+    - Albert W. Patrick III Elementary
+
+'Carver' → 3 schools:
+    - Carver College and Career Academy
+    - Carver Elementary
+    - Carver Middle
+
+'Eagle' → 3 schools:
+    - Eagle Ridge Middle
+    - Eagle Rock Elementary
+    - Eagle View Elementary
+
+'Francis' → 3 schools:
+    - Francis Asbury Elementary
+    - Francis C. Hammond Middle
+    - Francis W. Jones Magnet Middle
+
+'Lee' → 3 schools:
+    - Lee High
+    - Lee Hill Elementary
+    - Lee M. Waid Elementary
+
+'Manassas' → 3 schools:
+    - Manassas Park Elementary
+    - Manassas Park High
+    - Manassas Park Middle
+
+'Staunton' → 3 schools:
+    - Staunton High
+    - Staunton River High
+    - Staunton River Middle
+
+'Herndon' → 3 schools:
+    - Herndon Elementary
+    - Herndon High
+    - Herndon Middle
+
+'Chancellor' → 3 schools:
+    - Chancellor Elementary
+    - Chancellor High
+    - Chancellor Middle
+
+'Northumberland' → 3 schools:
+    - Northumberland Elementary
+    - Northumberland High
+    - Northumberland Middle
+
+'David' → 3 schools:
+    - David A. Dutrow Elementary
+    - David A. Harrison Elementary
+    - David A. Kaechele Elementary
+
+'Springfield' → 3 schools:
+    - Springfield Elementary
+    - Springfield Estates Elementary
+    - Springfield Park Elementary
+
+'Tabb' → 3 schools:
+    - Tabb Elementary
+    - Tabb High
+    - Tabb Middle
+
+'Berkeley' → 3 schools:
+    - Berkeley Elementary
+    - Berkeley Glenn Elementary
+    - Berkeley Middle
+
+'Stuarts' → 3 schools:
+    - Stuarts Draft Elementary
+    - Stuarts Draft High
+    - Stuarts Draft Middle
+
+'Yorktown' → 3 schools:
+    - Yorktown Elementary
+    - Yorktown High
+    - Yorktown Middle
+
+'Parry' → 3 schools:
+    - Parry McCluer High
+    - Parry McCluer Middle
+    - Parry McCluer Middle School
+
+'Riverheads' → 3 schools:
+    - Riverheads Elementary
+    - Riverheads High
+    - Riverheads Middle
+
+'Old' → 3 schools:
+    - Old Bridge Elementary
+    - Old Donation School
+    - Old Hundred Elementary
+
+'Greenbrier' → 3 schools:
+    - Greenbrier Elementary
+    - Greenbrier Intermediate
+    - Greenbrier Middle
+
+'Tazewell' → 3 schools:
+    - Tazewell High
+    - Tazewell Intermediate
+    - Tazewell Middle
+
+'Appomattox' → 3 schools:
+    - Appomattox County High
+    - Appomattox Elementary
+    - Appomattox Middle
+
+'Luray' → 3 schools:
+    - Luray Elementary
+    - Luray High
+    - Luray Middle
+
+'Matoaca' → 3 schools:
+    - Matoaca Elementary
+    - Matoaca High
+    - Matoaca Middle
+
+'Bluestone' → 3 schools:
+    - Bluestone  High
+    - Bluestone Elementary
+    - Bluestone Middle
+
+'Freedom' → 3 schools:
+    - Freedom High
+    - Freedom Hill Elementary
+    - Freedom Middle
+
+'Spotsylvania' → 3 schools:
+    - Spotsylvania Elementary
+    - Spotsylvania High
+    - Spotsylvania Middle
+
+'Cumberland' → 3 schools:
+    - Cumberland Elementary
+    - Cumberland High
+    - Cumberland Middle
+
+'Lebanon' → 3 schools:
+    - Lebanon Elementary
+    - Lebanon High
+    - Lebanon Middle
+
+'Fairfield' → 3 schools:
+    - Fairfield Court Elementary
+    - Fairfield Elementary
+    - Fairfield Middle
+
+'Orange' → 3 schools:
+    - Orange County High
+    - Orange Elementary
+    - Orange Hunt Elementary
+
+'T.' → 3 schools:
+    - T. Benton Gayle Middle
+    - T. Clay Wood Elementary
+    - T. Ryland Sanford Elementary
+
+'Paul' → 3 schools:
+    - Paul Burbank Elementary
+    - Paul Laurence Dunbar Middle for Innovation
+    - Paul Munro Elementary
+
+'Bethel' → 3 schools:
+    - Bethel Elementary
+    - Bethel High
+    - Bethel Manor Elementary
+
+'Samuel' → 3 schools:
+    - Samuel L. Gravely Jr. Elementary
+    - Samuel P. Langley Elementary
+    - Samuel W. Tucker Elementary
+
+'Ocean' → 3 schools:
+    - Ocean Lakes Elementary
+    - Ocean Lakes High
+    - Ocean View Elementary
+
+'Rappahannock' → 3 schools:
+    - Rappahannock County Elementary
+    - Rappahannock County High
+    - Rappahannock High
+
+'Rustburg' → 3 schools:
+    - Rustburg Elementary
+    - Rustburg High
+    - Rustburg Middle
+
+'Goochland' → 3 schools:
+    - Goochland Elementary
+    - Goochland High
+    - Goochland Middle
+
+'Ridgeview' → 3 schools:
+    - Ridgeview Elementary
+    - Ridgeview High
+    - Ridgeview Middle
+
+'Gretna' → 3 schools:
+    - Gretna Elementary
+    - Gretna High
+    - Gretna Middle
+
+'Hickory' → 3 schools:
+    - Hickory Elementary
+    - Hickory High
+    - Hickory Middle
+
+'Belmont' → 3 schools:
+    - Belmont Elementary
+    - Belmont Ridge Middle
+    - Belmont Station Elementary
+
+'Rocky' → 3 schools:
+    - Rocky Mount Elementary
+    - Rocky Run Elementary
+    - Rocky Run Middle
+
+'Dinwiddie' → 3 schools:
+    - Dinwiddie County High
+    - Dinwiddie County Middle
+    - Dinwiddie Elementary
+
+'Washington' → 3 schools:
+    - Washington County Virtual School
+    - Washington District Elementary
+    - Washington Mill Elementary
+
+'Princess' → 3 schools:
+    - Princess Anne Elementary
+    - Princess Anne High
+    - Princess Anne Middle
+
+'Sussex' → 3 schools:
+    - Sussex Central Elementary
+    - Sussex Central High
+    - Sussex Central Middle
+
+'Cardinal' → 3 schools:
+    - Cardinal Elementary
+    - Cardinal Forest Elementary
+    - Cardinal Ridge Elementary
+
+'Page' → 3 schools:
+    - Page County High
+    - Page County Middle
+    - Page Middle
+
+'King's' → 3 schools:
+    - King's Fork High
+    - King's Fork Middle
+    - King's Grant Elementary
+
+'Margaret' → 3 schools:
+    - Margaret Beeks Elementary
+    - Margaret Brent Elementary
+    - Margaret M. Pierce Elementary
+
+'Buffalo' → 3 schools:
+    - Buffalo Gap High
+    - Buffalo Gap Middle
+    - Buffalo Trail Elementary
+
+'Liberty' → 3 schools:
+    - Liberty Elementary
+    - Liberty High
+    - Liberty Middle
+
+'Chilhowie' → 3 schools:
+    - Chilhowie Elementary
+    - Chilhowie High
+    - Chilhowie Middle
+
+'Arlington' → 3 schools:
+    - Arlington Community High
+    - Arlington Science Focus School
+    - Arlington Traditional
+
+'Cave' → 3 schools:
+    - Cave Spring Elementary
+    - Cave Spring High
+    - Cave Spring Middle
+
+'Glenvar' → 3 schools:
+    - Glenvar Elementary
+    - Glenvar High
+    - Glenvar Middle
+
+'Red' → 3 schools:
+    - Red Hill Elementary
+    - Red Mill Elementary
+    - Red Oak-Sturgeon Elementary
+
+'Crestwood' → 3 schools:
+    - Crestwood Elementary
+    - Crestwood Intermediate
+    - Crestwood Middle
+
+'Norview' → 3 schools:
+    - Norview Elementary
+    - Norview High
+    - Norview Middle
+
+'Falling' → 3 schools:
+    - Falling Branch Elementary
+    - Falling Creek Elementary
+    - Falling Creek Middle
+
+'Chatham' → 3 schools:
+    - Chatham Elementary
+    - Chatham High
+    - Chatham Middle
+
+'Wilson' → 3 schools:
+    - Wilson Elementary
+    - Wilson Memorial High
+    - Wilson Middle
+
+'Auburn' → 3 schools:
+    - Auburn Elementary
+    - Auburn High
+    - Auburn Middle
+
+'Amherst' → 3 schools:
+    - Amherst County High
+    - Amherst Elementary
+    - Amherst Middle
+
+'Christiansburg' → 3 schools:
+    - Christiansburg Elementary
+    - Christiansburg High
+    - Christiansburg Middle
+
+'Marion' → 3 schools:
+    - Marion Elementary
+    - Marion Middle
+    - Marion Senior High
+
+'Little' → 3 schools:
+    - Little Creek Elementary
+    - Little River Elementary
+    - Little Run Elementary
+
+'Southampton' → 3 schools:
+    - Southampton Elementary
+    - Southampton High
+    - Southampton Middle
+
+'Buckingham' → 3 schools:
+    - Buckingham Co Elementary
+    - Buckingham County High
+    - Buckingham County Middle
+
+'Richlands' → 3 schools:
+    - Richlands Elementary
+    - Richlands High
+    - Richlands Middle
+
+'Landstown' → 3 schools:
+    - Landstown Elementary
+    - Landstown High
+    - Landstown Middle
+
+'Belle' → 2 schools:
+    - Belle Heth Elementary
+    - Belle View Elementary
+
+'Halifax' → 2 schools:
+    - Halifax County High
+    - Halifax County Middle
+
+'Hidden' → 2 schools:
+    - Hidden Valley High
+    - Hidden Valley Middle
+
+'Johnson' → 2 schools:
+    - Johnson Elementary
+    - Johnson Middle
+
+'Martinsville' → 2 schools:
+    - Martinsville High
+    - Martinsville Middle
+
+'Matthew' → 2 schools:
+    - Matthew Fontaine Maury High
+    - Matthew Whaley Elementary
+
+'Oscar' → 2 schools:
+    - Oscar F. Smith High
+    - Oscar Smith Middle
+
+'Southside' → 2 schools:
+    - Southside Elementary
+    - Southside STEM Academy at Campostella
+
+'Surry' → 2 schools:
+    - Surry County High
+    - Surry Elementary
+
+'Three' → 2 schools:
+    - Three Chopt Elementary
+    - Three Oaks Elementary
+
+'Brookville' → 2 schools:
+    - Brookville High
+    - Brookville Middle
+
+'Courtland' → 2 schools:
+    - Courtland Elementary
+    - Courtland High
+
+'Culpeper' → 2 schools:
+    - Culpeper County High
+    - Culpeper Middle
+
+'Leslie' → 2 schools:
+    - Leslie Fox Keyser Elementary
+    - Leslie H. Walton Middle
+
+'Meherrin' → 2 schools:
+    - Meherrin Elementary
+    - Meherrin Powellton Elementary
+
+'Rye' → 2 schools:
+    - Rye Cove High
+    - Rye Cove Intermediate
+
+'Spotswood' → 2 schools:
+    - Spotswood Elementary
+    - Spotswood High
+
+'W.W.' → 2 schools:
+    - W.W. Gordon Elementary
+    - W.W. Robinson Elementary
+
+'Luther' → 2 schools:
+    - Luther P. Jackson Middle
+    - Luther W. Machen Elementary
+
+'York' → 2 schools:
+    - York High
+    - York River Academy
+
+'Benjamin' → 2 schools:
+    - Benjamin Franklin Middle
+    - Benjamin Syms Middle
+
+'Dominion' → 2 schools:
+    - Dominion High
+    - Dominion Trail Elementary
+
+'Andrew' → 2 schools:
+    - Andrew G. Wright Middle
+    - Andrew Lewis Middle
+
+'Arthur' → 2 schools:
+    - Arthur Ashe Jr. Elementary
+    - Arthur R. Ware Elementary
+
+'Midlothian' → 2 schools:
+    - Midlothian High
+    - Midlothian Middle
+
+'Rolling' → 2 schools:
+    - Rolling Ridge Elementary
+    - Rolling Valley Elementary
+
+'Smithfield' → 2 schools:
+    - Smithfield High
+    - Smithfield Middle
+
+'Trailblazer' → 2 schools:
+    - Trailblazer Elementary
+    - Trailblazer Elementary School
+
+'Radford' → 2 schools:
+    - Radford City Virtual
+    - Radford High
+
+'Dungannon' → 2 schools:
+    - Dungannon Elementary
+    - Dungannon Elementary School
+
+'Booker' → 2 schools:
+    - Booker T Washington High
+    - Booker T. Washington Elementary
+
+'Dogwood' → 2 schools:
+    - Dogwood Elementary
+    - Dogwood Middle
+
+'Greensville' → 2 schools:
+    - Greensville County High
+    - Greensville Elementary
+
+'Locust' → 2 schools:
+    - Locust Grove Elementary
+    - Locust Grove Middle
+
+'Signal' → 2 schools:
+    - Signal Hill Elementary
+    - Signal Knob Middle
+
+'Summit' → 2 schools:
+    - Summit Elementary
+    - Summit Elementary School
+
+'Short' → 2 schools:
+    - Short Pump Elementary
+    - Short Pump Middle
+
+'Tomahawk' → 2 schools:
+    - Tomahawk Creek Middle
+    - Tomahawk Elementary
+
+'Woodbridge' → 2 schools:
+    - Woodbridge High
+    - Woodbridge Middle
+
+'Daniel' → 2 schools:
+    - Daniel Morgan Intermediate
+    - Daniel Morgan Middle
+
+'Grace' → 2 schools:
+    - Grace E. Metz Middle
+    - Grace Miller Elementary
+
+'Nandua' → 2 schools:
+    - Nandua High
+    - Nandua Middle
+
+'Sunrise' → 2 schools:
+    - Sunrise Elementary
+    - Sunrise Valley Elementary
+
+'J.W.' → 2 schools:
+    - J.W. Adams Combined
+    - J.W. Alvey Elementary
+
+'Chincoteague' → 2 schools:
+    - Chincoteague Elementary
+    - Chincoteague High
+
+'Frederick' → 2 schools:
+    - Frederick County Middle
+    - Frederick Douglass Elementary
+
+'Osbourn' → 2 schools:
+    - Osbourn High
+    - Osbourn Park High
+
+'Henrico' → 2 schools:
+    - Henrico High
+    - Henrico Virtual Academy
+
+'Council' → 2 schools:
+    - Council Elementary/Middle
+    - Council High
+
+'Lafayette' → 2 schools:
+    - Lafayette Elementary
+    - Lafayette High
+
+'Middlesex' → 2 schools:
+    - Middlesex Elementary
+    - Middlesex High
+
+'Sharon' → 2 schools:
+    - Sharon C. McAuliffe Elementary
+    - Sharon Elementary
+
+'T.C.' → 2 schools:
+    - T.C. Miller Elementary School for Innovation
+    - T.C. Miller Elementary for Innovation
+
+'Frances' → 2 schools:
+    - Frances Hazel Reid Elementary
+    - Frances W. McClenney Elementary
+
+'Chesterfield' → 2 schools:
+    - Chesterfield Elementary
+    - Chesterfield Virtual School
+
+'Charlottesville' → 2 schools:
+    - Charlottesville High
+    - Charlottesville Middle
+
+'Douglas' → 2 schools:
+    - Douglas MacArthur Elementary
+    - Douglas S. Freeman High
+
+'Skyline' → 2 schools:
+    - Skyline High
+    - Skyline Middle
+
+'Giles' → 2 schools:
+    - Giles County K-12 Virtual School
+    - Giles High
+
+'Armstrong' → 2 schools:
+    - Armstrong Elementary
+    - Armstrong High
+
+'Hurley' → 2 schools:
+    - Hurley Elementary/Middle
+    - Hurley High
+
+'Northwood' → 2 schools:
+    - Northwood High
+    - Northwood Middle
+
+'Discovery' → 2 schools:
+    - Discovery Elementary
+    - Discovery STEM Academy
+
+'Heritage' → 2 schools:
+    - Heritage Elementary
+    - Heritage High
+
+'Oakton' → 2 schools:
+    - Oakton Elementary
+    - Oakton High
+
+'Clover' → 2 schools:
+    - Clover Hill Elementary
+    - Clover Hill High
+
+'Mountain' → 2 schools:
+    - Mountain View Elementary
+    - Mountain View High
+
+'Valley' → 2 schools:
+    - Valley Elementary
+    - Valley Institute Elementary
+
+'Woodrow' → 2 schools:
+    - Woodrow Wilson Intermediate
+    - Woodrow Wilson Middle
+
+'Hamilton' → 2 schools:
+    - Hamilton Elementary
+    - Hamilton Holmes Middle
+
+'Martin' → 2 schools:
+    - Martin Luther King Jr. Elementary
+    - Martin Luther King Jr. Middle
+
+'Jefferson' → 2 schools:
+    - Jefferson Forest High
+    - Jefferson Middle
+
+'Evergreen' → 2 schools:
+    - Evergreen Elementary
+    - Evergreen Mill Elementary
+
+'Mathews' → 2 schools:
+    - Mathews Elementary
+    - Mathews High
+
+'Robert' → 2 schools:
+    - Robert E. Aylor Middle
+    - Robert S. Payne Elementary
+
+'Lois' → 2 schools:
+    - Lois Harrison-Jones Elementary
+    - Lois Hornsby Middle
+
+'Altavista' → 2 schools:
+    - Altavista Elementary
+    - Altavista High
+
+'Centreville' → 2 schools:
+    - Centreville Elementary
+    - Centreville High
+
+'L.F.' → 2 schools:
+    - L.F. Addington Middle
+    - L.F. Palmer Elementary
+
+'Jamestown' → 2 schools:
+    - Jamestown Elementary
+    - Jamestown High
+
+'Alexandria' → 2 schools:
+    - Alexandria City High
+    - Alexandria City High School
+
+'Breckinridge' → 2 schools:
+    - Breckinridge Elementary
+    - Breckinridge Middle
+
+'Tuckahoe' → 2 schools:
+    - Tuckahoe Elementary
+    - Tuckahoe Middle
+
+'Nansemond' → 2 schools:
+    - Nansemond Parkway Elementary
+    - Nansemond River High
+
+'Warren' → 2 schools:
+    - Warren County High
+    - Warren County Middle
+
+'Pocahontas' → 2 schools:
+    - Pocahontas Elementary
+    - Pocahontas Middle
+
+'Stony' → 2 schools:
+    - Stony Mill Elementary
+    - Stony Point Elementary
+
+'Abingdon' → 2 schools:
+    - Abingdon Elementary
+    - Abingdon High
+
+'Bland' → 2 schools:
+    - Bland County Elementary
+    - Bland County High
+
+'Meridian' → 2 schools:
+    - Meridian High
+    - Meridian High School
+
+'Fluvanna' → 2 schools:
+    - Fluvanna County High
+    - Fluvanna Middle
+
+'Greenwood' → 2 schools:
+    - Greenwood Elementary
+    - Greenwood Mill Elementary
+
+'Swift' → 2 schools:
+    - Swift Creek Elementary
+    - Swift Creek Middle
+
+'Hampton' → 2 schools:
+    - Hampton High
+    - Hampton Oaks Elementary
+
+'Bedford' → 2 schools:
+    - Bedford Elementary
+    - Bedford Hills Elementary
+
+'Lincoln' → 2 schools:
+    - Lincoln Elementary
+    - Lincoln Terrace Elementary
+
+'Pennington' → 2 schools:
+    - Pennington Middle
+    - Pennington Traditional
+
+'Varina' → 2 schools:
+    - Varina Elementary
+    - Varina High
+
+'Stuart' → 2 schools:
+    - Stuart Elementary
+    - Stuart M. Beville Middle
+
+'Willis' → 2 schools:
+    - Willis A. Jenkins Elementary
+    - Willis Elementary
+
+'Sandusky' → 2 schools:
+    - Sandusky Elementary
+    - Sandusky Middle
+
+'Covington' → 2 schools:
+    - Covington High
+    - Covington Middle
+
+'Linkhorne' → 2 schools:
+    - Linkhorne Elementary
+    - Linkhorne Middle
+
+'Northampton' → 2 schools:
+    - Northampton High
+    - Northampton Middle
+
+'Willard' → 2 schools:
+    - Willard Elementary
+    - Willard Middle
+
+'Lakeside' → 2 schools:
+    - Lakeside Elementary
+    - Lakeside Middle
+
+'Mechanicsville' → 2 schools:
+    - Mechanicsville Elementary
+    - Mechanicsville High
+
+'Providence' → 2 schools:
+    - Providence Elementary
+    - Providence Middle
+
+'Granby' → 2 schools:
+    - Granby Elementary
+    - Granby High
+
+'East' → 2 schools:
+    - East Rockingham High
+    - East Salem Elementary
+
+'Elkton' → 2 schools:
+    - Elkton Elementary
+    - Elkton Middle
+
+'Narrows' → 2 schools:
+    - Narrows Elementary/Middle
+    - Narrows High
+
+'Christopher' → 2 schools:
+    - Christopher C. Kraft Elementary
+    - Christopher Farms Elementary
+
+'Grayson' → 2 schools:
+    - Grayson County High
+    - Grayson Highlands
+
+'Kate' → 2 schools:
+    - Kate Collins Middle
+    - Kate Waller Barrett Elementary
+
+'Blue' → 2 schools:
+    - Blue Ridge Elementary
+    - Blue Ridge Middle
+
+'C.' → 2 schools:
+    - C. Alton Lindsay Middle
+    - C. Hunter Ritchie Elementary
+
+'Caroline' → 2 schools:
+    - Caroline High
+    - Caroline Middle
+
+'Carroll' → 2 schools:
+    - Carroll County High
+    - Carroll County Middle
+
+'Wakefield' → 2 schools:
+    - Wakefield Forest Elementary
+    - Wakefield High
+
+'Baldwin' → 2 schools:
+    - Baldwin Elementary
+    - Baldwin Intermediate
+
+'Unity' → 2 schools:
+    - Unity Braxton Middle
+    - Unity Reed High
+
+'Edwin' → 2 schools:
+    - Edwin A. Gibson Elementary
+    - Edwin W. Chittum Elementary
+
+'Northside' → 2 schools:
+    - Northside High
+    - Northside Middle
+
+'Pembroke' → 2 schools:
+    - Pembroke Elementary
+    - Pembroke Meadows Elementary
+
+'Parkside' → 2 schools:
+    - Parkside Elementary
+    - Parkside Middle
+
+'Riverview' → 2 schools:
+    - Riverview Elementary
+    - Riverview Elementary/Middle
+
+'Lynnhaven' → 2 schools:
+    - Lynnhaven Elementary
+    - Lynnhaven Middle
+
+'Arcadia' → 2 schools:
+    - Arcadia High
+    - Arcadia Middle
+
+'Hermitage' → 2 schools:
+    - Hermitage Elementary
+    - Hermitage High
+
+'Honaker' → 2 schools:
+    - Honaker Elementary
+    - Honaker High
+
+'Rosa' → 2 schools:
+    - Rosa Lee Carter Elementary
+    - Rosa Parks Elementary
+
+'Campbell' → 2 schools:
+    - Campbell Court Elementary
+    - Campbell Elementary
+
+'Manchester' → 2 schools:
+    - Manchester High
+    - Manchester Middle
+
+'Louisa' → 2 schools:
+    - Louisa County High
+    - Louisa County Middle
+
+'Gunston' → 2 schools:
+    - Gunston Elementary
+    - Gunston Middle
+
+'Westwood' → 2 schools:
+    - Westwood Hills Elementary
+    - Westwood Middle
+
+'J.B.' → 2 schools:
+    - J.B. Fisher Elementary
+    - J.B. Watkins Elementary
+
+'Coeburn' → 2 schools:
+    - Coeburn Middle
+    - Coeburn Primary
+
+'Annandale' → 2 schools:
+    - Annandale High
+    - Annandale Terrace Elementary
+
+'Loudoun' → 2 schools:
+    - Loudoun County High
+    - Loudoun Valley High
+
+'Glade' → 2 schools:
+    - Glade Hill Elementary
+    - Glade Spring Middle
+
+'Sterling' → 2 schools:
+    - Sterling Elementary
+    - Sterling Middle
+
+'Blacksburg' → 2 schools:
+    - Blacksburg High
+    - Blacksburg Middle
+
+'Nelson' → 2 schools:
+    - Nelson County High
+    - Nelson Middle
+
+'Rich' → 2 schools:
+    - Rich Acres Elementary
+    - Rich Valley Elementary
+
+'Robious' → 2 schools:
+    - Robious Elementary
+    - Robious Middle
+
+'Broad' → 2 schools:
+    - Broad Rock Elementary
+    - Broad Run High
+
+'Gate' → 2 schools:
+    - Gate City High
+    - Gate City Middle
+
+'Castlewood' → 2 schools:
+    - Castlewood Elementary
+    - Castlewood High
+
+'Spring' → 2 schools:
+    - Spring Hill Elementary
+    - Spring Run Elementary
+
+'Rosemont' → 2 schools:
+    - Rosemont Elementary
+    - Rosemont Forest Elementary
+
+'Ashby-Lee' → 2 schools:
+    - Ashby-Lee Elementary
+    - Ashby-Lee Elementary School
+
+'Tallwood' → 2 schools:
+    - Tallwood Elementary
+    - Tallwood High
+
+'Bull' → 2 schools:
+    - Bull Run Elementary
+    - Bull Run Middle
+
+'Grassfield' → 2 schools:
+    - Grassfield Elementary
+    - Grassfield High
+
+'Gainesville' → 2 schools:
+    - Gainesville High
+    - Gainesville Middle
+
+'Hutchison' → 2 schools:
+    - Hutchison Elementary
+    - Hutchison Farm Elementary
+
+'Corporate' → 2 schools:
+    - Corporate Landing Elementary
+    - Corporate Landing Middle
+
+'Lewis' → 2 schools:
+    - Lewis High
+    - Lewis and Clark Elementary
+
+'Mecklenburg' → 2 schools:
+    - Mecklenburg County High
+    - Mecklenburg County Middle
+
+'Riverside' → 2 schools:
+    - Riverside Elementary
+    - Riverside High
+
+'Baker-Butler' → 2 schools:
+    - Baker-Butler Elem
+    - Baker-Butler Elementary
+
+'Dan' → 2 schools:
+    - Dan River High
+    - Dan River Middle
+
+'Cradock' → 2 schools:
+    - Cradock Elementary
+    - Cradock Middle
+
+'Tunstall' → 2 schools:
+    - Tunstall High
+    - Tunstall Middle
+
+'Achievable' → 2 schools:
+    - Achievable Dream Academy
+    - Achievable Dream Middle/High
+
+'Kings' → 2 schools:
+    - Kings Glen Elementary
+    - Kings Park Elementary
+
+'Greenbriar' → 2 schools:
+    - Greenbriar East Elementary
+    - Greenbriar West Elementary
+
+'Hayfield' → 2 schools:
+    - Hayfield Elementary
+    - Hayfield Secondary
+
+'Kilmer' → 2 schools:
+    - Kilmer Center
+    - Kilmer Middle
+
+'Key' → 2 schools:
+    - Key Center
+    - Key Middle
+
+
+======================================================================
+IMPACT SUMMARY
+======================================================================
+
+Total schools that could cause/receive duplicate data: 973
+Percentage of all schools: 54.3%
+
+DOES IT AFFECT OTHER SCHOOL LEVELS? YES
+----------------------------------------------------------------------
+Elementary schools affected: 445
+Middle schools affected: 234
+High schools affected: 233
+
+
+TEST CASE: Steuart Weller Elementary
+----------------------------------------------------------------------
+Search for 'Steuart': 1 school(s)
+  - Steuart W. Weller Elementary
+✓ No duplicate issue (unique first word)
+
+TEST CASE: Riverside High
+----------------------------------------------------------------------
+Search for 'Riverside': 2 school(s)
+  - Riverside High
+  - Riverside Elementary
+✗ DUPLICATE ISSUE CONFIRMED

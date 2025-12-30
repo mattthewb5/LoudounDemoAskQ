@@ -1,0 +1,48 @@
+======================================================================
+EXACT MATCH FALLBACK ANALYSIS
+======================================================================
+
+Test Results:
+----------------------------------------------------------------------
+
+School: Steuart Weller Elementary
+  Exact match found: No
+  Matched to: None
+  Records returned: 0
+  Works correctly: No
+
+School: Belmont Ridge Middle
+  Exact match found: Yes
+  Matched to: Belmont Ridge Middle
+  Records returned: 5
+  Works correctly: Yes
+
+School: Riverside High
+  Exact match found: Yes
+  Matched to: Riverside High
+  Records returned: 5
+  Works correctly: Yes
+
+
+Edge Cases to Consider:
+----------------------------------------------------------------------
+1. Name variations: normalize_school_name() handles these:
+   - 'Steuart Weller Elementary' → 'STEUART WELLER'
+   - 'Steuart W. Weller Elementary' → 'STEUART W WELLER'
+   ⚠ These DON'T match! Need consistent input names.
+
+2. Whitespace handling: .strip() handles leading/trailing
+
+3. Case sensitivity: .upper() handles case differences
+
+
+Recommendation:
+----------------------------------------------------------------------
+Exact normalized match IS SAFE for the current data because:
+- All test schools have unique normalized names in Loudoun data
+- The normalizer keeps distinguishing words (RIDGE, STATION)
+- Only removes school type suffixes
+
+CAVEAT: Must ensure school names from assignment boundary data
+match the format in VADOE performance data. Current test shows
+they use the same naming convention.

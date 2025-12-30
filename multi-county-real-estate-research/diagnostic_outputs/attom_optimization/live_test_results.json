@@ -1,0 +1,227 @@
+{
+  "test_date": "2025-12-22T17:48:39.307081",
+  "optimization": "enrich_sqft=False",
+  "results": [
+    {
+      "address": "43500 Tuckaway Pl, Leesburg, VA 20176",
+      "property_detail": {
+        "success": true,
+        "sqft": null,
+        "bedrooms": null,
+        "year_built": null,
+        "response_ms": 474
+      },
+      "avm": {
+        "success": true,
+        "value": 360000,
+        "confidence": "N/A",
+        "response_ms": 254
+      },
+      "comps_without_enrich": {
+        "success": true,
+        "count": 3,
+        "with_sqft": 0,
+        "without_sqft": 3,
+        "response_ms": 4576
+      },
+      "errors": []
+    },
+    {
+      "address": "23704 Velvet Grass Ln, Ashburn, VA 20148",
+      "property_detail": {
+        "success": true,
+        "sqft": 3655,
+        "bedrooms": 4,
+        "year_built": 2012,
+        "response_ms": 184
+      },
+      "avm": {
+        "success": true,
+        "value": 1483132,
+        "confidence": "N/A",
+        "response_ms": 106
+      },
+      "comps_without_enrich": {
+        "success": true,
+        "count": 2,
+        "with_sqft": 0,
+        "without_sqft": 2,
+        "response_ms": 4413
+      },
+      "errors": []
+    },
+    {
+      "address": "42713 Newcomer Ter, Chantilly, VA 20152",
+      "property_detail": {
+        "success": true,
+        "sqft": 2512,
+        "bedrooms": 3,
+        "year_built": 2004,
+        "response_ms": 418
+      },
+      "avm": {
+        "success": true,
+        "value": 724197,
+        "confidence": "N/A",
+        "response_ms": 134
+      },
+      "comps_without_enrich": {
+        "success": false,
+        "count": 0
+      },
+      "errors": []
+    },
+    {
+      "address": "41690 Dillinger Mill Pl, Aldie, VA 20105",
+      "property_detail": {
+        "success": true,
+        "sqft": 3991,
+        "bedrooms": 4,
+        "year_built": 2015,
+        "response_ms": 157
+      },
+      "avm": {
+        "success": true,
+        "value": 1284612,
+        "confidence": "N/A",
+        "response_ms": 169
+      },
+      "comps_without_enrich": {
+        "success": true,
+        "count": 1,
+        "with_sqft": 0,
+        "without_sqft": 1,
+        "response_ms": 4961
+      },
+      "errors": []
+    },
+    {
+      "address": "24756 Stonehill Farm Ct, Aldie, VA 20105",
+      "property_detail": {
+        "success": true,
+        "sqft": 4372,
+        "bedrooms": 5,
+        "year_built": 2024,
+        "response_ms": 139
+      },
+      "avm": {
+        "success": true,
+        "value": 1593486,
+        "confidence": "N/A",
+        "response_ms": 124
+      },
+      "comps_without_enrich": {
+        "success": true,
+        "count": 9,
+        "with_sqft": 0,
+        "without_sqft": 9,
+        "response_ms": 4717
+      },
+      "errors": []
+    },
+    {
+      "address": "23018 Oglethorpe Ct, Ashburn, VA 20148",
+      "property_detail": {
+        "success": false
+      },
+      "avm": {
+        "success": false
+      },
+      "comps_without_enrich": {
+        "success": false,
+        "count": 0
+      },
+      "errors": []
+    },
+    {
+      "address": "43195 Wayside Cir, Ashburn, VA 20147",
+      "property_detail": {
+        "success": false
+      },
+      "avm": {
+        "success": false
+      },
+      "comps_without_enrich": {
+        "success": false,
+        "count": 0
+      },
+      "errors": []
+    },
+    {
+      "address": "24960 Greengage Pl, Aldie, VA 20105",
+      "property_detail": {
+        "success": false
+      },
+      "avm": {
+        "success": false
+      },
+      "comps_without_enrich": {
+        "success": false,
+        "count": 0
+      },
+      "errors": []
+    },
+    {
+      "address": "22554 Wilderness Acres Cir, Leesburg, VA 20175",
+      "property_detail": {
+        "success": true,
+        "sqft": 4223,
+        "bedrooms": 5,
+        "year_built": 2012,
+        "response_ms": 481
+      },
+      "avm": {
+        "success": true,
+        "value": 1373604,
+        "confidence": "N/A",
+        "response_ms": 430
+      },
+      "comps_without_enrich": {
+        "success": true,
+        "count": 1,
+        "with_sqft": 0,
+        "without_sqft": 1,
+        "response_ms": 4659
+      },
+      "errors": []
+    },
+    {
+      "address": "20620 Duxbury Ter, Ashburn, VA 20147",
+      "property_detail": {
+        "success": true,
+        "sqft": 1800,
+        "bedrooms": 4,
+        "year_built": 2014,
+        "response_ms": 91
+      },
+      "avm": {
+        "success": true,
+        "value": 679639,
+        "confidence": "N/A",
+        "response_ms": 136
+      },
+      "comps_without_enrich": {
+        "success": true,
+        "count": 1,
+        "with_sqft": 0,
+        "without_sqft": 1,
+        "response_ms": 4381
+      },
+      "errors": []
+    }
+  ],
+  "summary": {
+    "total": 10,
+    "prop_success": 7,
+    "avm_success": 7,
+    "comp_success": 6,
+    "total_comps": 17,
+    "avg_comps": 1.7,
+    "comps_with_sqft": 0,
+    "comps_without_sqft": 17,
+    "calls_optimized": 30,
+    "calls_unoptimized": 47,
+    "calls_saved": 17,
+    "overall_success": false
+  }
+}

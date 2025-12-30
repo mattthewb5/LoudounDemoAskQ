@@ -1,0 +1,64 @@
+======================================================================
+EXISTING SCHOOL MATCHING FUNCTIONS
+======================================================================
+
+Function: match_school_in_performance_data()
+Location: core/loudoun_school_performance.py:217-252
+Signature: match_school_in_performance_data(school_name: str, perf_df: pd.DataFrame) -> Optional[str]
+
+Implementation:
+----------------------------------------------------------------------
+
+def match_school_in_performance_data(school_name: str, perf_df: pd.DataFrame) -> Optional[str]:
+    """Find matching school name in performance data."""
+    normalized_target = normalize_school_name(school_name)
+    loudoun_schools = perf_df[perf_df['Division_Name'] == 'Loudoun County']['School_Name'].unique()
+    
+    for perf_name in loudoun_schools:
+        normalized_perf = normalize_school_name(perf_name)
+        
+        # Exact match
+        if normalized_target == normalized_perf:
+            return perf_name
+        
+        # Partial match
+        if normalized_target in normalized_perf or normalized_perf in normalized_target:
+            return perf_name
+        
+        # First word match with additional checks  <-- BUG HERE
+        target_words = normalized_target.split()
+        perf_words = normalized_perf.split()
+        if target_words and perf_words:
+            if target_words[0] == perf_words[0] and len(target_words[0]) > 2:
+                return perf_name  <-- Returns FIRST match, not best match
+    
+    return None
+
+
+Matching Logic Analysis:
+----------------------------------------------------------------------
+Type: Hybrid (exact → partial → first word)
+Normalization: YES - uses normalize_school_name()
+  - Strips whitespace
+  - Converts to uppercase
+  - Removes periods/commas
+  - Removes school type suffixes (Elementary, Middle, High, ES, MS, HS)
+
+*** CRITICAL BUG FOUND ***
+----------------------------------------------------------------------
+The first-word fallback (lines 244-250) returns the FIRST school
+that shares a first word, not the CORRECT school.
+
+Example:
+  Input: 'Belmont Ridge Middle' → Normalized: 'BELMONT RIDGE'
+  Data file order: 'Belmont Station Elementary' appears at position 30
+                   'Belmont Ridge Middle' appears at position 82
+  Result: Returns 'Belmont Station Elementary' (WRONG!)
+          because it's first in file and first word matches.
+
+Other Functions Found:
+----------------------------------------------------------------------
+1. normalize_school_name() - Lines 70-112 - Name normalization
+2. get_school_coordinates() - Lines 115-151 - Coordinate lookup
+3. find_peer_schools() - Lines 154-214 - Peer school finding
+4. create_performance_chart() - Lines 255-387 - Uses match_school_in_performance_data()

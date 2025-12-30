@@ -1,0 +1,59 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Leesburg",
+        "notes": "PLACEHOLDER - Replace with actual boundary from Loudoun County GIS",
+        "source": "Placeholder for development",
+        "county": "Loudoun",
+        "state": "VA"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-77.58, 39.07],
+            [-77.54, 39.07],
+            [-77.54, 39.13],
+            [-77.58, 39.13],
+            [-77.58, 39.07]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Purcellville",
+        "notes": "PLACEHOLDER - Replace with actual boundary",
+        "source": "Placeholder for development"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-77.74, 39.13],
+            [-77.68, 39.13],
+            [-77.68, 39.16],
+            [-77.74, 39.16],
+            [-77.74, 39.13]
+          ]
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "source": "PLACEHOLDER DATA - Not official boundaries",
+    "created": "November 2025",
+    "status": "Development placeholder",
+    "notes": "These are rough approximations for testing infrastructure. Get real boundaries from Loudoun County GIS: https://logis.loudoun.gov/",
+    "todo": [
+      "Download official town boundaries from Loudoun County GIS",
+      "Replace this file with real GeoJSON data",
+      "Verify boundaries with known addresses in each town",
+      "Test all 7 incorporated towns"
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+======================================================================
+PATTERN COMPARISON
+======================================================================
+
+Buggy Pattern (lines 604-614):
+----------------------------------------------------------------------
+Code:
+  school_data = performance_df[
+      performance_df['School_Name'].str.contains(
+          school.split()[0],  # <-- Only first word!
+          case=False, na=False
+      )
+  ]
+
+'Belmont Ridge Middle' matches:
+  - 'Belmont Station Elementary' (WRONG)
+  - 'Belmont Ridge Middle' (correct)
+Record count: 10+ (multiple schools' data combined)
+Visual result: DUPLICATE LINES on chart
+
+Working Pattern (lines 650-841) - Actually ALSO BUGGY:
+----------------------------------------------------------------------
+Code:
+  subject_match = match_school_in_performance_data(subject_school, perf_df)
+  subject_data = perf_df[
+      (perf_df['School_Name'] == subject_match) &
+      (perf_df['Division_Name'] == 'Loudoun County')
+  ]
+
+'Belmont Ridge Middle' matches:
+  - Returns: 'Belmont Station Elementary' (WRONG school!)
+Record count: 5 (one school, but WRONG school)
+Visual result: NO DUPLICATES, but WRONG DATA displayed
+
+Key Difference:
+----------------------------------------------------------------------
+Pattern 1 (Buggy): Uses str.contains() → returns MULTIPLE schools → duplicates
+Pattern 2 (Also buggy): Returns ONE school via match function → no duplicates
+                        BUT the match function has first-word bug → wrong data
+
+NEITHER PATTERN IS CORRECT!
+Both have bugs, just different manifestations:
+  - Pattern 1: Duplicate lines (visual bug)
+  - Pattern 2: Wrong data (data quality bug)

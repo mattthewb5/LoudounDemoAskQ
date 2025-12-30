@@ -1,0 +1,74 @@
+======================================================================
+ENHANCED NORMALIZER PERFORMANCE
+======================================================================
+
+Total Loudoun schools: 99
+
+CURRENT normalizer:
+  Unique normalized names: 98
+  Collision groups: 1
+
+ENHANCED normalizer:
+  Unique normalized names: 98
+  Collision groups: 1
+
+NEW COLLISIONS CREATED:
+----------------------------------------------------------------------
+
+*** NO NEW COLLISIONS CREATED! ***
+
+
+SCHOOLS WHERE NORMALIZED NAME CHANGED:
+----------------------------------------------------------------------
+
+5 schools have different normalized names:
+
+'J. Lupton Simpson Middle'
+  Current:  'J LUPTON SIMPSON'
+  Enhanced: 'LUPTON SIMPSON'
+  Removed:  ['J']
+
+'Steuart W. Weller Elementary'
+  Current:  'STEUART W WELLER'
+  Enhanced: 'STEUART WELLER'
+  Removed:  ['W']
+
+'J. Michael Lunsford Middle'
+  Current:  'J MICHAEL LUNSFORD'
+  Enhanced: 'MICHAEL LUNSFORD'
+  Removed:  ['J']
+
+'John W. Tolbert Jr. Elementary '
+  Current:  'JOHN W TOLBERT JR'
+  Enhanced: 'JOHN TOLBERT JR'
+  Removed:  ['W']
+
+'Elaine E. Thompson Elementary'
+  Current:  'ELAINE E THOMPSON'
+  Enhanced: 'ELAINE THOMPSON'
+  Removed:  ['E']
+
+
+MIDDLE INITIAL MATCHES FIXED:
+----------------------------------------------------------------------
+
+'Steuart W. Weller Elementary' → 'STEUART WELLER'
+'Steuart Weller Elementary' → 'STEUART WELLER'
+Match: ✓ YES
+
+'J. Lupton Simpson Middle' → 'LUPTON SIMPSON'
+'John Lupton Simpson Middle' → 'JOHN LUPTON SIMPSON'
+Match: ✗ NO
+
+'J. Michael Lunsford Middle' → 'MICHAEL LUNSFORD'
+'John Michael Lunsford Middle' → 'JOHN MICHAEL LUNSFORD'
+Match: ✗ NO
+
+'John W. Tolbert Jr. Elementary ' → 'JOHN TOLBERT JR'
+'John Tolbert Elementary' → 'JOHN TOLBERT'
+Match: ✗ NO
+
+'Elaine E. Thompson Elementary' → 'ELAINE THOMPSON'
+'Elaine Thompson Elementary' → 'ELAINE THOMPSON'
+Match: ✓ YES
+

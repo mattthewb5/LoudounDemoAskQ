@@ -1,0 +1,805 @@
+═══════════════════════════════════════════════════════════════════════════════
+ATTOM DATA API - USAGE AUDIT
+═══════════════════════════════════════════════════════════════════════════════
+Audit Date: 2025-12-21
+Branch: claude/verify-neighborhood-integration-MGlc6
+Auditor: Claude Code
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION 1: ATTOM API IMPLEMENTATION
+═══════════════════════════════════════════════════════════════════════════════
+
+File Location: core/attom_client.py
+Class Name: ATTOMClient
+Base URL: https://api.gateway.attomdata.com/propertyapi/v1.0.0
+
+API Endpoints Used:
+─────────────────────────────────────────────────────────────────────────────
+
+1. /property/detail
+   Purpose: Get comprehensive property information
+   Called from: get_property_detail(), enrich_comparable_with_sqft()
+   Frequency: 1 call per property + 0-10 calls for comp enrichment
+   Returns: Address, beds, baths, sqft, year_built, lot_size, property_type,
+            subdivision, APN, last_sale_price, last_sale_date,
+            assessed_value, market_value, lat/lon
+
+2. /property/expandedprofile
+   Purpose: Extended property details (building characteristics)
+   Called from: get_property_expanded() - currently unused in production
+   Frequency: 0 calls (defined but not used in orchestrator)
+   Returns: Detailed building information
+
+3. /attomavm/detail
+   Purpose: Automated Valuation Model (primary valuation)
+   Called from: get_avm()
+   Frequency: 1 call per property (when AVM available)
+   Returns: value, value_low, value_high, confidence_score (FSD), as_of_date
+
+4. /assessment/detail
+   Purpose: Tax assessment data (fallback when AVM unavailable)
+   Called from: _get_assessment_value()
+   Frequency: 0-2 calls per property (only on AVM failure)
+   Returns: assessed_value, market_value
+
+5. /sale/snapshot
+   Purpose: Find comparable sales within radius of coordinates
+   Called from: get_comparable_sales()
+   Frequency: 1 call per property
+   Returns: List of nearby sales with price, date, property details
+
+Methods Defined:
+─────────────────────────────────────────────────────────────────────────────
+
+Method: get_property_detail(address)
+  Purpose: Fetch comprehensive property information
+  Parameters: address (str) - Full address string
+  Returns: PropertyData dataclass or None
+  ATTOM endpoint: /property/detail
+  API Calls: 1
+
+Method: get_property_expanded(address)
+  Purpose: Extended building details (NOT USED IN PRODUCTION)
+  Parameters: address (str)
+  Returns: Dict or None
+  ATTOM endpoint: /property/expandedprofile
+  API Calls: 1 (if called)
+
+Method: get_avm(address)
+  Purpose: Get Automated Valuation Model estimate
+  Parameters: address (str)
+  Returns: AVMResult dataclass or None
+  ATTOM endpoint: /attomavm/detail, fallback to /assessment/detail
+  API Calls: 1-2 (primary + potential fallback)
+
+Method: _get_assessment_value(address)
+  Purpose: Get tax assessment as AVM fallback
+  Parameters: address (str)
+  Returns: AVMResult (adjusted) or None
+  ATTOM endpoint: /assessment/detail
+  API Calls: 1
+
+Method: get_valuation(address)
+  Purpose: Best available valuation using fallback chain
+  Parameters: address (str)
+  Returns: AVMResult or None
+  Fallback chain: AVM → Assessment → Property Detail market/assessed
+  API Calls: 1-3 (depending on data availability)
+
+Method: enrich_comparable_with_sqft(comp)
+  Purpose: Add sqft data to comparables missing it
+  Parameters: ComparableSale object
+  Returns: ComparableSale (enriched)
+  ATTOM endpoint: /property/detail
+  API Calls: 1 per comp needing enrichment
+
+Method: get_comparable_sales(address, radius_miles=0.5, months_back=12, max_results=10, enrich_sqft=True)
+  Purpose: Find nearby comparable sales
+  Parameters: address, search radius, date range, result limit
+  Returns: List[ComparableSale]
+  ATTOM endpoint: /sale/snapshot + /property/detail for enrichment
+  API Calls: 2 (sale/snapshot + property/detail for coords) + 0-10 (enrichment)
+
+Data Classes:
+─────────────────────────────────────────────────────────────────────────────
+
+AVMResult:
+  - value: int (primary estimate)
+  - value_low: Optional[int]
+  - value_high: Optional[int]
+  - confidence_score: Optional[float] (FSD - Forecast Standard Deviation)
+  - as_of_date: Optional[str]
+  - source: str (e.g., "ATTOM AVM", "ATTOM Market Assessment")
+
+PropertyData:
+  - address, city, state, zipcode: str
+  - latitude, longitude: float
+  - bedrooms: Optional[int]
+  - bathrooms: Optional[float]
+  - sqft: Optional[int]
+  - sqft_source: Optional[str] (e.g., 'Tax Records (above-grade only)')
+  - year_built: Optional[int]
+  - lot_size: Optional[int]
+  - property_type: Optional[str]
+  - subdivision: Optional[str]
+  - apn: Optional[str] (Assessor's Parcel Number)
+  - last_sale_price: Optional[int]
+  - last_sale_date: Optional[str]
+  - assessed_value: Optional[int]
+  - market_value: Optional[int]
+
+ComparableSale:
+  - address, city, state, zipcode: str
+  - sale_price: int
+  - sale_date: str
+  - bedrooms: Optional[int]
+  - bathrooms: Optional[float]
+  - sqft: Optional[int]
+  - year_built: Optional[int]
+  - distance_miles: float
+  - price_per_sqft: Optional[float] (calculated)
+  - subdivision: Optional[str]
+  - adjusted_sale_price: Optional[int]
+  - time_adjustment_pct: Optional[float]
+  - adjusted_price_per_sqft: Optional[float]
+  - similarity_score: Optional[float]
+
+
+═══════════════════════════════════════════════════════════════════════════════
+SECTION 2: DATA RETRIEVED FROM ATTOM
+═══════════════════════════════════════════════════════════════════════════════
+
+Property Valuation Data:
+  ☑ Estimated value (AVM)
+  ☑ Value range (low/high)
+  ☑ Confidence score (FSD - Forecast Standard Deviation)
+  ☑ Valuation date
+  ☑ Market value (from assessment)
+  ☑ Assessed value
+
+Property Characteristics:
+  ☑ Bedrooms
+  ☑ Bathrooms
+  ☑ Square footage (living area)
+  ☑ Lot size
+  ☑ Year built
+  ☑ Property type
+  ☑ Latitude/Longitude
+  ☑ Subdivision name
+
+Tax Assessment Data:
+  ☑ Assessed value
+  ☑ Market value (assessed for tax purposes)
+  ☐ Tax amount (not currently extracted)
+  ☐ Assessment year (not currently extracted)
+
+Sales History:
+  ☑ Last sale date
+  ☑ Last sale price
+  ☐ Full sale history (NOT from ATTOM - using Loudoun County data instead)
+
+Identification:
+  ☑ APN (Assessor's Parcel Number) - used to lookup Loudoun County sales history
+  ☑ Full formatted address
+
+Other Data:
+  ☐ School district (NOT from ATTOM - using GIS shapefiles)
+  ☑ Subdivision/neighborhood info
+  ☐ Foreclosure status (not extracted)
+  ☐ Ownership info (not extracted)
+
+
+═══════════════════════════════════════════════════════════════════════════════
+SECTION 3: USAGE PATTERNS
+═══════════════════════════════════════════════════════════════════════════════
+
+Per Property Analysis (PropertyValuationOrchestrator.analyze_property):
+─────────────────────────────────────────────────────────────────────────────
+
+ATTOM API calls per property:
+
+1. Property Details (1 call)
+   Location: orchestrator.py line 122
+   Endpoint: /property/detail
+   Purpose: Get sqft, property type, APN for sales lookup
+
+2. Valuation (1-3 calls)
+   Location: orchestrator.py line 146
+   Endpoint: /attomavm/detail → /assessment/detail → /property/detail
+   Purpose: Get market value estimate with fallback chain
+
+3. Comparable Sales (1-12 calls)
+   Location: orchestrator.py line 156
+   Endpoint: /sale/snapshot (1 call)
+             /property/detail (0-10 calls for sqft enrichment)
+   Purpose: Find nearby sales for comparison
+
+TOTAL ATTOM CALLS PER PROPERTY: 3-16 calls
+  - Best case: 3 calls (AVM works, all comps have sqft)
+  - Typical case: 5-8 calls (AVM + some comp enrichment)
+  - Worst case: 16 calls (all fallbacks + all comps need enrichment)
+
+Data Flow:
+1. get_property_detail(address)
+   └→ Extract sqft, beds, baths, APN
+   └→ APN used for Loudoun County sales history lookup (FREE)
+
+2. get_valuation(address)
+   └→ Try AVM endpoint
+   └→ Fallback to assessment endpoint
+   └→ Fallback to property detail market/assessed values
+   └→ Return best available value estimate
+
+3. get_comparable_sales(address)
+   └→ Get target property coordinates (1 call to /property/detail)
+   └→ Query /sale/snapshot with coordinates
+   └→ Filter by date range (client-side)
+   └→ Enrich comps missing sqft (0-10 calls to /property/detail)
+   └→ Return sorted by distance
+
+
+Integration Points:
+─────────────────────────────────────────────────────────────────────────────
+
+PropertyValuationOrchestrator (core/property_valuation_orchestrator.py):
+  Line 54: self.attom = ATTOMClient(api_key=attom_key)
+  Line 122: property_data = self.attom.get_property_detail(address)
+  Line 146: avm_result = self.attom.get_valuation(address)
+  Line 156: comps = self.attom.get_comparable_sales(address, ...)
+
+loudoun_streamlit_app.py:
+  Line 56: from core.attom_client import ATTOMClient
+  Line 62: ATTOM_CLIENT = ATTOMClient(api_key=attom_key)
+  Line 2594: property_data = ATTOM_CLIENT.get_property_detail(address)
+  Purpose: Get sqft fallback when MLS lookup fails
+
+core/loudoun_narrative_generator.py:
+  Line 670: Uses 'ATTOM Property Detail' in data_sources list
+  Purpose: Display data source attribution in narrative
+
+core/comparable_analyzer.py:
+  Line 528: Imports ComparableSale for type hints
+  Purpose: Analyze comparable sales data structure
+
+
+Error Handling:
+─────────────────────────────────────────────────────────────────────────────
+
+What happens if ATTOM API fails?
+
+1. Property Detail Failure:
+   - Returns None
+   - Orchestrator continues without sqft/APN
+   - Sales history lookup skipped (no APN)
+
+2. AVM Failure:
+   - Falls back to /assessment/detail
+   - Falls back to property detail assessed/market values
+   - If all fail: attom_estimate = None in result
+
+3. Comparable Sales Failure:
+   - Returns empty list
+   - No comps displayed to user
+   - Triangulated value uses only ATTOM + RentCast
+
+User Experience on Failure:
+   - Valuation section shows "N/A" for missing values
+   - Other sections (schools, location quality) still work
+   - Narrative generation adapts to missing data
+
+
+═══════════════════════════════════════════════════════════════════════════════
+SECTION 4: COST ANALYSIS
+═══════════════════════════════════════════════════════════════════════════════
+
+API Call Frequency:
+─────────────────────────────────────────────────────────────────────────────
+
+Calls per property analysis:
+  - Minimum: 3 calls (property_detail + AVM + sale_snapshot)
+  - Typical: 5-8 calls (with some comp enrichment)
+  - Maximum: 16 calls (all fallbacks + 10 comp enrichments)
+
+Estimated Average: 6 calls per property
+
+Monthly Usage Projections:
+  - 100 analyses/month: ~600 API calls
+  - 500 analyses/month: ~3,000 API calls
+  - 1,000 analyses/month: ~6,000 API calls
+  - 5,000 analyses/month: ~30,000 API calls
+
+Cost Estimates (assuming $0.10-0.30 per call):
+─────────────────────────────────────────────────────────────────────────────
+
+Low estimate ($0.10/call):
+  - Per analysis: $0.60
+  - 100/month: $60
+  - 500/month: $300
+  - 1,000/month: $600
+  - 5,000/month: $3,000
+
+Medium estimate ($0.15/call):
+  - Per analysis: $0.90
+  - 100/month: $90
+  - 500/month: $450
+  - 1,000/month: $900
+  - 5,000/month: $4,500
+
+High estimate ($0.30/call):
+  - Per analysis: $1.80
+  - 100/month: $180
+  - 500/month: $900
+  - 1,000/month: $1,800
+  - 5,000/month: $9,000
+
+
+═══════════════════════════════════════════════════════════════════════════════
+SECTION 5: DATA OVERLAP ANALYSIS
+═══════════════════════════════════════════════════════════════════════════════
+
+RentCast API (Already In Use):
+─────────────────────────────────────────────────────────────────────────────
+
+Endpoints: /v1/properties, /v1/avm/value, /v1/avm/rent/long-term
+
+┌─────────────────────┬──────────┬──────────┬─────────────────────────────────┐
+│ Data Point          │ ATTOM    │ RentCast │ Currently Used From             │
+├─────────────────────┼──────────┼──────────┼─────────────────────────────────┤
+│ Property value/AVM  │ ✓        │ ✓        │ BOTH (triangulated at 40%/30%)  │
+│ Rent estimate       │ ✗        │ ✓        │ RentCast                        │
+│ Bedrooms            │ ✓        │ ✓        │ ATTOM (primary), RentCast (alt) │
+│ Bathrooms           │ ✓        │ ✓        │ ATTOM (primary), RentCast (alt) │
+│ Square footage      │ ✓        │ ✓        │ ATTOM (RENTCAST sqft untested)  │
+│ Year built          │ ✓        │ ✓        │ ATTOM (primary), RentCast (alt) │
+│ Lot size            │ ✓        │ ✓        │ ATTOM (primary)                 │
+│ Property type       │ ✓        │ ✓        │ ATTOM (primary)                 │
+│ Subdivision         │ ✓        │ ✓        │ RentCast (preferred)            │
+│ HOA fee             │ ✗        │ ✓        │ RentCast                        │
+│ Latitude/Longitude  │ ✓        │ ✓        │ BOTH                            │
+│ Value range (hi/lo) │ ✓        │ ✓        │ ATTOM only (RentCast available) │
+│ Confidence score    │ ✓        │ ✗        │ ATTOM FSD                       │
+└─────────────────────┴──────────┴──────────┴─────────────────────────────────┘
+
+OVERLAP PERCENTAGE: ~70% of property characteristic data overlaps
+
+
+Loudoun County Sales Data (Parquet - FREE):
+─────────────────────────────────────────────────────────────────────────────
+
+Source: Commissioner of Revenue records
+Records: ~78,000 sales (2020-present)
+Format: Parquet (converted from Excel, 105x faster loading)
+Cost: FREE (public records)
+
+┌─────────────────────┬──────────┬────────────┬─────────────────────────────────┐
+│ Data Point          │ ATTOM    │ Sales Data │ Currently Used From             │
+├─────────────────────┼──────────┼────────────┼─────────────────────────────────┤
+│ Sale history        │ ✓        │ ✓          │ SALES DATA (preferred!)         │
+│ Last sale price     │ ✓        │ ✓          │ Sales Data (via APN)            │
+│ Sale date           │ ✓        │ ✓          │ Sales Data (via APN)            │
+│ Multiple past sales │ ✗        │ ✓          │ Sales Data (full history)       │
+│ Sale verification   │ ✗        │ ✓          │ Sales Data (arms-length filter) │
+│ APN/PARID           │ ✓        │ ✓          │ ATTOM provides, Sales uses      │
+└─────────────────────┴──────────┴────────────┴─────────────────────────────────┘
+
+KEY INSIGHT: Sales history already migrated OFF ATTOM to free county data!
+             ATTOM only provides APN to enable the lookup.
+
+
+County Tax Assessor (Could Access - FREE):
+─────────────────────────────────────────────────────────────────────────────
+
+Loudoun County has public property records that could provide:
+
+┌─────────────────────┬──────────┬─────────────┬───────────────────────────────┐
+│ Data Point          │ ATTOM    │ Tax Assessor│ Could Replace ATTOM?          │
+├─────────────────────┼──────────┼─────────────┼───────────────────────────────┤
+│ Assessed value      │ ✓        │ ✓           │ Yes (authoritative source)    │
+│ Property details    │ ✓        │ ✓           │ Yes (beds, baths, sqft)       │
+│ Ownership info      │ ✓        │ ✓           │ Yes                           │
+│ Building permits    │ ✗        │ ✓           │ N/A                           │
+│ Tax amount          │ ✓        │ ✓           │ Yes                           │
+└─────────────────────┴──────────┴─────────────┴───────────────────────────────┘
+
+Note: Would require scraping or API development.
+      Loudoun County does not have a public API.
+
+
+═══════════════════════════════════════════════════════════════════════════════
+SECTION 6: ESSENTIAL VS OPTIONAL ATTOM FEATURES
+═══════════════════════════════════════════════════════════════════════════════
+
+ESSENTIAL (Cannot easily replace):
+─────────────────────────────────────────────────────────────────────────────
+
+1. Comparable Sales via Radius Search (/sale/snapshot)
+   Why essential: No other source provides radius-based recent sales lookup
+   Replacement difficulty: HIGH
+   Alternative sources:
+     - County records: Have sales but NO geographic/radius search
+     - RentCast: No comparable sales endpoint
+     - Build own: Would need to geocode all 78K sales + spatial index
+   Effort to replace: 40-80 hours (geocode + spatial search + API)
+
+2. APN (Assessor's Parcel Number) Lookup
+   Why essential: Required for Loudoun County sales history lookup
+   Replacement difficulty: MEDIUM
+   Alternative sources:
+     - County website: Could scrape by address
+     - RentCast: May have parcel IDs (untested)
+   Effort to replace: 8-16 hours (scraper development)
+
+3. Automated Valuation Model (AVM)
+   Why essential: Third-party valuation for triangulation
+   Replacement difficulty: HIGH
+   Alternative sources:
+     - RentCast: Has AVM (already using - 30% weight)
+     - Build own: Possible with 78K sales + ML model
+   Effort to replace: 100-200 hours (build proprietary model)
+
+
+OPTIONAL (Could be replaced):
+─────────────────────────────────────────────────────────────────────────────
+
+1. Property Characteristics (beds, baths, sqft, year built)
+   Currently from ATTOM: Primary source
+   Could get from: RentCast (same data)
+   Effort to switch: 2-4 hours (update orchestrator)
+   Recommendation: TEST RentCast accuracy, then switch
+
+2. Subdivision Name
+   Currently from ATTOM: As fallback
+   Could get from: RentCast (already preferred)
+   Effort to switch: Already done! RentCast is primary.
+   Recommendation: REMOVE ATTOM subdivision code
+
+3. Assessed/Market Value
+   Currently from ATTOM: AVM fallback
+   Could get from: County records (scrape) or skip
+   Effort to switch: 8-16 hours (scraper) or 1 hour (remove)
+   Recommendation: Keep as fallback for now
+
+
+REDUNDANT (Already have from other sources):
+─────────────────────────────────────────────────────────────────────────────
+
+1. Sales History
+   ATTOM provides: Last sale from /property/detail
+   Also available from: Loudoun County Parquet data (78K records)
+   Current status: ALREADY USING COUNTY DATA (preferred!)
+   Recommendation: ✓ Already migrated off ATTOM for this
+
+2. Subdivision/HOA Info
+   ATTOM provides: subdivision field
+   Also available from: RentCast /properties endpoint
+   Current status: ALREADY USING RENTCAST (preferred!)
+   Recommendation: ✓ Already migrated off ATTOM for this
+
+
+═══════════════════════════════════════════════════════════════════════════════
+SECTION 7: REPLACEMENT STRATEGY
+═══════════════════════════════════════════════════════════════════════════════
+
+Immediate Wins (Use Existing Data - No Development):
+─────────────────────────────────────────────────────────────────────────────
+
+1. Use RentCast for Property Characteristics
+   Current: ATTOM get_property_detail for beds/baths/sqft/year
+   Switch to: RentCast get_value_estimate (already making this call!)
+   Effort: 2-4 hours
+   Savings: -1 ATTOM call per property = ~$0.10-0.30/property
+
+2. Remove Comp Enrichment Calls
+   Current: Up to 10 ATTOM calls to enrich comps with sqft
+   Switch to: Display comps without sqft (or skip missing-sqft comps)
+   Effort: 1-2 hours
+   Savings: -0-10 ATTOM calls per property = ~$0-3.00/property
+
+3. Skip ATTOM if RentCast Has Valid Data
+   Current: Always call ATTOM property/detail
+   Switch to: Only call if RentCast missing data
+   Effort: 2-3 hours
+   Savings: Variable, ~$0.10-0.30 when RentCast sufficient
+
+
+Short-Term (1-2 weeks) - Expand RentCast:
+─────────────────────────────────────────────────────────────────────────────
+
+1. Test RentCast Property Characteristics Accuracy
+   Action: Compare RentCast vs ATTOM for 20 properties
+   If accurate: Use RentCast as primary for beds/baths/sqft
+   Validation: Side-by-side comparison script
+   Dev time: 4-8 hours
+
+2. Reduce Triangulation to Two Sources
+   Current: ATTOM (40%) + RentCast (30%) + Comps (30%)
+   Potential: RentCast (50%) + Comps (50%)
+   Or: RentCast (60%) + Internal Model (40%)
+   Dev time: 4-8 hours (reweight + testing)
+
+
+Medium-Term (1-2 months) - Build In-House Capabilities:
+─────────────────────────────────────────────────────────────────────────────
+
+1. Geocode Sales Data for Comp Search
+   Current: ATTOM /sale/snapshot for radius search
+   Build: Add lat/lon to 78K sales records
+   Approach:
+     a. Batch geocode addresses using Google Maps API
+     b. Add lat/lon columns to Parquet
+     c. Build spatial index for radius queries
+   Data needed: Combined_sales.parquet + geocoding API
+   Dev time: 24-40 hours
+   Ongoing cost: Geocoding (one-time) ~$780 for 78K addresses
+
+2. Alternative APN Lookup
+   Current: ATTOM provides APN
+   Build: Address-to-APN lookup from county data
+   Approach:
+     a. Scrape Loudoun County property search
+     b. Or: APN is in sales data, build reverse lookup
+   Dev time: 16-24 hours
+
+
+Long-Term (3-6 months) - Competitive Moat:
+─────────────────────────────────────────────────────────────────────────────
+
+1. Proprietary AVM Model
+   Goal: Replace ATTOM AVM with local model
+   Approach:
+     a. Use 78K+ sales records as training data
+     b. Feature engineering: sqft, beds, baths, location, age
+     c. Add Loudoun-specific factors (schools, metro, data center)
+     d. Machine learning model (XGBoost, Random Forest)
+   Data needed: Sales data + property characteristics + location features
+   Dev time: 120-200 hours
+   Ongoing cost: Compute only (~$0)
+   Competitive advantage: Loudoun-specific accuracy > generic AVMs
+
+2. Eliminate ATTOM Dependency Entirely
+   Goal: Zero ATTOM API calls
+   Requirements:
+     a. RentCast for property characteristics ✓ (already available)
+     b. Geocoded sales for comps (see above)
+     c. Proprietary AVM (see above)
+     d. APN from county or RentCast
+   Timeline: 3-6 months
+   Savings: 100% of ATTOM costs
+
+
+═══════════════════════════════════════════════════════════════════════════════
+SECTION 8: RISK ASSESSMENT
+═══════════════════════════════════════════════════════════════════════════════
+
+Risks of Removing ATTOM:
+─────────────────────────────────────────────────────────────────────────────
+
+1. Loss of Comparable Sales Search
+   Impact: HIGH - Core feature of valuation
+   Mitigation: Build geocoded comp search (24-40 hours)
+   Timeline: Can't remove until built
+
+2. Loss of Third-Party Valuation Source
+   Impact: MEDIUM - Reduces triangulation confidence
+   Mitigation: Build proprietary model or use RentCast only
+   Timeline: Can reduce weight immediately
+
+3. Loss of APN for Sales Lookup
+   Impact: MEDIUM - Breaks sales history feature
+   Mitigation: Address-based sales lookup (less reliable)
+   Timeline: Need alternative APN source
+
+4. Data Quality Unknown
+   Impact: MEDIUM - RentCast accuracy untested
+   Mitigation: Run comparison study on 20-50 properties
+   Timeline: 1 week validation
+
+
+Risks of Keeping ATTOM:
+─────────────────────────────────────────────────────────────────────────────
+
+1. Cost Scaling with Growth
+   At 100 analyses/month: $60-180/month
+   At 1,000 analyses/month: $600-1,800/month
+   At 10,000 analyses/month: $6,000-18,000/month
+   Impact: Significant margin pressure at scale
+
+2. Vendor Dependence
+   - Single point of failure for comps
+   - API changes could break functionality
+   - Pricing changes risk
+   Impact: MEDIUM-HIGH business risk
+
+3. Data Freshness
+   - ATTOM data may lag real market
+   - County records more current for Loudoun
+   Impact: LOW (both reasonably current)
+
+
+═══════════════════════════════════════════════════════════════════════════════
+SECTION 9: RECOMMENDATIONS
+═══════════════════════════════════════════════════════════════════════════════
+
+IMMEDIATE (Pre-Demo - Before January 2025):
+─────────────────────────────────────────────────────────────────────────────
+
+  ✓ Keep ATTOM for stability
+  ✓ No changes needed for investor demo
+  ✓ Current cost acceptable for demo phase
+
+  Rationale: System works, demo imminent, no time for risky changes.
+
+
+POST-DEMO Phase 1 (January 2025 - Within 2 weeks):
+─────────────────────────────────────────────────────────────────────────────
+
+1. Validate RentCast Data Quality
+   Action: Create comparison script for 20 properties
+   Expected outcome: Determine if RentCast viable as primary
+   Risk: LOW (read-only analysis)
+   Dev time: 4-8 hours
+
+2. Eliminate Comp Enrichment Calls
+   Action: Set enrich_sqft=False in get_comparable_sales
+   Expected savings: 0-10 calls/property (~$0-3.00)
+   Risk: LOW (display change only)
+   Dev time: 1-2 hours
+
+3. Add RentCast Fallback for Property Details
+   Action: Only call ATTOM if RentCast returns None for sqft
+   Expected savings: ~30% of property detail calls
+   Risk: LOW
+   Dev time: 2-4 hours
+
+
+POST-DEMO Phase 2 (February 2025):
+─────────────────────────────────────────────────────────────────────────────
+
+1. Geocode Sales Data
+   Goal: Enable radius-based comp search using county data
+   Approach: Batch geocode 78K addresses
+   Cost: ~$780 one-time (Google Maps API at $0.01/address)
+   Dev time: 24-40 hours
+   Savings: Eliminate /sale/snapshot calls (~$0.15/property)
+
+2. Reduce ATTOM to Backup Role
+   Goal: RentCast primary, ATTOM only for missing data
+   Expected calls: 0-2 per property (vs 3-16 current)
+   Savings: 50-80% reduction in ATTOM costs
+
+
+NEXT QUARTER (Q2 2025):
+─────────────────────────────────────────────────────────────────────────────
+
+1. Build Proprietary AVM
+   Goal: Loudoun-specific valuation model
+   Approach: ML model trained on 78K sales
+   Timeline: 120-200 hours development
+   Outcome: Unique value prop + eliminate AVM dependency
+
+2. Complete ATTOM Elimination
+   Goal: Zero ATTOM API usage
+   Requirements:
+     - Geocoded sales ✓
+     - Proprietary AVM ✓
+     - RentCast for characteristics ✓
+   Savings: 100% of ATTOM costs
+
+
+═══════════════════════════════════════════════════════════════════════════════
+SECTION 10: SPECIFIC ALTERNATIVES FOR EACH ATTOM FEATURE
+═══════════════════════════════════════════════════════════════════════════════
+
+Feature: Property Valuation (AVM)
+─────────────────────────────────────────────────────────────────────────────
+Best alternative: RentCast /v1/avm/value (already in use)
+Pros:
+  - Already integrated
+  - Already paying for it
+  - Same general accuracy tier
+Cons:
+  - No confidence score like ATTOM's FSD
+  - Single source reduces triangulation
+Cost: Already included in RentCast subscription
+Recommendation: KEEP BOTH short-term, build own long-term
+
+
+Feature: Comparable Sales Radius Search
+─────────────────────────────────────────────────────────────────────────────
+Best alternative: Geocode Loudoun County sales data
+Pros:
+  - FREE after geocoding
+  - More sales (78K vs ATTOM sample)
+  - Full control over data
+Cons:
+  - One-time geocoding cost (~$780)
+  - Development time (24-40 hours)
+  - Maintenance responsibility
+Cost: $780 one-time + development time
+Recommendation: BUILD (Q1 2025)
+
+
+Feature: Property Characteristics (beds, baths, sqft)
+─────────────────────────────────────────────────────────────────────────────
+Best alternative: RentCast /v1/avm/value response
+Pros:
+  - Already making this call
+  - Zero additional API cost
+  - Data quality likely similar
+Cons:
+  - Untested accuracy vs ATTOM
+  - Single source
+Cost: $0 additional
+Recommendation: TEST then SWITCH (January 2025)
+
+
+Feature: APN (Assessor's Parcel Number)
+─────────────────────────────────────────────────────────────────────────────
+Best alternative: Build address-to-APN index from sales data
+Pros:
+  - FREE
+  - Fast lookup (in-memory)
+  - Already have the data
+Cons:
+  - May have gaps (only sold properties)
+  - Address matching complexity
+Cost: $0
+Recommendation: TEST feasibility (February 2025)
+
+
+Feature: Assessment Values
+─────────────────────────────────────────────────────────────────────────────
+Best alternative: Skip or scrape county website
+Pros:
+  - County data is authoritative source
+  - More current than ATTOM
+Cons:
+  - Scraping is fragile
+  - May violate ToS
+Cost: Development time only
+Recommendation: SKIP (use market value only)
+
+
+═══════════════════════════════════════════════════════════════════════════════
+EXECUTIVE SUMMARY
+═══════════════════════════════════════════════════════════════════════════════
+
+CURRENT ATTOM USAGE:
+  Calls per analysis: 3-16 (average ~6)
+  Primary features used:
+    1. Comparable sales radius search (/sale/snapshot)
+    2. Property characteristics (/property/detail)
+    3. Automated Valuation (/attomavm/detail)
+  Monthly cost (at 1K analyses): $600-$1,800
+
+OVERLAP WITH EXISTING SOURCES:
+  RentCast can replace: ~70% (property characteristics, AVM)
+  Sales data can replace: ~20% (sales history already migrated)
+  Already redundant: ~30% (subdivision, sales history)
+
+QUICK WINS (No Development):
+  1. Disable comp enrichment: Save 0-10 calls/property
+     Savings: $0-300/month (at 100 analyses)
+
+  2. Skip ATTOM when RentCast sufficient
+     Savings: ~$30-90/month (at 100 analyses)
+
+RECOMMENDED STRATEGY:
+  Phase 1 (Now): Keep ATTOM for demo stability
+  Phase 2 (Jan): Reduce usage, test RentCast accuracy
+  Phase 3 (Feb): Geocode sales, build comp search
+  Phase 4 (Q2): Build proprietary AVM, eliminate ATTOM
+
+ESTIMATED ANNUAL SAVINGS:
+  Year 1: $3,000-$8,000 (after development costs)
+  Year 2+: $7,000-$20,000/year (at 1K analyses/month)
+
+NEXT STEPS:
+  1. ✓ Complete this audit (DONE)
+  2. Create RentCast comparison script (4-8 hours)
+  3. Disable comp enrichment (1-2 hours)
+  4. Plan geocoding project (February 2025)
+
+═══════════════════════════════════════════════════════════════════════════════
+END OF AUDIT
+═══════════════════════════════════════════════════════════════════════════════

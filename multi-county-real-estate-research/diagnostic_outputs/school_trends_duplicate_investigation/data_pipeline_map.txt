@@ -1,0 +1,99 @@
+================================================================================
+SCHOOL PERFORMANCE DATA PIPELINE MAP
+================================================================================
+
+OVERVIEW
+--------
+The school performance trend charts are created in TWO separate sections:
+1. "School Performance Trends" (lines 596-648) - HAS THE BUG
+2. "School Performance vs State & Peers" expander (lines 650-841) - WORKS CORRECTLY
+
+================================================================================
+DATA FLOW DIAGRAM
+================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ DATA SOURCE                                                                  │
+│ data/loudoun/school_performance_trends_with_state_avg.csv                   │
+│ - 9,225 records from VADOE                                                  │
+│ - 1,797 unique schools (statewide)                                          │
+│ - Years: 2020-2025                                                          │
+└─────────────────────────────────────────────────────────────────────────────┘
+                                      │
+                                      ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ LOAD FUNCTION                                                                │
+│ loudoun_streamlit_app.py:199-210                                            │
+│ def load_school_performance() -> pd.DataFrame                               │
+│   → Loads CSV into DataFrame                                                │
+└─────────────────────────────────────────────────────────────────────────────┘
+                                      │
+                                      ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ SCHOOL ASSIGNMENT                                                            │
+│ loudoun_streamlit_app.py:422-526                                            │
+│ def find_assigned_schools(lat, lon) -> Dict[str, str]                       │
+│   → Uses shapefile school boundaries                                        │
+│   → Returns: {'elementary': 'Name', 'middle': 'Name', 'high': 'Name'}      │
+└─────────────────────────────────────────────────────────────────────────────┘
+                                      │
+                                      ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ *** BUG IS HERE ***                                                          │
+│ CHART DATA CREATION (lines 604-614, 628-638)                                │
+│                                                                              │
+│ for level, school in assignments.items():                                   │
+│     school_data = performance_df[                                           │
+│         performance_df['School_Name'].str.contains(                         │
+│             school.split()[0],    ◄── PROBLEM: Only uses FIRST WORD        │
+│             case=False,                                                      │
+│             na=False                                                         │
+│         )                                                                    │
+│     ]                                                                        │
+│                                                                              │
+│ Example: "Belmont Ridge Middle".split()[0] = "Belmont"                      │
+│ This matches: Belmont Elementary, Belmont Ridge Middle, Belmont Station ES  │
+└─────────────────────────────────────────────────────────────────────────────┘
+                                      │
+                                      ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ RESULT: DUPLICATE CHART LINES                                                │
+│ - 3 schools' data all labeled as "Belmont Ridge Middle"                     │
+│ - 15 data points instead of 5 (3 schools × 5 years)                         │
+│ - Visual: Multiple overlapping lines with same legend label                 │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+================================================================================
+AFFECTED FILES
+================================================================================
+
+FILE: loudoun_streamlit_app.py
+  LINE 199-210: load_school_performance() - Loads CSV data
+  LINE 422-526: find_assigned_schools() - Gets school assignments
+  LINE 554-849: display_schools_section() - Displays section
+  LINE 604-614: Reading chart data creation *** BUG LOCATION ***
+  LINE 628-638: Math chart data creation *** BUG LOCATION ***
+
+FILE: core/loudoun_school_performance.py
+  LINE 20-30:  load_performance_data() - Alternate loader
+  LINE 217-252: match_school_in_performance_data() - CORRECT matching logic
+  LINE 255-387: create_performance_chart() - Uses correct matching
+
+DATA FILE: data/loudoun/school_performance_trends_with_state_avg.csv
+  - Contains VADOE performance data
+  - Columns: School_ID, School_Name, Division_Name, School_Type, Year, *_Pass_Rate
+
+================================================================================
+NOTE: CORRECT PATTERN EXISTS IN CODEBASE
+================================================================================
+
+The "School Performance vs State & Peers" expander (lines 650-841) uses
+create_performance_chart() from core/loudoun_school_performance.py which
+has a more sophisticated matching algorithm:
+
+  1. normalize_school_name() - Removes suffixes like "Elementary", "Middle"
+  2. match_school_in_performance_data() - Uses exact or contained match
+
+This pattern works correctly and doesn't produce duplicates.
+
+================================================================================

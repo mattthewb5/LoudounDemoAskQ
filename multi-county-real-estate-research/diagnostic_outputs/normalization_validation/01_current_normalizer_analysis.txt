@@ -1,0 +1,46 @@
+======================================================================
+CURRENT NORMALIZER PERFORMANCE
+======================================================================
+
+Total Loudoun schools: 99
+Unique normalized names: 98
+Collision groups: 1
+
+COLLISIONS FOUND:
+----------------------------------------------------------------------
+
+'STERLING' matches 2 schools:
+  - Sterling Elementary
+  - Sterling Middle
+
+
+MIDDLE INITIAL SCHOOLS:
+----------------------------------------------------------------------
+
+Found 5 schools with single-letter words:
+
+Original: 'J. Lupton Simpson Middle'
+Normalized: 'J LUPTON SIMPSON'
+Single letters: ['J']
+Match problem: Won't match variant without middle initial
+
+Original: 'Steuart W. Weller Elementary'
+Normalized: 'STEUART W WELLER'
+Single letters: ['W']
+Match problem: Won't match variant without middle initial
+
+Original: 'J. Michael Lunsford Middle'
+Normalized: 'J MICHAEL LUNSFORD'
+Single letters: ['J']
+Match problem: Won't match variant without middle initial
+
+Original: 'John W. Tolbert Jr. Elementary '
+Normalized: 'JOHN W TOLBERT JR'
+Single letters: ['W']
+Match problem: Won't match variant without middle initial
+
+Original: 'Elaine E. Thompson Elementary'
+Normalized: 'ELAINE E THOMPSON'
+Single letters: ['E']
+Match problem: Won't match variant without middle initial
+

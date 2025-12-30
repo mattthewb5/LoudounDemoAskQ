@@ -1,0 +1,2235 @@
+{
+  "_metadata": {
+    "description": "Loudoun County community/HOA data for NewCo property intelligence platform",
+    "last_updated": "2025-12-26",
+    "data_sources": [
+      "HOA websites",
+      "Van Metre documents",
+      "County records",
+      "Web research"
+    ],
+    "notes": "Subdivision patterns use wildcards - match subdivision names from GIS/RentCast data",
+    "va_data_integrated": true,
+    "va_communities_added": 46,
+    "va_communities_updated": 13,
+    "community_sizes_added": 17,
+    "community_sizes_batch2": 17,
+    "community_sizes_batch3": 11
+  },
+  "communities": {
+    "river_creek": {
+      "display_name": "River Creek",
+      "alternate_names": [
+        "River Creek on the Potomac"
+      ],
+      "hoa_name": "River Creek Owners Association (RCOA)",
+      "hoa_website": "https://www.rivercreekowners.com",
+      "club_website": "https://www.invitedclubs.com/clubs/river-creek-club",
+      "management_company": null,
+      "location": "Leesburg",
+      "community_type": "gated_golf",
+      "year_established": 1997,
+      "total_homes": 1132,
+      "total_acres": 600,
+      "open_space_percent": 50,
+      "fees": {
+        "hoa_monthly": 250,
+        "club_monthly": null,
+        "fee_notes": "HOA dues include common area maintenance, trash removal, club social membership. Golf membership separate.",
+        "golf_membership_available": true,
+        "fee_year": 2024,
+        "source": "rivercreekowners.com"
+      },
+      "amenities": {
+        "pools": 1,
+        "pool_details": [
+          "Pool and tennis complex with fitness center"
+        ],
+        "fitness_centers": 1,
+        "tennis_courts": 4,
+        "tennis_notes": "Courts at Confluence Park + club",
+        "golf": {
+          "on_site": true,
+          "holes": 18,
+          "designer": "Ault-Clark & Associates",
+          "type": "championship"
+        },
+        "trails_miles": 7,
+        "clubhouse": true,
+        "clubhouse_features": [
+          "Full-service restaurant",
+          "Bar",
+          "Golf pro shop",
+          "Meeting rooms",
+          "Event spaces"
+        ],
+        "parks": [
+          "Confluence Park (8 acres)"
+        ],
+        "park_amenities": [
+          "Tot lot",
+          "Picnic tables",
+          "Grills",
+          "Basketball court",
+          "Sand volleyball",
+          "Tennis courts",
+          "Kayak/canoe storage",
+          "Floating dock",
+          "Boat launch"
+        ],
+        "other": [
+          "Gated community",
+          "Potomac River access",
+          "Goose Creek access"
+        ]
+      },
+      "schools": {
+        "elementary": "Frances Hazel Reid Elementary",
+        "middle": "Harper Park Middle",
+        "high": "Heritage High"
+      },
+      "subdivision_patterns": [
+        "RIVER CREEK*",
+        "RIVERCREEK*"
+      ],
+      "nearby_landmarks": [
+        "Potomac River",
+        "Goose Creek",
+        "Historic Leesburg"
+      ],
+      "latitude": 39.106025,
+      "longitude": -77.494338,
+      "coordinate_source": "Loudoun County GIS Subdivisions",
+      "subdivision_matches": 10
+    },
+    "brambleton": {
+      "display_name": "Brambleton",
+      "alternate_names": [],
+      "hoa_name": "Brambleton Community Association (BCA)",
+      "hoa_website": "https://brambletonhoa.com",
+      "management_company": "FirstService Residential",
+      "location": "Ashburn/Brambleton",
+      "community_type": "master_planned",
+      "year_established": 2001,
+      "total_homes": 9103,
+      "homes_sold": 8040,
+      "total_acres": 2390,
+      "fees": {
+        "single_family_monthly": 204.8,
+        "townhome_monthly": 202.95,
+        "condo_monthly": 161.6,
+        "fee_year": 2025,
+        "includes": [
+          "Trash removal",
+          "Recycling",
+          "Snow removal (private streets)",
+          "Common area maintenance",
+          "Verizon FiOS"
+        ]
+      },
+      "amenities": {
+        "pools": 5,
+        "pool_details": [
+          "Community Center Pool (main pool, wading pool, spa)",
+          "Beacon Crest Pool (heated, spa, fireplace, club room)",
+          "Brambleton Corner Pool (8-lane lap, zero-depth beach entry)",
+          "Brambleton Crossing Pool (splashpad, water slide, beach entry)",
+          "Stratford Landing Pool"
+        ],
+        "fitness_centers": 0,
+        "fitness_notes": "OneLife Fitness nearby (free 1-year membership for new homebuyers)",
+        "tennis_courts": 6,
+        "pickleball_courts": 2,
+        "basketball_courts": 3,
+        "volleyball_courts": 2,
+        "multi_purpose_courts": 1,
+        "tot_lots": 18,
+        "tot_lot_features": [
+          "Kids' Zipline",
+          "Bike Track"
+        ],
+        "trails_miles": 18,
+        "trails_certification": "Runner Friendly Community (Road Runners Club of America)",
+        "clubhouse": true,
+        "clubhouse_features": [
+          "Community Center",
+          "Brambleton Corner Clubhouse"
+        ],
+        "golf": {
+          "on_site": false,
+          "nearby": "Brambleton Regional Golf Course"
+        },
+        "town_center": {
+          "has_town_center": true,
+          "retailers": 40,
+          "features": [
+            "Restaurants",
+            "Shopping",
+            "Entertainment",
+            "Brambleton Library"
+          ]
+        },
+        "parks": [
+          "Legacy Park",
+          "Brambleton Park"
+        ],
+        "other": [
+          "Silver Line bus service to Ashburn Metro"
+        ]
+      },
+      "schools": {
+        "elementary": [
+          "Legacy Elementary",
+          "Creighton's Corner Elementary",
+          "Madison's Trust Elementary"
+        ],
+        "middle": "Brambleton Middle",
+        "high": [
+          "Briar Woods High",
+          "Independence High"
+        ]
+      },
+      "sub_communities": {
+        "birchwood_at_brambleton": {
+          "display_name": "Birchwood at Brambleton",
+          "type": "55+ active adult",
+          "separate_hoa": true,
+          "total_homes": 1500,
+          "note": "Separate HOA from main Brambleton"
+        }
+      },
+      "subdivision_patterns": [
+        "BRAMBLETON*"
+      ],
+      "exclude_patterns": [
+        "BIRCHWOOD*"
+      ],
+      "developer": "Brambleton Group L.L.C. (Soave Real Estate)",
+      "builders": [
+        "Knutson",
+        "Tri Pointe",
+        "Van Metre Homes"
+      ],
+      "latitude": 38.972182,
+      "longitude": -77.532552,
+      "coordinate_source": "Loudoun County GIS Subdivisions",
+      "subdivision_matches": 35
+    },
+    "broadlands": {
+      "display_name": "Broadlands",
+      "alternate_names": [],
+      "hoa_name": "Broadlands Association, Inc.",
+      "hoa_website": "https://www.broadlandshoa.org",
+      "management_company": "FirstService Residential",
+      "location": "Ashburn",
+      "community_type": "master_planned",
+      "year_established": 1995,
+      "homeowner_controlled": 2009,
+      "total_homes": 4000,
+      "total_acres": 1500,
+      "fees": {
+        "single_family_monthly": 111,
+        "townhome_monthly": 127,
+        "villa_townhome_monthly": 151,
+        "fee_notes": "SF on VDOT streets $111; SF on private streets $137; 2026 rates approved November 2025",
+        "fee_year": 2025
+      },
+      "amenities": {
+        "pools": 1,
+        "pool_details": [
+          "Southern Walk Pool",
+          "Community Pool",
+          "Summerbrooke Pool"
+        ],
+        "fitness_centers": 1,
+        "tennis_courts": 1,
+        "tennis_notes": "Claiborne Tennis Courts undergoing renovation (2025)",
+        "tot_lots": 23,
+        "trails_miles": null,
+        "trails_notes": "Miles of nature trails through Stream Valley Park",
+        "clubhouse": true,
+        "clubhouse_features": [
+          "Community Center available for rentals"
+        ],
+        "parks": [
+          "Stream Valley Park (150+ acres)",
+          "Hillside Park",
+          "Oak Tree Grove"
+        ],
+        "wildlife_certification": "Certified Wildlife Habitat Community (National Wildlife Federation)",
+        "other": [
+          "Broadlands Live! Summer Concert Series"
+        ],
+        "has_pool": true,
+        "has_tennis": true,
+        "fitness_center": true,
+        "has_trails": true,
+        "playgrounds": 1,
+        "has_playground": true,
+        "basketball": true,
+        "pickleball": true
+      },
+      "schools": {
+        "elementary": [
+          "Hillside Elementary",
+          "Mill Run Elementary"
+        ],
+        "middle": "Eagle Ridge Middle",
+        "high": "Briar Woods High"
+      },
+      "sub_communities": {
+        "condos": [
+          "Demott & Silver",
+          "The Signature (active adult)",
+          "The Villas (active adult)"
+        ],
+        "apartments": [
+          "The Arbors at Broadlands",
+          "Van Metre Broadlands Apartments"
+        ]
+      },
+      "subdivision_patterns": [
+        "BROADLANDS*",
+        "SOUTHERN WALK*"
+      ],
+      "developer": "Van Metre Companies",
+      "nearby_shopping": [
+        "Broadlands Village Center",
+        "Broadlands Market Place"
+      ],
+      "latitude": 39.022693,
+      "longitude": -77.5112,
+      "coordinate_source": "Loudoun County GIS Subdivisions",
+      "subdivision_matches": 11,
+      "va_verified": true,
+      "va_verified_date": "12/24/2025",
+      "notes": "15 tennis courts total"
+    },
+    "ashburn_village": {
+      "display_name": "Ashburn Village",
+      "alternate_names": [],
+      "hoa_name": "Ashburn Village Community Association",
+      "hoa_website": "http://www.ashburnvillage.org",
+      "management_company": null,
+      "location": "Ashburn",
+      "community_type": "master_planned",
+      "total_homes": 5300,
+      "total_acres": 1500,
+      "fees": {
+        "single_family_monthly": 87,
+        "townhome_monthly": 98,
+        "condo_monthly": 100,
+        "fee_notes": "Includes Sports Pavilion access for owners; condo fees may vary",
+        "fee_year": 2024
+      },
+      "amenities": {
+        "pools": 5,
+        "pool_details": [
+          "4 outdoor pools",
+          "1 indoor pool"
+        ],
+        "recreation_centers": 4,
+        "fitness_centers": 1,
+        "fitness_notes": "Sports Pavilion with full-size gym",
+        "tennis_courts": 1,
+        "trails_miles": null,
+        "clubhouse": true,
+        "has_pool": true,
+        "has_tennis": true,
+        "fitness_center": true,
+        "has_trails": true,
+        "trail_miles": 50.0,
+        "playgrounds": 8,
+        "has_playground": true,
+        "basketball": true,
+        "dog_park": true,
+        "pickleball": true
+      },
+      "subdivision_patterns": [
+        "ASHBURN VILLAGE*"
+      ],
+      "latitude": 39.041677,
+      "longitude": -77.474075,
+      "coordinate_source": "Loudoun County GIS Subdivisions",
+      "subdivision_matches": 4,
+      "va_verified": true,
+      "va_verified_date": "12/24/2025",
+      "notes": "Club membership required",
+      "home_count_source": "LoCoMusings",
+      "home_count_notes": "Largest Loudoun neighborhood, 1,500 acres"
+    },
+    "stone_ridge": {
+      "display_name": "Stone Ridge",
+      "alternate_names": [],
+      "hoa_name": "Stone Ridge Association",
+      "hoa_website": "https://stoneridgehoa.org",
+      "management_company": "SFMC",
+      "location": "Aldie/Stone Ridge",
+      "community_type": "master_planned",
+      "fees": {
+        "hoa_monthly_range": "150-250",
+        "fee_notes": "Varies by property type and section; Savannah/Cedarwood SF higher (includes yard maintenance). Covers trash, recycling, snow removal",
+        "fee_year": 2024
+      },
+      "amenities": {
+        "pools": 3,
+        "fitness_centers": 1,
+        "tennis_courts": 3,
+        "basketball_courts": 1,
+        "tot_lots": 5,
+        "clubhouse": true,
+        "clubhouse_notes": "Newly renovated clubhouse with fitness center and rental space",
+        "other": [
+          "Amphitheater with event lawn",
+          "Walking trails"
+        ],
+        "has_pool": true,
+        "has_tennis": true,
+        "fitness_center": true,
+        "has_trails": true,
+        "playgrounds": 8,
+        "has_playground": true,
+        "basketball": true
+      },
+      "subdivision_patterns": [
+        "STONE RIDGE*",
+        "STONERIDGE*"
+      ],
+      "latitude": 38.932612,
+      "longitude": -77.556155,
+      "coordinate_source": "Loudoun County GIS Subdivisions",
+      "subdivision_matches": 20,
+      "va_verified": true,
+      "va_verified_date": "12/24/2025",
+      "total_homes": 3474,
+      "home_count_source": "Wikipedia",
+      "home_count_notes": "Van Metre community, 800 acres"
+    },
+    "south_riding": {
+      "display_name": "South Riding",
+      "alternate_names": [],
+      "hoa_name": "South Riding Proprietary",
+      "hoa_website": "http://www.southriding.net",
+      "management_company": null,
+      "location": "South Riding/Chantilly",
+      "community_type": "master_planned",
+      "fees": {
+        "hoa_monthly": 91,
+        "fee_notes": "Approximate average; varies by property type (detached ~$87, townhome ~$96). Contact HOA for current rates",
+        "fee_year": 2022
+      },
+      "subdivision_patterns": [
+        "SOUTH RIDING*",
+        "SOUTHRIDING*"
+      ],
+      "latitude": 38.900928,
+      "longitude": -77.509206,
+      "coordinate_source": "Loudoun County GIS Subdivisions",
+      "subdivision_matches": 12,
+      "amenities": {
+        "pools": 4,
+        "has_pool": true,
+        "tennis_courts": 4,
+        "has_tennis": true,
+        "clubhouse": true,
+        "has_trails": true,
+        "playgrounds": 1,
+        "has_playground": true,
+        "basketball": true,
+        "dog_park": true,
+        "pickleball": true
+      },
+      "va_verified": true,
+      "va_verified_date": "12/24/2025",
+      "total_homes": 6336,
+      "home_count_source": "Wikipedia",
+      "home_count_notes": "Toll Brothers development"
+    },
+    "lansdowne": {
+      "display_name": "Lansdowne on the Potomac",
+      "alternate_names": [
+        "Lansdowne"
+      ],
+      "hoa_name": "Lansdowne HOA",
+      "hoa_website": "http://www.lansdownehoa.com",
+      "management_company": null,
+      "location": "Lansdowne/Leesburg",
+      "community_type": "master_planned",
+      "fees": {
+        "townhome_monthly": 1182,
+        "fee_notes": "Luxury community; fees include Xfinity high-speed internet and cable. SF fees vary by section",
+        "fee_year": 2024
+      },
+      "amenities": {
+        "golf": {
+          "on_site": true,
+          "nearby": "Lansdowne Resort Golf"
+        },
+        "other": [
+          "Potomac River access",
+          "Walking trails",
+          "Xfinity fiber internet included"
+        ]
+      },
+      "subdivision_patterns": [
+        "LANSDOWNE*"
+      ],
+      "latitude": 39.080338,
+      "longitude": -77.487168,
+      "coordinate_source": "Loudoun County GIS Subdivisions",
+      "subdivision_matches": 16,
+      "va_verified": true,
+      "va_verified_date": "12/24/2025",
+      "notes": "Mixed-use urban center",
+      "total_homes": 2155,
+      "home_count_source": "Lansdowne HOA",
+      "home_count_notes": "Golf community, 1,000 acres"
+    },
+    "cascades": {
+      "display_name": "Cascades",
+      "alternate_names": [],
+      "hoa_name": "Cascades Homeowners Association",
+      "hoa_website": "http://www.cascadesva.com",
+      "management_company": null,
+      "location": "Sterling/Potomac Falls",
+      "community_type": "master_planned",
+      "fees": {
+        "hoa_monthly_range": "70-100+",
+        "fee_notes": "Varies by neighborhood",
+        "fee_year": 2024
+      },
+      "subdivision_patterns": [
+        "CASCADES*",
+        "CASCADE*"
+      ],
+      "latitude": 39.047606,
+      "longitude": -77.351198,
+      "coordinate_source": "Loudoun County GIS Subdivisions",
+      "subdivision_matches": 10,
+      "amenities": {
+        "pools": 5,
+        "has_pool": true,
+        "tennis_courts": 1,
+        "has_tennis": true,
+        "clubhouse": true,
+        "fitness_center": true,
+        "has_trails": true,
+        "playgrounds": 25,
+        "has_playground": true,
+        "pickleball": true
+      },
+      "va_verified": true,
+      "va_verified_date": "12/24/2025",
+      "notes": "1 indoor/2 outdoor pools",
+      "total_homes": 6500,
+      "home_count_source": "Wikipedia",
+      "home_count_notes": "2,500 acres, 5 pools, 15 tennis courts"
+    },
+    "ashburn_farm": {
+      "display_name": "Ashburn Farm",
+      "alternate_names": [],
+      "hoa_name": "Ashburn Farm Community Association",
+      "hoa_website": "http://www.ashburnfarmassociation.org",
+      "management_company": null,
+      "location": "Ashburn",
+      "community_type": "master_planned",
+      "fees": {
+        "single_family_monthly": 76,
+        "condo_monthly_range": "340-360",
+        "fee_notes": "SF covers common areas; condos include pool, fitness",
+        "fee_year": 2024
+      },
+      "subdivision_patterns": [
+        "ASHBURN FARM*"
+      ],
+      "latitude": 39.02923,
+      "longitude": -77.503967,
+      "coordinate_source": "Loudoun County GIS Subdivisions",
+      "subdivision_matches": 1,
+      "amenities": {
+        "pools": 3,
+        "has_pool": true,
+        "tennis_courts": 5,
+        "has_tennis": true,
+        "clubhouse": true,
+        "has_trails": true,
+        "playgrounds": 17,
+        "has_playground": true,
+        "basketball": true,
+        "pickleball": true
+      },
+      "va_verified": true,
+      "va_verified_date": "12/24/2025",
+      "notes": "Includes Sports Pavilion",
+      "total_homes": 3862,
+      "home_count_source": "LoCoMusings",
+      "home_count_notes": "1,824 SF, 1,416 TH, 460 condos, 162 apts"
+    },
+    "one_loudoun": {
+      "display_name": "One Loudoun",
+      "alternate_names": [],
+      "hoa_name": "One Loudoun Neighborhood Association",
+      "hoa_website": "https://www.1lna.com",
+      "management_company": null,
+      "location": "Ashburn",
+      "community_type": "mixed_use",
+      "fees": {
+        "hoa_monthly_range": "266-309",
+        "fee_notes": "Varies by property type and section; maintains Central Park, Saranac Park, Town Center",
+        "fee_year": 2024
+      },
+      "amenities": {
+        "town_center": {
+          "has_town_center": true,
+          "features": [
+            "Retail",
+            "Restaurants",
+            "Entertainment",
+            "Movie theater",
+            "Topgolf nearby"
+          ]
+        },
+        "pools": 1,
+        "has_pool": true,
+        "tennis_courts": 1,
+        "has_tennis": true,
+        "clubhouse": true,
+        "fitness_center": true,
+        "has_trails": true,
+        "playgrounds": 3,
+        "has_playground": true,
+        "basketball": true,
+        "dog_park": true,
+        "pickleball": true
+      },
+      "subdivision_patterns": [
+        "ONE LOUDOUN*",
+        "1 LOUDOUN*"
+      ],
+      "latitude": 39.049795,
+      "longitude": -77.455236,
+      "coordinate_source": "Loudoun County GIS Subdivisions",
+      "subdivision_matches": 17,
+      "va_verified": true,
+      "va_verified_date": "12/24/2025",
+      "total_homes": 1040,
+      "home_count_source": "One Loudoun official",
+      "home_count_notes": "358-acre mixed-use community; SF, TH, and condos at buildout"
+    },
+    "willowsford": {
+      "display_name": "Willowsford",
+      "alternate_names": [],
+      "hoa_name": "Willowsford HOA",
+      "hoa_website": "https://www.willowsfordlife.com",
+      "management_company": null,
+      "location": "Aldie/Willowsford",
+      "community_type": "master_planned_rural",
+      "fees": {
+        "hoa_monthly": 191,
+        "conservancy_monthly": 88,
+        "total_monthly": 279,
+        "fee_notes": "Base HOA + Conservancy fee; covers pools, trails, Lodge access. Conservancy increasing to $88 in 2025/2026",
+        "fee_year": 2025
+      },
+      "amenities": {
+        "farms": true,
+        "farm_notes": "Working farm with farm-to-table program",
+        "trails_miles": null,
+        "pools": 1,
+        "clubhouse": true,
+        "has_pool": true,
+        "tennis_courts": 1,
+        "has_tennis": true,
+        "fitness_center": true,
+        "has_trails": true,
+        "trail_miles": 40.0,
+        "playgrounds": 1,
+        "has_playground": true,
+        "basketball": true,
+        "dog_park": true,
+        "pickleball": true
+      },
+      "subdivision_patterns": [
+        "WILLOWSFORD*"
+      ],
+      "latitude": 38.935941,
+      "longitude": -77.578985,
+      "coordinate_source": "Loudoun County GIS Subdivisions",
+      "subdivision_matches": 10,
+      "va_verified": true,
+      "va_verified_date": "12/24/2025",
+      "notes": "Extensive trails (~40 miles); fitness center at The Lodge; dog parks; multiple pools and courts",
+      "total_homes": 2195,
+      "home_count_source": "LoCoMusings",
+      "home_count_notes": "4-village agrihood, 4,125 acres"
+    },
+    "belmont_country_club": {
+      "display_name": "Belmont Country Club",
+      "alternate_names": [
+        "Belmont CC",
+        "Belmont"
+      ],
+      "hoa_name": "Belmont Community Association",
+      "hoa_website": "https://belmonthoa.org/",
+      "club_website": "https://www.invitedclubs.com/clubs/belmont-country-club",
+      "management_company": null,
+      "location": "Ashburn",
+      "community_type": "gated_golf",
+      "year_established": 1997,
+      "total_homes": 2157,
+      "fees": {
+        "estates_monthly": 352,
+        "executive_monthly": 303,
+        "villa_monthly": 347,
+        "limited_general_monthly": 423,
+        "hoa_monthly_range": "303-423",
+        "fee_notes": "Varies by property type; includes lawn care, cable/WiFi, trash removal",
+        "fee_year": 2024,
+        "golf_membership_available": true
+      },
+      "amenities": {
+        "pools": 3,
+        "pool_details": [
+          "Main pool",
+          "Adult-only pool"
+        ],
+        "fitness_centers": 1,
+        "tennis_courts": 7,
+        "tennis_notes": "Tennis and pickleball courts",
+        "golf": {
+          "on_site": true,
+          "holes": 18,
+          "designer": "Arnold Palmer",
+          "type": "championship"
+        },
+        "clubhouse": true,
+        "clubhouse_features": [
+          "35,000 sqft clubhouse",
+          "Restaurant",
+          "Bar",
+          "Event spaces",
+          "Historic Belmont Manor"
+        ],
+        "park_amenities": [
+          "Playground",
+          "Basketball court",
+          "Soccer fields",
+          "Sand volleyball"
+        ],
+        "other": [
+          "Gated sections",
+          "W&OD Trail access",
+          "Lawn care included",
+          "Cable/WiFi included",
+          "Trash removal included"
+        ],
+        "has_pool": true,
+        "has_tennis": true,
+        "fitness_center": true,
+        "has_trails": true,
+        "playgrounds": 1,
+        "has_playground": true,
+        "basketball": true,
+        "pickleball": true
+      },
+      "schools": {
+        "elementary": "Belmont Station Elementary",
+        "middle": "Stone Hill Middle",
+        "high": "Rock Ridge High"
+      },
+      "subdivision_patterns": [
+        "BELMONT*",
+        "BELMONT COUNTRY CLUB*",
+        "BELMONT CC*"
+      ],
+      "exclude_patterns": [
+        "BELMONT GREENE*"
+      ],
+      "nearby_landmarks": [
+        "W&OD Trail",
+        "One Loudoun",
+        "Dulles Town Center"
+      ],
+      "latitude": 39.051569,
+      "longitude": -77.50198,
+      "coordinate_source": "Loudoun County GIS Subdivisions",
+      "subdivision_matches": 45,
+      "va_verified": true,
+      "va_verified_date": "12/24/2025",
+      "notes": "Gated country club community with Arnold Palmer golf course; multiple pools, large clubhouse, fitness center, 7 tennis courts (hard & Har-Tru), pickleball, basketball courts, playgrounds, and walking trails. Amenities largely accessed via club membership."
+    },
+    "belmont_greene": {
+      "display_name": "Belmont Greene",
+      "alternate_names": [
+        "Belmont Greene Condos"
+      ],
+      "hoa_name": "Belmont Greene HOA",
+      "hoa_website": "http://www.belmontgreene.org",
+      "management_company": null,
+      "location": "Ashburn",
+      "community_type": "condo_townhome",
+      "total_homes": 700,
+      "total_acres": 65,
+      "fees": {
+        "hoa_monthly_range": "130-300",
+        "condo_monthly_range": "137-290",
+        "fee_notes": "Varies by property type; covers pool, grounds, trash, common areas",
+        "fee_year": 2024,
+        "includes": [
+          "Trash removal",
+          "Snow removal",
+          "Exterior maintenance",
+          "Lawn care",
+          "Master insurance"
+        ]
+      },
+      "amenities": {
+        "pools": 1,
+        "pool_details": [
+          "Main pool with kiddy pool"
+        ],
+        "fitness_centers": 0,
+        "tennis_courts": 1,
+        "volleyball_courts": 1,
+        "basketball_courts": 1,
+        "tot_lots": 2,
+        "trails_miles": null,
+        "trails_notes": "Walking trails with W&OD Trail access",
+        "clubhouse": true,
+        "clubhouse_features": [
+          "Community center with kitchen and fireplace"
+        ],
+        "parks": [
+          "Trailside Park access"
+        ],
+        "other": [
+          "Soccer field",
+          "Baseball field",
+          "8 wetlands preservation areas"
+        ],
+        "has_pool": true,
+        "has_tennis": true
+      },
+      "schools": {
+        "elementary": null,
+        "middle": null,
+        "high": null
+      },
+      "subdivision_patterns": [
+        "BELMONT GREENE*"
+      ],
+      "latitude": 39.052829,
+      "longitude": -77.51258,
+      "coordinate_source": "Loudoun County GIS Subdivisions",
+      "subdivision_matches": 3,
+      "va_verified": true,
+      "va_verified_date": "12/24/2025"
+    },
+    "potomac_station": {
+      "display_name": "Potomac Station",
+      "alternate_names": [
+        "Gatherings at Potomac Station"
+      ],
+      "hoa_name": "Potomac Station Community Association",
+      "hoa_website": "https://potomacstation.org/",
+      "management_company": null,
+      "location": "Leesburg",
+      "community_type": "master_planned",
+      "fees": {
+        "hoa_monthly_range": "60-110",
+        "fee_notes": "County side vs town side pricing; includes trash and snow removal. Pool membership included in HOA fees",
+        "fee_year": 2024
+      },
+      "amenities": {
+        "pools": 1,
+        "pool_details": [
+          "Junior Olympic-sized pool at clubhouse"
+        ],
+        "fitness_centers": 0,
+        "tennis_courts": 1,
+        "basketball_courts": 1,
+        "tot_lots": 3,
+        "tot_lot_notes": "Multiple playground areas",
+        "trails_miles": null,
+        "trails_notes": "Walking trails throughout community",
+        "clubhouse": true,
+        "clubhouse_features": [
+          "Available for resident rental on weekends"
+        ],
+        "other": [
+          "Active Events Committee",
+          "Swimming league for children"
+        ],
+        "has_pool": true,
+        "has_tennis": true,
+        "has_trails": true,
+        "playgrounds": 1,
+        "has_playground": true,
+        "basketball": true,
+        "pickleball": true
+      },
+      "schools": {
+        "elementary": "Potomac Falls Elementary",
+        "middle": "River Bend Middle",
+        "high": "Potomac Falls High"
+      },
+      "subdivision_patterns": [
+        "POTOMAC STATION*"
+      ],
+      "nearby_landmarks": [
+        "Potomac Station Marketplace",
+        "Leesburg Premium Outlets"
+      ],
+      "latitude": 39.096028,
+      "longitude": -77.520747,
+      "coordinate_source": "Loudoun County GIS Subdivisions",
+      "subdivision_matches": 5,
+      "va_verified": true,
+      "va_verified_date": "12/24/2025",
+      "total_homes": 1401,
+      "home_count_source": "Potomac Station HOA",
+      "home_count_notes": "SF and TH, built 1997+, Leesburg"
+    },
+    "loudoun_valley_estates": {
+      "display_name": "Loudoun Valley Estates",
+      "alternate_names": [
+        "LVE"
+      ],
+      "hoa_name": "Loudoun Valley Estates Homeowners Association, Inc.",
+      "hoa_website": "https://www.lvehoa.com/",
+      "management_company": null,
+      "location": "Ashburn",
+      "community_type": "master_planned",
+      "year_established": 2000,
+      "total_residents": 11500,
+      "developer": "Toll Brothers",
+      "fees": {
+        "townhome_monthly": 135,
+        "single_family_monthly": 170,
+        "fee_notes": "Covers trash, snow, pool, fitness, playgrounds, common areas",
+        "fee_year": 2024,
+        "fee_includes": [
+          "Snow removal on HOA streets",
+          "Trash and recycling",
+          "Lawn care (fertilizer/weed control)",
+          "Leaf removal",
+          "Bus service to Ashburn Metro"
+        ]
+      },
+      "amenities": {
+        "pools": 3,
+        "pool_details": [
+          "Three outdoor swimming pools"
+        ],
+        "fitness_centers": 1,
+        "tennis_courts": 3,
+        "basketball_courts": 2,
+        "volleyball_courts": 1,
+        "tot_lots": 3,
+        "trails_miles": null,
+        "trails_notes": "Multiple walking trails around scenic pond",
+        "clubhouse": true,
+        "clubhouse_features": [
+          "Two clubhouses: Evergreen and Fair Ridge",
+          "Pool tables",
+          "Shuffleboard",
+          "TVs",
+          "Kitchens",
+          "Main clubhouse available for rental"
+        ],
+        "parks": [
+          "Lyndora Park (Loudoun County facility)"
+        ],
+        "other": [
+          "Viperfish summer swim team",
+          "Annual community events",
+          "Social committee",
+          "Book club",
+          "Dining club"
+        ]
+      },
+      "schools": {
+        "elementary": "Rosa Lee Carter Elementary",
+        "middle": "Farmwell Station Middle",
+        "high": "Rock Ridge High"
+      },
+      "subdivision_patterns": [
+        "LOUDOUN VALLEY ESTATES*",
+        "LOUDOUN VALLEY EST*",
+        "LVE*"
+      ],
+      "nearby_landmarks": [
+        "Ashburn Metro Station",
+        "One Loudoun"
+      ],
+      "latitude": 38.979872,
+      "longitude": -77.512709,
+      "coordinate_source": "Loudoun County GIS Subdivisions",
+      "subdivision_matches": 21,
+      "total_homes": 1100,
+      "home_count_source": "LoCoMusings",
+      "home_count_notes": "400+ townhomes, ~11,500 residents"
+    },
+    "farmwell_hunt": {
+      "display_name": "Farmwell Hunt",
+      "alternate_names": [],
+      "hoa_name": "Farmwell Hunt HOA",
+      "hoa_website": "https://www.farmwellhunthoa.org/",
+      "management_company": null,
+      "location": "Ashburn",
+      "community_type": "master_planned",
+      "year_established": 1995,
+      "anniversary_note": "Celebrating 30 years (1995-2025)",
+      "fees": {
+        "hoa_monthly": 125,
+        "fee_notes": "Pool access requires good standing with association. Covers landscaping, pool staffing, trash, snow removal",
+        "fee_year": 2024
+      },
+      "amenities": {
+        "pools": 1,
+        "pool_details": [
+          "Pool adjacent to clubhouse",
+          "Electronic pool pass system",
+          "10 complimentary guest passes per season"
+        ],
+        "fitness_centers": 0,
+        "tennis_courts": 4,
+        "tennis_notes": "Resurfaced in 2020, keypad locked access",
+        "basketball_courts": 2,
+        "tot_lots": 4,
+        "tot_lot_notes": "Primary playground at clubhouse, additional at Twain Terrace, Sandburg, and Trowbridge townhomes",
+        "clubhouse": true,
+        "clubhouse_features": [
+          "Adjacent to pool",
+          "Available for resident events"
+        ]
+      },
+      "schools": {
+        "elementary": "Farmwell Station Elementary",
+        "middle": "Farmwell Station Middle",
+        "high": "Rock Ridge High"
+      },
+      "subdivision_patterns": [
+        "FARMWELL HUNT*",
+        "FARMWELL*"
+      ],
+      "nearby_landmarks": [
+        "Ashburn Village",
+        "One Loudoun"
+      ],
+      "address": "21431 Hemingway Dr, Ashburn, VA 20147",
+      "latitude": 39.020929,
+      "longitude": -77.488558,
+      "coordinate_source": "Loudoun County GIS Subdivisions",
+      "subdivision_matches": 2,
+      "total_homes": 568,
+      "home_count_source": "Farmwell Hunt HOA",
+      "home_count_notes": "~2,500 residents, 1 sq mile"
+    },
+    "kirkpatrick_farms": {
+      "display_name": "Kirkpatrick Farms",
+      "alternate_names": [
+        "KPF"
+      ],
+      "hoa_name": "Kirkpatrick Farms HOA",
+      "hoa_website": "https://www.kirkpatrickfarms.com/",
+      "management_company": "Cardinal Management Group",
+      "location": "Aldie/Stone Ridge",
+      "community_type": "master_planned",
+      "year_established": 2000,
+      "fees": {
+        "condo_monthly": 384,
+        "fee_notes": "Condo fees cover trash, snow removal, pool, common area maintenance"
+      },
+      "amenities": {
+        "pools": 1,
+        "pool_details": [
+          "Community pool",
+          "Home to Kirkpatrick Farms Krakens Swim Team"
+        ],
+        "fitness_centers": 1,
+        "fitness_notes": "Indoor gym in clubhouse (weight room)",
+        "tennis_courts": 1,
+        "basketball_courts": 1,
+        "tot_lots": 1,
+        "trails_miles": null,
+        "trails_notes": "Walking trails and lakes",
+        "clubhouse": true,
+        "clubhouse_features": [
+          "Indoor gym",
+          "Clubroom rental available ($350 for 5 hours)",
+          "Capacity 62 people"
+        ],
+        "other": [
+          "Lakes",
+          "Krakens summer swim team"
+        ],
+        "has_pool": true,
+        "has_tennis": true,
+        "fitness_center": true,
+        "has_trails": true,
+        "playgrounds": 1,
+        "has_playground": true,
+        "basketball": true
+      },
+      "schools": {
+        "elementary": "Pinebrook Elementary",
+        "middle": "Mercer Middle",
+        "high": "John Champe High"
+      },
+      "subdivision_patterns": [
+        "KIRKPATRICK FARMS*",
+        "KIRKPATRICK*",
+        "KPF*"
+      ],
+      "nearby_landmarks": [
+        "Stone Ridge",
+        "Brambleton"
+      ],
+      "latitude": 38.993393,
+      "longitude": -77.618767,
+      "coordinate_source": "Loudoun County GIS Subdivisions",
+      "subdivision_matches": 6,
+      "va_verified": true,
+      "va_verified_date": "12/24/2025",
+      "notes": "Pool, tot lots, tennis & basketball courts, clubhouse, open field & interconnecting trails listed . the text in website does not explicitly confirm if the gym/fitness facility is actively available now",
+      "total_homes": 900,
+      "home_count_source": "Washington Times",
+      "home_count_notes": "TH, condos, and SF homes"
+    },
+    "alexander_s_chase": {
+      "display_name": "Alexander's Chase",
+      "data_source": "VA Research Team",
+      "data_verified": "12/25/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 1,
+        "has_pool": true,
+        "tennis_courts": 2,
+        "has_tennis": true,
+        "clubhouse": true,
+        "fitness_center": false,
+        "has_trails": true,
+        "trail_miles": 1.5,
+        "playgrounds": 2,
+        "has_playground": true,
+        "basketball": true,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.alexanderschasehoa.com",
+      "notes": "Community pool, tennis courts, clubhouse, walking trails, 2 playgrounds, basketball court (MLS / Google sources)",
+      "total_homes": 207,
+      "home_count_source": "Sequoia Management",
+      "home_count_notes": "SF and TH, Ashburn, built 2011-2013"
+    },
+    "amberleigh": {
+      "display_name": "Amberleigh",
+      "data_source": "VA Research Team",
+      "data_verified": "12/25/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 1,
+        "has_pool": true,
+        "tennis_courts": 2,
+        "has_tennis": true,
+        "clubhouse": true,
+        "fitness_center": true,
+        "has_trails": true,
+        "trail_miles": 2.0,
+        "playgrounds": 1,
+        "has_playground": true,
+        "basketball": true,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.amberleighhoa.com",
+      "notes": "Pool, tennis, fitness, walking trails, playground, basketball (MLS / Google sources)",
+      "total_homes": 144,
+      "home_count_source": "Sequoia Management",
+      "home_count_notes": "SF and TH, Ashburn"
+    },
+    "autumn_oaks": {
+      "display_name": "Autumn Oaks",
+      "data_source": "VA Research Team",
+      "data_verified": "12/25/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 1,
+        "has_pool": true,
+        "tennis_courts": 2,
+        "has_tennis": true,
+        "clubhouse": true,
+        "fitness_center": true,
+        "has_trails": true,
+        "trail_miles": 2.0,
+        "playgrounds": 1,
+        "has_playground": true,
+        "basketball": true,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.autumnoakshoa.com",
+      "notes": "Pool, tennis, bocce courts, basketball, playgrounds, trails, Recreation Center (MLS / Google sources)",
+      "total_homes": 179,
+      "home_count_source": "Sequoia Management",
+      "home_count_notes": "25-acre community in Sterling"
+    },
+    "beacon_hill": {
+      "display_name": "Beacon Hill",
+      "data_source": "VA Research Team",
+      "data_verified": "12/25/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 1,
+        "has_pool": true,
+        "tennis_courts": 2,
+        "has_tennis": true,
+        "clubhouse": true,
+        "fitness_center": true,
+        "has_trails": true,
+        "trail_miles": 1.0,
+        "playgrounds": 1,
+        "has_playground": true,
+        "basketball": true,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.beaconhillhoa.com",
+      "notes": "Pool, clubhouse, tennis, playground, basketball court, walking trail (MLS / Google sources)",
+      "total_homes": 225,
+      "home_count_source": "LoCoMusings",
+      "home_count_notes": "Estate and hamlet homes on 1,100 acres"
+    },
+    "beauregard_estates": {
+      "display_name": "Beauregard Estates",
+      "data_source": "VA Research Team",
+      "data_verified": "12/25/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 1,
+        "has_pool": true,
+        "tennis_courts": 2,
+        "has_tennis": true,
+        "clubhouse": true,
+        "fitness_center": false,
+        "has_trails": true,
+        "trail_miles": 1.0,
+        "playgrounds": 1,
+        "has_playground": true,
+        "basketball": true,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.beauregardhoa.com",
+      "notes": "Pool, tennis, clubhouse, trails, playground, basketball (MLS / Google sources)"
+    },
+    "belle_terra": {
+      "display_name": "Belle Terra",
+      "data_source": "VA Research Team",
+      "data_verified": "12/25/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 1,
+        "has_pool": true,
+        "tennis_courts": 2,
+        "has_tennis": true,
+        "clubhouse": true,
+        "fitness_center": true,
+        "has_trails": true,
+        "trail_miles": 2.0,
+        "playgrounds": 1,
+        "has_playground": true,
+        "basketball": true,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.belleterrahoa.com",
+      "notes": "Pool, tennis, clubhouse, fitness center, trails, playground, basketball (MLS / Google sources)",
+      "total_homes": 278,
+      "home_count_source": "Sequoia Management",
+      "home_count_notes": "Estate homes on large lots, Ashburn"
+    },
+    "broad_run_farms": {
+      "display_name": "Broad Run Farms",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 0,
+        "has_pool": false,
+        "tennis_courts": 0,
+        "has_tennis": false,
+        "clubhouse": false,
+        "fitness_center": false,
+        "has_trails": true,
+        "trail_miles": null,
+        "playgrounds": 1,
+        "has_playground": true,
+        "basketball": false,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.broadrunfarms.com",
+      "notes": "Community has riverside access, pavilion, picnic area with swing set and benches but no formal pool, tennis, club amenities listed publicly \u2014 Broad Run Farms Civic Association parks and river property. (Broad Run Farms Civic Association)",
+      "total_homes": 320,
+      "home_count_source": "Washington Post",
+      "home_count_notes": "706 acres, no HOA, established 1952"
+    },
+    "cabin_branch_forest": {
+      "display_name": "Cabin Branch Forest",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 0,
+        "has_pool": false,
+        "tennis_courts": 0,
+        "has_tennis": false,
+        "clubhouse": false,
+        "fitness_center": false,
+        "has_trails": true,
+        "trail_miles": null,
+        "playgrounds": 0,
+        "has_playground": false,
+        "basketball": false,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.cabinbranchhoa.com",
+      "notes": "Quiet neighborhood backing to Claude Moore Park nature center; no pool/tennis/etc mentioned in public HOA description. (Cabin Branch Forest)",
+      "total_homes": 77,
+      "home_count_source": "Cabin Branch Forest HOA",
+      "home_count_notes": "Self-managed community, eastern Loudoun County"
+    },
+    "cardinal_glen": {
+      "display_name": "Cardinal Glen",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 0,
+        "has_pool": false,
+        "tennis_courts": 0,
+        "has_tennis": false,
+        "clubhouse": false,
+        "fitness_center": false,
+        "has_trails": false,
+        "trail_miles": null,
+        "playgrounds": 0,
+        "has_playground": false,
+        "basketball": false,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.cardinalglenhoa.com",
+      "notes": "No public amenities info available from HOA site or visible external descriptions.",
+      "total_homes": 185,
+      "home_count_source": "Cardinal Glen HOA",
+      "home_count_notes": "Sterling, own traffic light on Rt 7"
+    },
+    "connemara_woods": {
+      "display_name": "Connemara Woods",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 0,
+        "has_pool": false,
+        "tennis_courts": 0,
+        "has_tennis": false,
+        "clubhouse": false,
+        "fitness_center": false,
+        "has_trails": false,
+        "trail_miles": null,
+        "playgrounds": 0,
+        "has_playground": false,
+        "basketball": false,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.connemarawoodshoa.com",
+      "notes": "Small community; no swimming pool, recreation center, or large common areas per official community description. (Connemara Woods Homeowners Association)",
+      "total_homes": 55,
+      "home_count_source": "Connemara Woods HOA",
+      "home_count_notes": "Built 1986-1987, off Potomac View Road"
+    },
+    "countryside": {
+      "display_name": "CountrySide",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 3,
+        "has_pool": true,
+        "tennis_courts": 0,
+        "has_tennis": false,
+        "clubhouse": false,
+        "fitness_center": false,
+        "has_trails": true,
+        "trail_miles": null,
+        "playgrounds": 1,
+        "has_playground": true,
+        "basketball": true,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.countrysidehoa.org",
+      "notes": "Community contains three swimming pools, extensive paved walking trails/nature areas and multiple playgrounds per community area information (not HOA site). (Wikipedia)",
+      "total_homes": 2539,
+      "home_count_source": "Wikipedia",
+      "home_count_notes": "1,253 SF, 1,168 TH, 16 manor homes, 102 condos"
+    },
+    "courts_and_ridges_of_ashburn": {
+      "display_name": "Courts and Ridges of Ashburn",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 1,
+        "has_pool": true,
+        "tennis_courts": 1,
+        "has_tennis": true,
+        "clubhouse": true,
+        "fitness_center": false,
+        "has_trails": false,
+        "trail_miles": null,
+        "playgrounds": 0,
+        "has_playground": false,
+        "basketball": false,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.courtsandridges.org",
+      "notes": "Clubhouse; community pool; tennis courts (no counts listed)",
+      "total_homes": 412,
+      "home_count_source": "Courts and Ridges HOA",
+      "home_count_notes": "SF and TH on 115 acres in Old Ashburn"
+    },
+    "exeter": {
+      "display_name": "Exeter",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 1,
+        "has_pool": true,
+        "tennis_courts": 1,
+        "has_tennis": true,
+        "clubhouse": true,
+        "fitness_center": false,
+        "has_trails": true,
+        "trail_miles": null,
+        "playgrounds": 4,
+        "has_playground": true,
+        "basketball": true,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.exeterhoa.com",
+      "notes": "Pool, 4 playgrounds, tennis, basketball, trails (2+ miles), clubhouse",
+      "total_homes": 829,
+      "home_count_source": "LoCoMusings",
+      "home_count_notes": "399 SF, 430 TH on 215 acres"
+    },
+    "great_falls_forest": {
+      "display_name": "Great Falls Forest",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 1,
+        "has_pool": true,
+        "tennis_courts": 2,
+        "has_tennis": true,
+        "clubhouse": true,
+        "fitness_center": false,
+        "has_trails": true,
+        "trail_miles": null,
+        "playgrounds": 1,
+        "has_playground": true,
+        "basketball": true,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.greatfallsforesthoa.com",
+      "total_homes": 318,
+      "home_count_source": "neighborhoods.com",
+      "home_count_notes": "SF homes built 1987-1990 by 6 builders"
+    },
+    "greenfield_crossing": {
+      "display_name": "Greenfield Crossing",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 0,
+        "has_pool": false,
+        "tennis_courts": 0,
+        "has_tennis": false,
+        "clubhouse": false,
+        "fitness_center": false,
+        "has_trails": false,
+        "trail_miles": null,
+        "playgrounds": 0,
+        "has_playground": false,
+        "basketball": false,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.greenfieldcrossinghoa.com",
+      "notes": "No amenities on site"
+    },
+    "kincora": {
+      "display_name": "Kincora",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 0,
+        "has_pool": false,
+        "tennis_courts": 0,
+        "has_tennis": false,
+        "clubhouse": false,
+        "fitness_center": false,
+        "has_trails": true,
+        "trail_miles": null,
+        "playgrounds": 1,
+        "has_playground": true,
+        "basketball": false,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://kincorahoa.com",
+      "notes": "Heron's Walk trails",
+      "total_homes": 629,
+      "home_count_source": "Wikipedia",
+      "home_count_notes": "200 TH + 333 apts + 96 affordable (2,400 planned at buildout)"
+    },
+    "lansdowne_woods": {
+      "display_name": "Lansdowne Woods",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 1,
+        "has_pool": true,
+        "tennis_courts": 1,
+        "has_tennis": true,
+        "clubhouse": true,
+        "fitness_center": true,
+        "has_trails": true,
+        "trail_miles": null,
+        "playgrounds": 0,
+        "has_playground": false,
+        "basketball": false,
+        "dog_park": false,
+        "pickleball": true
+      },
+      "hoa_website": "https://www.lansdownewoodshoa.org",
+      "notes": "55+ Community",
+      "total_homes": 1113,
+      "home_count_source": "Lansdowne Woods official website",
+      "home_count_notes": "55+ condo community, 46 acres"
+    },
+    "lexington_7": {
+      "display_name": "Lexington 7",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 0,
+        "has_pool": false,
+        "tennis_courts": 0,
+        "has_tennis": false,
+        "clubhouse": false,
+        "fitness_center": false,
+        "has_trails": true,
+        "trail_miles": null,
+        "playgrounds": 0,
+        "has_playground": false,
+        "basketball": false,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.lexington7hoa.com"
+    },
+    "loudoun_crossing": {
+      "display_name": "Loudoun Crossing",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 1,
+        "has_pool": true,
+        "tennis_courts": 1,
+        "has_tennis": true,
+        "clubhouse": true,
+        "fitness_center": true,
+        "has_trails": false,
+        "trail_miles": null,
+        "playgrounds": 1,
+        "has_playground": true,
+        "basketball": false,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.loudouncrossinghoa.com",
+      "notes": "site mentions gym open and clubhouse areas; 2025 pool information page exists; MLS/management listings indicate pool, gym, tennis courts, tot lot/playground.",
+      "total_homes": 399,
+      "home_count_source": "Sequoia Management",
+      "home_count_notes": "Condos in Aldie, built 2015-2017 by Ryan Homes"
+    },
+    "moorefield_station": {
+      "display_name": "Moorefield Station",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 2,
+        "has_pool": true,
+        "tennis_courts": 2,
+        "has_tennis": true,
+        "clubhouse": true,
+        "fitness_center": true,
+        "has_trails": true,
+        "trail_miles": null,
+        "playgrounds": 0,
+        "has_playground": false,
+        "basketball": false,
+        "dog_park": false,
+        "pickleball": true
+      },
+      "hoa_website": "https://www.moorefieldhoa.org",
+      "notes": "55+ Community",
+      "total_homes": 1500,
+      "home_count_source": "homes.com",
+      "home_count_notes": "Current count; 592-acre development plans up to 6,000 homes at buildout"
+    },
+    "potomac_green": {
+      "display_name": "Potomac Green",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 1,
+        "has_pool": true,
+        "tennis_courts": 1,
+        "has_tennis": true,
+        "clubhouse": true,
+        "fitness_center": false,
+        "has_trails": false,
+        "trail_miles": null,
+        "playgrounds": 1,
+        "has_playground": true,
+        "basketball": false,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://potomacgreenhoa.com",
+      "notes": "Part of Golf Club",
+      "total_homes": 1363,
+      "home_count_source": "Potomac Green HOA",
+      "home_count_notes": "55+ Del Webb community"
+    },
+    "raspberry_falls": {
+      "display_name": "Raspberry Falls",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 1,
+        "has_pool": true,
+        "tennis_courts": 4,
+        "has_tennis": true,
+        "clubhouse": true,
+        "fitness_center": false,
+        "has_trails": true,
+        "trail_miles": 26.0,
+        "playgrounds": 1,
+        "has_playground": true,
+        "basketball": true,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.raspberryfallshoa.org",
+      "notes": "26 miles of trails",
+      "total_homes": 201,
+      "home_count_source": "LoCoMusings",
+      "home_count_notes": "Golf community, 1-acre+ lots"
+    },
+    "sugarland_run": {
+      "display_name": "Sugarland Run",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 1,
+        "has_pool": true,
+        "tennis_courts": 1,
+        "has_tennis": true,
+        "clubhouse": true,
+        "fitness_center": false,
+        "has_trails": true,
+        "trail_miles": null,
+        "playgrounds": 1,
+        "has_playground": true,
+        "basketball": false,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.sugarlandhoa.com",
+      "total_homes": 2062,
+      "home_count_source": "Sugarland Run HOA",
+      "home_count_notes": "Founded 1971, California Contemporary style"
+    },
+    "cascades_park": {
+      "display_name": "Cascades Park",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 1,
+        "has_pool": true,
+        "tennis_courts": 1,
+        "has_tennis": true,
+        "clubhouse": true,
+        "fitness_center": false,
+        "has_trails": true,
+        "trail_miles": null,
+        "playgrounds": 1,
+        "has_playground": true,
+        "basketball": false,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.cascadespark.com"
+    },
+    "dulles_farms": {
+      "display_name": "Dulles Farms",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 2,
+        "has_pool": true,
+        "tennis_courts": 3,
+        "has_tennis": true,
+        "clubhouse": true,
+        "fitness_center": true,
+        "has_trails": true,
+        "trail_miles": 5.25,
+        "playgrounds": 10,
+        "has_playground": true,
+        "basketball": false,
+        "dog_park": true,
+        "pickleball": false
+      },
+      "hoa_website": "https://dullesfarms.com",
+      "notes": "Multiple amenities .pools, 2 clubhouses with fitness rooms and meeting rooms, tennis courts, walking trails, dog park, playgrounds & nature areas per official Amenities listing.",
+      "total_homes": 1700,
+      "home_count_source": "Dulles Farms HOA",
+      "home_count_notes": "450+ acres, 4 sub-communities"
+    },
+    "greenway_farms": {
+      "display_name": "Greenway Farms",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 1,
+        "has_pool": true,
+        "tennis_courts": 1,
+        "has_tennis": true,
+        "clubhouse": true,
+        "fitness_center": false,
+        "has_trails": true,
+        "trail_miles": null,
+        "playgrounds": 1,
+        "has_playground": true,
+        "basketball": true,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.greenwayfarmshoa.com",
+      "total_homes": 408,
+      "home_count_source": "LoCoMusings",
+      "home_count_notes": "SF and TH, Leesburg"
+    },
+    "highlands_of_round_hill": {
+      "display_name": "Highlands of Round Hill",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 0,
+        "has_pool": false,
+        "tennis_courts": 2,
+        "has_tennis": true,
+        "clubhouse": false,
+        "fitness_center": false,
+        "has_trails": true,
+        "trail_miles": null,
+        "playgrounds": 1,
+        "has_playground": true,
+        "basketball": true,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.highlandsroundhill.com"
+    },
+    "loudoun_valley_ii": {
+      "display_name": "Loudoun Valley II",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 3,
+        "has_pool": true,
+        "tennis_courts": 1,
+        "has_tennis": true,
+        "clubhouse": true,
+        "fitness_center": true,
+        "has_trails": true,
+        "trail_miles": null,
+        "playgrounds": 1,
+        "has_playground": true,
+        "basketball": true,
+        "dog_park": false,
+        "pickleball": true
+      },
+      "hoa_website": "https://www.lvehoa.com",
+      "total_homes": 1100,
+      "home_count_source": "LoCoMusings",
+      "home_count_notes": "Part of Loudoun Valley Estates complex"
+    },
+    "mayfair": {
+      "display_name": "Mayfair",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 1,
+        "has_pool": true,
+        "tennis_courts": 0,
+        "has_tennis": false,
+        "clubhouse": true,
+        "fitness_center": false,
+        "has_trails": true,
+        "trail_miles": null,
+        "playgrounds": 1,
+        "has_playground": true,
+        "basketball": false,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.mayfairhoa.com",
+      "notes": "Login required site",
+      "total_homes": 262,
+      "home_count_source": "Mayfair HOA",
+      "home_count_notes": "111 SF + 151 TH, Purcellville"
+    },
+    "parkside_at_ashburn": {
+      "display_name": "Parkside at Ashburn",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 1,
+        "has_pool": true,
+        "tennis_courts": 0,
+        "has_tennis": false,
+        "clubhouse": true,
+        "fitness_center": true,
+        "has_trails": true,
+        "trail_miles": null,
+        "playgrounds": 1,
+        "has_playground": true,
+        "basketball": false,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.parksidehoa.com",
+      "notes": "GoDaddy parking page"
+    },
+    "potomac_crossing": {
+      "display_name": "Potomac Crossing",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 1,
+        "has_pool": true,
+        "tennis_courts": 0,
+        "has_tennis": false,
+        "clubhouse": false,
+        "fitness_center": false,
+        "has_trails": true,
+        "trail_miles": null,
+        "playgrounds": 1,
+        "has_playground": true,
+        "basketball": true,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.potomaccrossinghoa.com",
+      "total_homes": 921,
+      "home_count_source": "LoCoMusings",
+      "home_count_notes": "385 TH + 536 SF, Leesburg"
+    },
+    "residences_at_dulles_parkway_center": {
+      "display_name": "Residences at Dulles Parkway Center",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 1,
+        "has_pool": true,
+        "tennis_courts": 0,
+        "has_tennis": false,
+        "clubhouse": true,
+        "fitness_center": true,
+        "has_trails": false,
+        "trail_miles": null,
+        "playgrounds": 0,
+        "has_playground": false,
+        "basketball": false,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.residencesatdulles.com",
+      "total_homes": 124,
+      "home_count_source": "northernvirginiahomepro",
+      "home_count_notes": "TH-style condos by K. Hovnanian, built 2011-2013"
+    },
+    "richland_forest": {
+      "display_name": "Richland Forest",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 0,
+        "has_pool": false,
+        "tennis_courts": 0,
+        "has_tennis": false,
+        "clubhouse": false,
+        "fitness_center": false,
+        "has_trails": false,
+        "trail_miles": null,
+        "playgrounds": 0,
+        "has_playground": false,
+        "basketball": false,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.richlandforesthouse.com",
+      "notes": "No private amenities",
+      "total_homes": 206,
+      "home_count_source": "Loudoun BoS Staff Report",
+      "home_count_notes": "Sterling neighborhood, est. 1950"
+    },
+    "rivercrest": {
+      "display_name": "Rivercrest",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 1,
+        "has_pool": true,
+        "tennis_courts": 0,
+        "has_tennis": false,
+        "clubhouse": true,
+        "fitness_center": false,
+        "has_trails": true,
+        "trail_miles": null,
+        "playgrounds": 1,
+        "has_playground": true,
+        "basketball": false,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.rivercrest.com",
+      "total_homes": 300,
+      "home_count_source": "Real estate listings",
+      "home_count_notes": "Sterling, backs to Algonkian Park"
+    },
+    "seneca_chase": {
+      "display_name": "Seneca Chase",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 0,
+        "has_pool": false,
+        "tennis_courts": 0,
+        "has_tennis": false,
+        "clubhouse": false,
+        "fitness_center": false,
+        "has_trails": true,
+        "trail_miles": null,
+        "playgrounds": 1,
+        "has_playground": true,
+        "basketball": true,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.senecachasehoa.com"
+    },
+    "seneca_ridge": {
+      "display_name": "Seneca Ridge",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 0,
+        "has_pool": false,
+        "tennis_courts": 0,
+        "has_tennis": false,
+        "clubhouse": false,
+        "fitness_center": false,
+        "has_trails": true,
+        "trail_miles": null,
+        "playgrounds": 1,
+        "has_playground": true,
+        "basketball": false,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.senecaridgehoa.com",
+      "total_homes": 182,
+      "home_count_source": "Seneca Ridge HOA",
+      "home_count_notes": "Sterling location"
+    },
+    "sycamore_hill": {
+      "display_name": "Sycamore Hill",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 1,
+        "has_pool": true,
+        "tennis_courts": 2,
+        "has_tennis": true,
+        "clubhouse": false,
+        "fitness_center": false,
+        "has_trails": false,
+        "trail_miles": null,
+        "playgrounds": 5,
+        "has_playground": true,
+        "basketball": true,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.sycamorehillhoa.com",
+      "notes": "Pool, 2 tennis courts, 5 playgrounds, basketball courts per official Amenities page",
+      "total_homes": 475,
+      "home_count_source": "LoCoMusings",
+      "home_count_notes": "All townhomes, Leesburg"
+    },
+    "tavistock_farms": {
+      "display_name": "Tavistock Farms",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 1,
+        "has_pool": true,
+        "tennis_courts": 3,
+        "has_tennis": true,
+        "clubhouse": true,
+        "fitness_center": false,
+        "has_trails": true,
+        "trail_miles": null,
+        "playgrounds": 1,
+        "has_playground": true,
+        "basketball": false,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.tavistockfarmshoa.com",
+      "total_homes": 518,
+      "home_count_source": "LoCoMusings / Tavistock Farms HOA",
+      "home_count_notes": "305 SF + 213 TH, Leesburg, opened mid-1990s"
+    },
+    "the_regency": {
+      "display_name": "The Regency",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 1,
+        "has_pool": true,
+        "tennis_courts": 0,
+        "has_tennis": false,
+        "clubhouse": true,
+        "fitness_center": true,
+        "has_trails": false,
+        "trail_miles": null,
+        "playgrounds": 0,
+        "has_playground": false,
+        "basketball": false,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.theregencyhoa.org"
+    },
+    "the_reserve_at_rokeby_farm": {
+      "display_name": "The Reserve at Rokeby Farm",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 0,
+        "has_pool": false,
+        "tennis_courts": 0,
+        "has_tennis": false,
+        "clubhouse": false,
+        "fitness_center": false,
+        "has_trails": true,
+        "trail_miles": null,
+        "playgrounds": 0,
+        "has_playground": false,
+        "basketball": false,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.reserveatrokeby.com"
+    },
+    "vantage_pointe": {
+      "display_name": "Vantage Pointe",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 0,
+        "has_pool": false,
+        "tennis_courts": 0,
+        "has_tennis": false,
+        "clubhouse": false,
+        "fitness_center": false,
+        "has_trails": true,
+        "trail_miles": null,
+        "playgrounds": 0,
+        "has_playground": false,
+        "basketball": false,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.vantagepointehoa.com",
+      "notes": "Woodland preservation"
+    },
+    "village_of_waxpool": {
+      "display_name": "Village of Waxpool",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 1,
+        "has_pool": true,
+        "tennis_courts": 0,
+        "has_tennis": false,
+        "clubhouse": false,
+        "fitness_center": false,
+        "has_trails": true,
+        "trail_miles": null,
+        "playgrounds": 1,
+        "has_playground": true,
+        "basketball": false,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.waxpoolhoa.com"
+    },
+    "waterford_view_estates": {
+      "display_name": "Waterford View Estates",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 0,
+        "has_pool": false,
+        "tennis_courts": 0,
+        "has_tennis": false,
+        "clubhouse": false,
+        "fitness_center": false,
+        "has_trails": false,
+        "trail_miles": null,
+        "playgrounds": 0,
+        "has_playground": false,
+        "basketball": false,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.waterfordviewhoa.com"
+    },
+    "westerley": {
+      "display_name": "Westerley",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 1,
+        "has_pool": true,
+        "tennis_courts": 0,
+        "has_tennis": false,
+        "clubhouse": true,
+        "fitness_center": false,
+        "has_trails": true,
+        "trail_miles": null,
+        "playgrounds": 1,
+        "has_playground": true,
+        "basketball": false,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.westerlyhoa.com",
+      "total_homes": 313,
+      "home_count_source": "Westerley HOA",
+      "home_count_notes": "SF and TH"
+    },
+    "windermere": {
+      "display_name": "Windermere",
+      "data_source": "VA Research Team",
+      "data_verified": "12/24/2025",
+      "verified_by": "Javeria",
+      "amenities": {
+        "pools": 1,
+        "has_pool": true,
+        "tennis_courts": 1,
+        "has_tennis": true,
+        "clubhouse": true,
+        "fitness_center": false,
+        "has_trails": true,
+        "trail_miles": null,
+        "playgrounds": 1,
+        "has_playground": true,
+        "basketball": true,
+        "dog_park": false,
+        "pickleball": false
+      },
+      "hoa_website": "https://www.windermerehoa.com",
+      "total_homes": 197,
+      "home_count_source": "Sequoia Management",
+      "home_count_notes": "Pulte Homes, Ashburn"
+    }
+  },
+  "_todo": {
+    "communities_to_add": [
+      "CountrySide",
+      "Dulles Farms",
+      "Kincora",
+      "Loudoun Valley II",
+      "Loudoun Valley III",
+      "Moorefield Station",
+      "Potomac Green",
+      "Raspberry Falls",
+      "Sugarland Run"
+    ],
+    "data_to_verify": [
+      "HOA monthly fees for communities without 2024/2025 data",
+      "Pool counts and details",
+      "Tennis court counts",
+      "Trail mileage"
+    ]
+  }
+}

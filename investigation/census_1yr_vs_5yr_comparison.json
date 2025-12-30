@@ -1,0 +1,129 @@
+{
+  "comparison_date": "2025-12-29",
+  "acs_1yr_2023": {
+    "lfpr": 73.4,
+    "lfpr_moe": 1.0,
+    "emp_to_pop_ratio": 70.4,
+    "emp_to_pop_moe": 1.1,
+    "industries": {
+      "Agriculture/Mining": {
+        "value": 0.4,
+        "moe": 0.2
+      },
+      "Construction": {
+        "value": 5.2,
+        "moe": 0.8
+      },
+      "Manufacturing": {
+        "value": 4.1,
+        "moe": 0.7
+      },
+      "Wholesale trade": {
+        "value": 1.0,
+        "moe": 0.5
+      },
+      "Retail trade": {
+        "value": 7.4,
+        "moe": 1.2
+      },
+      "Transportation/Utilities": {
+        "value": 3.7,
+        "moe": 0.7
+      },
+      "Information (Tech)": {
+        "value": 3.5,
+        "moe": 0.5
+      },
+      "Finance/Insurance/RE": {
+        "value": 7.8,
+        "moe": 0.9
+      },
+      "Professional/Scientific": {
+        "value": 31.8,
+        "moe": 1.7
+      },
+      "Education/Healthcare": {
+        "value": 17.2,
+        "moe": 1.4
+      },
+      "Arts/Entertainment/Food": {
+        "value": 5.0,
+        "moe": 0.8
+      },
+      "Other services": {
+        "value": 5.4,
+        "moe": 1.0
+      },
+      "Public administration": {
+        "value": 7.5,
+        "moe": 1.0
+      }
+    }
+  },
+  "acs_5yr_2019_2023": {
+    "lfpr": 74.1,
+    "lfpr_moe": 0.6,
+    "emp_to_pop_ratio": 71.3,
+    "emp_to_pop_moe": 0.6,
+    "industries": {
+      "Agriculture/Mining": {
+        "value": 0.6,
+        "moe": 0.2
+      },
+      "Construction": {
+        "value": 5.0,
+        "moe": 0.4
+      },
+      "Manufacturing": {
+        "value": 4.4,
+        "moe": 0.4
+      },
+      "Wholesale trade": {
+        "value": 1.2,
+        "moe": 0.2
+      },
+      "Retail trade": {
+        "value": 7.4,
+        "moe": 0.5
+      },
+      "Transportation/Utilities": {
+        "value": 4.1,
+        "moe": 0.4
+      },
+      "Information (Tech)": {
+        "value": 3.7,
+        "moe": 0.3
+      },
+      "Finance/Insurance/RE": {
+        "value": 7.9,
+        "moe": 0.5
+      },
+      "Professional/Scientific": {
+        "value": 29.6,
+        "moe": 0.9
+      },
+      "Education/Healthcare": {
+        "value": 16.8,
+        "moe": 0.6
+      },
+      "Arts/Entertainment/Food": {
+        "value": 6.7,
+        "moe": 0.5
+      },
+      "Other services": {
+        "value": 4.7,
+        "moe": 0.4
+      },
+      "Public administration": {
+        "value": 8.0,
+        "moe": 0.5
+      }
+    }
+  },
+  "recommendation": {
+    "primary_source": "ACS 5-Year",
+    "reason": "Lower margin of error, more stable for OM baseline",
+    "supplemental": "ACS 1-Year for trend analysis when meaningful"
+  },
+  "avg_moe_ratio_1yr_to_5yr": 1.94
+}

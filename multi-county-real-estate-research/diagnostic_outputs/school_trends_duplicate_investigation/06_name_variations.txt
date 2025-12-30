@@ -1,0 +1,35 @@
+======================================================================
+SCHOOL NAME VARIATION ANALYSIS
+======================================================================
+
+ALL SCHOOLS CONTAINING 'BELMONT':
+----------------------------------------------------------------------
+  'Belmont Elementary'
+    Records: 5
+  'Belmont Ridge Middle'
+    Records: 5
+  'Belmont Station Elementary '
+    Records: 5
+    ⚠️ HAS TRAILING SPACE
+
+
+ALL SCHOOLS CONTAINING 'RIVERSIDE':
+----------------------------------------------------------------------
+  'Riverside Elementary'
+    Records: 10
+  'Riverside High'
+    Records: 5
+
+
+NAME NORMALIZATION NEEDED: YES
+----------------------------------------------------------------------
+Issue 1: Search pattern uses first word only
+  - 'Belmont Ridge Middle'.split()[0] = 'Belmont'
+  - Matches multiple schools with same first word
+
+Issue 2: Trailing whitespace in some school names
+  - 'Belmont Station Elementary ' has trailing space
+
+RECOMMENDATION:
+  Use exact match or more specific search pattern
+  e.g., df['School_Name'].str.strip() == school.strip()

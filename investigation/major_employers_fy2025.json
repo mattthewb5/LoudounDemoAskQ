@@ -1,0 +1,209 @@
+{
+  "source": "Loudoun County ACFR FY2025 - Table O",
+  "document_url": "https://www.loudoun.gov/DocumentCenter/View/218084/Loudoun-County-ACFR-FY-2025",
+  "as_of_date": "2025-06-30",
+  "fiscal_year": "FY2025",
+  "note": "Employment ranges used for some employers; percentages based on midpoint of range",
+  "total_county_employment_source": "Virginia Employment Commission and BLS data files",
+  "current_year": {
+    "year": 2025,
+    "total_pct_of_employment": 21.36,
+    "employers": [
+      {
+        "rank": 1,
+        "name": "Loudoun County Public Schools",
+        "employees": 13281,
+        "employees_display": "13,281",
+        "pct_of_total": 6.71,
+        "industry": "Education/Government"
+      },
+      {
+        "rank": 2,
+        "name": "County of Loudoun",
+        "employees": 5059,
+        "employees_display": "5,059",
+        "pct_of_total": 2.56,
+        "industry": "Government"
+      },
+      {
+        "rank": 3,
+        "name": "U.S. Department of Homeland Security",
+        "employees_range": [2500, 5000],
+        "employees_midpoint": 3750,
+        "employees_display": "2,500 - 5,000",
+        "pct_of_total": 1.89,
+        "industry": "Federal Government"
+      },
+      {
+        "rank": 4,
+        "name": "Northrop Grumman",
+        "former_name": "Orbital ATK at this location",
+        "employees_range": [2500, 5000],
+        "employees_midpoint": 3750,
+        "employees_display": "2,500 - 5,000",
+        "pct_of_total": 1.89,
+        "industry": "Aerospace/Defense"
+      },
+      {
+        "rank": 5,
+        "name": "United Airlines",
+        "employees_range": [2500, 5000],
+        "employees_midpoint": 3750,
+        "employees_display": "2,500 - 5,000",
+        "pct_of_total": 1.89,
+        "industry": "Transportation/Aviation"
+      },
+      {
+        "rank": 6,
+        "name": "Amazon",
+        "employees_range": [2500, 5000],
+        "employees_midpoint": 3750,
+        "employees_display": "2,500 - 5,000",
+        "pct_of_total": 1.89,
+        "industry": "Technology/E-commerce"
+      },
+      {
+        "rank": 7,
+        "name": "Inova Health System",
+        "aka": "Loudoun Hospital Center",
+        "employees_range": [2500, 5000],
+        "employees_midpoint": 3750,
+        "employees_display": "2,500 - 5,000",
+        "pct_of_total": 1.89,
+        "industry": "Healthcare"
+      },
+      {
+        "rank": 8,
+        "name": "Verizon",
+        "employees_range": [1000, 2500],
+        "employees_midpoint": 1750,
+        "employees_display": "1,000 - 2,500",
+        "pct_of_total": 0.88,
+        "industry": "Telecommunications"
+      },
+      {
+        "rank": 9,
+        "name": "Dynalectric",
+        "employees_range": [1000, 2500],
+        "employees_midpoint": 1750,
+        "employees_display": "1,000 - 2,500",
+        "pct_of_total": 0.88,
+        "industry": "Construction/Electrical"
+      },
+      {
+        "rank": 10,
+        "name": "Walmart",
+        "employees_range": [1000, 2500],
+        "employees_midpoint": 1750,
+        "employees_display": "1,000 - 2,500",
+        "pct_of_total": 0.88,
+        "industry": "Retail"
+      }
+    ]
+  },
+  "comparison_year": {
+    "year": 2016,
+    "total_pct_of_employment": 18.58,
+    "employers": [
+      {
+        "rank": 1,
+        "name": "Loudoun County Public Schools",
+        "employees": 10210,
+        "employees_display": "10,210",
+        "pct_of_total": 6.41,
+        "industry": "Education/Government"
+      },
+      {
+        "rank": 2,
+        "name": "County of Loudoun",
+        "employees": 3377,
+        "employees_display": "3,377",
+        "pct_of_total": 2.12,
+        "industry": "Government"
+      },
+      {
+        "rank": 3,
+        "name": "Verizon",
+        "employees_range": [2500, 4999],
+        "employees_midpoint": 3750,
+        "employees_display": "2,500 - 4,999",
+        "pct_of_total": 2.35,
+        "industry": "Telecommunications"
+      },
+      {
+        "rank": 4,
+        "name": "U.S. Department of Homeland Security",
+        "employees_range": [1000, 2499],
+        "employees_midpoint": 1750,
+        "employees_display": "1,000 - 2,499",
+        "pct_of_total": 1.10,
+        "industry": "Federal Government"
+      },
+      {
+        "rank": 5,
+        "name": "United Airlines",
+        "employees_range": [1000, 2499],
+        "employees_midpoint": 1750,
+        "employees_display": "1,000 - 2,499",
+        "pct_of_total": 1.10,
+        "industry": "Transportation/Aviation"
+      },
+      {
+        "rank": 6,
+        "name": "Inova Health System",
+        "aka": "Loudoun Hospital Center",
+        "employees_range": [1000, 2499],
+        "employees_midpoint": 1750,
+        "employees_display": "1,000 - 2,499",
+        "pct_of_total": 1.10,
+        "industry": "Healthcare"
+      },
+      {
+        "rank": 7,
+        "name": "RTX",
+        "former_name": "Raytheon Technologies",
+        "employees_range": [1000, 2499],
+        "employees_midpoint": 1750,
+        "employees_display": "1,000 - 2,499",
+        "pct_of_total": 1.10,
+        "industry": "Aerospace/Defense"
+      },
+      {
+        "rank": 8,
+        "name": "Orbital ATK Inc",
+        "former_name": "Orbital Sciences",
+        "employees_range": [1000, 2499],
+        "employees_midpoint": 1750,
+        "employees_display": "1,000 - 2,499",
+        "pct_of_total": 1.10,
+        "industry": "Aerospace/Defense"
+      },
+      {
+        "rank": 9,
+        "name": "Swissport USA, Inc",
+        "employees_range": [1000, 2499],
+        "employees_midpoint": 1750,
+        "employees_display": "1,000 - 2,499",
+        "pct_of_total": 1.10,
+        "industry": "Aviation Services"
+      },
+      {
+        "rank": 10,
+        "name": "U.S. Postal Service",
+        "employees_range": [1000, 2499],
+        "employees_midpoint": 1750,
+        "employees_display": "1,000 - 2,499",
+        "pct_of_total": 1.10,
+        "industry": "Federal Government"
+      }
+    ]
+  },
+  "data_quality_notes": [
+    "PDF is machine-readable - extracted successfully with PyPDF2",
+    "Employment ranges used for most employers (not exact counts)",
+    "Percentages calculated using range midpoints",
+    "New entrants since 2016: Amazon, Northrop Grumman, Dynalectric, Walmart",
+    "Dropped from top 10: RTX, Orbital ATK (merged into Northrop Grumman), Swissport, USPS",
+    "Verizon declined from rank 3 to rank 8 (significant reduction)"
+  ]
+}

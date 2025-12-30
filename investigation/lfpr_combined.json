@@ -1,0 +1,94 @@
+{
+  "title": "Labor Force Participation - Combined Data Structure",
+  "purpose": "Dual-source approach for Offering Memorandum with explicit dating",
+  "created": "2025-12-29",
+
+  "census_baseline": {
+    "lfpr": 74.1,
+    "lfpr_moe": 0.6,
+    "source": "Census ACS 2019-2023 5-Year Estimates",
+    "dataset": "DP03_0002PE",
+    "data_vintage": "2019-2023",
+    "effective_midpoint": "~2021",
+    "api_endpoint": "https://api.census.gov/data/2023/acs/acs5/profile",
+    "comparison": {
+      "virginia": {
+        "lfpr": 65.6,
+        "difference_from_loudoun": -8.5
+      },
+      "usa": {
+        "lfpr": 63.5,
+        "difference_from_loudoun": -10.6
+      }
+    },
+    "interpretation": "Loudoun County's LFPR of 74.1% is 10.6 percentage points higher than the national average, indicating an exceptionally engaged workforce.",
+    "recommendation": "Use as baseline metric for OM comparisons due to lower margin of error and methodological consistency across geographies."
+  },
+
+  "census_supplemental": {
+    "lfpr": 73.4,
+    "lfpr_moe": 1.0,
+    "source": "Census ACS 2023 1-Year Estimates",
+    "dataset": "DP03_0002PE",
+    "data_vintage": "2023",
+    "note": "Most recent single-year estimate. LFPR difference from 5-Year (-0.7%) is within margin of error.",
+    "use_case": "Supplement 5-Year baseline when highlighting recent trends, but note higher MOE."
+  },
+
+  "bls_current": {
+    "labor_force": 253982,
+    "as_of_date": "December 2024",
+    "source": "BLS Local Area Unemployment Statistics",
+    "api_endpoint": "https://api.bls.gov/publicAPI/v2/timeseries/data/",
+    "series_id": "LAUCN511070000000006",
+    "yoy_comparison": {
+      "prior_value": 250262,
+      "prior_date": "December 2023",
+      "change_pct": 1.49
+    },
+    "moving_avg_12mo": 254774,
+    "trend_direction": "stable",
+    "unemployment_rate": {
+      "current": 2.2,
+      "prior_year": 2.0,
+      "virginia_comparison": 2.9
+    },
+    "seasonal_note": "Data is NOT seasonally adjusted. Year-over-year comparisons recommended."
+  },
+
+  "methodology_notes": [
+    "Census LFPR is pre-calculated and methodologically consistent across geographies",
+    "Census 5-Year estimates have ~2x lower margin of error than 1-Year",
+    "BLS provides more current data but requires population denominator from Census to calculate LFPR",
+    "BLS county-level data is not seasonally adjusted - use YoY comparisons for trends",
+    "Recommended approach: Use Census 5-Year for baseline rate, BLS for trend/trajectory",
+    "Data center employment note: Many tech workers are based in Fairfax/Arlington offices while infrastructure is physically located in Loudoun"
+  ],
+
+  "display_format": {
+    "recommended_layout": "LABOR FORCE PARTICIPATION\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nBaseline Rate: 74.1%\n  └─ Source: Census ACS 2019-2023 5-Year Estimates\n  └─ Loudoun vs Virginia: +8.5 pts | vs USA: +10.6 pts\n\nCurrent Labor Force: 253,982 (Dec 2024)\n  └─ Source: BLS Local Area Unemployment Statistics\n  └─ Year-over-Year: +1.5% vs Dec 2023\n  └─ 12-Month Trend: Stable\n\nNote: Census provides stable baseline; BLS shows current trajectory.",
+    "key_takeaways": [
+      "74.1% LFPR - significantly above national average",
+      "253,982 labor force - growing 1.5% YoY",
+      "2.2% unemployment rate - well below Virginia (2.9%)"
+    ]
+  },
+
+  "data_freshness": {
+    "census_5yr": {
+      "release_date": "December 2024",
+      "data_period": "2019-2023",
+      "next_update": "December 2025 (2020-2024 estimates)"
+    },
+    "census_1yr": {
+      "release_date": "September 2024",
+      "data_period": "2023",
+      "next_update": "September 2025 (2024 estimates)"
+    },
+    "bls_laus": {
+      "release_frequency": "Monthly",
+      "typical_lag": "~4 weeks after reference month",
+      "current_data": "December 2024"
+    }
+  }
+}

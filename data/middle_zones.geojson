@@ -1,0 +1,40 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "SCHOOL_NAME": "Clarke Middle School",
+        "SCHOOL": "Clarke Middle",
+        "ADDRESS": "350 S Milledge Avenue, Athens, GA 30605"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -83.39,
+              33.95
+            ],
+            [
+              -83.365,
+              33.95
+            ],
+            [
+              -83.365,
+              33.97
+            ],
+            [
+              -83.39,
+              33.97
+            ],
+            [
+              -83.39,
+              33.95
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

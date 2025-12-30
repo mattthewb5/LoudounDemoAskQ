@@ -1,0 +1,152 @@
+================================================================================
+GIS DATA LOADING PERFORMANCE ANALYSIS
+================================================================================
+
+Analysis Date: 2025-12-19
+Branch: claude/verify-neighborhood-integration-MGlc6
+
+================================================================================
+GIS DATA SOURCES IDENTIFIED
+================================================================================
+
+1. ROADS (Shapefile)
+   - Location: data/loudoun/gis/roads/*.shp
+   - Format: ESRI Shapefile (4 files: .shp, .dbf, .shx, .prj)
+   - Size: ~7-8 MB (estimated)
+   - Loading: gpd.read_file() via GeoPandas
+   - CRS Transformation: EPSG:2924 (VA State Plane) → EPSG:4326 (WGS84)
+   - Post-processing:
+     * Filter highways (11 patterns)
+     * Filter collectors (17 patterns + road groups + class filter)
+   - Used by: LocationQualityAnalyzer._load_gis_data()
+
+2. AIOD ZONES (Shapefile)
+   - Location: data/loudoun/gis/aiod/*.shp
+   - Format: ESRI Shapefile
+   - Size: ~500 KB (estimated)
+   - Loading: gpd.read_file() via GeoPandas
+   - CRS Transformation: EPSG:2924 → EPSG:4326
+   - Post-processing: None (direct polygon containment checks)
+   - Used by: LocationQualityAnalyzer._load_gis_data()
+
+3. POWER LINES (GeoJSON)
+   - Location: data/loudoun/utilities/Major_Power_Lines.geojson
+   - Format: GeoJSON
+   - Size: ~400 KB (estimated)
+   - Loading: json.load() (Python standard library)
+   - CRS Transformation: None (already WGS84)
+   - Post-processing: Parse features into list
+   - Used by: PowerLineAnalyzer._load_power_lines()
+
+================================================================================
+CURRENT LOADING PATTERN
+================================================================================
+
+LocationQualityAnalyzer:
+  - Created fresh each property analysis
+  - Loads roads + AIOD on every instantiation
+  - Pattern in orchestrator: analyzer = LocationQualityAnalyzer()
+  - Pattern in module: quick_location_check() creates new instance
+
+PowerLineAnalyzer:
+  - Has module-level singleton: _analyzer_instance
+  - Uses get_power_line_analyzer() factory
+  - BUT: Not using Streamlit caching - reloads on each rerun
+
+================================================================================
+ESTIMATED TIMING BREAKDOWN
+================================================================================
+
+Roads Loading:
+  - File I/O (shapefile): 1-2 seconds
+  - CRS transformation: 2-3 seconds
+  - Filter highways: 0.1 seconds
+  - Filter collectors: 0.2 seconds
+  - Subtotal: 3-5 seconds
+
+AIOD Loading:
+  - File I/O (shapefile): 0.5-1 second
+  - CRS transformation: 0.5-1 second
+  - Subtotal: 1-2 seconds
+
+Power Lines Loading:
+  - File I/O (GeoJSON): 0.1-0.2 seconds
+  - Parse features: 0.1 seconds
+  - Subtotal: 0.2-0.4 seconds
+
+TOTAL PER PROPERTY ANALYSIS: 4-8 seconds (GIS portion only)
+
+================================================================================
+CACHING STRATEGY
+================================================================================
+
+Create: core/loudoun_gis_data.py
+
+Functions to add:
+  1. @st.cache_resource get_cached_roads_data()
+     - Returns: (highways GeoDataFrame, collectors GeoDataFrame)
+     - Includes CRS transformation
+
+  2. @st.cache_resource get_cached_aiod_zones()
+     - Returns: AIOD GeoDataFrame
+     - Includes CRS transformation
+
+  3. @st.cache_resource get_cached_power_lines()
+     - Returns: List of power line dicts
+     - JSON parsing included
+
+Update: core/location_quality_analyzer.py
+  - Accept pre-loaded GIS data in __init__
+  - Add factory: get_cached_location_analyzer()
+
+Update: core/loudoun_utilities_analysis.py
+  - Use cached power lines from loudoun_gis_data.py
+
+================================================================================
+EXPECTED RESULTS
+================================================================================
+
+BEFORE:
+  First property: 4-8 seconds (GIS loading)
+  Second property: 4-8 seconds (reload GIS)
+  Third property: 4-8 seconds (reload GIS)
+
+AFTER:
+  First property: 4-8 seconds (initial cache fill)
+  Second property: ~0s (instant cache hit)
+  Third property: ~0s (instant cache hit)
+
+Combined with sales data caching (Part 2):
+  First property: 2.83s (sales) + 4-8s (GIS) = 7-11s total
+  Second property: ~0s (both cached)
+
+================================================================================
+FILES TO MODIFY
+================================================================================
+
+1. CREATE: core/loudoun_gis_data.py
+   - Cached GIS loading functions
+   - Multi-county pattern (like sales data)
+
+2. MODIFY: core/location_quality_analyzer.py
+   - Accept pre-loaded data
+   - Add cached factory function
+
+3. MODIFY: core/loudoun_utilities_analysis.py
+   - Use cached power lines
+
+4. MODIFY: core/property_valuation_orchestrator.py
+   - Use cached analyzers
+
+================================================================================
+NEXT STEPS
+================================================================================
+
+Phase 2: Create core/loudoun_gis_data.py with cached functions
+Phase 3: Update LocationQualityAnalyzer to use cached data
+Phase 4: Update PowerLineAnalyzer to use cached data
+Phase 5: Update orchestrator
+Phase 6: Test caching behavior
+Phase 7: Integration testing
+
+================================================================================

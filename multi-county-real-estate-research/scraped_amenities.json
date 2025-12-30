@@ -1,0 +1,135 @@
+[
+  {
+    "community": "Broadlands",
+    "amenities": {
+      "pools": 1,
+      "has_pool": true,
+      "tennis_courts": 1,
+      "has_tennis": true,
+      "has_clubhouse": true,
+      "has_fitness": true,
+      "trail_miles": null,
+      "has_trails": true,
+      "playgrounds": 1,
+      "has_playground": true,
+      "has_basketball": true,
+      "has_dog_park": false,
+      "has_pickleball": true
+    },
+    "fees": null,
+    "source": "public_website",
+    "base_url": "https://www.broadlandshoa.org",
+    "urls_scraped": [
+      "https://www.broadlandshoa.org",
+      "https://www.broadlandshoa.org/about-broadlands/",
+      "https://www.broadlandshoa.org/amenities/fitness-center/",
+      "https://www.broadlandshoa.org/amenities/pool/",
+      "https://www.broadlandshoa.org/amenities/community-center-rental-information/",
+      "https://www.broadlandshoa.org/outside-pool-membership/"
+    ]
+  },
+  {
+    "community": "Potomac Station",
+    "amenities": {
+      "pools": 1,
+      "has_pool": true,
+      "tennis_courts": 1,
+      "has_tennis": true,
+      "has_clubhouse": true,
+      "has_fitness": false,
+      "trail_miles": null,
+      "has_trails": true,
+      "playgrounds": 1,
+      "has_playground": true,
+      "has_basketball": true,
+      "has_dog_park": false,
+      "has_pickleball": true
+    },
+    "fees": null,
+    "source": "public_website",
+    "base_url": "https://potomacstation.org",
+    "urls_scraped": [
+      "https://potomacstation.org",
+      "https://potomacstation.org/",
+      "https://potomacstation.org/aboutus/",
+      "https://potomacstation.org/amenities/"
+    ]
+  },
+  {
+    "community": "Willowsford",
+    "amenities": {
+      "pools": 1,
+      "has_pool": true,
+      "tennis_courts": 0,
+      "has_tennis": false,
+      "has_clubhouse": false,
+      "has_fitness": true,
+      "trail_miles": null,
+      "has_trails": false,
+      "playgrounds": 0,
+      "has_playground": false,
+      "has_basketball": false,
+      "has_dog_park": true,
+      "has_pickleball": false
+    },
+    "fees": null,
+    "source": "public_website",
+    "base_url": "https://www.willowsfordlife.com",
+    "urls_scraped": [
+      "https://www.willowsfordlife.com",
+      "https://www.willowsfordlife.com/CivicAlerts.aspx?AID=80",
+      "https://www.willowsfordlife.com/27/AMENITIES",
+      "https://www.willowsfordlife.com/35/COMMUNITY"
+    ]
+  },
+  {
+    "community": "Brambleton",
+    "amenities": {
+      "pools": 0,
+      "has_pool": false,
+      "tennis_courts": 0,
+      "has_tennis": false,
+      "has_clubhouse": false,
+      "has_fitness": false,
+      "trail_miles": null,
+      "has_trails": false,
+      "playgrounds": 0,
+      "has_playground": false,
+      "has_basketball": false,
+      "has_dog_park": false,
+      "has_pickleball": false
+    },
+    "fees": null,
+    "source": "public_website",
+    "base_url": "https://www.brambletonva.com",
+    "urls_scraped": [
+      "https://www.brambletonva.com",
+      "https://www.brambletonva.com/about"
+    ]
+  },
+  {
+    "community": "One Loudoun",
+    "amenities": {
+      "pools": 1,
+      "has_pool": true,
+      "tennis_courts": 1,
+      "has_tennis": true,
+      "has_clubhouse": false,
+      "has_fitness": false,
+      "trail_miles": null,
+      "has_trails": true,
+      "playgrounds": 1,
+      "has_playground": true,
+      "has_basketball": true,
+      "has_dog_park": true,
+      "has_pickleball": true
+    },
+    "fees": null,
+    "source": "public_website",
+    "base_url": "https://www.1lna.com",
+    "urls_scraped": [
+      "https://www.1lna.com",
+      "https://www.1lna.com/about"
+    ]
+  }
+]

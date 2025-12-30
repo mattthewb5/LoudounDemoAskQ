@@ -1,0 +1,52 @@
+======================================================================
+EDGE CASES & RECOMMENDATIONS
+======================================================================
+
+SCHOOLS REQUIRING SPECIAL HANDLING:
+----------------------------------------------------------------------
+
+Found 1 collision group(s):
+
+Collision: 'STERLING'
+  - Sterling Elementary
+  - Sterling Middle
+
+SPECIAL CASE: Sterling Elementary vs Sterling Middle
+----------------------------------------------------------------------
+Both normalize to 'STERLING' - this is expected behavior.
+These are different school LEVELS (Elementary vs Middle).
+The school boundary data assigns schools by level, so:
+  - If boundary assigns 'Sterling Elementary' → match 'Sterling Elementary'
+  - If boundary assigns 'Sterling Middle' → match 'Sterling Middle'
+  - The school TYPE should distinguish them in practice
+
+RECOMMENDATION: This collision is ACCEPTABLE because:
+  1. School assignments come with implicit level (elem/middle/high)
+  2. Chart data is grouped by level anyway
+  3. A property won't be assigned both Sterling Elementary AND Middle
+
+RECOMMENDED LOOKUP TABLE:
+----------------------------------------------------------------------
+NOT NEEDED - Enhanced normalizer handles all cases for Loudoun.
+
+ALTERNATIVE NORMALIZATION STRATEGIES:
+----------------------------------------------------------------------
+If issues arise in production, consider:
+1. Pre-computed lookup table mapping boundary names to VADOE names
+2. Keep School_Type in matching (Elementary/Middle/High)
+3. Fuzzy matching with high threshold as fallback
+
+IMPLEMENTATION SAFETY:
+----------------------------------------------------------------------
+Enhanced normalizer safe for all schools: YES
+  - Only 1 collision exists (Sterling) and it's by design
+  - Sterling schools are different levels, not duplicates
+
+Manual lookup table needed: NO
+  - All test address schools match correctly
+  - Middle initial variations (Steuart W. Weller) now match
+
+Risk level: LOW
+  - No new collisions created
+  - Fixes the duplicate chart line bug
+  - Backward compatible (schools without initials unchanged)

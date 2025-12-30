@@ -1,0 +1,81 @@
+#ASSMT_CD,HIGHEST_RECENT_IND,LONG_SCHOOL_YEAR,SCHOOL_DSTRCT_CD,SCHOOL_DSTRCT_NM,INSTN_NUMBER,INSTN_NAME,SUBGRP_DESC,TEST_CMPNT_TYP_CD,NATIONAL_NUM_TESTED_CNT,STATE_NUM_TESTED_CNT,DSTRCT_NUM_TESTED_CNT,INSTN_NUM_TESTED_CNT,NATIONAL_AVG_SCORE_VAL,STATE_AVG_SCORE_VAL,DSTRCT_AVG_SCORE_VAL,INSTN_AVG_SCORE_VAL,source_file,SCHOOL_DISTRCT_CD
+SAT,Highest,2022-23,629.0,Clarke County,102,Cedar Shoals High School,All Students,Combined Test Score,1913742.0,38401.0,187.3,74,508.0,1035.4,990.6,977.8,SAT_2022-23_Highest_2024-05-02_10_46_31.csv,
+SAT,Highest,2022-23,629.0,Clarke County,102,Cedar Shoals High School,All Students,Math Section Score - New,1913742.0,38511.0,190,74,508.0,505.6,481.5,484.5,SAT_2022-23_Highest_2024-05-02_10_46_31.csv,
+SAT,Highest,2022-23,629.0,Clarke County,102,Cedar Shoals High School,All Students,Reading Test  Score - New,1913742.0,38346.0,186,74,,268.2,258.5,250.4,SAT_2022-23_Highest_2024-05-02_10_46_31.csv,
+SAT,Highest,2022-23,629.0,Clarke County,102,Cedar Shoals High School,All Students,WritLang Test  Score - New,1913742.0,38347.0,186,74,,261.6,250.6,243,SAT_2022-23_Highest_2024-05-02_10_46_31.csv,
+SAT,Highest,2022-23,629.0,Clarke County,5556,Clarke Central High School,All Students,Combined Test Score,1913742.0,38401.0,187.3,113.3,508.0,1035.4,990.6,999.1,SAT_2022-23_Highest_2024-05-02_10_46_31.csv,
+SAT,Highest,2022-23,629.0,Clarke County,5556,Clarke Central High School,All Students,Essay Analysis Score - New,264011.0,194.0,TFS,TFS,3.0,3.7,TFS,TFS,SAT_2022-23_Highest_2024-05-02_10_46_31.csv,
+SAT,Highest,2022-23,629.0,Clarke County,5556,Clarke Central High School,All Students,Essay Reading Score - New,264011.0,194.0,TFS,TFS,4.0,4.6,TFS,TFS,SAT_2022-23_Highest_2024-05-02_10_46_31.csv,
+SAT,Highest,2022-23,629.0,Clarke County,5556,Clarke Central High School,All Students,Essay Total,264011.0,194.0,TFS,TFS,5.0,13.7,TFS,TFS,SAT_2022-23_Highest_2024-05-02_10_46_31.csv,
+SAT,Highest,2022-23,629.0,Clarke County,5556,Clarke Central High School,All Students,Essay Writing Score - New,264011.0,194.0,TFS,TFS,5.0,5.4,TFS,TFS,SAT_2022-23_Highest_2024-05-02_10_46_31.csv,
+SAT,Highest,2022-23,629.0,Clarke County,5556,Clarke Central High School,All Students,Math Section Score - New,1913742.0,38511.0,190,116,508.0,505.6,481.5,479.7,SAT_2022-23_Highest_2024-05-02_10_46_31.csv,
+SAT,Highest,2022-23,629.0,Clarke County,5556,Clarke Central High School,All Students,Reading Test  Score - New,1913742.0,38346.0,186,112,,268.2,258.5,263.8,SAT_2022-23_Highest_2024-05-02_10_46_31.csv,
+SAT,Highest,2022-23,629.0,Clarke County,5556,Clarke Central High School,All Students,WritLang Test  Score - New,1913742.0,38347.0,186,112,,261.6,250.6,255.6,SAT_2022-23_Highest_2024-05-02_10_46_31.csv,
+SAT,Highest,2023-24,629.0,Clarke County,102,Cedar Shoals High School,All Students,Combined Test Score,1973891.0,32979.0,170.3,63.3,505.0,1043.6,1026.8,999.8,SAT_2023-24_Highest_2025-01-14_16_21_13.csv,
+SAT,Highest,2023-24,629.0,Clarke County,102,Cedar Shoals High School,All Students,Math Section Score - New,1973891.0,37143.0,185,68,505.0,505.4,495.3,490.4,SAT_2023-24_Highest_2025-01-14_16_21_13.csv,
+SAT,Highest,2023-24,629.0,Clarke County,102,Cedar Shoals High School,All Students,Reading Test  Score - New,1973891.0,30895.0,163,61,,272.2,269.1,257.2,SAT_2023-24_Highest_2025-01-14_16_21_13.csv,
+SAT,Highest,2023-24,629.0,Clarke County,102,Cedar Shoals High School,All Students,WritLang Test  Score - New,1973891.0,30900.0,163,61,,266.0,262.3,252.1,SAT_2023-24_Highest_2025-01-14_16_21_13.csv,
+SAT,Highest,2023-24,629.0,Clarke County,104,Classic City High School,All Students,Combined Test Score,1973891.0,32979.0,170.3,TFS,505.0,1043.6,1026.8,TFS,SAT_2023-24_Highest_2025-01-14_16_21_13.csv,
+SAT,Highest,2023-24,629.0,Clarke County,104,Classic City High School,All Students,Math Section Score - New,1973891.0,37143.0,185,TFS,505.0,505.4,495.3,TFS,SAT_2023-24_Highest_2025-01-14_16_21_13.csv,
+SAT,Highest,2023-24,629.0,Clarke County,104,Classic City High School,All Students,Reading Test  Score - New,1973891.0,30895.0,163,TFS,,272.2,269.1,TFS,SAT_2023-24_Highest_2025-01-14_16_21_13.csv,
+SAT,Highest,2023-24,629.0,Clarke County,104,Classic City High School,All Students,WritLang Test  Score - New,1973891.0,30900.0,163,TFS,,266.0,262.3,TFS,SAT_2023-24_Highest_2025-01-14_16_21_13.csv,
+SAT,Highest,2023-24,629.0,Clarke County,5556,Clarke Central High School,All Students,Combined Test Score,1973891.0,32979.0,170.3,104.7,505.0,1043.6,1026.8,1048.4,SAT_2023-24_Highest_2025-01-14_16_21_13.csv,
+SAT,Highest,2023-24,629.0,Clarke County,5556,Clarke Central High School,All Students,Math Section Score - New,1973891.0,37143.0,185,114,505.0,505.4,495.3,501,SAT_2023-24_Highest_2025-01-14_16_21_13.csv,
+SAT,Highest,2023-24,629.0,Clarke County,5556,Clarke Central High School,All Students,Reading Test  Score - New,1973891.0,30895.0,163,100,,272.2,269.1,277.3,SAT_2023-24_Highest_2025-01-14_16_21_13.csv,
+SAT,Highest,2023-24,629.0,Clarke County,5556,Clarke Central High School,All Students,WritLang Test  Score - New,1973891.0,30900.0,163,100,,266.0,262.3,270.1,SAT_2023-24_Highest_2025-01-14_16_21_13.csv,
+,,2019-20,,Clarke County,102,Cedar Shoals High School,All Students,Combined Test Score,2198460.0,43074.0,318,145,,1028.0,967,951,SAT_HIGHEST_2020_JUN_21_2021.csv,629.0
+,,2019-20,,Clarke County,102,Cedar Shoals High School,All Students,Essay Analysis Score - New,1258478.0,15097.0,76,34,,3.0,3,3,SAT_HIGHEST_2020_JUN_21_2021.csv,629.0
+,,2019-20,,Clarke County,102,Cedar Shoals High School,All Students,Essay Reading Score - New,1258478.0,15097.0,76,34,,5.0,5,4,SAT_HIGHEST_2020_JUN_21_2021.csv,629.0
+,,2019-20,,Clarke County,102,Cedar Shoals High School,All Students,Essay Total,1258478.0,15097.0,76,34,,13.0,13,13,SAT_HIGHEST_2020_JUN_21_2021.csv,629.0
+,,2019-20,,Clarke County,102,Cedar Shoals High School,All Students,Essay Writing Score - New,1258478.0,15097.0,76,34,,5.0,5,5,SAT_HIGHEST_2020_JUN_21_2021.csv,629.0
+,,2019-20,,Clarke County,102,Cedar Shoals High School,All Students,Math Section Score - New,2198460.0,43073.0,318,145,,503.0,474,468,SAT_HIGHEST_2020_JUN_21_2021.csv,629.0
+,,2019-20,,Clarke County,102,Cedar Shoals High School,All Students,Reading Test  Score - New,2198460.0,43074.0,318,145,,265.0,250,245,SAT_HIGHEST_2020_JUN_21_2021.csv,629.0
+,,2019-20,,Clarke County,102,Cedar Shoals High School,All Students,WritLang Test  Score - New,2198460.0,43075.0,318,145,,260.0,243,238,SAT_HIGHEST_2020_JUN_21_2021.csv,629.0
+,,2019-20,,Clarke County,104,Classic City High School,All Students,Combined Test Score,2198460.0,43074.0,318,TFS,,1028.0,967,TFS,SAT_HIGHEST_2020_JUN_21_2021.csv,629.0
+,,2019-20,,Clarke County,104,Classic City High School,All Students,Math Section Score - New,2198460.0,43073.0,318,TFS,,503.0,474,TFS,SAT_HIGHEST_2020_JUN_21_2021.csv,629.0
+,,2019-20,,Clarke County,104,Classic City High School,All Students,Reading Test  Score - New,2198460.0,43074.0,318,TFS,,265.0,250,TFS,SAT_HIGHEST_2020_JUN_21_2021.csv,629.0
+,,2019-20,,Clarke County,104,Classic City High School,All Students,WritLang Test  Score - New,2198460.0,43075.0,318,TFS,,260.0,243,TFS,SAT_HIGHEST_2020_JUN_21_2021.csv,629.0
+,,2019-20,,Clarke County,5556,Clarke Central High School,All Students,Combined Test Score,2198460.0,43074.0,318,172,,1028.0,967,980,SAT_HIGHEST_2020_JUN_21_2021.csv,629.0
+,,2019-20,,Clarke County,5556,Clarke Central High School,All Students,Essay Analysis Score - New,1258478.0,15097.0,76,42,,3.0,3,3,SAT_HIGHEST_2020_JUN_21_2021.csv,629.0
+,,2019-20,,Clarke County,5556,Clarke Central High School,All Students,Essay Reading Score - New,1258478.0,15097.0,76,42,,5.0,5,5,SAT_HIGHEST_2020_JUN_21_2021.csv,629.0
+,,2019-20,,Clarke County,5556,Clarke Central High School,All Students,Essay Total,1258478.0,15097.0,76,42,,13.0,13,14,SAT_HIGHEST_2020_JUN_21_2021.csv,629.0
+,,2019-20,,Clarke County,5556,Clarke Central High School,All Students,Essay Writing Score - New,1258478.0,15097.0,76,42,,5.0,5,5,SAT_HIGHEST_2020_JUN_21_2021.csv,629.0
+,,2019-20,,Clarke County,5556,Clarke Central High School,All Students,Math Section Score - New,2198460.0,43073.0,318,172,,503.0,474,479,SAT_HIGHEST_2020_JUN_21_2021.csv,629.0
+,,2019-20,,Clarke County,5556,Clarke Central High School,All Students,Reading Test  Score - New,2198460.0,43074.0,318,172,,265.0,250,254,SAT_HIGHEST_2020_JUN_21_2021.csv,629.0
+,,2019-20,,Clarke County,5556,Clarke Central High School,All Students,WritLang Test  Score - New,2198460.0,43075.0,318,172,,260.0,243,247,SAT_HIGHEST_2020_JUN_21_2021.csv,629.0
+,,2020-21,,Clarke County,102,Cedar Shoals High School,All Students,Combined Test Score,687305.0,26245.333333333332,99,30,,1094.0,1069,1036,SAT_HIGHEST_2021_Dec062021.csv,629.0
+,,2020-21,,Clarke County,102,Cedar Shoals High School,All Students,Essay Analysis Score - New,1509133.0,7921.0,30,13,,4.0,4,3,SAT_HIGHEST_2021_Dec062021.csv,629.0
+,,2020-21,,Clarke County,102,Cedar Shoals High School,All Students,Essay Reading Score - New,1509133.0,7920.0,30,13,,5.0,5,4,SAT_HIGHEST_2021_Dec062021.csv,629.0
+,,2020-21,,Clarke County,102,Cedar Shoals High School,All Students,Essay Total,1509133.0,7920.0,30,13,,14.0,13,13,SAT_HIGHEST_2021_Dec062021.csv,629.0
+,,2020-21,,Clarke County,102,Cedar Shoals High School,All Students,Essay Writing Score - New,1509133.0,7920.0,30,13,,5.0,5,5,SAT_HIGHEST_2021_Dec062021.csv,629.0
+,,2020-21,,Clarke County,102,Cedar Shoals High School,All Students,Math Section Score - New,687305.0,26246.0,99,30,,539.0,521,510,SAT_HIGHEST_2021_Dec062021.csv,629.0
+,,2020-21,,Clarke County,102,Cedar Shoals High School,All Students,Reading Test  Score - New,687305.0,26245.0,99,30,,279.0,275,263,SAT_HIGHEST_2021_Dec062021.csv,629.0
+,,2020-21,,Clarke County,102,Cedar Shoals High School,All Students,WritLang Test  Score - New,687305.0,26245.0,99,30,,277.0,273,263,SAT_HIGHEST_2021_Dec062021.csv,629.0
+,,2020-21,,Clarke County,5556,Clarke Central High School,All Students,Combined Test Score,687305.0,26245.333333333332,99,69,,1094.0,1069,1083,SAT_HIGHEST_2021_Dec062021.csv,629.0
+,,2020-21,,Clarke County,5556,Clarke Central High School,All Students,Essay Analysis Score - New,1509133.0,7921.0,30,17,,4.0,4,4,SAT_HIGHEST_2021_Dec062021.csv,629.0
+,,2020-21,,Clarke County,5556,Clarke Central High School,All Students,Essay Reading Score - New,1509133.0,7920.0,30,17,,5.0,5,5,SAT_HIGHEST_2021_Dec062021.csv,629.0
+,,2020-21,,Clarke County,5556,Clarke Central High School,All Students,Essay Total,1509133.0,7920.0,30,17,,14.0,13,14,SAT_HIGHEST_2021_Dec062021.csv,629.0
+,,2020-21,,Clarke County,5556,Clarke Central High School,All Students,Essay Writing Score - New,1509133.0,7920.0,30,17,,5.0,5,5,SAT_HIGHEST_2021_Dec062021.csv,629.0
+,,2020-21,,Clarke County,5556,Clarke Central High School,All Students,Math Section Score - New,687305.0,26246.0,99,69,,539.0,521,525,SAT_HIGHEST_2021_Dec062021.csv,629.0
+,,2020-21,,Clarke County,5556,Clarke Central High School,All Students,Reading Test  Score - New,687305.0,26245.0,99,69,,279.0,275,281,SAT_HIGHEST_2021_Dec062021.csv,629.0
+,,2020-21,,Clarke County,5556,Clarke Central High School,All Students,WritLang Test  Score - New,687305.0,26245.0,99,69,,277.0,273,277,SAT_HIGHEST_2021_Dec062021.csv,629.0
+,,2021-22,,Clarke County,102,Cedar Shoals High School,All Students,Combined Test Score,1737678.0,42865.0,233,88,,1032.0,982,947,SAT_HIGHEST_2022_Apr112023.csv,629.0
+,,2021-22,,Clarke County,102,Cedar Shoals High School,All Students,Essay Analysis Score - New,350845.0,3589.0,14,TFS,,4.0,4,TFS,SAT_HIGHEST_2022_Apr112023.csv,629.0
+,,2021-22,,Clarke County,102,Cedar Shoals High School,All Students,Essay Reading Score - New,350845.0,3589.0,14,TFS,,5.0,4,TFS,SAT_HIGHEST_2022_Apr112023.csv,629.0
+,,2021-22,,Clarke County,102,Cedar Shoals High School,All Students,Essay Total,350845.0,3589.0,14,TFS,,14.0,13,TFS,SAT_HIGHEST_2022_Apr112023.csv,629.0
+,,2021-22,,Clarke County,102,Cedar Shoals High School,All Students,Essay Writing Score - New,350845.0,3589.0,14,TFS,,5.0,5,TFS,SAT_HIGHEST_2022_Apr112023.csv,629.0
+,,2021-22,,Clarke County,102,Cedar Shoals High School,All Students,Math Section Score - New,1737678.0,42864.0,233,88,,505.0,481,463,SAT_HIGHEST_2022_Apr112023.csv,629.0
+,,2021-22,,Clarke County,102,Cedar Shoals High School,All Students,Reading Test  Score - New,1737678.0,42865.0,233,88,,266.0,254,248,SAT_HIGHEST_2022_Apr112023.csv,629.0
+,,2021-22,,Clarke County,102,Cedar Shoals High School,All Students,WritLang Test  Score - New,1737678.0,42867.0,233,88,,261.0,247,236,SAT_HIGHEST_2022_Apr112023.csv,629.0
+,,2021-22,,Clarke County,104,Classic City High School,All Students,Combined Test Score,1737678.0,42865.0,233,TFS,,1032.0,982,TFS,SAT_HIGHEST_2022_Apr112023.csv,629.0
+,,2021-22,,Clarke County,104,Classic City High School,All Students,Math Section Score - New,1737678.0,42864.0,233,TFS,,505.0,481,TFS,SAT_HIGHEST_2022_Apr112023.csv,629.0
+,,2021-22,,Clarke County,104,Classic City High School,All Students,Reading Test  Score - New,1737678.0,42865.0,233,TFS,,266.0,254,TFS,SAT_HIGHEST_2022_Apr112023.csv,629.0
+,,2021-22,,Clarke County,104,Classic City High School,All Students,WritLang Test  Score - New,1737678.0,42867.0,233,TFS,,261.0,247,TFS,SAT_HIGHEST_2022_Apr112023.csv,629.0
+,,2021-22,,Clarke County,5556,Clarke Central High School,All Students,Combined Test Score,1737678.0,42865.0,233,144,,1032.0,982,1005,SAT_HIGHEST_2022_Apr112023.csv,629.0
+,,2021-22,,Clarke County,5556,Clarke Central High School,All Students,Essay Analysis Score - New,350845.0,3589.0,14,10,,4.0,4,4,SAT_HIGHEST_2022_Apr112023.csv,629.0
+,,2021-22,,Clarke County,5556,Clarke Central High School,All Students,Essay Reading Score - New,350845.0,3589.0,14,10,,5.0,4,5,SAT_HIGHEST_2022_Apr112023.csv,629.0
+,,2021-22,,Clarke County,5556,Clarke Central High School,All Students,Essay Total,350845.0,3589.0,14,10,,14.0,13,14,SAT_HIGHEST_2022_Apr112023.csv,629.0
+,,2021-22,,Clarke County,5556,Clarke Central High School,All Students,Essay Writing Score - New,350845.0,3589.0,14,10,,5.0,5,5,SAT_HIGHEST_2022_Apr112023.csv,629.0
+,,2021-22,,Clarke County,5556,Clarke Central High School,All Students,Math Section Score - New,1737678.0,42864.0,233,144,,505.0,481,492,SAT_HIGHEST_2022_Apr112023.csv,629.0
+,,2021-22,,Clarke County,5556,Clarke Central High School,All Students,Reading Test  Score - New,1737678.0,42865.0,233,144,,266.0,254,258,SAT_HIGHEST_2022_Apr112023.csv,629.0
+,,2021-22,,Clarke County,5556,Clarke Central High School,All Students,WritLang Test  Score - New,1737678.0,42867.0,233,144,,261.0,247,254,SAT_HIGHEST_2022_Apr112023.csv,629.0

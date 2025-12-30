@@ -1,0 +1,75 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "SCHOOL_NAME": "Barrow Elementary School",
+        "SCHOOL": "Barrow Elementary",
+        "ADDRESS": "175 Hancock Avenue, Athens, GA 30601"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -83.385,
+              33.955
+            ],
+            [
+              -83.365,
+              33.955
+            ],
+            [
+              -83.365,
+              33.965
+            ],
+            [
+              -83.385,
+              33.965
+            ],
+            [
+              -83.385,
+              33.955
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "SCHOOL_NAME": "Chase Street Elementary School",
+        "SCHOOL": "Chase Street Elementary",
+        "ADDRESS": "1860 S Milledge Avenue, Athens, GA 30605"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -83.39,
+              33.95
+            ],
+            [
+              -83.37,
+              33.95
+            ],
+            [
+              -83.37,
+              33.96
+            ],
+            [
+              -83.39,
+              33.96
+            ],
+            [
+              -83.39,
+              33.95
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

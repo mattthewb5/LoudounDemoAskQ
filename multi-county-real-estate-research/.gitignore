@@ -1,0 +1,78 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Logs
+*.log
+
+# Backup files
+*.original
+*.backup
+*-backup-*/
+
+# Data files (if large)
+# Uncomment if you don't want to commit large data files
+# data/**/*.csv
+# data/**/*.json
+# data/**/*.geojson
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Project-specific
+*.original
+
+# API cache directories
+data/loudoun/cache/
+cache/

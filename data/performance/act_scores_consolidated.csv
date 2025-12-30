@@ -1,0 +1,77 @@
+LONG_SCHOOL_YEAR,SCHOOL_DISTRCT_CD,SCHOOL_DSTRCT_NM,INSTN_NUMBER,INSTN_NAME,SUBGRP_DESC,TEST_CMPNT_TYP_CD,NATIONAL_NUM_TESTED_CNT,STATE_NUM_TESTED_CNT,DSTRCT_NUM_TESTED_CNT,INSTN_NUM_TESTED_CNT,NATIONAL_AVG_SCORE_VAL,STATE_AVG_SCORE_VAL,DSTRCT_AVG_SCORE_VAL,INSTN_AVG_SCORE_VAL,source_file,#ASSMT_CD,HIGHEST_RECENT_IND,SCHOOL_DSTRCT_CD
+2022-23,629.0,Clarke County,102,Cedar Shoals High School,All Students,Composite,1386335.0,26623,486,189,19.5,20.7,17.7,16.5,ACT_2022-23_Highest_2025-01-15_09_21_13.csv,,,
+2022-23,629.0,Clarke County,102,Cedar Shoals High School,All Students,English,1386335.0,26622,486,189,18.6,19.9,16.5,14.7,ACT_2022-23_Highest_2025-01-15_09_21_13.csv,,,
+2022-23,629.0,Clarke County,102,Cedar Shoals High School,All Students,Mathematics,1386335.0,26623,486,189,19.0,20.1,17.3,16.5,ACT_2022-23_Highest_2025-01-15_09_21_13.csv,,,
+2022-23,629.0,Clarke County,102,Cedar Shoals High School,All Students,Reading,1386335.0,26620,486,189,20.1,21.6,18.5,17.0,ACT_2022-23_Highest_2025-01-15_09_21_13.csv,,,
+2022-23,629.0,Clarke County,102,Cedar Shoals High School,All Students,Science,1386335.0,26620,486,189,19.6,20.7,18.2,17.1,ACT_2022-23_Highest_2025-01-15_09_21_13.csv,,,
+2022-23,629.0,Clarke County,102,Cedar Shoals High School,All Students,Writing Subscore,380279.0,3439,12,TFS,6.1,6.6,6.3,,ACT_2022-23_Highest_2025-01-15_09_21_13.csv,,,
+2022-23,629.0,Clarke County,104,Classic City High School,All Students,Composite,1386335.0,26623,486,TFS,19.5,20.7,17.7,,ACT_2022-23_Highest_2025-01-15_09_21_13.csv,,,
+2022-23,629.0,Clarke County,104,Classic City High School,All Students,English,1386335.0,26622,486,TFS,18.6,19.9,16.5,,ACT_2022-23_Highest_2025-01-15_09_21_13.csv,,,
+2022-23,629.0,Clarke County,104,Classic City High School,All Students,Mathematics,1386335.0,26623,486,TFS,19.0,20.1,17.3,,ACT_2022-23_Highest_2025-01-15_09_21_13.csv,,,
+2022-23,629.0,Clarke County,104,Classic City High School,All Students,Reading,1386335.0,26620,486,TFS,20.1,21.6,18.5,,ACT_2022-23_Highest_2025-01-15_09_21_13.csv,,,
+2022-23,629.0,Clarke County,104,Classic City High School,All Students,Science,1386335.0,26620,486,TFS,19.6,20.7,18.2,,ACT_2022-23_Highest_2025-01-15_09_21_13.csv,,,
+2022-23,629.0,Clarke County,5556,Clarke Central High School,All Students,Composite,1386335.0,26623,486,294,19.5,20.7,17.7,18.6,ACT_2022-23_Highest_2025-01-15_09_21_13.csv,,,
+2022-23,629.0,Clarke County,5556,Clarke Central High School,All Students,English,1386335.0,26622,486,294,18.6,19.9,16.5,17.7,ACT_2022-23_Highest_2025-01-15_09_21_13.csv,,,
+2022-23,629.0,Clarke County,5556,Clarke Central High School,All Students,Mathematics,1386335.0,26623,486,294,19.0,20.1,17.3,17.8,ACT_2022-23_Highest_2025-01-15_09_21_13.csv,,,
+2022-23,629.0,Clarke County,5556,Clarke Central High School,All Students,Reading,1386335.0,26620,486,294,20.1,21.6,18.5,19.5,ACT_2022-23_Highest_2025-01-15_09_21_13.csv,,,
+2022-23,629.0,Clarke County,5556,Clarke Central High School,All Students,Science,1386335.0,26620,486,294,19.6,20.7,18.2,18.8,ACT_2022-23_Highest_2025-01-15_09_21_13.csv,,,
+2022-23,629.0,Clarke County,5556,Clarke Central High School,All Students,Writing Subscore,380279.0,3439,12,TFS,6.1,6.6,6.3,,ACT_2022-23_Highest_2025-01-15_09_21_13.csv,,,
+2023-24,,Clarke County,102,Cedar Shoals High School,All Students,Composite,1374791.0,14727,125,66,19.4,21.0,18.6,16.1,ACT_2023-24_Highest_2025-01-14_16_21_13.csv,ACT,Highest,629.0
+2023-24,,Clarke County,102,Cedar Shoals High School,All Students,English,1374791.0,14727,125,66,18.6,20.2,17.3,14.1,ACT_2023-24_Highest_2025-01-14_16_21_13.csv,ACT,Highest,629.0
+2023-24,,Clarke County,102,Cedar Shoals High School,All Students,Mathematics,1374791.0,14727,125,66,19.0,20.1,17.7,16,ACT_2023-24_Highest_2025-01-14_16_21_13.csv,ACT,Highest,629.0
+2023-24,,Clarke County,102,Cedar Shoals High School,All Students,Reading,1374791.0,14727,125,66,20.1,22.3,20.2,17.1,ACT_2023-24_Highest_2025-01-14_16_21_13.csv,ACT,Highest,629.0
+2023-24,,Clarke County,102,Cedar Shoals High School,All Students,Science,1374791.0,14727,125,66,19.6,21.0,18.7,16.6,ACT_2023-24_Highest_2025-01-14_16_21_13.csv,ACT,Highest,629.0
+2023-24,,Clarke County,102,Cedar Shoals High School,All Students,Writing Subscore,369535.0,1966,39,35,6.1,6.5,5.6,5.6,ACT_2023-24_Highest_2025-01-14_16_21_13.csv,ACT,Highest,629.0
+2023-24,,Clarke County,104,Classic City High School,All Students,Composite,1374791.0,14727,125,TFS,19.4,21.0,18.6,TFS,ACT_2023-24_Highest_2025-01-14_16_21_13.csv,ACT,Highest,629.0
+2023-24,,Clarke County,104,Classic City High School,All Students,English,1374791.0,14727,125,TFS,18.6,20.2,17.3,TFS,ACT_2023-24_Highest_2025-01-14_16_21_13.csv,ACT,Highest,629.0
+2023-24,,Clarke County,104,Classic City High School,All Students,Mathematics,1374791.0,14727,125,TFS,19.0,20.1,17.7,TFS,ACT_2023-24_Highest_2025-01-14_16_21_13.csv,ACT,Highest,629.0
+2023-24,,Clarke County,104,Classic City High School,All Students,Reading,1374791.0,14727,125,TFS,20.1,22.3,20.2,TFS,ACT_2023-24_Highest_2025-01-14_16_21_13.csv,ACT,Highest,629.0
+2023-24,,Clarke County,104,Classic City High School,All Students,Science,1374791.0,14727,125,TFS,19.6,21.0,18.7,TFS,ACT_2023-24_Highest_2025-01-14_16_21_13.csv,ACT,Highest,629.0
+2023-24,,Clarke County,5556,Clarke Central High School,All Students,Composite,1374791.0,14727,125,58,19.4,21.0,18.6,21.6,ACT_2023-24_Highest_2025-01-14_16_21_13.csv,ACT,Highest,629.0
+2023-24,,Clarke County,5556,Clarke Central High School,All Students,English,1374791.0,14727,125,58,18.6,20.2,17.3,21,ACT_2023-24_Highest_2025-01-14_16_21_13.csv,ACT,Highest,629.0
+2023-24,,Clarke County,5556,Clarke Central High School,All Students,Mathematics,1374791.0,14727,125,58,19.0,20.1,17.7,19.8,ACT_2023-24_Highest_2025-01-14_16_21_13.csv,ACT,Highest,629.0
+2023-24,,Clarke County,5556,Clarke Central High School,All Students,Reading,1374791.0,14727,125,58,20.1,22.3,20.2,23.7,ACT_2023-24_Highest_2025-01-14_16_21_13.csv,ACT,Highest,629.0
+2023-24,,Clarke County,5556,Clarke Central High School,All Students,Science,1374791.0,14727,125,58,19.6,21.0,18.7,21.3,ACT_2023-24_Highest_2025-01-14_16_21_13.csv,ACT,Highest,629.0
+2023-24,,Clarke County,5556,Clarke Central High School,All Students,Writing Subscore,369535.0,1966,39,TFS,6.1,6.5,5.6,TFS,ACT_2023-24_Highest_2025-01-14_16_21_13.csv,ACT,Highest,629.0
+2019-20,629.0,Clarke County,102,Cedar Shoals High School,All Students,Composite,1670497.0,26811,257,120,20.6,20.8,18.5,17.5,ACT_HIGHEST_2020_JUN_21_2021.csv,,,
+2019-20,629.0,Clarke County,102,Cedar Shoals High School,All Students,Reading,1670497.0,26810,257,120,21.2,21.6,19.6,18.1,ACT_HIGHEST_2020_JUN_21_2021.csv,,,
+2019-20,629.0,Clarke County,102,Cedar Shoals High School,All Students,English,1670497.0,26811,257,120,19.7,20.2,17.1,15.8,ACT_HIGHEST_2020_JUN_21_2021.csv,,,
+2019-20,629.0,Clarke County,102,Cedar Shoals High School,All Students,Writing Subscore,678906.0,5089,23,12,6.4,6.8,6.8,6.3,ACT_HIGHEST_2020_JUN_21_2021.csv,,,
+2019-20,629.0,Clarke County,5556,Clarke Central High School,All Students,Mathematics,1670497.0,26810,257,137,20.4,20.2,18.1,18.8,ACT_HIGHEST_2020_JUN_21_2021.csv,,,
+2019-20,629.0,Clarke County,5556,Clarke Central High School,All Students,English,1670497.0,26811,257,137,19.7,20.2,17.1,18.1,ACT_HIGHEST_2020_JUN_21_2021.csv,,,
+2019-20,629.0,Clarke County,5556,Clarke Central High School,All Students,Writing Subscore,678906.0,5089,23,11,6.4,6.8,6.8,7.5,ACT_HIGHEST_2020_JUN_21_2021.csv,,,
+2019-20,629.0,Clarke County,102,Cedar Shoals High School,All Students,Mathematics,1670497.0,26810,257,120,20.4,20.2,18.1,17.4,ACT_HIGHEST_2020_JUN_21_2021.csv,,,
+2019-20,629.0,Clarke County,5556,Clarke Central High School,All Students,Science,1670497.0,26810,257,137,20.6,20.8,18.8,19.4,ACT_HIGHEST_2020_JUN_21_2021.csv,,,
+2019-20,629.0,Clarke County,5556,Clarke Central High School,All Students,Reading,1670497.0,26810,257,137,21.2,21.6,19.6,21.0,ACT_HIGHEST_2020_JUN_21_2021.csv,,,
+2019-20,629.0,Clarke County,5556,Clarke Central High School,All Students,Composite,1670497.0,26811,257,137,20.6,20.8,18.5,19.4,ACT_HIGHEST_2020_JUN_21_2021.csv,,,
+2019-20,629.0,Clarke County,102,Cedar Shoals High School,All Students,Science,1670497.0,26810,257,120,20.6,20.8,18.8,18.2,ACT_HIGHEST_2020_JUN_21_2021.csv,,,
+2020-21,629.0,Clarke County,5556,Clarke Central High School,All Students,Mathematics,1295349.0,12574,67,54,19.9,22.0,21.7,22.0,ACT_HIGHEST_2021.csv,,,
+2020-21,629.0,Clarke County,102,Cedar Shoals High School,All Students,Composite,1295349.0,12574,67,13,20.3,22.9,22.6,20.6,ACT_HIGHEST_2021.csv,,,
+2020-21,629.0,Clarke County,102,Cedar Shoals High School,All Students,English,1295349.0,12575,67,13,19.6,22.5,22.4,19.6,ACT_HIGHEST_2021.csv,,,
+2020-21,629.0,Clarke County,5556,Clarke Central High School,All Students,Reading,1295349.0,12574,67,54,20.9,23.8,23.6,24.2,ACT_HIGHEST_2021.csv,,,
+2020-21,629.0,Clarke County,5556,Clarke Central High School,All Students,Science,1295349.0,12574,67,54,20.4,22.7,22.1,22.4,ACT_HIGHEST_2021.csv,,,
+2020-21,629.0,Clarke County,102,Cedar Shoals High School,All Students,Mathematics,1295349.0,12574,67,13,19.9,22.0,21.7,20.5,ACT_HIGHEST_2021.csv,,,
+2020-21,629.0,Clarke County,5556,Clarke Central High School,All Students,English,1295349.0,12575,67,54,19.6,22.5,22.4,23.0,ACT_HIGHEST_2021.csv,,,
+2020-21,629.0,Clarke County,102,Cedar Shoals High School,All Students,Writing Subscore,463733.0,2516,11,TFS,6.4,6.9,7.3,,ACT_HIGHEST_2021.csv,,,
+2020-21,629.0,Clarke County,102,Cedar Shoals High School,All Students,Science,1295349.0,12574,67,13,20.4,22.7,22.1,20.8,ACT_HIGHEST_2021.csv,,,
+2020-21,629.0,Clarke County,102,Cedar Shoals High School,All Students,Reading,1295349.0,12574,67,13,20.9,23.8,23.6,21.2,ACT_HIGHEST_2021.csv,,,
+2020-21,629.0,Clarke County,5556,Clarke Central High School,All Students,Composite,1295349.0,12574,67,54,20.3,22.9,22.6,23.1,ACT_HIGHEST_2021.csv,,,
+2020-21,629.0,Clarke County,5556,Clarke Central High School,All Students,Writing Subscore,463733.0,2516,11,TFS,6.4,6.9,7.3,,ACT_HIGHEST_2021.csv,,,
+2021-22,629.0,Clarke County,5556,Clarke Central High School,All Students,Science,1349644.0,18999,151,87,19.9,20.7,19.0,20.1,ACT_HIGHEST_2022.csv,,,
+2021-22,629.0,Clarke County,104,Classic City High School,All Students,English,1349644.0,18999,151,TFS,19.0,19.9,17.1,,ACT_HIGHEST_2022.csv,,,
+2021-22,629.0,Clarke County,5556,Clarke Central High School,All Students,Writing Subscore,333194.0,2776,10,TFS,6.2,6.5,6.9,,ACT_HIGHEST_2022.csv,,,
+2021-22,629.0,Clarke County,102,Cedar Shoals High School,All Students,Reading,1349644.0,18999,151,62,20.4,21.7,19.4,17.9,ACT_HIGHEST_2022.csv,,,
+2021-22,629.0,Clarke County,102,Cedar Shoals High School,All Students,Writing Subscore,333194.0,2776,10,TFS,6.2,6.5,6.9,,ACT_HIGHEST_2022.csv,,,
+2021-22,629.0,Clarke County,104,Classic City High School,All Students,Science,1349644.0,18999,151,TFS,19.9,20.7,19.0,,ACT_HIGHEST_2022.csv,,,
+2021-22,629.0,Clarke County,102,Cedar Shoals High School,All Students,English,1349644.0,18999,151,62,19.0,19.9,17.1,15.5,ACT_HIGHEST_2022.csv,,,
+2021-22,629.0,Clarke County,5556,Clarke Central High School,All Students,Composite,1349644.0,18999,151,87,19.8,20.7,18.4,19.4,ACT_HIGHEST_2022.csv,,,
+2021-22,629.0,Clarke County,5556,Clarke Central High School,All Students,Mathematics,1349644.0,18999,151,87,19.3,19.9,17.7,18.3,ACT_HIGHEST_2022.csv,,,
+2021-22,629.0,Clarke County,102,Cedar Shoals High School,All Students,Composite,1349644.0,18999,151,62,19.8,20.7,18.4,17.1,ACT_HIGHEST_2022.csv,,,
+2021-22,629.0,Clarke County,5556,Clarke Central High School,All Students,English,1349644.0,18999,151,87,19.0,19.9,17.1,18.3,ACT_HIGHEST_2022.csv,,,
+2021-22,629.0,Clarke County,104,Classic City High School,All Students,Writing Subscore,333194.0,2776,10,TFS,6.2,6.5,6.9,,ACT_HIGHEST_2022.csv,,,
+2021-22,629.0,Clarke County,104,Classic City High School,All Students,Composite,1349644.0,18999,151,TFS,19.8,20.7,18.4,,ACT_HIGHEST_2022.csv,,,
+2021-22,629.0,Clarke County,5556,Clarke Central High School,All Students,Reading,1349644.0,18999,151,87,20.4,21.7,19.4,20.4,ACT_HIGHEST_2022.csv,,,
+2021-22,629.0,Clarke County,104,Classic City High School,All Students,Mathematics,1349644.0,18999,151,TFS,19.3,19.9,17.7,,ACT_HIGHEST_2022.csv,,,
+2021-22,629.0,Clarke County,104,Classic City High School,All Students,Reading,1349644.0,18999,151,TFS,20.4,21.7,19.4,,ACT_HIGHEST_2022.csv,,,
+2021-22,629.0,Clarke County,102,Cedar Shoals High School,All Students,Mathematics,1349644.0,18999,151,62,19.3,19.9,17.7,17.0,ACT_HIGHEST_2022.csv,,,
+2021-22,629.0,Clarke County,102,Cedar Shoals High School,All Students,Science,1349644.0,18999,151,62,19.9,20.7,19.0,17.5,ACT_HIGHEST_2022.csv,,,

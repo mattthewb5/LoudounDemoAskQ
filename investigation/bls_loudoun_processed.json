@@ -1,0 +1,49 @@
+{
+  "fetch_date": "2025-12-29",
+  "source": "BLS Local Area Unemployment Statistics (LAUS)",
+  "geography": "Loudoun County, VA (FIPS 51107)",
+  "seasonal_adjustment": "Not seasonally adjusted",
+  "methodology_note": "County-level LAUS data is not seasonally adjusted. Year-over-year comparisons recommended to avoid seasonal distortion.",
+  "metrics": {
+    "labor_force": {
+      "current_value": 253982.0,
+      "current_date": "December 2024",
+      "prior_year_value": 250262.0,
+      "prior_year_date": "December 2023",
+      "yoy_change_pct": 1.49,
+      "moving_avg_12mo": 254773.5,
+      "trend_direction": "stable",
+      "unit": "persons"
+    },
+    "employment": {
+      "current_value": 248432.0,
+      "current_date": "December 2024",
+      "prior_year_value": 245170.0,
+      "prior_year_date": "December 2023",
+      "yoy_change_pct": 1.33,
+      "moving_avg_12mo": 248477.2,
+      "trend_direction": "stable",
+      "unit": "persons"
+    },
+    "unemployment": {
+      "current_value": 5550.0,
+      "current_date": "December 2024",
+      "prior_year_value": 5092.0,
+      "prior_year_date": "December 2023",
+      "yoy_change_pct": 8.99,
+      "moving_avg_12mo": 6296.2,
+      "trend_direction": "declining",
+      "unit": "persons"
+    },
+    "unemployment_rate": {
+      "current_value": 2.2,
+      "current_date": "December 2024",
+      "prior_year_value": 2.0,
+      "prior_year_date": "December 2023",
+      "yoy_change_pct": 10.0,
+      "moving_avg_12mo": 2.5,
+      "trend_direction": "declining",
+      "unit": "percent"
+    }
+  }
+}

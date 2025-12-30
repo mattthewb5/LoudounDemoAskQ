@@ -1,0 +1,67 @@
+======================================================================
+DUPLICATE ANALYSIS REPORT
+======================================================================
+
+ROOT CAUSE:
+----------------------------------------------------------------------
+The search pattern in loudoun_streamlit_app.py lines 606-608 uses:
+  performance_df['School_Name'].str.contains(school.split()[0], case=False)
+
+This extracts only the FIRST WORD of the school name for matching.
+For 'Belmont Ridge Middle', it searches for 'Belmont' which matches:
+  - Belmont Elementary (WRONG)
+  - Belmont Ridge Middle (CORRECT)
+  - Belmont Station Elementary (WRONG)
+
+PIPELINE STAGE WHERE DUPLICATES ARE INTRODUCED:
+----------------------------------------------------------------------
+Stage: Chart Data Creation (lines 604-614, 628-638)
+Function: display_schools_section()
+File: loudoun_streamlit_app.py
+
+DUPLICATE INSTANCES FOUND:
+----------------------------------------------------------------------
+
+School Label: 'Steuart Weller Elementary'
+Expected records: 5 (one per year 2020-2025)
+Actual records: 5
+Raw school sources: ['Steuart W. Weller Elementary']
+
+School Label: 'Belmont Ridge Middle'
+Expected records: 5 (one per year 2020-2025)
+Actual records: 15
+Raw school sources: ['Belmont Station Elementary ', 'Belmont Elementary', 'Belmont Ridge Middle']
+*** DUPLICATE SOURCES DETECTED ***
+  - 'Belmont Station Elementary ': 5 records
+  - 'Belmont Elementary': 5 records
+  - 'Belmont Ridge Middle': 5 records
+
+School Label: 'Riverside High'
+Expected records: 5 (one per year 2020-2025)
+Actual records: 15
+Raw school sources: ['Riverside High', 'Riverside Elementary']
+*** DUPLICATE SOURCES DETECTED ***
+  - 'Riverside High': 5 records
+  - 'Riverside Elementary': 10 records
+
+
+SAMPLE DUPLICATE RECORDS (Middle School 2024-2025):
+----------------------------------------------------------------------
+
+Record from 'Belmont Station Elementary ':
+  Year: 2024-2025
+  Reading: 81.0
+  Math: 85.0
+  School Type: Elem
+
+Record from 'Belmont Elementary':
+  Year: 2024-2025
+  Reading: 73.0
+  Math: 80.0
+  School Type: Elem
+
+Record from 'Belmont Ridge Middle':
+  Year: 2024-2025
+  Reading: 84.0
+  Math: 84.0
+  School Type: Middle

@@ -1,0 +1,156 @@
+======================================================================
+PROBLEMATIC FIRST-WORD GROUPS
+======================================================================
+
+Analysis of schools sharing first word in normalized name (Loudoun County)
+
+
+======================================================================
+GROUP: 'J' (2 schools)
+======================================================================
+
+Current Normalizer:
+  'J. Lupton Simpson Middle' → 'J LUPTON SIMPSON'
+  'J. Michael Lunsford Middle' → 'J MICHAEL LUNSFORD'
+
+Unique normalized names: 2
+  ✓ All distinct
+
+Enhanced Normalizer:
+  'J. Lupton Simpson Middle' → 'LUPTON SIMPSON'
+  'J. Michael Lunsford Middle' → 'MICHAEL LUNSFORD'
+
+Unique normalized names: 2
+  ✓ All distinct
+
+ADEQUATE DISTINCTION: YES - All schools have unique normalized names
+
+
+======================================================================
+GROUP: 'DOMINION' (2 schools)
+======================================================================
+
+Current Normalizer:
+  'Dominion High' → 'DOMINION'
+  'Dominion Trail Elementary' → 'DOMINION TRAIL'
+
+Unique normalized names: 2
+  ✓ All distinct
+
+Enhanced Normalizer:
+  'Dominion High' → 'DOMINION'
+  'Dominion Trail Elementary' → 'DOMINION TRAIL'
+
+Unique normalized names: 2
+  ✓ All distinct
+
+ADEQUATE DISTINCTION: YES - All schools have unique normalized names
+
+
+======================================================================
+GROUP: 'BELMONT' (2 schools)
+======================================================================
+
+Current Normalizer:
+  'Belmont Ridge Middle' → 'BELMONT RIDGE'
+  'Belmont Station Elementary ' → 'BELMONT STATION'
+
+Unique normalized names: 2
+  ✓ All distinct
+
+Enhanced Normalizer:
+  'Belmont Ridge Middle' → 'BELMONT RIDGE'
+  'Belmont Station Elementary ' → 'BELMONT STATION'
+
+Unique normalized names: 2
+  ✓ All distinct
+
+ADEQUATE DISTINCTION: YES - All schools have unique normalized names
+
+
+======================================================================
+GROUP: 'JOHN' (2 schools)
+======================================================================
+
+Current Normalizer:
+  'John Champe High' → 'JOHN CHAMPE'
+  'John W. Tolbert Jr. Elementary ' → 'JOHN W TOLBERT JR'
+
+Unique normalized names: 2
+  ✓ All distinct
+
+Enhanced Normalizer:
+  'John Champe High' → 'JOHN CHAMPE'
+  'John W. Tolbert Jr. Elementary ' → 'JOHN TOLBERT JR'
+
+Unique normalized names: 2
+  ✓ All distinct
+
+ADEQUATE DISTINCTION: YES - All schools have unique normalized names
+
+
+======================================================================
+GROUP: 'STONE' (2 schools)
+======================================================================
+
+Current Normalizer:
+  'Stone Bridge High' → 'STONE BRIDGE'
+  'Stone Hill Middle' → 'STONE HILL'
+
+Unique normalized names: 2
+  ✓ All distinct
+
+Enhanced Normalizer:
+  'Stone Bridge High' → 'STONE BRIDGE'
+  'Stone Hill Middle' → 'STONE HILL'
+
+Unique normalized names: 2
+  ✓ All distinct
+
+ADEQUATE DISTINCTION: YES - All schools have unique normalized names
+
+
+======================================================================
+GROUP: 'LOUDOUN' (2 schools)
+======================================================================
+
+Current Normalizer:
+  'Loudoun County High' → 'LOUDOUN COUNTY'
+  'Loudoun Valley High' → 'LOUDOUN VALLEY'
+
+Unique normalized names: 2
+  ✓ All distinct
+
+Enhanced Normalizer:
+  'Loudoun County High' → 'LOUDOUN COUNTY'
+  'Loudoun Valley High' → 'LOUDOUN VALLEY'
+
+Unique normalized names: 2
+  ✓ All distinct
+
+ADEQUATE DISTINCTION: YES - All schools have unique normalized names
+
+
+======================================================================
+GROUP: 'STERLING' (2 schools)
+======================================================================
+
+Current Normalizer:
+  'Sterling Elementary' → 'STERLING'
+  'Sterling Middle' → 'STERLING'
+
+Unique normalized names: 1
+  ⚠ COLLISION EXISTS
+
+Enhanced Normalizer:
+  'Sterling Elementary' → 'STERLING'
+  'Sterling Middle' → 'STERLING'
+
+Unique normalized names: 1
+  ⚠ COLLISION EXISTS
+  Collision on 'STERLING':
+    - Sterling Elementary
+    - Sterling Middle
+
+ADEQUATE DISTINCTION: NO - Some schools still collide
+

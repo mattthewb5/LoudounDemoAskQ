@@ -1,0 +1,433 @@
+{
+  "_metadata": {
+    "generated": "2025-12-09T12:16:12.629483Z",
+    "source": "Google Distance Matrix API",
+    "rush_hour": "Tuesday 08:00",
+    "offpeak": "Tuesday 14:00",
+    "notes": "Travel times are estimates based on typical traffic patterns"
+  },
+  "destinations": {
+    "tysons": {
+      "name": "Tysons Corner",
+      "description": "Major employment & retail hub"
+    },
+    "dc": {
+      "name": "Downtown DC",
+      "description": "Federal employment center"
+    },
+    "dulles": {
+      "name": "Dulles Airport",
+      "description": "Washington Dulles International (IAD)"
+    },
+    "reston": {
+      "name": "Reston Town Center",
+      "description": "Tech corridor hub"
+    }
+  },
+  "roads": {
+    "LEESBURG PIKE": {
+      "route_number": "VA-7",
+      "toll": false,
+      "commute_pattern": "Heavy eastbound AM, westbound PM",
+      "midpoint_coords": [
+        39.104104,
+        -77.71421
+      ],
+      "travel_times": {
+        "tysons": {
+          "miles": 36.0,
+          "rush_min": 43,
+          "offpeak_min": 47
+        },
+        "dc": {
+          "miles": 51.5,
+          "rush_min": 57,
+          "offpeak_min": 69
+        },
+        "dulles": {
+          "miles": 27.9,
+          "rush_min": 33,
+          "offpeak_min": 35
+        },
+        "reston": {
+          "miles": 30.6,
+          "rush_min": 36,
+          "offpeak_min": 41
+        }
+      }
+    },
+    "SULLY RD": {
+      "route_number": "VA-28",
+      "toll": false,
+      "commute_pattern": "Varies by segment",
+      "midpoint_coords": [
+        39.06966,
+        -77.62066
+      ],
+      "travel_times": {
+        "tysons": {
+          "miles": 32.6,
+          "rush_min": 37,
+          "offpeak_min": 39
+        },
+        "dc": {
+          "miles": 43.9,
+          "rush_min": 50,
+          "offpeak_min": 60
+        },
+        "dulles": {
+          "miles": 20.4,
+          "rush_min": 26,
+          "offpeak_min": 25
+        },
+        "reston": {
+          "miles": 23.1,
+          "rush_min": 29,
+          "offpeak_min": 31
+        }
+      }
+    },
+    "DULLES TOLL RD": {
+      "route_number": "VA-267",
+      "toll": true,
+      "commute_pattern": "Heavy eastbound AM, westbound PM",
+      "midpoint_coords": [
+        38.992436,
+        -77.437963
+      ],
+      "travel_times": {
+        "tysons": {
+          "miles": 16.8,
+          "rush_min": 19,
+          "offpeak_min": 22
+        },
+        "dc": {
+          "miles": 28.2,
+          "rush_min": 33,
+          "offpeak_min": 41
+        },
+        "dulles": {
+          "miles": 4.4,
+          "rush_min": 7,
+          "offpeak_min": 7
+        },
+        "reston": {
+          "miles": 7.4,
+          "rush_min": 12,
+          "offpeak_min": 14
+        }
+      }
+    },
+    "LEE JACKSON HWY": {
+      "route_number": "US-50",
+      "toll": false,
+      "commute_pattern": "Heavy eastbound AM, westbound PM",
+      "midpoint_coords": [
+        38.949676,
+        -77.66009
+      ],
+      "travel_times": {
+        "tysons": {
+          "miles": 31.4,
+          "rush_min": 42,
+          "offpeak_min": 47
+        },
+        "dc": {
+          "miles": 42.7,
+          "rush_min": 55,
+          "offpeak_min": 68
+        },
+        "dulles": {
+          "miles": 19.2,
+          "rush_min": 31,
+          "offpeak_min": 36
+        },
+        "reston": {
+          "miles": 21.9,
+          "rush_min": 34,
+          "offpeak_min": 41
+        }
+      }
+    },
+    "JAMES MONROE HWY": {
+      "route_number": "US-15",
+      "toll": false,
+      "commute_pattern": "Varies by segment",
+      "midpoint_coords": [
+        39.045948,
+        -77.579794
+      ],
+      "travel_times": {
+        "tysons": {
+          "miles": 26.2,
+          "rush_min": 27,
+          "offpeak_min": 28
+        },
+        "dc": {
+          "miles": 37.6,
+          "rush_min": 42,
+          "offpeak_min": 47
+        },
+        "dulles": {
+          "miles": 14.1,
+          "rush_min": 17,
+          "offpeak_min": 15
+        },
+        "reston": {
+          "miles": 16.8,
+          "rush_min": 20,
+          "offpeak_min": 21
+        }
+      }
+    },
+    "LOUDOUN COUNTY PKWY": {
+      "route_number": "SC-607",
+      "toll": false,
+      "commute_pattern": "Local collector",
+      "midpoint_coords": [
+        38.994239,
+        -77.494175
+      ],
+      "travel_times": {
+        "tysons": {
+          "miles": 18.4,
+          "rush_min": 19,
+          "offpeak_min": 23
+        },
+        "dc": {
+          "miles": 29.7,
+          "rush_min": 34,
+          "offpeak_min": 41
+        },
+        "dulles": {
+          "miles": 6.2,
+          "rush_min": 8,
+          "offpeak_min": 8
+        },
+        "reston": {
+          "miles": 8.9,
+          "rush_min": 12,
+          "offpeak_min": 14
+        }
+      }
+    },
+    "WAXPOOL RD": {
+      "route_number": "SC-625",
+      "toll": false,
+      "commute_pattern": "Heavy eastbound AM, westbound PM",
+      "midpoint_coords": [
+        39.015931,
+        -77.463665
+      ],
+      "travel_times": {
+        "tysons": {
+          "miles": 19.7,
+          "rush_min": 23,
+          "offpeak_min": 27
+        },
+        "dc": {
+          "miles": 31.1,
+          "rush_min": 37,
+          "offpeak_min": 46
+        },
+        "dulles": {
+          "miles": 7.2,
+          "rush_min": 11,
+          "offpeak_min": 13
+        },
+        "reston": {
+          "miles": 10.2,
+          "rush_min": 16,
+          "offpeak_min": 19
+        }
+      }
+    },
+    "OLD OX RD": {
+      "route_number": "SC-606",
+      "toll": false,
+      "commute_pattern": "Heavy eastbound AM, westbound PM",
+      "midpoint_coords": [
+        38.930038,
+        -77.494351
+      ],
+      "travel_times": {
+        "tysons": {
+          "miles": 22.8,
+          "rush_min": 34,
+          "offpeak_min": 37
+        },
+        "dc": {
+          "miles": 34.2,
+          "rush_min": 48,
+          "offpeak_min": 58
+        },
+        "dulles": {
+          "miles": 11.2,
+          "rush_min": 34,
+          "offpeak_min": 34
+        },
+        "reston": {
+          "miles": 13.4,
+          "rush_min": 27,
+          "offpeak_min": 29
+        }
+      }
+    },
+    "CASCADES PKWY": {
+      "route_number": "SC-1794",
+      "toll": false,
+      "commute_pattern": "Local collector",
+      "midpoint_coords": [
+        39.042089,
+        -77.393463
+      ],
+      "travel_times": {
+        "tysons": {
+          "miles": 13.9,
+          "rush_min": 19,
+          "offpeak_min": 28
+        },
+        "dc": {
+          "miles": 27.2,
+          "rush_min": 34,
+          "offpeak_min": 47
+        },
+        "dulles": {
+          "miles": 10.0,
+          "rush_min": 14,
+          "offpeak_min": 14
+        },
+        "reston": {
+          "miles": 8.0,
+          "rush_min": 13,
+          "offpeak_min": 18
+        }
+      }
+    },
+    "BELMONT RIDGE RD": {
+      "route_number": "SC-659",
+      "toll": false,
+      "commute_pattern": "Local collector",
+      "midpoint_coords": [
+        38.97523,
+        -77.52574
+      ],
+      "travel_times": {
+        "tysons": {
+          "miles": 21.3,
+          "rush_min": 25,
+          "offpeak_min": 28
+        },
+        "dc": {
+          "miles": 32.6,
+          "rush_min": 39,
+          "offpeak_min": 47
+        },
+        "dulles": {
+          "miles": 9.1,
+          "rush_min": 14,
+          "offpeak_min": 15
+        },
+        "reston": {
+          "miles": 11.8,
+          "rush_min": 18,
+          "offpeak_min": 21
+        }
+      }
+    },
+    "RYAN RD": {
+      "route_number": "SC-772",
+      "toll": false,
+      "commute_pattern": "Heavy eastbound AM, westbound PM",
+      "midpoint_coords": [
+        38.927974,
+        -77.466605
+      ],
+      "travel_times": {
+        "tysons": {
+          "miles": 24.1,
+          "rush_min": 38,
+          "offpeak_min": 39
+        },
+        "dc": {
+          "miles": 35.5,
+          "rush_min": 51,
+          "offpeak_min": 61
+        },
+        "dulles": {
+          "miles": 12.5,
+          "rush_min": 37,
+          "offpeak_min": 37
+        },
+        "reston": {
+          "miles": 14.7,
+          "rush_min": 31,
+          "offpeak_min": 33
+        }
+      }
+    },
+    "SYCOLIN RD": {
+      "route_number": "SC-643",
+      "toll": false,
+      "commute_pattern": "Local collector",
+      "midpoint_coords": [
+        39.05442,
+        -77.613814
+      ],
+      "travel_times": {
+        "tysons": {
+          "miles": 30.4,
+          "rush_min": 33,
+          "offpeak_min": 35
+        },
+        "dc": {
+          "miles": 41.8,
+          "rush_min": 47,
+          "offpeak_min": 57
+        },
+        "dulles": {
+          "miles": 18.2,
+          "rush_min": 22,
+          "offpeak_min": 23
+        },
+        "reston": {
+          "miles": 20.9,
+          "rush_min": 25,
+          "offpeak_min": 28
+        }
+      }
+    },
+    "EDWARDS FERRY RD": {
+      "route_number": "",
+      "toll": false,
+      "commute_pattern": "Local collector",
+      "midpoint_coords": [
+        39.11374,
+        -77.541861
+      ],
+      "travel_times": {
+        "tysons": {
+          "miles": 23.0,
+          "rush_min": 29,
+          "offpeak_min": 32
+        },
+        "dc": {
+          "miles": 36.3,
+          "rush_min": 44,
+          "offpeak_min": 51
+        },
+        "dulles": {
+          "miles": 16.0,
+          "rush_min": 19,
+          "offpeak_min": 20
+        },
+        "reston": {
+          "miles": 20.2,
+          "rush_min": 24,
+          "offpeak_min": 25
+        }
+      }
+    }
+  },
+  "_errors": []
+}

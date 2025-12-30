@@ -1,0 +1,357 @@
+LONG_SCHOOL_YEAR,DETAIL_LVL_DESC,SCHOOL_DSTRCT_CD,SCHOOL_DSTRCT_NM,INSTN_NUMBER,INSTN_NAME,GRADES_SERVED_DESC,LABEL_LVL_1_DESC,PROGRAM_TOTAL,PROGRAM_PERCENT,TOTAL_COUNT,source_file,#RPT_NAME
+2019-20,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -ALL Students,586.0,80.94,724.0,Graduation_Rate_2020_Dec112020.csv,
+2019-20,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Active Duty,,,,Graduation_Rate_2020_Dec112020.csv,
+2019-20,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -American Indian/Alaskan,,,,Graduation_Rate_2020_Dec112020.csv,
+2019-20,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Asian/Pacific Islander,,,,Graduation_Rate_2020_Dec112020.csv,
+2019-20,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Black,283.0,78.83,359.0,Graduation_Rate_2020_Dec112020.csv,
+2019-20,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Economically Disadvantaged,586.0,80.94,724.0,Graduation_Rate_2020_Dec112020.csv,
+2019-20,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Female,324.0,86.86,373.0,Graduation_Rate_2020_Dec112020.csv,
+2019-20,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Foster,,,,Graduation_Rate_2020_Dec112020.csv,
+2019-20,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Hispanic,152.0,79.58,191.0,Graduation_Rate_2020_Dec112020.csv,
+2019-20,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Homeless,23.0,57.5,40.0,Graduation_Rate_2020_Dec112020.csv,
+2019-20,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Limited English Proficient,34.0,61.82,55.0,Graduation_Rate_2020_Dec112020.csv,
+2019-20,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Male,262.0,74.64,351.0,Graduation_Rate_2020_Dec112020.csv,
+2019-20,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Migrant,,,,Graduation_Rate_2020_Dec112020.csv,
+2019-20,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Multi-Racial,18.0,78.26,23.0,Graduation_Rate_2020_Dec112020.csv,
+2019-20,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Not Economically Disadvantaged,,,,Graduation_Rate_2020_Dec112020.csv,
+2019-20,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Students With Disability,61.0,65.59,93.0,Graduation_Rate_2020_Dec112020.csv,
+2019-20,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Students Without Disability,525.0,83.2,631.0,Graduation_Rate_2020_Dec112020.csv,
+2019-20,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -White,122.0,88.41,138.0,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -ALL Students,246.0,77.12,319.0,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Active Duty,,,,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -American Indian/Alaskan,,,,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Asian/Pacific Islander,,,,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Black,131.0,77.06,170.0,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Economically Disadvantaged,246.0,77.12,319.0,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Female,140.0,83.83,167.0,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Foster,,,,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Hispanic,72.0,75.0,96.0,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Homeless,,,,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Limited English Proficient,14.0,51.85,27.0,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Male,106.0,69.74,152.0,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Migrant,,,,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Multi-Racial,,,,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Not Economically Disadvantaged,,,,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Students With Disability,33.0,68.75,48.0,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Students Without Disability,213.0,78.6,271.0,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -White,32.0,82.05,39.0,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -ALL Students,13.0,50.0,26.0,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Active Duty,,,,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -American Indian/Alaskan,,,,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Asian/Pacific Islander,,,,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Black,,,,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Economically Disadvantaged,13.0,50.0,26.0,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Female,,,,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Foster,,,,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Hispanic,,,,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Homeless,,,,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Limited English Proficient,,,,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Male,,,,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Migrant,,,,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Multi-Racial,,,,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Not Economically Disadvantaged,,,,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Students With Disability,,,,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Students Without Disability,12.0,48.0,25.0,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -White,,,,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -ALL Students,327.0,86.28,379.0,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Active Duty,,,,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -American Indian/Alaskan,,,,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Asian/Pacific Islander,,,,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Black,145.0,82.86,175.0,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Economically Disadvantaged,327.0,86.28,379.0,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Female,176.0,90.26,195.0,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Foster,,,,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Hispanic,79.0,87.78,90.0,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Homeless,13.0,59.09,22.0,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Limited English Proficient,19.0,73.08,26.0,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Male,151.0,82.07,184.0,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Migrant,,,,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Multi-Racial,,,,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Not Economically Disadvantaged,,,,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Students With Disability,27.0,61.36,44.0,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Students Without Disability,300.0,89.6,335.0,Graduation_Rate_2020_Dec112020.csv,
+2019-20,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -White,86.0,91.49,94.0,Graduation_Rate_2020_Dec112020.csv,
+2020-21,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -ALL Students,629,79.82,788,Graduation_Rate_2021_Dec062021.csv,
+2020-21,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Active Duty,TFS,TFS,TFS,Graduation_Rate_2021_Dec062021.csv,
+2020-21,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -American Indian/Alaskan,TFS,TFS,TFS,Graduation_Rate_2021_Dec062021.csv,
+2020-21,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Asian/Pacific Islander,17,89.47,19,Graduation_Rate_2021_Dec062021.csv,
+2020-21,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Black,275,75.14,366,Graduation_Rate_2021_Dec062021.csv,
+2020-21,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Economically Disadvantaged,629,79.82,788,Graduation_Rate_2021_Dec062021.csv,
+2020-21,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Female,329,82.87,397,Graduation_Rate_2021_Dec062021.csv,
+2020-21,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Foster,TFS,TFS,TFS,Graduation_Rate_2021_Dec062021.csv,
+2020-21,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Hispanic,159,81.12,196,Graduation_Rate_2021_Dec062021.csv,
+2020-21,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Homeless,29,54.72,53,Graduation_Rate_2021_Dec062021.csv,
+2020-21,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Male,300,76.73,391,Graduation_Rate_2021_Dec062021.csv,
+2020-21,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Migrant,TFS,TFS,TFS,Graduation_Rate_2021_Dec062021.csv,
+2020-21,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Multi-Racial,31,83.78,37,Graduation_Rate_2021_Dec062021.csv,
+2020-21,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Not Economically Disadvantaged,TFS,TFS,TFS,Graduation_Rate_2021_Dec062021.csv,
+2020-21,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Students With Disability,63,63.64,99,Graduation_Rate_2021_Dec062021.csv,
+2020-21,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Students Without Disability,566,82.1,689,Graduation_Rate_2021_Dec062021.csv,
+2020-21,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -White,146,86.39,169,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -ALL Students,225,74.01,304,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Active Duty,TFS,TFS,TFS,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -American Indian/Alaskan,TFS,TFS,TFS,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Asian/Pacific Islander,TFS,TFS,TFS,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Black,112,69.14,162,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Economically Disadvantaged,225,74.01,304,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Female,122,80.26,152,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Foster,TFS,TFS,TFS,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Hispanic,68,80,85,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Homeless,TFS,TFS,TFS,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Male,103,67.76,152,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Migrant,TFS,TFS,TFS,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Multi-Racial,TFS,TFS,TFS,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Not Economically Disadvantaged,TFS,TFS,TFS,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Students With Disability,22,47.83,46,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Students Without Disability,203,78.7,258,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -White,35,81.4,43,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -ALL Students,24,66.67,36,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Active Duty,TFS,TFS,TFS,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -American Indian/Alaskan,TFS,TFS,TFS,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Asian/Pacific Islander,TFS,TFS,TFS,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Black,19,70.37,27,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Economically Disadvantaged,24,66.67,36,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Female,TFS,TFS,TFS,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Foster,TFS,TFS,TFS,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Hispanic,TFS,TFS,TFS,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Homeless,TFS,TFS,TFS,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Male,16,76.19,21,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Migrant,TFS,TFS,TFS,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Multi-Racial,TFS,TFS,TFS,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Not Economically Disadvantaged,TFS,TFS,TFS,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Students With Disability,TFS,TFS,TFS,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Students Without Disability,20,64.5,31,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -White,TFS,TFS,TFS,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -ALL Students,380,84.82,448,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Active Duty,TFS,TFS,TFS,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -American Indian/Alaskan,TFS,TFS,TFS,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Asian/Pacific Islander,13,92.86,14,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Black,144,81.36,177,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Economically Disadvantaged,380,84.82,448,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Female,199,86.52,230,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Foster,TFS,TFS,TFS,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Hispanic,89,83.96,106,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Homeless,17,60.71,28,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Male,181,83.03,218,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Migrant,TFS,TFS,TFS,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Multi-Racial,23,88.46,26,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Not Economically Disadvantaged,TFS,TFS,TFS,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Students With Disability,37,77.08,48,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Students Without Disability,343,85.8,400,Graduation_Rate_2021_Dec062021.csv,
+2020-21,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -White,110,88.71,124,Graduation_Rate_2021_Dec062021.csv,
+2022-23,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -ALL Students,579,75.39,768,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Active Duty,TFS,TFS,TFS,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -American Indian/Alaskan,TFS,TFS,TFS,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Asian/Pacific Islander,13,86.67,15,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Black,241,71.94,335,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Economically Disadvantaged,579,75.39,768,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Female,308,81.27,379,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Foster,TFS,TFS,TFS,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Hispanic,164,73.54,223,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Homeless,22,50,44,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Limited English Proficient,45,62.5,72,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Male,271,69.67,389,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Migrant,TFS,TFS,TFS,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Multi-Racial,26,76.47,34,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Not Economically Disadvantaged,TFS,TFS,TFS,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Students With Disability,60,56.6,106,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Students Without Disability,519,78.4,662,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -White,135,83.85,161,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -ALL Students,216,69.45,311,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Active Duty,TFS,TFS,TFS,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -American Indian/Alaskan,TFS,TFS,TFS,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Asian/Pacific Islander,TFS,TFS,TFS,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Black,105,70.95,148,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Economically Disadvantaged,216,69.45,311,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Female,108,76.06,142,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Foster,TFS,TFS,TFS,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Hispanic,66,62.26,106,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Homeless,TFS,TFS,TFS,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Limited English Proficient,13,40.63,32,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Male,108,63.91,169,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Migrant,TFS,TFS,TFS,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Multi-Racial,TFS,TFS,TFS,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Not Economically Disadvantaged,TFS,TFS,TFS,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Students With Disability,22,53.66,41,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Students Without Disability,194,71.9,270,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -White,32,76.19,42,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -ALL Students,TFS,TFS,TFS,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Active Duty,TFS,TFS,TFS,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -American Indian/Alaskan,TFS,TFS,TFS,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Asian/Pacific Islander,TFS,TFS,TFS,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Black,TFS,TFS,TFS,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Economically Disadvantaged,TFS,TFS,TFS,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Female,TFS,TFS,TFS,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Foster,TFS,TFS,TFS,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Hispanic,TFS,TFS,TFS,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Homeless,TFS,TFS,TFS,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Limited English Proficient,TFS,TFS,TFS,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Male,TFS,TFS,TFS,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Migrant,TFS,TFS,TFS,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Multi-Racial,TFS,TFS,TFS,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Not Economically Disadvantaged,TFS,TFS,TFS,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Students With Disability,TFS,TFS,TFS,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Students Without Disability,TFS,TFS,TFS,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -White,TFS,TFS,TFS,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -ALL Students,355,80.14,443,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Active Duty,TFS,TFS,TFS,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -American Indian/Alaskan,TFS,TFS,TFS,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Asian/Pacific Islander,TFS,TFS,TFS,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Black,130,73.86,176,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Economically Disadvantaged,355,80.14,443,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Female,196,85.96,228,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Foster,TFS,TFS,TFS,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Hispanic,97,83.62,116,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Homeless,11,50,22,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Limited English Proficient,32,80,40,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Male,159,73.95,215,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Migrant,TFS,TFS,TFS,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Multi-Racial,18,72,25,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Not Economically Disadvantaged,TFS,TFS,TFS,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Students With Disability,36,57.14,63,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Students Without Disability,319,83.9,380,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2022-23,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -White,102,87.18,117,Graduation_Rate_2022-23_2023-12-15_18_55_15.csv,
+2021-22,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -ALL Students,603,76.33,790,Graduation_Rate_2022_Dec082022.csv,
+2021-22,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Active Duty,TFS,TFS,TFS,Graduation_Rate_2022_Dec082022.csv,
+2021-22,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -American Indian/Alaskan,TFS,TFS,TFS,Graduation_Rate_2022_Dec082022.csv,
+2021-22,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Asian/Pacific Islander,10,90.91,11,Graduation_Rate_2022_Dec082022.csv,
+2021-22,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Black,279,76.02,367,Graduation_Rate_2022_Dec082022.csv,
+2021-22,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Economically Disadvantaged,603,76.33,790,Graduation_Rate_2022_Dec082022.csv,
+2021-22,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Female,340,83.13,409,Graduation_Rate_2022_Dec082022.csv,
+2021-22,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Foster,TFS,TFS,TFS,Graduation_Rate_2022_Dec082022.csv,
+2021-22,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Hispanic,148,71.84,206,Graduation_Rate_2022_Dec082022.csv,
+2021-22,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Homeless,29,50,58,Graduation_Rate_2022_Dec082022.csv,
+2021-22,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Limited English Proficient,32,50,64,Graduation_Rate_2022_Dec082022.csv,
+2021-22,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Male,263,69.03,381,Graduation_Rate_2022_Dec082022.csv,
+2021-22,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Migrant,TFS,TFS,TFS,Graduation_Rate_2022_Dec082022.csv,
+2021-22,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Multi-Racial,17,56.67,30,Graduation_Rate_2022_Dec082022.csv,
+2021-22,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Not Economically Disadvantaged,TFS,TFS,TFS,Graduation_Rate_2022_Dec082022.csv,
+2021-22,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Students With Disability,62,62.63,99,Graduation_Rate_2022_Dec082022.csv,
+2021-22,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Students Without Disability,541,78.3,691,Graduation_Rate_2022_Dec082022.csv,
+2021-22,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -White,149,85.14,175,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -ALL Students,225,71.2,316,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Active Duty,TFS,TFS,TFS,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -American Indian/Alaskan,TFS,TFS,TFS,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Asian/Pacific Islander,TFS,TFS,TFS,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Black,112,73.68,152,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Economically Disadvantaged,225,71.2,316,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Female,128,79.5,161,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Foster,TFS,TFS,TFS,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Hispanic,64,66.67,96,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Homeless,TFS,TFS,TFS,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Limited English Proficient,10,33.33,30,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Male,97,62.58,155,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Migrant,TFS,TFS,TFS,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Multi-Racial,TFS,TFS,TFS,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Not Economically Disadvantaged,TFS,TFS,TFS,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Students With Disability,26,60.47,43,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Students Without Disability,199,72.9,273,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -White,39,75,52,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -ALL Students,13,68.42,19,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Active Duty,TFS,TFS,TFS,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -American Indian/Alaskan,TFS,TFS,TFS,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Asian/Pacific Islander,TFS,TFS,TFS,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Black,12,70.59,17,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Economically Disadvantaged,13,68.42,19,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Female,TFS,TFS,TFS,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Foster,TFS,TFS,TFS,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Hispanic,TFS,TFS,TFS,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Homeless,TFS,TFS,TFS,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Limited English Proficient,TFS,TFS,TFS,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Male,TFS,TFS,TFS,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Migrant,TFS,TFS,TFS,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Multi-Racial,TFS,TFS,TFS,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Not Economically Disadvantaged,TFS,TFS,TFS,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Students With Disability,TFS,TFS,TFS,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Students Without Disability,11,64.7,17,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -White,TFS,TFS,TFS,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -ALL Students,365,80.22,455,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Active Duty,TFS,TFS,TFS,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -American Indian/Alaskan,TFS,TFS,TFS,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Asian/Pacific Islander,TFS,TFS,TFS,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Black,155,78.28,198,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Economically Disadvantaged,365,80.22,455,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Female,203,86.02,236,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Foster,TFS,TFS,TFS,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Hispanic,83,76.15,109,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Homeless,17,54.84,31,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Limited English Proficient,22,64.71,34,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Male,162,73.97,219,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Migrant,TFS,TFS,TFS,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Multi-Racial,TFS,TFS,TFS,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Not Economically Disadvantaged,TFS,TFS,TFS,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Students With Disability,34,62.96,54,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Students Without Disability,331,82.5,401,Graduation_Rate_2022_Dec082022.csv,
+2021-22,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -White,110,89.43,123,Graduation_Rate_2022_Dec082022.csv,
+2023-24,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -ALL Students,656,81.09,809,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Active Duty,TFS,TFS,TFS,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -American Indian/Alaskan,TFS,TFS,TFS,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Asian/Pacific Islander,12,85.71,14,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Black,277,77.16,359,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Economically Disadvantaged,656,81.09,809,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Female,321,86.52,371,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Foster,TFS,TFS,TFS,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Hispanic,174,80.18,217,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Homeless,21,45.65,46,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Limited English Proficient,45,64.29,70,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Male,335,76.48,438,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Migrant,TFS,TFS,TFS,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Multi-Racial,25,69.44,36,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Not Economically Disadvantaged,TFS,TFS,TFS,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Students With Disability,76,61.29,124,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -Students Without Disability,580,84.7,685,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,District,629,Clarke County,ALL,All Column Values,"PK,KK,01,02,03,04,05,06,07,08,09,10,11,12",Grad Rate -White,168,91.8,183,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -ALL Students,279,81.34,343,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Active Duty,TFS,TFS,TFS,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -American Indian/Alaskan,TFS,TFS,TFS,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Asian/Pacific Islander,TFS,TFS,TFS,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Black,129,81.13,159,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Economically Disadvantaged,279,81.34,343,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Female,142,86.06,165,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Foster,TFS,TFS,TFS,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Hispanic,86,78.9,109,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Homeless,11,73.33,15,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Limited English Proficient,21,61.76,34,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Male,137,76.97,178,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Migrant,TFS,TFS,TFS,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Multi-Racial,13,72.22,18,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Not Economically Disadvantaged,TFS,TFS,TFS,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Students With Disability,40,66.67,60,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -Students Without Disability,239,84.5,283,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,0102,Cedar Shoals High School,"09,10,11,12",Grad Rate -White,48,88.89,54,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -ALL Students,14,48.28,29,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Active Duty,TFS,TFS,TFS,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -American Indian/Alaskan,TFS,TFS,TFS,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Asian/Pacific Islander,TFS,TFS,TFS,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Black,11,45.83,24,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Economically Disadvantaged,14,48.28,29,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Female,TFS,TFS,10,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Foster,TFS,TFS,TFS,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Hispanic,TFS,TFS,TFS,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Homeless,TFS,TFS,10,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Limited English Proficient,TFS,TFS,TFS,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Male,TFS,TFS,19,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Migrant,TFS,TFS,TFS,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Multi-Racial,TFS,TFS,TFS,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Not Economically Disadvantaged,TFS,TFS,TFS,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Students With Disability,TFS,TFS,TFS,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -Students Without Disability,10,47.6,21,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,0104,Classic City High School,"09,10,11,12",Grad Rate -White,TFS,TFS,TFS,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -ALL Students,363,83.07,437,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Active Duty,TFS,TFS,TFS,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -American Indian/Alaskan,TFS,TFS,TFS,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Asian/Pacific Islander,TFS,TFS,11,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Black,137,77.84,176,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Economically Disadvantaged,363,83.07,437,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Female,173,88.27,196,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Foster,TFS,TFS,TFS,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Hispanic,86,81.13,106,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Homeless,TFS,TFS,16,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Limited English Proficient,22,66.67,33,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Male,190,78.84,241,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Migrant,TFS,TFS,TFS,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Multi-Racial,12,75,16,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Not Economically Disadvantaged,TFS,TFS,TFS,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Students With Disability,32,57.14,56,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -Students Without Disability,331,86.9,381,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate
+2023-24,School,629,Clarke County,5556,Clarke Central High School,"09,10,11,12",Grad Rate -White,119,92.97,128,Graduation_Rate_2023-24_2025-01-14_16_53_10.csv,Graduation Rate

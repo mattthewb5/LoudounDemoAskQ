@@ -1,0 +1,98 @@
+┌────────────────────────────────────────────────────────────────────────────┐
+│                                                                            │
+│              🏡 Athens Home Buyer Research Assistant                       │
+│       AI-powered school & safety research for Athens-Clarke County, GA     │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+
+⚠️  Disclaimer: Data from public sources (Clarke County Schools, Georgia GOSA,
+Athens-Clarke Police). Always verify important information independently...
+
+📖 About the Data - Sources, Updates & Limitations  ▼
+
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│                                                                            │
+│  💬 Ask me about any Athens property                                      │
+│                                                                            │
+│  ┌──────────────────────────────────────────────────────────────────────┐ │
+│  │                                                                      │ │
+│  │  Example: Is 150 Hancock Avenue a good area for families with       │ │
+│  │  young kids?                                                         │ │
+│  │                                                                      │ │
+│  │  Or try: What are the schools like at 1398 W Hancock Ave,           │ │
+│  │  Athens, GA 30606?                                                   │ │
+│  │                                                                      │ │
+│  └──────────────────────────────────────────────────────────────────────┘ │
+│                                                                            │
+│  Type your question about any property in Athens. Include the street      │
+│  address in your question, and I'll analyze schools and safety data       │
+│  for you.                                                                 │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+
+
+📊 Include in Analysis:
+
+   ☑ 🎓 School Information    ☑ 🛡️ Crime & Safety Analysis
+
+   💡 AI will synthesize insights across both schools and safety
+
+
+                        ┌─────────────────────┐
+                        │     🔍 Search       │
+                        └─────────────────────┘
+
+
+💡 Example Queries - Click to Copy  ▼
+
+    Just type naturally! Include the address in your question...
+
+    📍 General Questions:
+    - Is 150 Hancock Avenue a good area for families with young kids?
+    - What are the pros and cons of living at 220 College Station Road?
+
+    🎓 School-Focused:
+    - What are the schools like at 1000 Jennings Mill Road?
+
+    🛡️ Safety-Focused:
+    - How safe is the neighborhood around 195 Hoyt Street?
+
+
+────────────────────────────────────────────────────────────────────────────
+
+KEY IMPROVEMENTS:
+
+✅ Single Text Box - No more separate "address" and "question" fields!
+
+✅ Natural Language - Just type like you're talking to someone:
+   "Is 150 Hancock Avenue a good area for families?"
+
+✅ Smart Parsing - Automatically extracts:
+   • Address: 150 Hancock Avenue
+   • Question: Is this address a good area for families?
+
+✅ Visual Feedback - Shows what was understood:
+   🔍 What I understood ▼
+   Address: 150 Hancock Avenue
+   Question: Is this address a good area for families?
+
+✅ Better Examples - Shows complete natural language queries instead of
+   separate address/question examples
+
+
+────────────────────────────────────────────────────────────────────────────
+
+HOW TO USE:
+
+1. Type your question naturally in the text box
+2. Make sure to include the street address (e.g., "150 Hancock Avenue")
+3. Select what analysis you want (Schools ☑  Crime ☑)
+4. Click Search
+
+EXAMPLES:
+• "Is 1398 W Hancock Avenue, Athens, GA 30606 a good neighborhood?"
+• "What are the schools like at 150 Hancock Ave?"
+• "How safe is 220 College Station Road?"
+
+────────────────────────────────────────────────────────────────────────────

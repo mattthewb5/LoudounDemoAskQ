@@ -1,0 +1,379 @@
+================================================================================
+ATTOM API OPTIMIZATION - IMPLEMENTATION GUIDE
+================================================================================
+
+Analysis Date: 2025-12-22
+Document Type: Implementation Specification (READ-ONLY ANALYSIS)
+
+NOTE: This document provides implementation specifications for future work.
+      No code changes are being made in this analysis session.
+
+================================================================================
+QUICK WIN: DISABLE SQFT ENRICHMENT
+================================================================================
+
+CHANGE LOCATION: core/property_valuation_orchestrator.py
+LINE NUMBER: 156-160
+
+CURRENT CODE:
+```python
+comps = self.attom.get_comparable_sales(
+    address=address,
+    radius_miles=1.0,
+    max_results=10
+)
+```
+
+OPTIMIZED CODE:
+```python
+comps = self.attom.get_comparable_sales(
+    address=address,
+    radius_miles=1.0,
+    max_results=10,
+    enrich_sqft=False  # <-- ADD THIS LINE
+)
+```
+
+IMPACT:
+- Saves 0-10 API calls per valuation
+- Estimated savings: $0.475/property
+- No functional changes (sqft data simply not enriched)
+
+TESTING:
+1. Run existing valuation on test property
+2. Verify valuation still completes
+3. Check that comps are returned (without enriched sqft)
+4. Compare valuation result to baseline
+
+
+================================================================================
+COMPREHENSIVE: LOCAL SQFT LOOKUP
+================================================================================
+
+OPTION A: Modify Orchestrator to Use Local Data
+-----------------------------------------------
+
+CHANGE LOCATION: core/property_valuation_orchestrator.py
+NEW CODE (insert after line 160):
+
+```python
+# Get comps without enrichment
+comps = self.attom.get_comparable_sales(
+    address=address,
+    radius_miles=1.0,
+    max_results=10,
+    enrich_sqft=False  # Don't make extra API calls
+)
+
+# Enrich with local data instead
+if comps and sales_data:
+    for comp in comps:
+        if not comp.sqft or comp.sqft <= 0:
+            # Try local parquet data
+            local_record = sales_data.lookup_by_address(comp.address)
+            if local_record and local_record.get('finished_area'):
+                comp.sqft = int(local_record['finished_area'])
+                if comp.sqft > 0:
+                    comp.price_per_sqft = comp.sale_price / comp.sqft
+```
+
+DEPENDENCY:
+- Requires lookup_by_address() method in LoudounSalesData
+- This method may need to be added (see below)
+
+
+OPTION B: Add lookup_by_address() to LoudounSalesData
+-----------------------------------------------------
+
+CHANGE LOCATION: core/loudoun_sales_data.py
+NEW CODE (add new method):
+
+```python
+def lookup_by_address(self, address: str) -> Optional[Dict]:
+    """
+    Look up property data by address from local parquet data.
+
+    Args:
+        address: Property address to search
+
+    Returns:
+        Dict with property data or None if not found
+    """
+    if self.df is None:
+        return None
+
+    # Normalize address for matching
+    normalized = address.upper().strip()
+
+    # Try exact match first
+    matches = self.df[self.df['address'].str.upper() == normalized]
+
+    if matches.empty:
+        # Try fuzzy match on street address portion
+        street_part = normalized.split(',')[0].strip()
+        matches = self.df[self.df['address'].str.upper().str.contains(street_part)]
+
+    if matches.empty:
+        return None
+
+    # Return most recent record
+    most_recent = matches.sort_values('sale_date', ascending=False).iloc[0]
+    return most_recent.to_dict()
+```
+
+
+================================================================================
+SMART AVM FALLBACK
+================================================================================
+
+CHANGE LOCATION: core/attom_client.py
+METHOD: get_valuation() (lines 306-370)
+
+CURRENT BEHAVIOR:
+- Try AVM endpoint
+- On any failure -> try assessment endpoint
+- On 404 -> try assessment endpoint
+- Multiple fallback attempts
+
+OPTIMIZED CODE:
+
+```python
+def get_valuation(self, address: str) -> Optional[AVMResult]:
+    """
+    Get AVM value with single fallback to assessment.
+
+    Optimized: Only one fallback attempt to reduce API calls.
+    """
+    # Try primary AVM first
+    try:
+        url = f"{self.BASE_URL}/attomavm/detail"
+        params = {'address': address}
+
+        response = self.session.get(url, params=params)
+
+        if response.status_code == 200:
+            data = response.json()
+            avm_value = self._extract_avm_value(data)
+            if avm_value:
+                return avm_value
+
+        # Single fallback to assessment (only if AVM fails)
+        if response.status_code in [404, 500] or not avm_value:
+            return self._get_assessment_value(address)
+
+    except Exception as e:
+        # On exception, try assessment once
+        return self._get_assessment_value(address)
+
+    return None
+```
+
+
+================================================================================
+PROPERTY DETAIL CACHING
+================================================================================
+
+CHANGE LOCATION: core/attom_client.py
+
+ADD IMPORTS (top of file):
+```python
+from pathlib import Path
+from datetime import datetime, timedelta
+import hashlib
+```
+
+ADD CACHE CONFIGURATION:
+```python
+# Cache configuration
+CACHE_DIR = Path(__file__).parent.parent / 'cache' / 'attom'
+CACHE_TTL_DAYS = 7  # Property details don't change often
+```
+
+ADD CACHE HELPER FUNCTIONS:
+```python
+def _get_cache_key(address: str) -> str:
+    """Generate cache key from address."""
+    normalized = address.lower().strip().replace(' ', '_')
+    if len(normalized) > 100:
+        return hashlib.md5(normalized.encode()).hexdigest()
+    return normalized
+
+def _get_cached_property(cache_key: str) -> Optional[Dict]:
+    """Get cached property data if valid."""
+    CACHE_DIR.mkdir(parents=True, exist_ok=True)
+    cache_file = CACHE_DIR / f"{cache_key}.json"
+
+    if not cache_file.exists():
+        return None
+
+    try:
+        with open(cache_file, 'r') as f:
+            cached = json.load(f)
+
+        cached_at = datetime.fromisoformat(cached.get('cached_at', '2000-01-01'))
+        if datetime.now() - cached_at > timedelta(days=CACHE_TTL_DAYS):
+            return None  # Expired
+
+        return cached.get('data')
+    except:
+        return None
+
+def _save_to_cache(cache_key: str, data: Dict) -> None:
+    """Save property data to cache."""
+    CACHE_DIR.mkdir(parents=True, exist_ok=True)
+    cache_file = CACHE_DIR / f"{cache_key}.json"
+
+    cache_data = {
+        'cached_at': datetime.now().isoformat(),
+        'data': data
+    }
+
+    with open(cache_file, 'w') as f:
+        json.dump(cache_data, f)
+```
+
+MODIFY get_property_detail():
+```python
+def get_property_detail(self, address: str, use_cache: bool = True) -> Optional[PropertyData]:
+    """Get property detail with caching."""
+    cache_key = _get_cache_key(address)
+
+    # Check cache first
+    if use_cache:
+        cached = _get_cached_property(cache_key)
+        if cached:
+            return self._parse_property_data(cached)
+
+    # Make API call
+    try:
+        response = self.session.get(...)
+        data = response.json()
+
+        # Cache the result
+        if use_cache and data:
+            _save_to_cache(cache_key, data)
+
+        return self._parse_property_data(data)
+    except:
+        return None
+```
+
+
+================================================================================
+LIMIT COMP ENRICHMENT TO TOP N
+================================================================================
+
+CHANGE LOCATION: core/attom_client.py
+METHOD: get_comparable_sales() (lines 375-520)
+
+MODIFY ENRICHMENT LOGIC:
+```python
+# After getting comparables, only enrich top 3
+if enrich_sqft:
+    # Sort by relevance (distance, recency, etc.)
+    sorted_comps = sorted(comparables,
+                         key=lambda c: (c.distance_miles,
+                                       -datetime.strptime(c.sale_date, '%m/%d/%Y').timestamp()))
+
+    enriched = []
+    for i, comp in enumerate(sorted_comps):
+        if i < 3 and (not comp.sqft or comp.sqft <= 0):
+            # Only enrich top 3 comps
+            enriched_comp = self.enrich_comparable_with_sqft(comp)
+            enriched.append(enriched_comp)
+        else:
+            enriched.append(comp)
+
+    return enriched
+```
+
+
+================================================================================
+TESTING CHECKLIST
+================================================================================
+
+BEFORE OPTIMIZATION:
+[ ] Record baseline API call count for test property
+[ ] Record baseline valuation result
+[ ] Record baseline response time
+[ ] Document current monthly API usage
+
+AFTER EACH CHANGE:
+[ ] Verify valuation still completes
+[ ] Compare API call count (should be lower)
+[ ] Compare valuation result (should be similar)
+[ ] Check for any errors or warnings
+[ ] Test edge cases (property not found, no comps, etc.)
+
+TEST PROPERTIES:
+1. 43500 Tuckaway Pl, Leesburg, VA 20176 (standard)
+2. Rural property (may have fewer comps)
+3. Recent sale (has known value to compare)
+4. Older property (may have more data gaps)
+
+
+================================================================================
+ROLLBACK PLAN
+================================================================================
+
+If optimization causes issues:
+
+1. QUICK ROLLBACK (1 minute):
+   - Remove enrich_sqft=False parameter
+   - Everything returns to baseline
+
+2. CACHE ISSUES:
+   - Delete cache directory: rm -rf cache/attom/
+   - Restart application
+
+3. FULL ROLLBACK:
+   - Git revert the optimization commits
+   - Clear any caches
+   - Restart application
+
+
+================================================================================
+MONITORING
+================================================================================
+
+METRICS TO TRACK:
+1. API calls per valuation (target: 3-4)
+2. API cost per day/week/month
+3. Valuation accuracy (compare to known sales)
+4. Response time per valuation
+5. Error rate
+
+ALERTING:
+- Alert if API calls > 5 per valuation
+- Alert if error rate > 5%
+- Alert if valuation differs > 20% from prior
+
+
+================================================================================
+IMPLEMENTATION PRIORITY
+================================================================================
+
+PHASE 1: Quick Win (Day 1)
+- Add enrich_sqft=False to orchestrator
+- Test with sample properties
+- Deploy
+
+PHASE 2: Local Data (Week 1)
+- Add lookup_by_address() to LoudounSalesData
+- Modify orchestrator to use local enrichment
+- Test thoroughly
+
+PHASE 3: Caching (Week 2)
+- Add caching to attom_client.py
+- Test cache invalidation
+- Monitor cache hit rates
+
+PHASE 4: Smart Fallback (Week 2-3)
+- Simplify AVM fallback logic
+- Test edge cases
+- Monitor for increased nulls
+
+
+================================================================================
+END OF IMPLEMENTATION GUIDE
+================================================================================

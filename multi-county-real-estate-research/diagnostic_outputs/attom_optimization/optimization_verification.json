@@ -1,0 +1,42 @@
+{
+  "verification_date": "2025-12-22T17:46:07.176403",
+  "optimization_present": true,
+  "savings_calculation": {
+    "calls_before": 8,
+    "calls_after": 3,
+    "calls_saved": 5,
+    "cost_before": 0.76,
+    "cost_after": 0.28500000000000003,
+    "cost_saved_per_property": 0.475,
+    "reduction_percent": 62.5,
+    "annual_savings_1k_month": 5700.0,
+    "annual_savings_5k_month": 28500.0
+  },
+  "live_test_results": [
+    {
+      "address": "43500 Tuckaway Pl, Leesburg, VA 20176",
+      "success": false,
+      "error": "PropertyValuationOrchestrator.analyze_property() missing 2 required positional arguments: 'lat' and 'lon'"
+    },
+    {
+      "address": "23704 Velvet Grass Ln, Ashburn, VA 20148",
+      "success": false,
+      "error": "PropertyValuationOrchestrator.analyze_property() missing 2 required positional arguments: 'lat' and 'lon'"
+    },
+    {
+      "address": "42713 Newcomer Ter, Chantilly, VA 20152",
+      "success": false,
+      "error": "PropertyValuationOrchestrator.analyze_property() missing 2 required positional arguments: 'lat' and 'lon'"
+    },
+    {
+      "address": "41690 Dillinger Mill Pl, Aldie, VA 20105",
+      "success": false,
+      "error": "PropertyValuationOrchestrator.analyze_property() missing 2 required positional arguments: 'lat' and 'lon'"
+    },
+    {
+      "address": "24756 Stonehill Farm Ct, Aldie, VA 20105",
+      "success": false,
+      "error": "PropertyValuationOrchestrator.analyze_property() missing 2 required positional arguments: 'lat' and 'lon'"
+    }
+  ]
+}

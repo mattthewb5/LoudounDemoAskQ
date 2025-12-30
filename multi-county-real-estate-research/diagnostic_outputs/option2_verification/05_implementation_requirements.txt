@@ -1,0 +1,53 @@
+======================================================================
+OPTION 2 IMPLEMENTATION REQUIREMENTS
+======================================================================
+
+Scenario: Function exists BUT HAS A BUG
+
+Option 2 NOT Recommended Because:
+----------------------------------------------------------------------
+1. match_school_in_performance_data() has first-word fallback bug
+2. Would trade duplicate lines for wrong data
+3. Success depends on data file order (unreliable)
+
+RECOMMENDED: Exact Normalized Match Approach
+----------------------------------------------------------------------
+
+Changes needed in loudoun_streamlit_app.py:
+
+1. Add import at top of file:
+   from core.loudoun_school_performance import normalize_school_name
+
+2. Replace lines 606-608 with:
+   normalized_target = normalize_school_name(school)
+   school_data = performance_df[
+       performance_df['School_Name'].apply(normalize_school_name) == normalized_target
+   ]
+
+3. Replace lines 630-632 with same pattern (Math chart)
+
+4. ALSO FIX match_school_in_performance_data() in loudoun_school_performance.py:
+   Remove lines 244-250 (first-word fallback) or reorder to check exact first
+
+Files affected:
+  - loudoun_streamlit_app.py (2 locations)
+  - core/loudoun_school_performance.py (fix existing function)
+
+Estimated lines changed: 10-15
+
+Risk Assessment:
+----------------------------------------------------------------------
+Complexity: Low (simple pattern replacement)
+Breaking change risk: Low (improves accuracy)
+Testing requirements: Test with Belmont Ridge, Riverside, Sterling addresses
+
+EDGE CASE: Name Variations
+----------------------------------------------------------------------
+'Steuart Weller Elementary' (boundary data) vs
+'Steuart W. Weller Elementary' (VADOE data)
+
+These don't match with exact normalized match.
+Solutions:
+1. Fix source data (make names consistent)
+2. Add special handling for known variations
+3. Use fuzzy matching as fallback (with strict threshold)

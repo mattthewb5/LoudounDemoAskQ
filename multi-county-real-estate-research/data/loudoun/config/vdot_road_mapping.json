@@ -1,0 +1,235 @@
+{
+    "highways": {
+        "LEESBURG PIKE": {
+            "vdot_routes": ["VA-7E", "VA-7W", "SR-7"],
+            "vdot_aliases": ["Harry Byrd Hwy", "Harry Flood Byrd Hwy"],
+            "typical_adt_range": [50000, 142000],
+            "notes": "Main east-west corridor through Loudoun"
+        },
+        "HARRY BYRD HWY": {
+            "vdot_routes": ["VA-7E", "VA-7W", "SR-7"],
+            "vdot_aliases": ["Leesburg Pike"],
+            "typical_adt_range": [50000, 142000],
+            "notes": "Same as Leesburg Pike - Route 7"
+        },
+        "SULLY RD": {
+            "vdot_routes": ["VA-28N", "VA-28S", "SR-28"],
+            "vdot_aliases": ["Sully Road"],
+            "typical_adt_range": [80000, 185000],
+            "notes": "Major north-south corridor, highest traffic in Loudoun"
+        },
+        "SULLY ROAD": {
+            "vdot_routes": ["VA-28N", "VA-28S", "SR-28"],
+            "vdot_aliases": [],
+            "typical_adt_range": [80000, 185000],
+            "notes": "Same as Sully Rd - Route 28"
+        },
+        "DULLES ACCESS RD": {
+            "vdot_routes": ["VA-267E", "VA-267W", "SR-267"],
+            "vdot_aliases": ["Dulles Toll Road", "Dulles Greenway"],
+            "typical_adt_range": [25000, 88000],
+            "notes": "Limited access toll road"
+        },
+        "DULLES TOLL RD": {
+            "vdot_routes": ["VA-267E", "VA-267W", "SR-267"],
+            "vdot_aliases": ["Dulles Access Rd", "Dulles Greenway"],
+            "typical_adt_range": [25000, 88000],
+            "notes": "Same as Dulles Access - Route 267"
+        },
+        "GREENWAY": {
+            "vdot_routes": ["VA-267E", "VA-267W", "SR-267"],
+            "vdot_aliases": ["Dulles Greenway"],
+            "typical_adt_range": [25000, 88000],
+            "notes": "Western extension of Dulles Toll Road"
+        },
+        "LEE JACKSON HWY": {
+            "vdot_routes": ["US-50E", "US-50W"],
+            "vdot_aliases": ["John Mosby Hwy"],
+            "typical_adt_range": [20000, 86000],
+            "notes": "US Route 50 - changes name at different points"
+        },
+        "JOHN MOSBY HWY": {
+            "vdot_routes": ["US-50E", "US-50W"],
+            "vdot_aliases": ["Lee Jackson Hwy"],
+            "typical_adt_range": [20000, 86000],
+            "notes": "US Route 50 western portion"
+        },
+        "JAMES MONROE HWY": {
+            "vdot_routes": ["US-15N", "US-15S"],
+            "vdot_aliases": ["Leesburg Bypass"],
+            "typical_adt_range": [26000, 80000],
+            "notes": "Major north-south route through Leesburg"
+        },
+        "KING ST": {
+            "vdot_routes": ["BUS US-15N", "BUS US-15S"],
+            "vdot_aliases": ["Business US-15"],
+            "typical_adt_range": [6700, 28000],
+            "notes": "Business route through downtown Leesburg"
+        }
+    },
+    "collectors": {
+        "LOUDOUN COUNTY PKWY": {
+            "vdot_routes": ["SC-607", "SC-1950"],
+            "vdot_codes": ["SC-607S (Loudoun County)", "SC-607N (Loudoun County)", "SC-1950N (Loudoun County)", "SC-1950S (Loudoun County)"],
+            "typical_adt_range": [19000, 30000],
+            "notes": "Major collector connecting Ashburn to Route 7"
+        },
+        "WAXPOOL RD": {
+            "vdot_routes": ["SC-625", "SC-1036", "SC-2119"],
+            "vdot_codes": ["SC-625E (Loudoun County)", "SC-625W (Loudoun County)"],
+            "typical_adt_range": [13000, 61000],
+            "notes": "High traffic collector in Ashburn area"
+        },
+        "BELMONT RIDGE RD": {
+            "vdot_routes": ["SC-659"],
+            "vdot_codes": ["SC-659N (Loudoun County)", "SC-659S (Loudoun County)"],
+            "typical_adt_range": [13000, 17000],
+            "notes": "North-south collector connecting to Greenway"
+        },
+        "ASHBURN VILLAGE BLVD": {
+            "vdot_routes": ["SC-1795"],
+            "vdot_codes": [],
+            "typical_adt_range": [10000, 14000],
+            "notes": "Community connector in Ashburn"
+        },
+        "PACIFIC BLVD": {
+            "vdot_routes": ["SC-846"],
+            "vdot_codes": ["SC-846N (Loudoun County)", "SC-846S (Loudoun County)"],
+            "typical_adt_range": [18000, 25000],
+            "notes": "Major Sterling area collector"
+        },
+        "CLAIBORNE PKWY": {
+            "vdot_routes": [],
+            "vdot_codes": [],
+            "typical_adt_range": [8000, 15000],
+            "notes": "Not directly in VDOT - use coordinate lookup"
+        },
+        "BRADDOCK RD": {
+            "vdot_routes": [],
+            "vdot_codes": [],
+            "typical_adt_range": [5000, 10000],
+            "notes": "Not directly in VDOT Loudoun - use coordinate lookup"
+        },
+        "STERLING BLVD": {
+            "vdot_routes": [],
+            "vdot_codes": ["Sterling RD (PR - Town of Herndon)", "Sterling RD (NP - Town of Herndon)"],
+            "typical_adt_range": [25000, 37000],
+            "notes": "Named road in VDOT, use coordinate lookup"
+        },
+        "BATTLEFIELD PKWY": {
+            "vdot_routes": [],
+            "vdot_codes": ["Battlefield PKWY (PR - Town of Leesburg)", "Battlefield PKWY (NP - Town of Leesburg)"],
+            "typical_adt_range": [15000, 17000],
+            "notes": "Named road in VDOT"
+        },
+        "RIVER CREEK PKWY": {
+            "vdot_routes": [],
+            "vdot_codes": ["River Creek PKWY (PR - Town of Leesburg)", "River Creek PKWY (NP - Town of Leesburg)"],
+            "typical_adt_range": [20000, 23000],
+            "notes": "Named road in VDOT"
+        },
+        "CROSSTRAIL BLVD": {
+            "vdot_routes": [],
+            "vdot_codes": [],
+            "typical_adt_range": [5000, 12000],
+            "notes": "Not directly in VDOT - use coordinate lookup"
+        },
+        "SHREVEPORT DR": {
+            "vdot_routes": [],
+            "vdot_codes": [],
+            "typical_adt_range": [3000, 8000],
+            "notes": "Not in VDOT - use coordinate lookup"
+        },
+        "OLD OX RD": {
+            "vdot_routes": ["SC-606"],
+            "vdot_codes": ["SC-606E (Loudoun County)", "SC-606W (Loudoun County)"],
+            "typical_adt_range": [35000, 48000],
+            "notes": "High traffic east-west collector"
+        },
+        "TALL CEDARS PKWY": {
+            "vdot_routes": [],
+            "vdot_codes": [],
+            "typical_adt_range": [5000, 10000],
+            "notes": "Not directly in VDOT - use coordinate lookup"
+        },
+        "DULLES WEST BLVD": {
+            "vdot_routes": [],
+            "vdot_codes": [],
+            "typical_adt_range": [5000, 10000],
+            "notes": "Not directly in VDOT - use coordinate lookup"
+        },
+        "RYAN RD": {
+            "vdot_routes": ["SC-772", "SC-645"],
+            "vdot_codes": ["SC-772E (Loudoun County)", "SC-772W (Loudoun County)"],
+            "typical_adt_range": [5600, 14000],
+            "notes": "Connects Loudoun County Pkwy to Route 7"
+        },
+        "SHELLHORN RD": {
+            "vdot_routes": ["SC-643"],
+            "vdot_codes": ["SC-643N (Loudoun County)", "SC-643S (Loudoun County)"],
+            "typical_adt_range": [6000, 9300],
+            "notes": "Connects Loudoun County Pkwy to Waxpool"
+        },
+        "PROSPERITY AVE": {
+            "vdot_routes": [],
+            "vdot_codes": [],
+            "typical_adt_range": [3000, 8000],
+            "notes": "Not directly in VDOT - use coordinate lookup"
+        },
+        "EDWARDS FERRY RD": {
+            "vdot_routes": [],
+            "vdot_codes": ["Edwards Ferry RD (PR - Town of Leesburg)", "Edwards Ferry RD (NP - Town of Leesburg)"],
+            "typical_adt_range": [25000, 29000],
+            "notes": "Named road in VDOT - high traffic near Leesburg"
+        },
+        "SYCOLIN RD": {
+            "vdot_routes": ["SC-643"],
+            "vdot_codes": ["Sycolin RD (PR - Town of Leesburg)", "Sycolin RD (NP - Town of Leesburg)"],
+            "typical_adt_range": [6000, 9300],
+            "notes": "Named road in VDOT"
+        },
+        "CASCADES PKWY": {
+            "vdot_routes": ["SC-1794"],
+            "vdot_codes": ["SC-1794E (Loudoun County)", "SC-1794W (Loudoun County)"],
+            "typical_adt_range": [18000, 23000],
+            "notes": "Major collector in Cascades area"
+        },
+        "NOKES BLVD": {
+            "vdot_routes": ["SC-1793", "SC-1902"],
+            "vdot_codes": ["SC-1793E (Loudoun County)", "SC-1902N (Loudoun County)"],
+            "typical_adt_range": [20000, 26000],
+            "notes": "Major collector near Sterling"
+        }
+    },
+    "_unmapped": [
+        "CLAIBORNE PKWY - no direct VDOT match, use coordinate-based lookup",
+        "BRADDOCK RD - not in VDOT Loudoun data, use coordinate lookup",
+        "CROSSTRAIL BLVD - no direct VDOT match",
+        "SHREVEPORT DR - not in VDOT data",
+        "TALL CEDARS PKWY - no direct VDOT match",
+        "DULLES WEST BLVD - no direct VDOT match",
+        "PROSPERITY AVE - no direct VDOT match"
+    ],
+    "_vdot_high_adt_not_mapped": [
+        "VA-286 (Fairfax County Pkwy) - 55K-83K ADT - edge of Loudoun",
+        "SC-602 (Fairfax) - 40K ADT - outside core Loudoun",
+        "I-66 - 171K ADT - southern edge of Loudoun",
+        "VA-9 (Charles Town Pike) - 25K ADT - western Loudoun",
+        "VA-228 - 24K ADT - northern Loudoun area"
+    ],
+    "_coordinate_fallback_strategy": {
+        "description": "When road name has no mapping, query VDOT API by coordinates",
+        "radius_miles": 0.5,
+        "api_endpoint": "https://services.arcgis.com/p5v98VHDX9Atv3l7/arcgis/rest/services/VDOTTrafficVolume/FeatureServer/0/query",
+        "display_format": "~{adt:,} vehicles/day ({vdot_route_name})"
+    },
+    "_metadata": {
+        "created": "2025-12-08",
+        "vdot_data_date": "2024-02",
+        "vdot_data_range": "1986-2022",
+        "loudoun_shapefile_source": "Loudoun County Road Centerline",
+        "notes": "Manual review recommended. Some collectors use VDOT SC codes that differ from local names. Coordinate-based fallback ensures ADT display even without name match.",
+        "api_max_records": 2000,
+        "api_auth_required": false
+    }
+}

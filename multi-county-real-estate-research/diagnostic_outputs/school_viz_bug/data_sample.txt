@@ -1,0 +1,43 @@
+======================================================================
+SCHOOL VISUALIZATION BUG - DATA EVIDENCE
+======================================================================
+
+=== BELMONT RIDGE MIDDLE - HISTORY DATA ===
+               School_Name       Year  History_Pass_Rate
+7645  Belmont Ridge Middle  2020-2021                NaN
+7646  Belmont Ridge Middle  2021-2022               85.0
+7647  Belmont Ridge Middle  2022-2023               92.0
+7648  Belmont Ridge Middle  2023-2024               92.0
+7649  Belmont Ridge Middle  2024-2025               90.0
+
+=== VIRGINIA STATE AVERAGE - MIDDLE SCHOOL HISTORY ===
+                 School_Name       Year  History_Pass_Rate
+9215  Virginia State Average  2020-2021          64.978836
+9216  Virginia State Average  2021-2022          69.311688
+9217  Virginia State Average  2022-2023          71.752412
+9218  Virginia State Average  2023-2024          72.526144
+9219  Virginia State Average  2024-2025          71.686007
+
+=== SIMULATED CHART DATA (as built by create_performance_chart) ===
+        Year  Pass_Rate                  School
+0  2021-2022  85.000000    Belmont Ridge Middle
+1  2022-2023  92.000000    Belmont Ridge Middle
+2  2023-2024  92.000000    Belmont Ridge Middle
+3  2024-2025  90.000000    Belmont Ridge Middle
+4  2020-2021  64.978836  Virginia State Average
+5  2021-2022  69.311688  Virginia State Average
+6  2022-2023  71.752412  Virginia State Average
+7  2023-2024  72.526144  Virginia State Average
+8  2024-2025  71.686007  Virginia State Average
+
+=== X-AXIS YEAR ORDER (order of first appearance) ===
+Plotly will show: ['2021-2022', '2022-2023', '2023-2024', '2024-2025', '2020-2021']
+Should show:      ['2020-2021', '2021-2022', '2022-2023', '2023-2024', '2024-2025']
+
+=== BUG EXPLANATION ===
+1. Belmont Ridge has NaN for 2020-2021 History (COVID year)
+2. The NaN is filtered out: if pd.notna(row.get(metric_col))
+3. State Average has data for all years including 2020-2021
+4. Chart data has school years first, then state avg years
+5. Plotly shows categories in order of FIRST APPEARANCE
+6. Result: 2020-2021 appears at END of x-axis (wrong!)

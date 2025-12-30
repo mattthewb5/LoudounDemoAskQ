@@ -1,0 +1,37 @@
+======================================================================
+COMPARISON SUMMARY: Current vs Enhanced Normalizer
+======================================================================
+
+Total schools: 99
+Schools changed by enhanced normalizer: 5
+Schools unchanged: 94
+
+CRITICAL CHANGES THAT FIX PROBLEMS:
+----------------------------------------------------------------------
+1. 'Steuart W. Weller Elementary' → 'STEUART WELLER'
+   Now matches 'Steuart Weller Elementary' from boundary data
+
+2. 'Elaine E. Thompson Elementary' → 'ELAINE THOMPSON'
+   Now matches variations without middle initial
+
+3. 'John W. Tolbert Jr. Elementary' → 'JOHN TOLBERT JR'
+   Removes middle initial (though 'Jr' still differs from 'Jr.')
+
+POTENTIAL ISSUES:
+----------------------------------------------------------------------
+1. 'J. Lupton Simpson' → 'LUPTON SIMPSON'
+   Removes first initial 'J' - won't match 'John Lupton Simpson'
+   BUT: Boundary data likely uses 'J. Lupton Simpson' not 'John'
+
+2. 'J. Michael Lunsford' → 'MICHAEL LUNSFORD'
+   Same issue - removes first initial
+
+COLLISION STATUS:
+----------------------------------------------------------------------
+Current normalizer collisions: 1
+  - 'STERLING': ['Sterling Elementary', 'Sterling Middle']
+
+Enhanced normalizer collisions: 1
+  - 'STERLING': ['Sterling Elementary', 'Sterling Middle']
+
+NET CHANGE: No new collisions created!

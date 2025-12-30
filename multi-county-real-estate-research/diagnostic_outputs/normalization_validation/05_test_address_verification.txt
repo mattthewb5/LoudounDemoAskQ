@@ -1,0 +1,77 @@
+======================================================================
+TEST ADDRESS SCHOOL VERIFICATION
+======================================================================
+
+Address: 44750 Maynard Sq, Ashburn, VA 20147
+
+======================================================================
+ELEMENTARY: Steuart Weller Elementary
+======================================================================
+
+Boundary data: "Steuart Weller Elementary"
+VADOE data matching 'Steuart':
+  - "Steuart W. Weller Elementary"
+
+Current normalizer (first-word search):
+  Boundary normalized: "STEUART WELLER"
+  str.contains('Steuart') matches:
+    - "Steuart W. Weller Elementary"
+  Records: 5 ✓
+
+Enhanced normalizer (exact match):
+  Boundary normalized: "STEUART WELLER"
+  Exact matches:
+    - "Steuart W. Weller Elementary" → "STEUART WELLER" ✓
+  Records: 5 ✓
+
+Summary:
+  ✓ OK: No duplicates in either approach
+
+======================================================================
+MIDDLE: Belmont Ridge Middle
+======================================================================
+
+Boundary data: "Belmont Ridge Middle"
+VADOE data matching 'Belmont':
+  - "Belmont Station Elementary "
+  - "Belmont Ridge Middle"
+
+Current normalizer (first-word search):
+  Boundary normalized: "BELMONT RIDGE"
+  str.contains('Belmont') matches:
+    - "Belmont Station Elementary "
+    - "Belmont Ridge Middle"
+  Records: 10 (DUPLICATE BUG - 2 schools × 5 years)
+
+Enhanced normalizer (exact match):
+  Boundary normalized: "BELMONT RIDGE"
+  Exact matches:
+    - "Belmont Ridge Middle" → "BELMONT RIDGE" ✓
+  Records: 5 ✓
+
+Summary:
+  ✓ FIXED: Enhanced normalizer eliminates duplicates
+
+======================================================================
+HIGH: Riverside High
+======================================================================
+
+Boundary data: "Riverside High"
+VADOE data matching 'Riverside':
+  - "Riverside High"
+
+Current normalizer (first-word search):
+  Boundary normalized: "RIVERSIDE"
+  str.contains('Riverside') matches:
+    - "Riverside High"
+  Records: 5 ✓
+
+Enhanced normalizer (exact match):
+  Boundary normalized: "RIVERSIDE"
+  Exact matches:
+    - "Riverside High" → "RIVERSIDE" ✓
+  Records: 5 ✓
+
+Summary:
+  ✓ OK: No duplicates in either approach
+

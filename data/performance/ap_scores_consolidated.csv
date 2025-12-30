@@ -1,0 +1,333 @@
+LONG_SCHOOL_YEAR,SCHOOL_DISTRCT_CD,SCHOOL_DSTRCT_NM,INSTN_NUMBER,INSTN_NAME,TEST_CMPNT_TYP_NM,NUMBER_OF_STUDENTS_TESTED,NUMBER_TESTS_TAKEN,NOTESTS_3ORHIGHER,source_file,#RPT_NAME,DETAIL_LVL_DESC,NUMBER_TESTS_3_OR_HIGHER
+2019-20,629,Clarke County,0102,Cedar Shoals High School,ALL Subjects,201,328,134,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,0102,Cedar Shoals High School,Art History,TFS,TFS,TFS,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,0102,Cedar Shoals High School,Art: Studio 2-D Design,TFS,TFS,TFS,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,0102,Cedar Shoals High School,Art: Studio Drawing,TFS,TFS,TFS,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,0102,Cedar Shoals High School,Biology,TFS,TFS,TFS,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,0102,Cedar Shoals High School,Calculus A,TFS,TFS,TFS,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,0102,Cedar Shoals High School,Calculus BC,TFS,TFS,TFS,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,0102,Cedar Shoals High School,Computer Science A,TFS,TFS,TFS,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,0102,Cedar Shoals High School,Economics: Micro,22,22,13,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,0102,Cedar Shoals High School,Eng. Language & Comp,32,32,7,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,0102,Cedar Shoals High School,Eng. Literature & Comp,24,24,9,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,0102,Cedar Shoals High School,Environmental Science,26,26,7,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,0102,Cedar Shoals High School,Gov. & Pol. U.S.,60,60,12,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,0102,Cedar Shoals High School,Physics 1,TFS,TFS,TFS,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,0102,Cedar Shoals High School,Psychology,19,19,10,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,0102,Cedar Shoals High School,Spanish Language,TFS,TFS,TFS,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,0102,Cedar Shoals High School,Statistics,17,17,11,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,0102,Cedar Shoals High School,U.S. History,26,26,11,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,0102,Cedar Shoals High School,World History,59,59,25,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,5556,Clarke Central High School,ALL Subjects,338,560,319,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,5556,Clarke Central High School,Art History,TFS,TFS,TFS,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,5556,Clarke Central High School,Art: Studio 2-D Design,TFS,TFS,TFS,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,5556,Clarke Central High School,Biology,19,19,15,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,5556,Clarke Central High School,Calculus A,18,18,15,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,5556,Clarke Central High School,Calculus BC,TFS,TFS,TFS,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,5556,Clarke Central High School,Chemistry,15,15,10,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,5556,Clarke Central High School,Computer Science A,TFS,TFS,TFS,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,5556,Clarke Central High School,Economics: Micro,28,28,16,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,5556,Clarke Central High School,Eng. Language & Comp,65,65,35,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,5556,Clarke Central High School,Eng. Literature & Comp,10,10,7,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,5556,Clarke Central High School,Environmental Science,53,53,25,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,5556,Clarke Central High School,European History,TFS,TFS,TFS,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,5556,Clarke Central High School,French Language,TFS,TFS,TFS,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,5556,Clarke Central High School,Geography: Human,28,28,19,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,5556,Clarke Central High School,German Language,TFS,TFS,TFS,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,5556,Clarke Central High School,Gov. & Pol. U.S.,105,105,43,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,5556,Clarke Central High School,Physics 1,16,16,13,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,5556,Clarke Central High School,Physics C: Mechanics,TFS,TFS,TFS,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,5556,Clarke Central High School,Spanish Language,TFS,TFS,TFS,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,5556,Clarke Central High School,Statistics,25,25,12,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,5556,Clarke Central High School,U.S. History,67,67,37,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,5556,Clarke Central High School,World History,83,83,52,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,ALL Subjects,539,888,453,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Art History,TFS,TFS,TFS,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Art: Studio 2-D Design,TFS,TFS,TFS,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Art: Studio Drawing,TFS,TFS,TFS,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Biology,25,25,21,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Calculus A,27,27,16,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Calculus BC,TFS,TFS,TFS,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Chemistry,15,15,10,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Computer Science A,TFS,TFS,TFS,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Economics: Micro,50,50,29,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Eng. Language & Comp,97,97,42,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Eng. Literature & Comp,34,34,16,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Environmental Science,79,79,32,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,European History,TFS,TFS,TFS,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,French Language,TFS,TFS,TFS,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Geography: Human,28,28,19,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,German Language,TFS,TFS,TFS,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Gov. & Pol. U.S.,165,165,55,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Physics 1,24,24,18,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Physics C: Mechanics,TFS,TFS,TFS,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Psychology,19,19,10,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Spanish Language,16,16,15,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Statistics,42,42,23,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,U.S. History,93,93,48,AP_2020_JUN_21_2021.csv,,,
+2019-20,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,World History,142,142,77,AP_2020_JUN_21_2021.csv,,,
+2020-21,629,Clarke County,0102,Cedar Shoals High School,ALL Subjects,143,232,85,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,0102,Cedar Shoals High School,Art History,TFS,TFS,TFS,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,0102,Cedar Shoals High School,Art: Studio 2-D Design,TFS,TFS,TFS,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,0102,Cedar Shoals High School,Art: Studio Drawing,TFS,TFS,TFS,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,0102,Cedar Shoals High School,Biology,TFS,TFS,TFS,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,0102,Cedar Shoals High School,Calculus A,10,10,1,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,0102,Cedar Shoals High School,Calculus BC,TFS,TFS,TFS,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,0102,Cedar Shoals High School,Chemistry,TFS,TFS,TFS,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,0102,Cedar Shoals High School,Computer Science A,11,11,2,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,0102,Cedar Shoals High School,Economics: Micro,10,10,4,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,0102,Cedar Shoals High School,Eng. Language & Comp,29,29,17,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,0102,Cedar Shoals High School,Eng. Literature & Comp,TFS,TFS,TFS,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,0102,Cedar Shoals High School,Environmental Science,11,11,4,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,0102,Cedar Shoals High School,Gov. & Pol. U.S.,56,56,7,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,0102,Cedar Shoals High School,Music Theory,TFS,TFS,TFS,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,0102,Cedar Shoals High School,Physics 1,TFS,TFS,TFS,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,0102,Cedar Shoals High School,Psychology,10,10,3,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,0102,Cedar Shoals High School,Spanish Language,TFS,TFS,TFS,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,0102,Cedar Shoals High School,Spanish Literature,TFS,TFS,TFS,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,0102,Cedar Shoals High School,Statistics,TFS,TFS,TFS,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,0102,Cedar Shoals High School,U.S. History,25,25,11,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,0102,Cedar Shoals High School,World History,31,31,16,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,5556,Clarke Central High School,ALL Subjects,301,444,192,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,5556,Clarke Central High School,Art History,TFS,TFS,TFS,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,5556,Clarke Central High School,Art: Studio 2-D Design,TFS,TFS,TFS,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,5556,Clarke Central High School,Biology,11,11,8,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,5556,Clarke Central High School,Calculus A,TFS,TFS,TFS,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,5556,Clarke Central High School,Calculus BC,10,10,5,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,5556,Clarke Central High School,Chemistry,23,23,6,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,5556,Clarke Central High School,Chinese Lang. & Culture,TFS,TFS,TFS,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,5556,Clarke Central High School,Computer Science A,TFS,TFS,TFS,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,5556,Clarke Central High School,Economics: Micro,26,26,5,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,5556,Clarke Central High School,Eng. Language & Comp,44,44,25,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,5556,Clarke Central High School,Eng. Literature & Comp,TFS,TFS,TFS,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,5556,Clarke Central High School,Environmental Science,42,42,18,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,5556,Clarke Central High School,French Language,TFS,TFS,TFS,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,5556,Clarke Central High School,Geography: Human,TFS,TFS,TFS,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,5556,Clarke Central High School,Gov. & Pol. U.S.,107,107,34,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,5556,Clarke Central High School,Music Theory,TFS,TFS,TFS,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,5556,Clarke Central High School,Physics 1,TFS,TFS,TFS,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,5556,Clarke Central High School,Psychology,TFS,TFS,TFS,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,5556,Clarke Central High School,Spanish Language,13,13,12,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,5556,Clarke Central High School,Statistics,TFS,TFS,TFS,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,5556,Clarke Central High School,U.S. History,57,57,21,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,5556,Clarke Central High School,World History,66,66,34,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,ALL Subjects,444,676,277,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Art History,TFS,TFS,TFS,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Art: Studio 2-D Design,TFS,TFS,TFS,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Art: Studio Drawing,TFS,TFS,TFS,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Biology,15,15,10,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Calculus A,14,14,1,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Calculus BC,15,15,8,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Chemistry,25,25,8,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Chinese Lang. & Culture,TFS,TFS,TFS,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Computer Science A,17,17,2,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Economics: Micro,36,36,9,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Eng. Language & Comp,73,73,42,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Eng. Literature & Comp,12,12,2,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Environmental Science,53,53,22,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,French Language,TFS,TFS,TFS,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Geography: Human,TFS,TFS,TFS,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Gov. & Pol. U.S.,163,163,41,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Music Theory,TFS,TFS,TFS,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Physics 1,10,10,5,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Psychology,11,11,4,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Spanish Language,17,17,14,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Spanish Literature,TFS,TFS,TFS,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Statistics,13,13,10,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,U.S. History,82,82,32,AP_2021_Dec062021.csv,,,
+2020-21,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,World History,97,97,50,AP_2021_Dec062021.csv,,,
+2022-23,629,Clarke County,0102,Cedar Shoals High School,ALL Subjects,161,280,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL ALL SUBJECTS,163
+2022-23,629,Clarke County,0102,Cedar Shoals High School,Art: Studio 2-D Design,TFS,TFS,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,TFS
+2022-23,629,Clarke County,0102,Cedar Shoals High School,Art: Studio Drawing,TFS,TFS,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,TFS
+2022-23,629,Clarke County,0102,Cedar Shoals High School,Biology,TFS,TFS,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,TFS
+2022-23,629,Clarke County,0102,Cedar Shoals High School,Calculus A,TFS,TFS,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,TFS
+2022-23,629,Clarke County,0102,Cedar Shoals High School,Calculus BC,11,11,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,TFS
+2022-23,629,Clarke County,0102,Cedar Shoals High School,Computer Science Principles,11,11,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,TFS
+2022-23,629,Clarke County,0102,Cedar Shoals High School,Economics: Micro,10,10,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,TFS
+2022-23,629,Clarke County,0102,Cedar Shoals High School,Eng. Language & Comp,33,33,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,18
+2022-23,629,Clarke County,0102,Cedar Shoals High School,Eng. Literature & Comp,TFS,TFS,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,TFS
+2022-23,629,Clarke County,0102,Cedar Shoals High School,Environmental Science,16,16,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,13
+2022-23,629,Clarke County,0102,Cedar Shoals High School,Geography: Human,10,10,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,TFS
+2022-23,629,Clarke County,0102,Cedar Shoals High School,Gov. & Pol. U.S.,38,38,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,13
+2022-23,629,Clarke County,0102,Cedar Shoals High School,Physics 1,TFS,TFS,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,TFS
+2022-23,629,Clarke County,0102,Cedar Shoals High School,Psychology,22,22,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,TFS
+2022-23,629,Clarke County,0102,Cedar Shoals High School,Spanish Language,TFS,TFS,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,TFS
+2022-23,629,Clarke County,0102,Cedar Shoals High School,Statistics,23,23,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,19
+2022-23,629,Clarke County,0102,Cedar Shoals High School,U.S. History,39,39,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,13
+2022-23,629,Clarke County,0102,Cedar Shoals High School,World History,33,33,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,25
+2022-23,629,Clarke County,1058,Clarke Middle School,ALL Subjects,TFS,TFS,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL ALL SUBJECTS,TFS
+2022-23,629,Clarke County,1058,Clarke Middle School,Biology,TFS,TFS,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,TFS
+2022-23,629,Clarke County,1058,Clarke Middle School,Calculus BC,TFS,TFS,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,TFS
+2022-23,629,Clarke County,1058,Clarke Middle School,U.S. History,TFS,TFS,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,TFS
+2022-23,629,Clarke County,5556,Clarke Central High School,ALL Subjects,428,696,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL ALL SUBJECTS,335
+2022-23,629,Clarke County,5556,Clarke Central High School,Art: Studio 2-D Design,TFS,TFS,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,TFS
+2022-23,629,Clarke County,5556,Clarke Central High School,Biology,27,27,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,13
+2022-23,629,Clarke County,5556,Clarke Central High School,Calculus A,21,21,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,10
+2022-23,629,Clarke County,5556,Clarke Central High School,Calculus BC,TFS,TFS,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,TFS
+2022-23,629,Clarke County,5556,Clarke Central High School,Chemistry,30,30,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,13
+2022-23,629,Clarke County,5556,Clarke Central High School,Computer Science A,11,11,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,TFS
+2022-23,629,Clarke County,5556,Clarke Central High School,Economics: Micro,23,23,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,14
+2022-23,629,Clarke County,5556,Clarke Central High School,Eng. Language & Comp,87,87,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,42
+2022-23,629,Clarke County,5556,Clarke Central High School,Eng. Literature & Comp,11,11,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,11
+2022-23,629,Clarke County,5556,Clarke Central High School,Environmental Science,34,34,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,13
+2022-23,629,Clarke County,5556,Clarke Central High School,Geography: Human,12,12,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,TFS
+2022-23,629,Clarke County,5556,Clarke Central High School,Gov. & Pol. U.S.,153,153,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,49
+2022-23,629,Clarke County,5556,Clarke Central High School,Physics 1,16,16,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,TFS
+2022-23,629,Clarke County,5556,Clarke Central High School,Psychology,34,34,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,17
+2022-23,629,Clarke County,5556,Clarke Central High School,Spanish Language,13,13,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,13
+2022-23,629,Clarke County,5556,Clarke Central High School,Statistics,16,16,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,TFS
+2022-23,629,Clarke County,5556,Clarke Central High School,U.S. History,95,95,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,30
+2022-23,629,Clarke County,5556,Clarke Central High School,World History,102,102,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,SCHOOL,76
+2022-23,629,Clarke County,ALL,All Schools,ALL Subjects,591,979,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,DISTRICT ALL SUBJECTS,499
+2022-23,629,Clarke County,ALL,All Schools,Art: Studio 2-D Design,TFS,TFS,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,DISTRICT,TFS
+2022-23,629,Clarke County,ALL,All Schools,Art: Studio Drawing,TFS,TFS,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,DISTRICT,TFS
+2022-23,629,Clarke County,ALL,All Schools,Biology,32,32,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,DISTRICT,15
+2022-23,629,Clarke County,ALL,All Schools,Calculus A,25,25,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,DISTRICT,12
+2022-23,629,Clarke County,ALL,All Schools,Calculus BC,20,20,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,DISTRICT,17
+2022-23,629,Clarke County,ALL,All Schools,Chemistry,30,30,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,DISTRICT,13
+2022-23,629,Clarke County,ALL,All Schools,Computer Science A,11,11,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,DISTRICT,TFS
+2022-23,629,Clarke County,ALL,All Schools,Computer Science Principles,11,11,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,DISTRICT,TFS
+2022-23,629,Clarke County,ALL,All Schools,Economics: Micro,33,33,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,DISTRICT,19
+2022-23,629,Clarke County,ALL,All Schools,Eng. Language & Comp,120,120,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,DISTRICT,60
+2022-23,629,Clarke County,ALL,All Schools,Eng. Literature & Comp,19,19,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,DISTRICT,18
+2022-23,629,Clarke County,ALL,All Schools,Environmental Science,50,50,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,DISTRICT,26
+2022-23,629,Clarke County,ALL,All Schools,Geography: Human,22,22,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,DISTRICT,18
+2022-23,629,Clarke County,ALL,All Schools,Gov. & Pol. U.S.,191,191,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,DISTRICT,62
+2022-23,629,Clarke County,ALL,All Schools,Physics 1,20,20,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,DISTRICT,TFS
+2022-23,629,Clarke County,ALL,All Schools,Psychology,56,56,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,DISTRICT,26
+2022-23,629,Clarke County,ALL,All Schools,Spanish Language,21,21,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,DISTRICT,21
+2022-23,629,Clarke County,ALL,All Schools,Statistics,39,39,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,DISTRICT,23
+2022-23,629,Clarke County,ALL,All Schools,U.S. History,135,135,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,DISTRICT,43
+2022-23,629,Clarke County,ALL,All Schools,World History,135,135,,AP_2022-23_2024-04-02_14_14_37.csv,AP COUNTS,DISTRICT,101
+2021-22,629,Clarke County,0102,Cedar Shoals High School,ALL Subjects,178,281,136,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,0102,Cedar Shoals High School,Art History,TFS,TFS,TFS,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,0102,Cedar Shoals High School,Art: Studio 2-D Design,TFS,TFS,TFS,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,0102,Cedar Shoals High School,Art: Studio Drawing,TFS,TFS,TFS,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,0102,Cedar Shoals High School,Biology,TFS,TFS,TFS,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,0102,Cedar Shoals High School,Calculus A,TFS,TFS,TFS,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,0102,Cedar Shoals High School,Calculus BC,TFS,TFS,TFS,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,0102,Cedar Shoals High School,Chemistry,TFS,TFS,TFS,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,0102,Cedar Shoals High School,Computer Science A,TFS,TFS,TFS,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,0102,Cedar Shoals High School,Economics: Micro,14,14,4,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,0102,Cedar Shoals High School,Eng. Language & Comp,22,22,13,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,0102,Cedar Shoals High School,Eng. Literature & Comp,18,18,14,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,0102,Cedar Shoals High School,Environmental Science,24,24,10,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,0102,Cedar Shoals High School,Gov. & Pol. U.S.,42,42,10,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,0102,Cedar Shoals High School,Physics 1,TFS,TFS,TFS,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,0102,Cedar Shoals High School,Psychology,14,14,11,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,0102,Cedar Shoals High School,Spanish Language,TFS,TFS,TFS,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,0102,Cedar Shoals High School,Statistics,TFS,TFS,TFS,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,0102,Cedar Shoals High School,U.S. History,31,31,9,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,0102,Cedar Shoals High School,World History,57,57,24,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,5556,Clarke Central High School,ALL Subjects,366,577,273,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,5556,Clarke Central High School,Art History,TFS,TFS,TFS,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,5556,Clarke Central High School,Art: Studio 2-D Design,TFS,TFS,TFS,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,5556,Clarke Central High School,Art: Studio 3-D Design,TFS,TFS,TFS,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,5556,Clarke Central High School,Biology,TFS,TFS,TFS,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,5556,Clarke Central High School,Calculus A,27,27,13,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,5556,Clarke Central High School,Chemistry,36,36,7,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,5556,Clarke Central High School,Computer Science A,TFS,TFS,TFS,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,5556,Clarke Central High School,Economics: Micro,27,27,10,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,5556,Clarke Central High School,Eng. Language & Comp,54,54,29,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,5556,Clarke Central High School,Eng. Literature & Comp,13,13,13,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,5556,Clarke Central High School,Environmental Science,36,36,16,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,5556,Clarke Central High School,French Language,TFS,TFS,TFS,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,5556,Clarke Central High School,Geography: Human,15,15,12,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,5556,Clarke Central High School,Gov. & Pol. U.S.,119,119,37,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,5556,Clarke Central High School,Physics 1,TFS,TFS,TFS,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,5556,Clarke Central High School,Psychology,27,27,12,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,5556,Clarke Central High School,Spanish Language,TFS,TFS,TFS,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,5556,Clarke Central High School,Statistics,18,18,5,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,5556,Clarke Central High School,U.S. History,56,56,22,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,5556,Clarke Central High School,World History,108,108,71,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,ALL Subjects,544,858,409,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Art History,TFS,TFS,TFS,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Art: Studio 2-D Design,TFS,TFS,TFS,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Art: Studio 3-D Design,TFS,TFS,TFS,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Art: Studio Drawing,TFS,TFS,TFS,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Biology,10,10,7,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Calculus A,35,35,20,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Calculus BC,TFS,TFS,TFS,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Chemistry,40,40,11,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Computer Science A,15,15,6,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Economics: Micro,41,41,14,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Eng. Language & Comp,76,76,42,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Eng. Literature & Comp,31,31,27,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Environmental Science,60,60,26,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,French Language,TFS,TFS,TFS,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Geography: Human,15,15,12,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Gov. & Pol. U.S.,161,161,47,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Physics 1,12,12,5,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Psychology,41,41,23,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Spanish Language,11,11,10,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,Statistics,27,27,11,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,U.S. History,87,87,31,AP_2022_Apr102023.csv,,,
+2021-22,629,Clarke County,SCHOOL_ALL,SCHOOL_ALL,World History,165,165,95,AP_2022_Apr102023.csv,,,
+2023-24,629,Clarke County,0102,Cedar Shoals High School,ALL Subjects,159,233,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL ALL SUBJECTS,131
+2023-24,629,Clarke County,0102,Cedar Shoals High School,African American Studies,13,13,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,11
+2023-24,629,Clarke County,0102,Cedar Shoals High School,Art: Studio 2-D Design,TFS,TFS,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,TFS
+2023-24,629,Clarke County,0102,Cedar Shoals High School,Art: Studio Drawing,TFS,TFS,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,TFS
+2023-24,629,Clarke County,0102,Cedar Shoals High School,Calculus A,TFS,TFS,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,TFS
+2023-24,629,Clarke County,0102,Cedar Shoals High School,Calculus BC,10,10,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,TFS
+2023-24,629,Clarke County,0102,Cedar Shoals High School,Computer Science A,TFS,TFS,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,TFS
+2023-24,629,Clarke County,0102,Cedar Shoals High School,Computer Science Principles,11,11,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,TFS
+2023-24,629,Clarke County,0102,Cedar Shoals High School,Economics: Micro,TFS,TFS,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,TFS
+2023-24,629,Clarke County,0102,Cedar Shoals High School,Eng. Language & Comp,28,28,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,15
+2023-24,629,Clarke County,0102,Cedar Shoals High School,Eng. Literature & Comp,TFS,TFS,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,TFS
+2023-24,629,Clarke County,0102,Cedar Shoals High School,Environmental Science,12,12,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,TFS
+2023-24,629,Clarke County,0102,Cedar Shoals High School,Geography: Human,TFS,TFS,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,TFS
+2023-24,629,Clarke County,0102,Cedar Shoals High School,Gov. & Pol. U.S.,34,34,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,21
+2023-24,629,Clarke County,0102,Cedar Shoals High School,Physics 1,TFS,TFS,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,TFS
+2023-24,629,Clarke County,0102,Cedar Shoals High School,Psychology,TFS,TFS,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,TFS
+2023-24,629,Clarke County,0102,Cedar Shoals High School,Spanish Language,13,13,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,10
+2023-24,629,Clarke County,0102,Cedar Shoals High School,U.S. History,33,33,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,19
+2023-24,629,Clarke County,0102,Cedar Shoals High School,World History,37,37,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,21
+2023-24,629,Clarke County,5556,Clarke Central High School,ALL Subjects,488,875,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL ALL SUBJECTS,576
+2023-24,629,Clarke County,5556,Clarke Central High School,Art: Studio 2-D Design,TFS,TFS,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,TFS
+2023-24,629,Clarke County,5556,Clarke Central High School,Art: Studio 3-D Design,TFS,TFS,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,TFS
+2023-24,629,Clarke County,5556,Clarke Central High School,Biology,12,12,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,TFS
+2023-24,629,Clarke County,5556,Clarke Central High School,Calculus A,15,15,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,14
+2023-24,629,Clarke County,5556,Clarke Central High School,Calculus BC,15,15,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,15
+2023-24,629,Clarke County,5556,Clarke Central High School,Chemistry,32,32,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,17
+2023-24,629,Clarke County,5556,Clarke Central High School,Computer Science A,TFS,TFS,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,TFS
+2023-24,629,Clarke County,5556,Clarke Central High School,Economics: Micro,38,38,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,19
+2023-24,629,Clarke County,5556,Clarke Central High School,Eng. Language & Comp,63,63,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,38
+2023-24,629,Clarke County,5556,Clarke Central High School,Eng. Literature & Comp,25,25,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,22
+2023-24,629,Clarke County,5556,Clarke Central High School,Environmental Science,70,70,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,24
+2023-24,629,Clarke County,5556,Clarke Central High School,European History,11,11,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,10
+2023-24,629,Clarke County,5556,Clarke Central High School,Geography: Human,25,25,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,19
+2023-24,629,Clarke County,5556,Clarke Central High School,Gov. & Pol. U.S.,166,166,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,105
+2023-24,629,Clarke County,5556,Clarke Central High School,Physics 1,14,14,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,TFS
+2023-24,629,Clarke County,5556,Clarke Central High School,Physics 2,TFS,TFS,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,TFS
+2023-24,629,Clarke County,5556,Clarke Central High School,Precalculus,68,68,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,59
+2023-24,629,Clarke County,5556,Clarke Central High School,Psychology,46,46,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,27
+2023-24,629,Clarke County,5556,Clarke Central High School,Spanish Language,22,22,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,21
+2023-24,629,Clarke County,5556,Clarke Central High School,Statistics,25,25,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,11
+2023-24,629,Clarke County,5556,Clarke Central High School,U.S. History,90,90,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,68
+2023-24,629,Clarke County,5556,Clarke Central High School,World History,124,124,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,SCHOOL,84
+2023-24,629,Clarke County,ALL,All Schools,ALL Subjects,647,1108,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,DISTRICT ALL SUBJECTS,707
+2023-24,629,Clarke County,ALL,All Schools,African American Studies,13,13,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,DISTRICT,11
+2023-24,629,Clarke County,ALL,All Schools,Art: Studio 2-D Design,TFS,TFS,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,DISTRICT,TFS
+2023-24,629,Clarke County,ALL,All Schools,Art: Studio 3-D Design,TFS,TFS,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,DISTRICT,TFS
+2023-24,629,Clarke County,ALL,All Schools,Art: Studio Drawing,TFS,TFS,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,DISTRICT,TFS
+2023-24,629,Clarke County,ALL,All Schools,Biology,12,12,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,DISTRICT,TFS
+2023-24,629,Clarke County,ALL,All Schools,Calculus A,17,17,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,DISTRICT,14
+2023-24,629,Clarke County,ALL,All Schools,Calculus BC,25,25,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,DISTRICT,23
+2023-24,629,Clarke County,ALL,All Schools,Chemistry,32,32,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,DISTRICT,17
+2023-24,629,Clarke County,ALL,All Schools,Computer Science A,TFS,TFS,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,DISTRICT,TFS
+2023-24,629,Clarke County,ALL,All Schools,Computer Science Principles,11,11,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,DISTRICT,TFS
+2023-24,629,Clarke County,ALL,All Schools,Economics: Micro,47,47,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,DISTRICT,19
+2023-24,629,Clarke County,ALL,All Schools,Eng. Language & Comp,91,91,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,DISTRICT,53
+2023-24,629,Clarke County,ALL,All Schools,Eng. Literature & Comp,34,34,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,DISTRICT,28
+2023-24,629,Clarke County,ALL,All Schools,Environmental Science,82,82,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,DISTRICT,31
+2023-24,629,Clarke County,ALL,All Schools,European History,11,11,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,DISTRICT,10
+2023-24,629,Clarke County,ALL,All Schools,Geography: Human,31,31,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,DISTRICT,23
+2023-24,629,Clarke County,ALL,All Schools,Gov. & Pol. U.S.,200,200,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,DISTRICT,126
+2023-24,629,Clarke County,ALL,All Schools,Physics 1,15,15,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,DISTRICT,TFS
+2023-24,629,Clarke County,ALL,All Schools,Physics 2,TFS,TFS,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,DISTRICT,TFS
+2023-24,629,Clarke County,ALL,All Schools,Precalculus,68,68,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,DISTRICT,59
+2023-24,629,Clarke County,ALL,All Schools,Psychology,54,54,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,DISTRICT,29
+2023-24,629,Clarke County,ALL,All Schools,Spanish Language,35,35,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,DISTRICT,31
+2023-24,629,Clarke County,ALL,All Schools,Statistics,25,25,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,DISTRICT,11
+2023-24,629,Clarke County,ALL,All Schools,U.S. History,123,123,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,DISTRICT,87
+2023-24,629,Clarke County,ALL,All Schools,World History,161,161,,AP_2023-24_2025-01-15_15_03_20.csv,AP COUNTS,DISTRICT,105

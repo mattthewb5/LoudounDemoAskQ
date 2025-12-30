@@ -1,0 +1,111 @@
+tower_id,tower_name,structure_type,height_ft,height_m,address,town,zip_code,latitude,longitude,fcc_registration,entity_name,carrier_category,attribution_level,status
+1,Emergency Comm Center,Lattice,120.0,36.0,"16632 Courage Ct, Leesburg",LEESBURG,20175,39.074437,-77.548055,1016113,"LOUDOUN, COUNTY OF",Government,FCC Matched,Built
+2,Ryan,Monopole,150.0,45.7,"20694 Ashburn Rd, Ashburn",ASHBURN,20147,39.044069,-77.486381,N/A,,,Local Only,Built
+3,Leesburg #3,Monopole,162.0,49.4,"41631 Shreve Mill Rd - Greenway Exit 3, Leesburg",LEESBURG,20175,39.059855,-77.56233,1034853,,,FCC ID Only,Built
+4,Dulles #7,Monopole,191.0,58.2,"22341 Loudoun County Pkwy, Ashburn",ASHBURN,20147,38.998939,-77.479063,1034850,,,FCC ID Only,Built
+5,Countryside #17,Monopole,149.0,45.4,"45415 Harry Byrd Hwy, Sterling",STERLING,20166,39.044174,-77.429447,1205720,,,FCC ID Only,Built
+6,Alford Tower,Lattice,199.0,90.2,"42462 Reservoir Ridge Pl, Ashburn",ASHBURN,20148,39.008751,-77.533009,1218775,E A R LTD,Other,FCC Matched,Built
+7,Builders Rd,Monopole,160.0,48.8,"43069 Builders Ln, Ashburn",ASHBURN,20147,39.066537,-77.511248,1039868,,,FCC ID Only,Built
+8,Watson,Monopole,198.0,60.4,"23341 Evergreen Mills Rd, Ashburn",ASHBURN,20148,38.980675,-77.561591,N/A,,,Local Only,Built
+9,Goose Creek GC,Monopole,192.0,58.5,"19237 Broken Rock St, Leesburg",LEESBURG,20175,39.082985,-77.515785,N/A,,,Local Only,Built
+10,Lansdowne Sprint Nextel Antennas,Roof Top,48.0,14.6,"18885 Conference Center Dr, Leesburg",LEESBURG,20176,39.094436,-77.483307,,,,Local Only,Built
+11,Sterling Park,Monopole,120.0,56.3,"21655 Cascades Pkwy, Sterling",STERLING,20166,39.017227,-77.413411,1039867,"Nextel Communications of the Mid-Atlantic, Inc.",T-Mobile,FCC Matched (Historical),Built
+12,Douglas,Monopole,150.0,45.7,"5 Douglas Ct, Sterling",STERLING,20166,38.978957,-77.413452,1004122,,,FCC ID Only,Built
+13,Adelphia,Lattice,150.0,45.7,"45750 Elmwood Ct, Sterling",STERLING,20166,39.021307,-77.417033,N/A,,,Local Only,Built
+14,Lane Ct,Monopole,150.0,45.7,"44923 Lane Ct, Sterling",STERLING,20166,38.987447,-77.447571,1002343,,,FCC ID Only,Built
+15,Broad Run,Monopole,168.0,51.2,"21599 Jesse Ct, Sterling",STERLING,20166,39.017647,-77.429769,1039866,,,FCC ID Only,Built
+16,Evergreen Mills 1,Monopole,150.0,45.7,"20964 The Woods Rd, Leesburg",LEESBURG,20175,39.041292,-77.594339,1024368,,,FCC ID Only,Built
+17,Evergreen Mills 2,Lattice,230.0,70.1,"20797 The Woods Rd, Leesburg",LEESBURG,20175,39.041745,-77.595485,1023975,,,FCC ID Only,Built
+18,Hamilton,Lattice,152.0,46.3,"17561 Canby Rd, Leesburg",LEESBURG,20175,39.130984,-77.624182,N/A,,,Local Only,Built
+19,Conklin Grid,Monopole,150.0,45.7,"25742 Branch Rail Dr, Chantilly",CHANTILLY,20152,38.905692,-77.54314,N/A,,,Local Only,Built
+20,Lucketts Fire Station,Monopole,186.0,56.7,"42637 Lucketts Rd, Leesburg",LEESBURG,20176,39.215644,-77.532903,N/A,,,Local Only,Built
+21,White Rock Mtn,Lattice,250.0,76.2,"37335 Snider Ln, Purcellville",PURCELLVILLE,20132,39.295515,-77.703802,1018045,,,FCC ID Only,Built
+22,South Fork Creek,Guyed,150.0,45.7,"15084 Clover Hill Rd, Waterford",WATERFORD,20197,39.20356,-77.610777,N/A,,,Local Only,Built
+23,NOVEC 03,Monopole,80.0,24.4,"349 E Market St, Leesburg",LEESBURG,20176,39.110706,-77.556466,N/A,,,Local Only,Built
+24,Leesburg Auto,Lattice,186.0,56.7,"310 Parker Ct SE, Leesburg",LEESBURG,20175,39.110778,-77.558037,1061299,,,FCC ID Only,Built
+25,Sterling VFC,Monopole,50.0,15.2,"46700 Middlefield Dr, Sterling",STERLING,20165,39.048563,-77.382613,N/A,,,Local Only,Built
+26,North Fork Creek,Guyed,145.0,44.2,"36659 Stony Point Rd, Purcellville",PURCELLVILLE,20132,39.187379,-77.735047,N/A,,,Local Only,Built
+27,Loudoun Hospital - Landsdowne,Roof Top,120.0,36.6,"44045 Riverside Pkwy, Leesburg",LEESBURG,20176,39.073926,-77.478045,,,,Local Only,Built
+28,Ashburn #6,Monopole,189.0,57.6,"21881 Ashburn Village Blvd, Ashburn",ASHBURN,20147,39.011373,-77.496028,1034851,,,FCC ID Only,Built
+29,Willard,Monopole,160.0,48.8,"25241 Willard Rd, Chantilly",CHANTILLY,20152,38.919509,-77.487757,N/A,,,Local Only,Built
+30,Shady Grove,Monopole,130.0,39.6,"24933 Shady Grove Ln, Chantilly",CHANTILLY,20152,38.927341,-77.518447,1238755,,,FCC ID Only,Built
+31,South Riding,Monopole,165.0,50.3,"26386 Bullrun Postoffice Rd, Centreville",CENTREVILLE,20120,38.88687,-77.511644,N/A,,,Local Only,Built
+32,Point of Rocks,Monopole,172.0,52.4,"12663 Myersville Ln, Leesburg",LEESBURG,20176,39.26466,-77.546824,N/A,,,Local Only,Built
+33,Main St Commons,Water Tank,180.0,62.4,"311 N Maple Ave, Purcellville",PURCELLVILLE,20132,39.140857,-77.703955,1203237,"Purcellville, Town, of",Other,FCC Matched,Built
+34,Red Fox,Water Tank,150.0,45.7,"10 E Marshall St, Middleburg",MIDDLEBURG,20117,38.97049,-77.734395,N/A,,,Local Only,Built
+35,Hamilton Baptist,Water Tank,140.0,42.7,"41 S Rodgers St, Hamilton",HAMILTON,20158,39.13355,-77.664643,N/A,,,Local Only,Built
+36,Stonewall,Water Tank,150.0,45.7,"25 Stonewall Ct, Middleburg",MIDDLEBURG,20117,38.969516,-77.747672,N/A,,,Local Only,Built
+37,Lovettsville,Water Tank,150.0,45.7,"14 Quarter Branch Rd, Lovettsville",LOVETTSVILLE,20180,39.281769,-77.634422,N/A,,,Local Only,Built
+38,TAG Telecommunications,Monopole,144.0,43.9,"22378 Powers Ct, Sterling",STERLING,20166,38.997216,-77.440886,,,,Local Only,Built
+39,Brambleton Water Storage Tanks,Water Tank,138.0,42.1,"22561 Parkland Farms Ter, Ashburn",ASHBURN,20148,38.993497,-77.526626,,,,Local Only,Built
+40,Sully,Water Tank,180.0,54.9,"22340 Circle Dr, Sterling",STERLING,20164,38.997581,-77.398983,N/A,,,Local Only,Built
+41,CWS WHEATLAND #116,Monopole,115.0,35.1,"38295 Charles Town Pike, Waterford",WATERFORD,20197,39.186438,-77.678986,,,,Local Only,Built
+42,,Ground mounted,43.0,13.1,"22746 Shaw Rd, Sterling",STERLING,20166,38.987308,-77.425319,,,,Local Only,Built
+43,Ft. Evans,Water Tank,150.0,45.7,"550 Fort Evans Rd NE, Leesburg",LEESBURG,20176,39.105928,-77.52605,N/A,,,Local Only,Built
+44,DVP 1,Trans-Mount,100.0,30.5,"22484 S Sterling Blvd, Sterling",STERLING,20164,38.993147,-77.416891,N/A,,,Local Only,Built
+45,DVP 2,Trans-Mount,150.0,45.7,"42830 Golf Club Dr, Leesburg",LEESBURG,20175,39.088288,-77.518845,1031372,,,FCC ID Only,Built
+46,DVP 3,Trans-Mount,80.0,24.4,"21870 Ruritan Rd, Sterling",STERLING,20166,39.011174,-77.4331,N/A,,,Local Only,Built
+47,DVP 4,Trans-Mount,80.0,24.4,"21855 Sully Rd, Sterling",STERLING,20166,39.01223,-77.434863,N/A,,,Local Only,Built
+48,DVP 5,Ft Worth Mnt,132.0,40.2,"42377 Sweetwater Ln, Chantilly",CHANTILLY,20152,38.876575,-77.537875,N/A,,,Local Only,Built
+49,DVP 8,Trans-Mount,80.0,24.4,"43160 Lake Ridge Pl, Leesburg",LEESBURG,20176,39.109254,-77.506686,N/A,,,Local Only,Built
+50,DVP 9,Trans-Mount,120.0,36.6,"42377 Sweetwater Ln, Chantilly",CHANTILLY,20152,38.875933,-77.537831,N/A,,,Local Only,Built
+51,DVP11,Trans-Mount,137.0,41.8,"21283 Smith Switch Rd, Ashburn",ASHBURN,20147,39.027196,-77.459574,N/A,,,Local Only,Built
+52,T-Mobile at Bahai Center,Roof Top,50.0,15.2,"21415 Cardinal Glen Cir, Sterling",STERLING,20164,39.022323,-77.384697,,,,Local Only,Built
+53,DVP 12,Trans-Mount,151.0,46.0,"24373 Racefield Ln, Aldie",ALDIE,20105,38.951977,-77.550938,N/A,,,Local Only,Built
+54,DVP 14,Trans-Mount,140.0,42.7,"42018 Briarfield Ln, Aldie",ALDIE,20105,38.954567,-77.550234,N/A,,,Local Only,Built
+55,DVP 15 / OmniPoint,Monopole,150.0,45.7,"18920 Potomac Station Dr, Leesburg",LEESBURG,20176,39.093158,-77.514226,N/A,,,Local Only,Built
+56,DVP 16,Trans-Mount,140.0,42.7,"24359 Racefield Ln, Aldie",ALDIE,20105,38.948578,-77.551797,N/A,,,Local Only,Built
+57,Round Hill,Silo,69.0,21.0,"18864 Yellow Schoolhouse Rd, Round Hill",ROUND HILL,20141,39.096736,-77.806632,N/A,,,Local Only,Built
+58,Aldie VFC,Wood-pole,55.0,16.8,"39459 John Mosby Hwy, Aldie",ALDIE,20105,38.975091,-77.63953,N/A,,,Local Only,Built
+59,Canby Road,Wood-pole,40.0,12.2,"17790 Canby Rd, Leesburg",LEESBURG,20175,39.124593,-77.626824,N/A,,,Local Only,Built
+60,Herndon Junction,Stealth Flag,126.0,60.3,"47020 Harry Byrd Pkwy, Sterling",STERLING,20164,39.015939,-77.372672,1039863,"Nextel Communications of the Mid-Atlantic, Inc.",T-Mobile,FCC Matched (Historical),Built
+61,Sugarland Crossing Center,Stealth Tower,44.0,13.4,"46920 Community Plz, Sterling",STERLING,20164,39.015992,-77.376198,N/A,,,Local Only,Built
+62,Next Day Blinds,Monopole,60.0,18.3,"220 Fort Evans Rd NE, Leesburg",LEESBURG,20176,39.111071,-77.536493,N/A,,,Local Only,Built
+63,AOL HQ,Roof Top,89.0,27.1,"22070 Broderick Rd, Sterling",STERLING,20166,39.004067,-77.447955,N/A,,,Local Only,Built
+64,Mirror Ridge,Roof Top,42.0,12.8,"21335 Signal Hill Plz, Sterling",STERLING,20164,39.024971,-77.389701,N/A,,,Local Only,Built
+65,Cascades Commons,Roof Top,38.0,11.6,"46045 Palisade Pkwy, Sterling",STERLING,20165,39.03371,-77.406656,N/A,,,Local Only,Built
+66,Dulles International Park,Roof Top,45.0,13.7,"22810 International Rd, Sterling",STERLING,20166,38.984371,-77.423706,N/A,,,Local Only,Built
+67,Loudoun Milling,Roof Top,60.0,18.3,"39098 Irene Rd, Hamilton",HAMILTON,20158,39.143748,-77.650654,N/A,,,Local Only,Built
+68,George Washington University,Roof Top,90.0,27.4,"20101 Academic Way, Ashburn",ASHBURN,20147,39.060273,-77.4461,N/A,,,Local Only,Built
+69,Countryside,Roof Top,38.0,11.6,"2 Pidgeon Hill Dr, Sterling",STERLING,20165,39.037782,-77.413295,N/A,,,Local Only,Built
+70,Citibank,Roof Top,30.0,9.1,"21800 Town Center Plz, Sterling",STERLING,20164,39.013758,-77.37328,N/A,,,Local Only,Built
+71,Next Day Blinds,Roof Top,50.0,15.2,"220 Fort Evans Rd NE, Leesburg",LEESBURG,20176,39.111035,-77.536502,N/A,,,Local Only,Built
+72,CNS Microwave Loudoun Compressor Station,Monopole,140.0,42.7,"40800 Compressor Ln, Leesburg",LEESBURG,20175,38.993172,-77.591684,,,,Local Only,Built
+73,Virtz Corner,Monopole,120.0,36.6,"19443 James Monroe Hwy, Leesburg",LEESBURG,20175,39.08151,-77.605365,,,,Local Only,Built
+74,Great Falls Plaza,Clock Tower,40.0,12.2,"20789 Great Falls Plz, Sterling",STERLING,20165,39.040393,-77.358037,N/A,,,Local Only,Built
+75,Sprint-Nextel Landsdowne,Roof Top,110.0,33.5,"44050 Woodridge Pkwy, Leesburg",LEESBURG,20176,39.083526,-77.47581,,,,Local Only,Built
+76,Bluemont Grain Elevator,Grain Elevator,120.0,36.6,"18293 Railroad St, Bluemont",BLUEMONT,20135,39.112367,-77.830796,,,,Local Only,Built
+77,Verizon Wireless at Round Hill,Water Tank,156.0,47.5,"17144 Evening Star Dr, Round Hill",ROUND HILL,20141,39.1447,-77.760725,,,,Local Only,Built
+78,Gilbert's Corner / Community Wireless at Old Food Mart,Monopole,120.0,36.6,"24060 Old Carolina Rd, Aldie",ALDIE,20105,38.953224,-77.623389,,,,Local Only,Built
+79,CWS Taylorstown,Monopole,150.0,45.7,"13420 Springhollow Ln, Leesburg",LEESBURG,20176,39.244436,-77.567824,,,,Local Only,Built
+80,Verizon C.O.,Lattice,180.0,54.9,"319 E Market St, Leesburg",LEESBURG,20176,39.111639,-77.558902,,,,Local Only,Built
+81,Waterford Heights,Guyed,150.0,45.7,"40866 Browns Ln, Waterford",WATERFORD,20197,39.18787,-77.575377,,,,Local Only,Built
+82,Belmont Ridge #4,Monopole,189.0,57.6,"20777 Belmont Ridge Rd, Ashburn",ASHBURN,20147,39.03855,-77.524662,1034852,,,FCC ID Only,Built
+83,Philomont Fire Department and Crown,Monopole,140.0,42.7,"36560 Jeb Stuart Rd, Purcellville",PURCELLVILLE,20132,39.056967,-77.739877,,,,Local Only,Built
+84,CWS Lenah,Monopole,140.0,42.7,"41102 John Mosby Hwy, Aldie",ALDIE,20105,38.95518,-77.581178,,,,Local Only,Built
+85,21270 Belmont Ridge Road,Water Tank,120.0,36.6,"21270 Belmont Ridge Rd, Ashburn",ASHBURN,20148,39.02787,-77.528373,,,,Local Only,Built
+86,AT&T Academic Way,Roof Top,90.0,27.4,"20101 Academic Way, Ashburn",ASHBURN,20147,39.060386,-77.446057,,,,Local Only,Built
+87,AT&T Olympic,Monopole,144.0,43.9,"43130 Northlake Blvd, Leesburg",LEESBURG,20176,39.105545,-77.508428,,,,Local Only,Built
+88,T-Mobile Belmont,Roof Top,85.0,25.9,"19775 Belmont Executive Plz, Ashburn",ASHBURN,20147,39.069629,-77.487374,,,,Local Only,Built
+89,Verizon Wireless Leisure World,Roof Top,122.0,37.2,"19365 Cypress Ridge Ter, Leesburg",LEESBURG,20176,39.081663,-77.474534,,,,Local Only,Built
+90,Riverview Leisure World,Roof Top,122.0,37.2,"19355 Cypress Ridge Ter, Leesburg",LEESBURG,20176,39.082694,-77.473507,,,,Local Only,Built
+91,T-Mobile Harrison Property Silo,Silo,150.0,45.7,"18756 Harmony Church Rd, Leesburg",LEESBURG,20175,39.098432,-77.640896,,,,Local Only,Built
+92,Sprint Car ABC,Monopole,130.0,39.6,"43399 Old Ox Road, Sterling",STERLING,20166,38.952877,-77.498184,,,,Local Only,Built
+93,Leisure World Roof Antennas,Roof Top,122.0,37.2,"19365 Cypress Ridge Ter, Leesburg",LEESBURG,20176,39.081395,-77.474584,,,,Local Only,Built
+94,,Monopole,150.0,45.7,"19166 Blueridge Mountain Rd, Bluemont",BLUEMONT,20135,39.084755,-77.860106,,,,Local Only,Built
+95,Verizon Wireless White Pump,Silo,62.0,18.9,"19470 Silcott Springs Rd, Purcellville",PURCELLVILLE,20132,39.079379,-77.749545,,,,Local Only,Built
+96,T-Mobile Hyatt House,Roof Top,80.0,24.4,"45520 Dulles Plz, Sterling",STERLING,20166,38.977692,-77.426572,,,,Local Only,Built
+97,Invisible Towers-Morven Park,Monopole,140.0,42.7,"41953 Tutt Ln, Leesburg",LEESBURG,20176,39.140833,-77.553752,,,,Local Only,Built
+98,Milestone Tower,Monopole,199.0,60.7,"16611 Courage Ct, Leesburg",LEESBURG,20175,39.073244,-77.549012,,,,Local Only,Built
+99,Invisible Towers Karmen,Monopole,199.0,60.7,"41114 Yakey Ln, Lovettsville",LOVETTSVILLE,20180,39.278889,-77.570117,,,,Local Only,Built
+100,Claude Moore Park,Monopole,124.0,37.8,"46129 Loudoun Park Ln, Sterling",STERLING,20164,39.014142,-77.402701,,,,Local Only,Built
+101,NOVEC Cedargrove Substation #5,Monopole,40.0,12.2,"21250 Claiborne Pkwy, Ashburn",ASHBURN,20148,39.027711,-77.507327,,,,Local Only,Built
+102,FAA,Lattice,,,"825 E Market St, Leesburg",LEESBURG,20176,39.10193,-77.542964,,,,Local Only,Built
+103,FAA,Lattice,,,"825 E Market St, Leesburg",LEESBURG,20176,39.101996,-77.542912,,,,Local Only,Built
+104,Milestone Tower-Gardenia Drive,Lattice,199.0,60.7,"25490 Lightridge Farm Rd, Aldie",ALDIE,20105,38.914023,-77.573151,,,,Local Only,Built
+105,Milestone Tower-Waterford,Monopole,132.0,40.2,"16445 Hamilton Station Rd, Waterford",WATERFORD,20197,39.161752,-77.636657,,,,Local Only,Built
+106,Milestone-Rockridge HS,Monopole,142.0,43.3,"43410 Loudoun Reserve Dr, Ashburn",ASHBURN,20148,38.979866,-77.498867,,,,Local Only,Built
+107,AT&T Stone Ridge Water Tower,Water Tank,164.0,50.0,"24668 Goshen Rd, Aldie",ALDIE,20105,38.936794,-77.567038,,,,Local Only,Built
+108,CWS Bolington,Monopole,164.0,50.0,"39157 Bolington Rd, Lovettsville",LOVETTSVILLE,20180,39.238733,-77.650978,,,,Local Only,Approved
+109,Brambleton Fire and Rescue,Monopole,127.0,38.7,"23705 Belmont Ridge Rd, Ashburn",ASHBURN,20148,38.96091,-77.537058,,,,Local Only,Built
+110,Milestone-Mickie Gordon Park,Monopole,132.0,40.2,"23229 Carters Farm Ln, Middleburg",MIDDLEBURG,20117,38.979562,-77.706625,,,,Local Only,Approved

@@ -1,0 +1,255 @@
+{
+  "metadata": {
+    "description": "Maternity hospital data for Loudoun County and nearby Fairfax County hospitals",
+    "data_source": "The Leapfrog Group (ratings.leapfroggroup.org)",
+    "extraction_date": "2025-12-28",
+    "notes": [
+      "NICU levels inferred from NICU admissions and hospital marketing materials",
+      "CMS star ratings from CMS Hospital General Information dataset",
+      "Leapfrog standard for C-section rate: 23.6% or less",
+      "Leapfrog standard for episiotomy rate: 5% or less"
+    ]
+  },
+  "hospitals": [
+    {
+      "id": "inova_loudoun",
+      "name": "Inova Loudoun Hospital",
+      "address": "44045 Riverside Parkway",
+      "city": "Leesburg",
+      "state": "VA",
+      "zip": "20176",
+      "county": "Loudoun",
+      "in_loudoun_county": true,
+      "health_system": "Inova Health System",
+      "ownership_type": "Voluntary non-profit - Private",
+      "teaching_status": true,
+      "coordinates": {
+        "latitude": 39.0457,
+        "longitude": -77.5203
+      },
+      "facility_info": {
+        "acute_care_beds": 189,
+        "icu_beds": 23,
+        "adult_admissions_annual": 13727,
+        "pediatric_admissions_annual": 945
+      },
+      "maternity": {
+        "live_births_annual": 2960,
+        "c_section_rate": 0.243,
+        "c_section_leapfrog_status": "Considerable Achievement",
+        "episiotomy_rate": 0.025,
+        "episiotomy_leapfrog_status": "Achieved the Standard",
+        "jaundice_screening_rate": 1.0,
+        "blood_clot_prevention_rate": 1.0,
+        "nicu_level": "III",
+        "nicu_level_source": "Inferred from 288 NICU admissions/year and Level IV transfer capability",
+        "nicu_admissions_annual": 288,
+        "nicu_transfer_available": "Inova Children's Hospital Level IV NICU",
+        "midwives_available": true,
+        "doulas_allowed": true,
+        "vbac_offered": true,
+        "tubal_ligation_offered": true,
+        "lactation_services": "hospital_and_outpatient",
+        "early_elective_delivery_policy": true,
+        "birthing_friendly_cms": true
+      },
+      "quality": {
+        "cms_overall_rating": 5,
+        "leapfrog_safety_grade": "A",
+        "leapfrog_consecutive_a_grades": 28,
+        "leapfrog_top_hospital": true,
+        "leapfrog_top_hospital_years": [2022, 2024, 2025],
+        "leapfrog_top_hospital_category": "Teaching",
+        "magnet_status": true
+      },
+      "leapfrog_url": "https://ratings.leapfroggroup.org/facility/details/49-0043/inova-loudoun-hospital-leesburg-va",
+      "hospital_website": "https://www.inova.org/locations/inova-loudoun-hospital"
+    },
+    {
+      "id": "stonesprings",
+      "name": "StoneSprings Hospital Center",
+      "address": "24440 Stone Springs Boulevard",
+      "city": "Dulles",
+      "state": "VA",
+      "zip": "20166",
+      "county": "Loudoun",
+      "in_loudoun_county": true,
+      "health_system": "HCA Virginia",
+      "ownership_type": "Proprietary",
+      "teaching_status": false,
+      "coordinates": {
+        "latitude": 38.9584,
+        "longitude": -77.4639
+      },
+      "facility_info": {
+        "acute_care_beds": 107,
+        "icu_beds": 10,
+        "adult_admissions_annual": 3116,
+        "pediatric_admissions_annual": 114
+      },
+      "maternity": {
+        "live_births_annual": 1268,
+        "c_section_rate": 0.198,
+        "c_section_leapfrog_status": "Achieved the Standard",
+        "episiotomy_rate": 0.07,
+        "episiotomy_leapfrog_status": "Considerable Achievement",
+        "jaundice_screening_rate": 1.0,
+        "blood_clot_prevention_rate": 0.967,
+        "nicu_level": "II",
+        "nicu_level_source": "Hospital website states Level II NICU for babies 32+ weeks",
+        "nicu_admissions_annual": 0,
+        "nicu_transfer_available": "HCA Virginia network hospitals",
+        "midwives_available": true,
+        "doulas_allowed": true,
+        "vbac_offered": true,
+        "tubal_ligation_offered": true,
+        "lactation_services": "hospital_and_outpatient",
+        "early_elective_delivery_policy": true,
+        "birthing_friendly_cms": true
+      },
+      "quality": {
+        "cms_overall_rating": 3,
+        "leapfrog_safety_grade": "A",
+        "leapfrog_consecutive_a_grades": null,
+        "leapfrog_top_hospital": false,
+        "leapfrog_top_hospital_years": [],
+        "leapfrog_top_hospital_category": null,
+        "magnet_status": false
+      },
+      "leapfrog_url": "https://ratings.leapfroggroup.org/facility/details/49-8801/stonesprings-hospital-center-dulles-va",
+      "hospital_website": "https://www.hcavirginia.com/locations/stonesprings-hospital-center"
+    },
+    {
+      "id": "inova_fair_oaks",
+      "name": "Inova Fair Oaks Hospital",
+      "address": "3600 Joseph Siewick Drive",
+      "city": "Fairfax",
+      "state": "VA",
+      "zip": "22033",
+      "county": "Fairfax",
+      "in_loudoun_county": false,
+      "health_system": "Inova Health System",
+      "ownership_type": "Voluntary non-profit - Private",
+      "teaching_status": true,
+      "coordinates": {
+        "latitude": 38.8628,
+        "longitude": -77.3772
+      },
+      "facility_info": {
+        "acute_care_beds": 174,
+        "icu_beds": 12,
+        "adult_admissions_annual": 11025,
+        "pediatric_admissions_annual": 332
+      },
+      "maternity": {
+        "live_births_annual": 3461,
+        "c_section_rate": 0.230,
+        "c_section_leapfrog_status": "Achieved the Standard",
+        "episiotomy_rate": 0.029,
+        "episiotomy_leapfrog_status": "Achieved the Standard",
+        "jaundice_screening_rate": 1.0,
+        "blood_clot_prevention_rate": 1.0,
+        "nicu_level": "III",
+        "nicu_level_source": "Inferred from 314 NICU admissions/year and Level IV transfer capability",
+        "nicu_admissions_annual": 314,
+        "nicu_transfer_available": "Inova Children's Hospital Level IV NICU",
+        "midwives_available": true,
+        "doulas_allowed": true,
+        "vbac_offered": true,
+        "tubal_ligation_offered": true,
+        "lactation_services": "hospital_only",
+        "early_elective_delivery_policy": true,
+        "birthing_friendly_cms": true
+      },
+      "quality": {
+        "cms_overall_rating": 5,
+        "leapfrog_safety_grade": "A",
+        "leapfrog_consecutive_a_grades": 27,
+        "leapfrog_top_hospital": true,
+        "leapfrog_top_hospital_years": [2022, 2023, 2024, 2025],
+        "leapfrog_top_hospital_category": "Teaching",
+        "magnet_status": true
+      },
+      "leapfrog_url": "https://ratings.leapfroggroup.org/facility/details/49-0101/inova-fair-oaks-hospital-fairfax-va",
+      "hospital_website": "https://www.inova.org/locations/inova-fair-oaks-hospital"
+    },
+    {
+      "id": "reston",
+      "name": "Reston Hospital Center",
+      "address": "1850 Town Center Parkway",
+      "city": "Reston",
+      "state": "VA",
+      "zip": "20190",
+      "county": "Fairfax",
+      "in_loudoun_county": false,
+      "health_system": "HCA Virginia",
+      "ownership_type": "Proprietary",
+      "teaching_status": false,
+      "coordinates": {
+        "latitude": 38.9530,
+        "longitude": -77.3470
+      },
+      "facility_info": {
+        "acute_care_beds": 153,
+        "icu_beds": 24,
+        "adult_admissions_annual": 11615,
+        "pediatric_admissions_annual": 264
+      },
+      "maternity": {
+        "live_births_annual": 1429,
+        "c_section_rate": 0.312,
+        "c_section_leapfrog_status": "Limited Achievement",
+        "episiotomy_rate": 0.066,
+        "episiotomy_leapfrog_status": "Considerable Achievement",
+        "jaundice_screening_rate": 0.998,
+        "blood_clot_prevention_rate": 0.991,
+        "nicu_level": "III",
+        "nicu_level_source": "Hospital website states Level III NICU; 264 NICU admissions/year",
+        "nicu_admissions_annual": 264,
+        "nicu_transfer_available": "HCA Virginia network hospitals",
+        "midwives_available": false,
+        "doulas_allowed": true,
+        "vbac_offered": true,
+        "tubal_ligation_offered": true,
+        "lactation_services": "hospital_only",
+        "early_elective_delivery_policy": true,
+        "birthing_friendly_cms": true
+      },
+      "quality": {
+        "cms_overall_rating": 3,
+        "leapfrog_safety_grade": "A",
+        "leapfrog_consecutive_a_grades": 5,
+        "leapfrog_top_hospital": false,
+        "leapfrog_top_hospital_years": [],
+        "leapfrog_top_hospital_category": null,
+        "magnet_status": false
+      },
+      "leapfrog_url": "https://ratings.leapfroggroup.org/facility/details/49-0107/reston-hospital-center-reston-va",
+      "hospital_website": "https://www.hcavirginia.com/locations/reston-hospital-center"
+    }
+  ],
+  "reference_hospitals": [
+    {
+      "id": "inova_fairfax",
+      "name": "Inova Fairfax Hospital / Inova Women's Hospital",
+      "description": "Regional referral center with Northern Virginia's only Level IV NICU",
+      "city": "Falls Church",
+      "state": "VA",
+      "nicu_level": "IV",
+      "notes": "High-risk pregnancy and micropremie referral destination for all Inova system hospitals"
+    }
+  ],
+  "nicu_level_definitions": {
+    "I": "Well-baby nursery. Basic care for healthy, full-term babies (35+ weeks).",
+    "II": "Special care nursery. Babies 32+ weeks with moderate issues expected to resolve quickly.",
+    "III": "Full NICU. Babies under 32 weeks or under 3.3 lbs, serious illness, comprehensive subspecialty care.",
+    "IV": "Regional NICU. All Level III capabilities plus complex surgery, ECMO, serves as regional referral center."
+  },
+  "leapfrog_standards": {
+    "c_section_rate_standard": 0.236,
+    "c_section_rate_description": "First-time mothers, single baby, full-term, head-down position",
+    "episiotomy_rate_standard": 0.05,
+    "jaundice_screening_standard": 0.90,
+    "blood_clot_prevention_standard": 0.90
+  }
+}

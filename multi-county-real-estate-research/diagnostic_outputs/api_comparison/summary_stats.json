@@ -1,0 +1,151 @@
+{
+  "total_properties": 96,
+  "analysis_date": "2025-12-22T16:51:10.498950",
+  "success_rates": {
+    "rentcast": 100.0,
+    "attom_property": 75.0,
+    "attom_avm": 71.9,
+    "both_have_valuation": 71.9,
+    "counts": {
+      "rentcast": 96,
+      "attom_property": 72,
+      "attom_avm": 69,
+      "both": 69
+    }
+  },
+  "valuation_comparison": {
+    "count_with_both": 69,
+    "mean_diff_pct": 2.81,
+    "mean_abs_diff_pct": 33.17,
+    "median_abs_diff_pct": 19.25,
+    "std_dev": 63.31,
+    "max_diff_pct": 376.15,
+    "min_diff_pct": -95.6,
+    "percentile_25": 8.27,
+    "percentile_75": 33.88,
+    "percentile_90": 78.85,
+    "within_5_pct": 10.1,
+    "within_10_pct": 29.0,
+    "within_15_pct": 34.8,
+    "within_20_pct": 53.6,
+    "over_20_pct": 46.4,
+    "rentcast_higher_count": 27,
+    "attom_higher_count": 42,
+    "equal_count": 0
+  },
+  "characteristic_matches": {
+    "bedrooms": {
+      "count": 0,
+      "match_rate": null,
+      "matches": 0
+    },
+    "bathrooms": {
+      "count": 0,
+      "match_rate": null,
+      "matches": 0
+    },
+    "year_built": {
+      "count": 0,
+      "match_rate": null,
+      "matches": 0
+    },
+    "sqft": {
+      "count": 0,
+      "mean_diff_pct": null,
+      "within_5_pct": null,
+      "within_10_pct": null
+    }
+  },
+  "response_times_ms": {
+    "rentcast_avg": 435.4,
+    "attom_property_avg": 302.5,
+    "attom_avm_avg": 337.8,
+    "attom_total_avg": 640.3
+  },
+  "by_city": {
+    "ASHBURN": {
+      "count": 26,
+      "rentcast_success_rate": 100.0,
+      "attom_success_rate": 76.9,
+      "mean_val_diff": -3.91
+    },
+    "STERLING": {
+      "count": 24,
+      "rentcast_success_rate": 100.0,
+      "attom_success_rate": 45.8,
+      "mean_val_diff": 15.07
+    },
+    "LEESBURG": {
+      "count": 17,
+      "rentcast_success_rate": 100.0,
+      "attom_success_rate": 88.2,
+      "mean_val_diff": -1.04
+    },
+    "ALDIE": {
+      "count": 9,
+      "rentcast_success_rate": 100.0,
+      "attom_success_rate": 100.0,
+      "mean_val_diff": -15.65
+    },
+    "CHANTILLY": {
+      "count": 6,
+      "rentcast_success_rate": 100.0,
+      "attom_success_rate": 0.0,
+      "mean_val_diff": null
+    },
+    "PURCELLVILLE": {
+      "count": 4,
+      "rentcast_success_rate": 100.0,
+      "attom_success_rate": 100.0,
+      "mean_val_diff": -12.77
+    },
+    "ROUND HILL": {
+      "count": 3,
+      "rentcast_success_rate": 100.0,
+      "attom_success_rate": 100.0,
+      "mean_val_diff": -20.63
+    },
+    "WATERFORD": {
+      "count": 1,
+      "rentcast_success_rate": 100.0,
+      "attom_success_rate": 100.0,
+      "mean_val_diff": 376.15
+    },
+    "LOVETTSVILLE": {
+      "count": 1,
+      "rentcast_success_rate": 100.0,
+      "attom_success_rate": 100.0,
+      "mean_val_diff": -43.07
+    },
+    "MIDDLEBURG": {
+      "count": 1,
+      "rentcast_success_rate": 100.0,
+      "attom_success_rate": 100.0,
+      "mean_val_diff": -19.34
+    },
+    "HAMILTON": {
+      "count": 1,
+      "rentcast_success_rate": 100.0,
+      "attom_success_rate": 100.0,
+      "mean_val_diff": 26.11
+    },
+    "BLUEMONT": {
+      "count": 1,
+      "rentcast_success_rate": 100.0,
+      "attom_success_rate": 100.0,
+      "mean_val_diff": 16.24
+    },
+    "PAEONIAN SPRINGS": {
+      "count": 1,
+      "rentcast_success_rate": 100.0,
+      "attom_success_rate": 100.0,
+      "mean_val_diff": 49.31
+    },
+    "GREAT FALLS": {
+      "count": 1,
+      "rentcast_success_rate": 100.0,
+      "attom_success_rate": 100.0,
+      "mean_val_diff": -29.77
+    }
+  }
+}

@@ -1,0 +1,2 @@
+address,original_lat,original_lon,corrected_lat,corrected_lon,correction_reason,date_corrected
+"42376 PATRIOT PARK DR LEESBURG, VA 20175",39.115452,-77.564532,38.973708,-77.551509,"Geocoded to downtown instead of industrial area. Using nearby 42630 Patriot Park coords as proxy.",2024-12-01
