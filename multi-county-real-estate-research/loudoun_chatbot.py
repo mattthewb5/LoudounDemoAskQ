@@ -9,11 +9,12 @@ Run with:
 """
 
 import streamlit as st
-from dotenv import load_dotenv
+from dotenv import load_dotenv, find_dotenv
 load_dotenv()
 import os
 from core.claude_integration import ClaudeChatHandler
-
+dotenv_path = find_dotenv()
+print(f"Loading .env from: {dotenv_path}")
 # DEBUG: Print what keys are loaded
 print("=" * 60)
 print("DEBUG: Environment Variables Check")
