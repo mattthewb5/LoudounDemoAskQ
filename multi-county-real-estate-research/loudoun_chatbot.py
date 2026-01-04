@@ -10,9 +10,6 @@ Run with:
 
 import streamlit as st
 import os
-if 'ANTHROPIC_API_KEY' in st.secrets:
-    os.environ['ANTHROPIC_API_KEY'] = st.secrets['ANTHROPIC_API_KEY']
-    os.environ['GOOGLE_MAPS_API_KEY'] = st.secrets['GOOGLE_MAPS_API_KEY']
 from core.claude_integration import ClaudeChatHandler
 dotenv_path = find_dotenv()
 print(f"Loading .env from: {dotenv_path}")
