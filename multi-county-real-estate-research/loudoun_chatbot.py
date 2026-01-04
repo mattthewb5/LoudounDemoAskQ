@@ -9,6 +9,8 @@ Run with:
 """
 
 import streamlit as st
+from dotenv import load_dotenv
+load_dotenv()
 import os
 import sys
 from pathlib import Path
