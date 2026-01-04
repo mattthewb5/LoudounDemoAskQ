@@ -42,11 +42,16 @@ except ImportError:
     ANTHROPIC_AVAILABLE = False
     Anthropic = None
 
-# Model configuration
+# Model configuration - try multiple models for compatibility
 DEFAULT_MODEL = "claude-sonnet-4-5-20241022"
+FALLBACK_MODELS = [
+    "claude-3-5-sonnet-20241022",
+    "claude-3-sonnet-20240229",
+    "claude-3-haiku-20240307"
+]
 MAX_TOKENS = 4096
 
-# Token cost estimates (per million tokens) - Claude Sonnet 4.5
+# Token cost estimates (per million tokens) - Claude Sonnet
 INPUT_COST_PER_MILLION = 3.00
 OUTPUT_COST_PER_MILLION = 15.00
 
@@ -334,14 +339,31 @@ class ClaudeChatHandler:
         if system_prompt is None:
             system_prompt = self._build_system_prompt()
 
-        # Initial API call
-        response = self.client.messages.create(
-            model=self.model,
-            max_tokens=MAX_TOKENS,
-            system=system_prompt,
-            tools=tools,
-            messages=messages
-        )
+        # Initial API call with model fallback
+        response = None
+        last_error = None
+        models_to_try = [self.model] + FALLBACK_MODELS
+
+        for model in models_to_try:
+            try:
+                response = self.client.messages.create(
+                    model=model,
+                    max_tokens=MAX_TOKENS,
+                    system=system_prompt,
+                    tools=tools,
+                    messages=messages
+                )
+                self.model = model  # Remember working model
+                break
+            except Exception as e:
+                last_error = e
+                if "not_found" in str(e).lower() or "404" in str(e):
+                    continue  # Try next model
+                else:
+                    raise  # Other errors should propagate
+
+        if response is None:
+            raise last_error or Exception("No working model found")
 
         total_input_tokens += response.usage.input_tokens
         total_output_tokens += response.usage.output_tokens
