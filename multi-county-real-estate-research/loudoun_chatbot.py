@@ -12,6 +12,25 @@ import streamlit as st
 from dotenv import load_dotenv
 load_dotenv()
 import os
+from core.claude_integration import ClaudeChatHandler
+
+# DEBUG: Print what keys are loaded
+print("=" * 60)
+print("DEBUG: Environment Variables Check")
+print("=" * 60)
+anthropic_key = os.getenv('ANTHROPIC_API_KEY')
+if anthropic_key:
+    print(f"ANTHROPIC_API_KEY found: {anthropic_key[:20]}... (length: {len(anthropic_key)})")
+else:
+    print("ANTHROPIC_API_KEY: NOT FOUND")
+    
+google_key = os.getenv('GOOGLE_MAPS_API_KEY')
+if google_key:
+    print(f"GOOGLE_MAPS_API_KEY found: {google_key[:10]}... (length: {len(google_key)})")
+else:
+    print("GOOGLE_MAPS_API_KEY: NOT FOUND")
+print("=" * 60)
+import os
 import sys
 from pathlib import Path
 
