@@ -24,3 +24,6 @@ Thumbs.db
 # Data (keep structure, ignore large downloads)
 # Uncomment these if you don't want to commit data files
 # data/performance/*.csv
+
+# Large GeoJSON files (use GeoParquet instead)
+data/loudoun/parcels/*.geojson

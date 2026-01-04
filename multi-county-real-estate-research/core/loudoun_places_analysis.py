@@ -704,5 +704,69 @@ def test_neighborhood_analysis():
     print("\n" + "=" * 60)
 
 
+def get_pharmacy_access(lat: float, lon: float, radius_miles: float = 5.0) -> Dict:
+    """
+    Get pharmacy access information for a location.
+
+    Tool-callable wrapper for pharmacy search with 24-hour detection.
+
+    Args:
+        lat: Latitude of property
+        lon: Longitude of property
+        radius_miles: Search radius (default 5 miles)
+
+    Returns:
+        Dict with:
+        - available: bool (any pharmacies found)
+        - pharmacy_count: int
+        - has_24_hour: bool
+        - pharmacies: List of pharmacy details
+        - nearest_24_hour: Dict or None
+        - summary: Text summary
+    """
+    coords = (lat, lon)
+
+    # Use existing search function
+    results, from_cache = search_nearby_places(coords, 'pharmacy', radius_miles)
+
+    # Find 24-hour pharmacies
+    has_24_hour = any(p.get('is_24_hour', False) for p in results)
+
+    # Get nearest 24-hour if available
+    nearest_24_hour = None
+    if has_24_hour:
+        twenty_four_hr = [p for p in results if p.get('is_24_hour', False)]
+        if twenty_four_hr:
+            nearest_24_hour = min(twenty_four_hr,
+                                 key=lambda p: p.get('distance_miles', float('inf')))
+
+    # Generate summary
+    if results:
+        summary_parts = [f"{len(results)} pharmacies within {radius_miles} miles."]
+        if has_24_hour:
+            count_24hr = len([p for p in results if p.get('is_24_hour', False)])
+            summary_parts.append(f"{count_24hr} are open 24 hours.")
+            if nearest_24_hour:
+                summary_parts.append(f"Nearest 24-hour: {nearest_24_hour['name']} at {nearest_24_hour['distance_miles']:.1f} mi.")
+        else:
+            summary_parts.append("No 24-hour pharmacies found in this radius.")
+        if results:
+            nearest = results[0]
+            summary_parts.append(f"Nearest pharmacy: {nearest['name']} at {nearest['distance_miles']:.1f} mi.")
+        summary = ' '.join(summary_parts)
+    else:
+        summary = f"No pharmacies found within {radius_miles} miles."
+
+    return {
+        'available': len(results) > 0,
+        'pharmacy_count': len(results),
+        'has_24_hour': has_24_hour,
+        'pharmacies': results,
+        'nearest_24_hour': nearest_24_hour,
+        'from_cache': from_cache,
+        'summary': summary
+    }
+
+
 if __name__ == "__main__":
     test_neighborhood_analysis()
