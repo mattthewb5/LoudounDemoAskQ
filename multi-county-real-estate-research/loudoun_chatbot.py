@@ -10,25 +10,6 @@ Run with:
 
 import streamlit as st
 import os
-from core.claude_integration import ClaudeChatHandler
-print(f"Loading .env from: {dotenv_path}")
-# DEBUG: Print what keys are loaded
-print("=" * 60)
-print("DEBUG: Environment Variables Check")
-print("=" * 60)
-anthropic_key = os.getenv('ANTHROPIC_API_KEY')
-if anthropic_key:
-    print(f"ANTHROPIC_API_KEY found: {anthropic_key[:20]}... (length: {len(anthropic_key)})")
-else:
-    print("ANTHROPIC_API_KEY: NOT FOUND")
-    
-google_key = os.getenv('GOOGLE_MAPS_API_KEY')
-if google_key:
-    print(f"GOOGLE_MAPS_API_KEY found: {google_key[:10]}... (length: {len(google_key)})")
-else:
-    print("GOOGLE_MAPS_API_KEY: NOT FOUND")
-print("=" * 60)
-import os
 import sys
 from pathlib import Path
 
@@ -45,8 +26,7 @@ os.environ['GOOGLE_MAPS_API_KEY'] = 'PLACEHOLDER_KEY'
 st.set_page_config(
     page_title="Loudoun County Property Research Assistant",
     page_icon="🏡",
-    layout="wide",
-    initial_sidebar_state="collapsed"
+    layout="wide"
 )
 
 # Import after page config
