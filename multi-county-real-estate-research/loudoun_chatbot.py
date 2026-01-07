@@ -11,7 +11,6 @@ Run with:
 import streamlit as st
 import os
 from core.claude_integration import ClaudeChatHandler
-dotenv_path = find_dotenv()
 print(f"Loading .env from: {dotenv_path}")
 # DEBUG: Print what keys are loaded
 print("=" * 60)
