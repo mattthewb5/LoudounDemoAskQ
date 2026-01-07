@@ -37,6 +37,10 @@ _APP_DIR = Path(__file__).parent
 if str(_APP_DIR) not in sys.path:
     sys.path.insert(0, str(_APP_DIR))
 
+# API Keys - set directly for testing
+os.environ['ANTHROPIC_API_KEY'] = 'PLACEHOLDER_KEY'
+os.environ['GOOGLE_MAPS_API_KEY'] = 'PLACEHOLDER_KEY'
+
 # Page configuration - must be first Streamlit command
 st.set_page_config(
     page_title="Loudoun County Property Research Assistant",
@@ -169,21 +173,8 @@ def render_chat():
     st.title("🏡 Loudoun County Property Research Assistant")
     st.markdown("Ask questions about any property in Loudoun County, Virginia")
 
-    # API Key Check
-    if not os.getenv('ANTHROPIC_API_KEY'):
-        st.error("⚠️ ANTHROPIC_API_KEY not set. Please set environment variable.")
-        st.code("export ANTHROPIC_API_KEY='your-api-key'")
-        st.stop()
-
-    if not ANTHROPIC_AVAILABLE:
-        st.error("⚠️ anthropic package not installed. Please install with: pip install anthropic")
-        st.stop()
-
     # Get handler
     handler = get_chat_handler()
-    if handler is None:
-        st.error("⚠️ Failed to initialize chat handler. Check API key and try again.")
-        st.stop()
 
     # Example queries (only show if no messages yet)
     if not st.session_state.chat_state["display_messages"]:
